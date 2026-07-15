@@ -1266,7 +1266,7 @@
     "division": "Under 12 Couple",
     "event": "Under 12 CRS",
     "backNo": "200",
-    "competitor": "Yuen Chun & Liu Siyan",
+    "competitor": "Ng Yuen Chun & Liu Siyan",
     "entryType": "Couple"
   },
   {
@@ -1606,7 +1606,7 @@
     "division": "Under 12 Couple",
     "event": "Under 12 WTF",
     "backNo": "200",
-    "competitor": "Yuen Chun & Liu Siyan",
+    "competitor": "Ng Yuen Chun & Liu Siyan",
     "entryType": "Couple"
   },
   {
@@ -6598,5 +6598,95 @@
     "backNo": "4",
     "competitor": "Wong Qinyuen & Zhu Wanyi",
     "entryType": "Couple"
+  },
+  {
+    "eventNo": "12",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo W",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "13",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo T",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "14",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo Q",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "15",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo F",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "16",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WT",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "17",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WQ",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "18",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WTF",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "19",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WTQ",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "20",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WTFQ",
+    "backNo": "50",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
   }
 ]
