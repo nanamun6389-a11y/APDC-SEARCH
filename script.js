@@ -11,7 +11,21 @@ function openPlayer(back,name){const items=entries.filter(x=>x.backNo===back&&x.
 function doSearch(){const s=norm(q.value);if(!s){searchBox.classList.add("hidden");return}const matched=entries.filter(x=>norm([x.backNo,x.competitor,x.event,x.section,x.style,x.division].join(" ")).includes(s));const ps=uniquePlayers(matched);searchTitle.textContent=`SEARCH RESULTS: ${q.value.trim()}`;searchCount.textContent=`${ps.length} FOUND`;searchBox.classList.remove("hidden");searchResults.innerHTML=ps.length?ps.map(p=>{const n=entries.filter(x=>x.backNo===p.backNo&&x.competitor===p.competitor).length;return`<div class="result-card"><button data-back="${esc(p.backNo)}" data-name="${esc(p.competitor)}"><span class="result-back">${esc(p.backNo)}</span><span><span class="result-name">${esc(p.competitor)}</span><span class="result-sub">${n} SECTIONS</span></span><span>›</span></button></div>`}).join(""):`<div class="empty">NO RESULTS FOUND.</div>`;searchResults.querySelectorAll("button").forEach(b=>b.onclick=()=>openPlayer(b.dataset.back,b.dataset.name))}
 function showInfo(type){if(type==="information"){infoContent.innerHTML=`<h2 class="info-title">INFORMATION</h2><div class="info-grid"><div><span>DATE</span><strong>2026.08.08 (SAT)</strong></div><div><span>VENUE</span><strong>Seocho Sports Complex</strong></div><div><span>HOSTED BY</span><strong>Dancefill Academy</strong></div><div><span>ORGANIZER</span><strong>Tei Kim</strong></div><div><span>SANCTIONED BY</span><strong>KDC (Korea Professional Dance Council)</strong></div></div>`}else{infoContent.innerHTML=`<h2 class="info-title">VENUE & DIRECTIONS</h2><div class="direction-box"><h3>SEOCHO SPORTS COMPLEX</h3><p><strong>Address</strong><br>73-48, Yangjae-daero 12-gil, Seocho-gu, Seoul</p><p><strong>Public Transportation</strong><br>From Yangjae Station Exit 10, take Seocho Village Bus No. 08 and get off at Seocho Sports Complex.</p><div class="map-links"><a href="https://map.naver.com/p/search/%EC%84%9C%EC%B4%88%EC%A2%85%ED%95%A9%EC%B2%B4%EC%9C%A1%EA%B4%80" target="_blank">NAVER MAP</a><a href="https://map.kakao.com/?q=%EC%84%9C%EC%B4%88%EC%A2%85%ED%95%A9%EC%B2%B4%EC%9C%A1%EA%B4%80" target="_blank">KAKAO MAP</a></div></div>`}infoModal.classList.remove("hidden")}
 document.getElementById("searchForm").onsubmit=e=>{e.preventDefault();doSearch();q.blur()};
-document.getElementById("resetBtn").onclick=()=>{q.value="";searchBox.classList.add("hidden");activeSection="ALL";renderTabs();renderEvents()};
+
+function goHome(){
+  q.value="";
+  activeSection="ALL";
+  searchBox.classList.add("hidden");
+  searchResults.innerHTML="";
+  searchCount.textContent="";
+  infoModal.classList.add("hidden");
+  playerModal.classList.add("hidden");
+  renderTabs();
+  renderEvents();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+document.getElementById("homeBtn").onclick=goHome;
+
 document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>showInfo(b.dataset.view));
 document.querySelectorAll("[data-close-info]").forEach(b=>b.onclick=()=>infoModal.classList.add("hidden"));
 document.querySelectorAll("[data-close-player]").forEach(b=>b.onclick=()=>playerModal.classList.add("hidden"));

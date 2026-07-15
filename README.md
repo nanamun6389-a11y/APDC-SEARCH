@@ -1,12 +1,9 @@
-# APDC ENTRY SEARCH — RESTORE
+# APDC ENTRY SEARCH — HOME HEADER UPDATE
 
-Upload all files in this folder ONLY to the APDC Search repository.
+Changes:
+- RESET button removed
+- APDC header/title is clickable
+- Clicking the header clears search, selects ALL, closes open panels, and returns to the top
+- Latest Search players data included
 
-Included:
-- index.html
-- style.css
-- script.js
-- players.json
-
-Do not upload Judge files such as judge.js, admin.html, live.html,
-firebase-config.js or database.rules.json to the Search repository.
+Upload these files only to the APDC-SEARCH repository.
