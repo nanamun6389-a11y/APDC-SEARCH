@@ -25,38 +25,8 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo CR",
-    "backNo": "60",
-    "competitor": "Louise Lu",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "2",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CR",
     "backNo": "44",
     "competitor": "Yul BAEK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "2",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CR",
-    "backNo": "61",
-    "competitor": "Sio Chong Lan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "2",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CR",
-    "backNo": "71",
-    "competitor": "Tsui Yu Yan",
     "entryType": "Solo"
   },
   {
@@ -85,6 +55,26 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo CR",
+    "backNo": "60",
+    "competitor": "Louise Lu",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "2",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CR",
+    "backNo": "61",
+    "competitor": "Sio Chong Lan",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "2",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CR",
     "backNo": "63",
     "competitor": "Ng Yuen Chun",
     "entryType": "Solo"
@@ -147,6 +137,26 @@
     "event": "Under 12 Solo CR",
     "backNo": "69",
     "competitor": "YeRin GA",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "2",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CR",
+    "backNo": "70",
+    "competitor": "SaRang KIM",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "2",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CR",
+    "backNo": "71",
+    "competitor": "Tsui Yu Yan",
     "entryType": "Solo"
   },
   {
@@ -157,146 +167,6 @@
     "event": "Under 12 Solo CR",
     "backNo": "73",
     "competitor": "SiA JEON",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "2",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CR",
-    "backNo": "70",
-    "competitor": "SaRang KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "60",
-    "competitor": "Louise Lu",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "61",
-    "competitor": "Sio Chong Lan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "62",
-    "competitor": "Kuok Sut Lao",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "47",
-    "competitor": "Ng Fong Yi",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "63",
-    "competitor": "Ng Yuen Chun",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "64",
-    "competitor": "Liu Siyan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "65",
-    "competitor": "Chin Choi Ni Charlie",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "66",
-    "competitor": "Liang Brain",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "67",
-    "competitor": "Tse Wan Laam",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "50",
-    "competitor": "Wong Yuet To",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "68",
-    "competitor": "HaBin WOO",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "69",
-    "competitor": "YeRin GA",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "3",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "70",
-    "competitor": "SaRang KIM",
     "entryType": "Solo"
   },
   {
@@ -315,8 +185,168 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo R",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "50",
+    "competitor": "Wong Yuet To",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "60",
+    "competitor": "Louise Lu",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "61",
+    "competitor": "Sio Chong Lan",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "62",
+    "competitor": "Kuok Sut Lao",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "63",
+    "competitor": "Ng Yuen Chun",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "64",
+    "competitor": "Liu Siyan",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "65",
+    "competitor": "Chin Choi Ni Charlie",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "66",
+    "competitor": "Liang Brain",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "67",
+    "competitor": "Tse Wan Laam",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "68",
+    "competitor": "HaBin WOO",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "69",
+    "competitor": "YeRin GA",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "70",
+    "competitor": "SaRang KIM",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "3",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
     "backNo": "76",
     "competitor": "Avery Boon",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "4",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo C",
+    "backNo": "55",
+    "competitor": "Marissa Yu En Goh Redimerio",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "4",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo C",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "4",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo C",
+    "backNo": "50",
+    "competitor": "Wong Yuet To",
     "entryType": "Solo"
   },
   {
@@ -347,16 +377,6 @@
     "event": "Under 12 Solo C",
     "backNo": "62",
     "competitor": "Kuok Sut Lao",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "4",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo C",
-    "backNo": "47",
-    "competitor": "Ng Fong Yi",
     "entryType": "Solo"
   },
   {
@@ -407,16 +427,6 @@
     "event": "Under 12 Solo C",
     "backNo": "67",
     "competitor": "Tse Wan Laam",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "4",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo C",
-    "backNo": "50",
-    "competitor": "Wong Yuet To",
     "entryType": "Solo"
   },
   {
@@ -451,132 +461,12 @@
   },
   {
     "eventNo": "4",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo C",
-    "backNo": "55",
-    "competitor": "Marissa Yu En Goh Redimerio",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "4",
     "section": "Under 12",
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo C",
     "backNo": "76",
     "competitor": "Avery Boon",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "60",
-    "competitor": "Louise Lu",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "61",
-    "competitor": "Sio Chong Lan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "62",
-    "competitor": "Kuok Sut Lao",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "71",
-    "competitor": "Tsui Yu Yan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "47",
-    "competitor": "Ng Fong Yi",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "63",
-    "competitor": "Ng Yuen Chun",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "64",
-    "competitor": "Liu Siyan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "65",
-    "competitor": "Chin Choi Ni Charlie",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "66",
-    "competitor": "Liang Brain",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "50",
-    "competitor": "Wong Yuet To",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "5",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
-    "backNo": "72",
-    "competitor": "GaEun LEE",
     "entryType": "Solo"
   },
   {
@@ -595,8 +485,138 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo S",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "50",
+    "competitor": "Wong Yuet To",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "60",
+    "competitor": "Louise Lu",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "61",
+    "competitor": "Sio Chong Lan",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "62",
+    "competitor": "Kuok Sut Lao",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "63",
+    "competitor": "Ng Yuen Chun",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "64",
+    "competitor": "Liu Siyan",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "65",
+    "competitor": "Chin Choi Ni Charlie",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "66",
+    "competitor": "Liang Brain",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "71",
+    "competitor": "Tsui Yu Yan",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "72",
+    "competitor": "GaEun LEE",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "5",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
     "backNo": "76",
     "competitor": "Avery Boon",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "6",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo P",
+    "backNo": "55",
+    "competitor": "Marissa Yu En Goh Redimerio",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "6",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo P",
+    "backNo": "50",
+    "competitor": "Wong Yuet To",
     "entryType": "Solo"
   },
   {
@@ -675,28 +695,8 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo P",
-    "backNo": "50",
-    "competitor": "Wong Yuet To",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "6",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo P",
     "backNo": "72",
     "competitor": "GaEun LEE",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "6",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo P",
-    "backNo": "55",
-    "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
   },
   {
@@ -707,6 +707,36 @@
     "event": "Under 12 Solo P",
     "backNo": "76",
     "competitor": "Avery Boon",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "7",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo J",
+    "backNo": "55",
+    "competitor": "Marissa Yu En Goh Redimerio",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "7",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo J",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "7",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo J",
+    "backNo": "50",
+    "competitor": "Wong Yuet To",
     "entryType": "Solo"
   },
   {
@@ -737,26 +767,6 @@
     "event": "Under 12 Solo J",
     "backNo": "62",
     "competitor": "Kuok Sut Lao",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "7",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo J",
-    "backNo": "71",
-    "competitor": "Tsui Yu Yan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "7",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo J",
-    "backNo": "47",
-    "competitor": "Ng Fong Yi",
     "entryType": "Solo"
   },
   {
@@ -815,18 +825,8 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo J",
-    "backNo": "50",
-    "competitor": "Wong Yuet To",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "7",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo J",
-    "backNo": "55",
-    "competitor": "Marissa Yu En Goh Redimerio",
+    "backNo": "71",
+    "competitor": "Tsui Yu Yan",
     "entryType": "Solo"
   },
   {
@@ -845,38 +845,8 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo RJ",
-    "backNo": "60",
-    "competitor": "Louise Lu",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "8",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo RJ",
     "backNo": "44",
     "competitor": "Yul BAEK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "8",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo RJ",
-    "backNo": "62",
-    "competitor": "Kuok Sut Lao",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "8",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo RJ",
-    "backNo": "71",
-    "competitor": "Tsui Yu Yan",
     "entryType": "Solo"
   },
   {
@@ -905,6 +875,26 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo RJ",
+    "backNo": "60",
+    "competitor": "Louise Lu",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "8",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo RJ",
+    "backNo": "62",
+    "competitor": "Kuok Sut Lao",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "8",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo RJ",
     "backNo": "63",
     "competitor": "Ng Yuen Chun",
     "entryType": "Solo"
@@ -947,6 +937,16 @@
     "event": "Under 12 Solo RJ",
     "backNo": "67",
     "competitor": "Tse Wan Laam",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "8",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo RJ",
+    "backNo": "71",
+    "competitor": "Tsui Yu Yan",
     "entryType": "Solo"
   },
   {
@@ -971,12 +971,12 @@
   },
   {
     "eventNo": "9",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRS",
-    "backNo": "60",
-    "competitor": "Louise Lu",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRS",
+    "backNo": "55",
+    "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
   },
   {
@@ -987,36 +987,6 @@
     "event": "Under 12 Solo CRS",
     "backNo": "44",
     "competitor": "Yul BAEK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "9",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRS",
-    "backNo": "75",
-    "competitor": "Tsai Yu Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "9",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRS",
-    "backNo": "61",
-    "competitor": "Sio Chong Lan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "9",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRS",
-    "backNo": "71",
-    "competitor": "Tsui Yu Yan",
     "entryType": "Solo"
   },
   {
@@ -1037,6 +1007,36 @@
     "event": "Under 12 Solo CRS",
     "backNo": "47",
     "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "9",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRS",
+    "backNo": "50",
+    "competitor": "Wong Yuet To",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "9",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRS",
+    "backNo": "60",
+    "competitor": "Louise Lu",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "9",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRS",
+    "backNo": "61",
+    "competitor": "Sio Chong Lan",
     "entryType": "Solo"
   },
   {
@@ -1085,8 +1085,8 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo CRS",
-    "backNo": "50",
-    "competitor": "Wong Yuet To",
+    "backNo": "71",
+    "competitor": "Tsui Yu Yan",
     "entryType": "Solo"
   },
   {
@@ -1101,12 +1101,12 @@
   },
   {
     "eventNo": "9",
-    "section": "Under 10",
+    "section": "Under 12",
     "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo CRS",
-    "backNo": "55",
-    "competitor": "Marissa Yu En Goh Redimerio",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRS",
+    "backNo": "75",
+    "competitor": "Tsai Yu Tong",
     "entryType": "Solo"
   },
   {
@@ -1121,32 +1121,12 @@
   },
   {
     "eventNo": "10",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRJ",
-    "backNo": "71",
-    "competitor": "Tsui Yu Yan",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "10",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRJ",
-    "backNo": "46",
-    "competitor": "Low Xin Yu",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "10",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRJ",
-    "backNo": "60",
-    "competitor": "Louise Lu",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRJ",
+    "backNo": "55",
+    "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
   },
   {
@@ -1165,18 +1145,8 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo CRJ",
-    "backNo": "75",
-    "competitor": "Tsai Yu Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "10",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRJ",
-    "backNo": "62",
-    "competitor": "Kuok Sut Lao",
+    "backNo": "46",
+    "competitor": "Low Xin Yu",
     "entryType": "Solo"
   },
   {
@@ -1187,6 +1157,26 @@
     "event": "Under 12 Solo CRJ",
     "backNo": "47",
     "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "10",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRJ",
+    "backNo": "60",
+    "competitor": "Louise Lu",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "10",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRJ",
+    "backNo": "62",
+    "competitor": "Kuok Sut Lao",
     "entryType": "Solo"
   },
   {
@@ -1241,12 +1231,22 @@
   },
   {
     "eventNo": "10",
-    "section": "Under 10",
+    "section": "Under 12",
     "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo CRJ",
-    "backNo": "55",
-    "competitor": "Marissa Yu En Goh Redimerio",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRJ",
+    "backNo": "71",
+    "competitor": "Tsui Yu Yan",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "10",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRJ",
+    "backNo": "75",
+    "competitor": "Tsai Yu Tong",
     "entryType": "Solo"
   },
   {
@@ -1330,6 +1330,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "12",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo W",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "13",
     "section": "Under 12",
     "style": "Modern",
@@ -1380,6 +1390,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "13",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo T",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "14",
     "section": "Under 12",
     "style": "Modern",
@@ -1420,6 +1440,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "14",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo Q",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "15",
     "section": "Under 12",
     "style": "Modern",
@@ -1447,6 +1477,16 @@
     "event": "Under 12 Solo F",
     "backNo": "65",
     "competitor": "Chin Choi Ni Charlie",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "15",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo F",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
     "entryType": "Solo"
   },
   {
@@ -1500,6 +1540,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "16",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WT",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "17",
     "section": "Under 12",
     "style": "Modern",
@@ -1530,6 +1580,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "17",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WQ",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "18",
     "section": "Under 12",
     "style": "Modern",
@@ -1557,6 +1617,16 @@
     "event": "Under 12 Solo WTF",
     "backNo": "65",
     "competitor": "Chin Choi Ni Charlie",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "18",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WTF",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
     "entryType": "Solo"
   },
   {
@@ -1597,6 +1667,16 @@
     "event": "Under 12 Solo WTQ",
     "backNo": "65",
     "competitor": "Chin Choi Ni Charlie",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "19",
+    "section": "Under 12",
+    "style": "Modern",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo WTQ",
+    "backNo": "77",
+    "competitor": "Wong Tsun Yin",
     "entryType": "Solo"
   },
   {
@@ -1625,6 +1705,16 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo R",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "21",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo R",
     "backNo": "120",
     "competitor": "Genie Chen",
     "entryType": "Solo"
@@ -1655,16 +1745,6 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo R",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "21",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo R",
     "backNo": "123",
     "competitor": "JuEun BYEON",
     "entryType": "Solo"
@@ -1685,8 +1765,8 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo W",
-    "backNo": "120",
-    "competitor": "Genie Chen",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -1695,8 +1775,8 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo W",
-    "backNo": "124",
-    "competitor": "Cheng Ut Tong, Udia",
+    "backNo": "120",
+    "competitor": "Genie Chen",
     "entryType": "Solo"
   },
   {
@@ -1715,6 +1795,16 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo W",
+    "backNo": "124",
+    "competitor": "Cheng Ut Tong, Udia",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "23",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo C",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -1735,28 +1825,8 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo C",
-    "backNo": "124",
-    "competitor": "Cheng Ut Tong, Udia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "23",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo C",
     "backNo": "121",
     "competitor": "Cheng Ut U, Uta",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "23",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo C",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -1775,8 +1845,28 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo C",
+    "backNo": "124",
+    "competitor": "Cheng Ut Tong, Udia",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "23",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo C",
     "backNo": "125",
     "competitor": "Chloe Pang Si Han",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "24",
+    "section": "Under 18",
+    "style": "Modern",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo T",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -1810,11 +1900,11 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "24",
+    "eventNo": "25",
     "section": "Under 18",
-    "style": "Modern",
+    "style": "Latin",
     "division": "Under 18 Solo",
-    "event": "Under 18 Solo T",
+    "event": "Under 18 Solo S",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -1837,16 +1927,6 @@
     "event": "Under 18 Solo S",
     "backNo": "124",
     "competitor": "Cheng Ut Tong, Udia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "25",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo S",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -1865,8 +1945,8 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo Q",
-    "backNo": "120",
-    "competitor": "Genie Chen",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -1875,6 +1955,16 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo Q",
+    "backNo": "120",
+    "competitor": "Genie Chen",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "27",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo P",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -1915,16 +2005,6 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo P",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "27",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo P",
     "backNo": "125",
     "competitor": "Chloe Pang Si Han",
     "entryType": "Solo"
@@ -1935,8 +2015,8 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo F",
-    "backNo": "120",
-    "competitor": "Genie Chen",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -1945,8 +2025,8 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo F",
-    "backNo": "124",
-    "competitor": "Cheng Ut Tong, Udia",
+    "backNo": "120",
+    "competitor": "Genie Chen",
     "entryType": "Solo"
   },
   {
@@ -1965,6 +2045,16 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo F",
+    "backNo": "124",
+    "competitor": "Cheng Ut Tong, Udia",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "29",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo J",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -1977,16 +2067,6 @@
     "event": "Under 18 Solo J",
     "backNo": "120",
     "competitor": "Genie Chen",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "29",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo J",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -2005,6 +2085,16 @@
     "style": "Modern",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo WT",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "30",
+    "section": "Under 18",
+    "style": "Modern",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo WT",
     "backNo": "120",
     "competitor": "Genie Chen",
     "entryType": "Solo"
@@ -2020,11 +2110,11 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "30",
+    "eventNo": "31",
     "section": "Under 18",
-    "style": "Modern",
+    "style": "Latin",
     "division": "Under 18 Solo",
-    "event": "Under 18 Solo WT",
+    "event": "Under 18 Solo CR",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -2045,28 +2135,8 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo CR",
-    "backNo": "124",
-    "competitor": "Cheng Ut Tong, Udia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "31",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CR",
     "backNo": "121",
     "competitor": "Cheng Ut U, Uta",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "31",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CR",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -2080,6 +2150,26 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "31",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo CR",
+    "backNo": "124",
+    "competitor": "Cheng Ut Tong, Udia",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "32",
+    "section": "Under 18",
+    "style": "Modern",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo WQ",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "32",
     "section": "Under 18",
     "style": "Modern",
@@ -2090,11 +2180,11 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "32",
+    "eventNo": "33",
     "section": "Under 18",
-    "style": "Modern",
+    "style": "Latin",
     "division": "Under 18 Solo",
-    "event": "Under 18 Solo WQ",
+    "event": "Under 18 Solo RJ",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -2110,11 +2200,11 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "33",
+    "eventNo": "34",
     "section": "Under 18",
-    "style": "Latin",
+    "style": "Modern",
     "division": "Under 18 Solo",
-    "event": "Under 18 Solo RJ",
+    "event": "Under 18 Solo WTFQ",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -2140,11 +2230,11 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "34",
+    "eventNo": "35",
     "section": "Under 18",
-    "style": "Modern",
+    "style": "Latin",
     "division": "Under 18 Solo",
-    "event": "Under 18 Solo WTFQ",
+    "event": "Under 18 Solo CSR",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -2165,16 +2255,6 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo CSR",
-    "backNo": "124",
-    "competitor": "Cheng Ut Tong, Udia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "35",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CSR",
     "backNo": "121",
     "competitor": "Cheng Ut U, Uta",
     "entryType": "Solo"
@@ -2185,8 +2265,8 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo CSR",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
+    "backNo": "124",
+    "competitor": "Cheng Ut Tong, Udia",
     "entryType": "Solo"
   },
   {
@@ -2215,6 +2295,16 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo CRJ",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "37",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo CRJ",
     "backNo": "120",
     "competitor": "Genie Chen",
     "entryType": "Solo"
@@ -2227,16 +2317,6 @@
     "event": "Under 18 Solo CRJ",
     "backNo": "122",
     "competitor": "Leung Pui U",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "37",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CRJ",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
   },
   {
@@ -2275,8 +2355,38 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo CSRJ",
+    "backNo": "12",
+    "competitor": "Cheng Cheuk Lam",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "39",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo CSRJ",
     "backNo": "120",
     "competitor": "Genie Chen",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "39",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo CSRJ",
+    "backNo": "121",
+    "competitor": "Cheng Ut U, Uta",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "39",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo CSRJ",
+    "backNo": "122",
+    "competitor": "Leung Pui U",
     "entryType": "Solo"
   },
   {
@@ -2290,31 +2400,11 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "39",
+    "eventNo": "40",
     "section": "Under 18",
     "style": "Latin",
     "division": "Under 18 Solo",
-    "event": "Under 18 Solo CSRJ",
-    "backNo": "121",
-    "competitor": "Cheng Ut U, Uta",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "39",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CSRJ",
-    "backNo": "122",
-    "competitor": "Leung Pui U",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "39",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CSRJ",
+    "event": "Under 18 Solo CSRPJ",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -2337,56 +2427,6 @@
     "event": "Under 18 Solo CSRPJ",
     "backNo": "122",
     "competitor": "Leung Pui U",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "40",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CSRPJ",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "41",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo Elite A Latin",
-    "backNo": "15",
-    "competitor": "ChanByeol PARK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "41",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo Elite A Latin",
-    "backNo": "120",
-    "competitor": "Genie Chen",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "41",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo Elite A Latin",
-    "backNo": "11",
-    "competitor": "SuBin AN",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "41",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo Elite A Latin",
-    "backNo": "75",
-    "competitor": "Tsai Yu Tong",
     "entryType": "Solo"
   },
   {
@@ -2405,6 +2445,46 @@
     "style": "Latin",
     "division": "Under 18 Solo",
     "event": "Under 18 Solo Elite A Latin",
+    "backNo": "11",
+    "competitor": "SuBin AN",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "41",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo Elite A Latin",
+    "backNo": "15",
+    "competitor": "ChanByeol PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "41",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo Elite A Latin",
+    "backNo": "75",
+    "competitor": "Tsai Yu Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "41",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo Elite A Latin",
+    "backNo": "120",
+    "competitor": "Genie Chen",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "41",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo Elite A Latin",
     "backNo": "125",
     "competitor": "Chloe Pang Si Han",
     "entryType": "Solo"
@@ -2415,6 +2495,16 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo CSR",
+    "backNo": "75",
+    "competitor": "Tsai Yu Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "42",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSR",
     "backNo": "90",
     "competitor": "Fifi Chang",
     "entryType": "Solo"
@@ -2475,38 +2565,8 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo CSR",
-    "backNo": "75",
-    "competitor": "Tsai Yu Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "42",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
     "backNo": "96",
     "competitor": "Leong Chi Kio",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "42",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
-    "backNo": "102",
-    "competitor": "Cheang Cheng Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "42",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
-    "backNo": "103",
-    "competitor": "JiMin JEONG",
     "entryType": "Solo"
   },
   {
@@ -2545,6 +2605,26 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo CSR",
+    "backNo": "102",
+    "competitor": "Cheang Cheng Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "42",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSR",
+    "backNo": "103",
+    "competitor": "JiMin JEONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "42",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSR",
     "backNo": "104",
     "competitor": "HeeSeo CHOI",
     "entryType": "Solo"
@@ -2567,6 +2647,16 @@
     "event": "Under 15 Solo CSR",
     "backNo": "106",
     "competitor": "Charis Phay Jia En",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "43",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo R",
+    "backNo": "14",
+    "competitor": "Mathilda Lily Cook",
     "entryType": "Solo"
   },
   {
@@ -2695,16 +2785,6 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo R",
-    "backNo": "14",
-    "competitor": "Mathilda Lily Cook",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "43",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo R",
     "backNo": "105",
     "competitor": "Lim Qin En",
     "entryType": "Solo"
@@ -2717,6 +2797,16 @@
     "event": "Under 15 Solo R",
     "backNo": "106",
     "competitor": "Charis Phay Jia En",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "44",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo C",
+    "backNo": "14",
+    "competitor": "Mathilda Lily Cook",
     "entryType": "Solo"
   },
   {
@@ -2787,16 +2877,6 @@
     "event": "Under 15 Solo C",
     "backNo": "96",
     "competitor": "Leong Chi Kio",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "44",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo C",
-    "backNo": "102",
-    "competitor": "Cheang Cheng Tong",
     "entryType": "Solo"
   },
   {
@@ -2845,8 +2925,8 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo C",
-    "backNo": "14",
-    "competitor": "Mathilda Lily Cook",
+    "backNo": "102",
+    "competitor": "Cheang Cheng Tong",
     "entryType": "Solo"
   },
   {
@@ -2867,6 +2947,16 @@
     "event": "Under 15 Solo C",
     "backNo": "106",
     "competitor": "Charis Phay Jia En",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "45",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo S",
+    "backNo": "14",
+    "competitor": "Mathilda Lily Cook",
     "entryType": "Solo"
   },
   {
@@ -2937,16 +3027,6 @@
     "event": "Under 15 Solo S",
     "backNo": "96",
     "competitor": "Leong Chi Kio",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "45",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo S",
-    "backNo": "103",
-    "competitor": "JiMin JEONG",
     "entryType": "Solo"
   },
   {
@@ -2975,8 +3055,8 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo S",
-    "backNo": "14",
-    "competitor": "Mathilda Lily Cook",
+    "backNo": "103",
+    "competitor": "JiMin JEONG",
     "entryType": "Solo"
   },
   {
@@ -2997,6 +3077,16 @@
     "event": "Under 15 Solo S",
     "backNo": "106",
     "competitor": "Charis Phay Jia En",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "46",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo P",
+    "backNo": "14",
+    "competitor": "Mathilda Lily Cook",
     "entryType": "Solo"
   },
   {
@@ -3067,6 +3157,26 @@
     "event": "Under 15 Solo P",
     "backNo": "96",
     "competitor": "Leong Chi Kio",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "46",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo P",
+    "backNo": "98",
+    "competitor": "Keung Yuen Hei Maemi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "46",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo P",
+    "backNo": "99",
+    "competitor": "Keung Wing Sum",
     "entryType": "Solo"
   },
   {
@@ -3085,38 +3195,18 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo P",
-    "backNo": "98",
-    "competitor": "Keung Yuen Hei Maemi",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "46",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo P",
-    "backNo": "99",
-    "competitor": "Keung Wing Sum",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "46",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo P",
-    "backNo": "14",
-    "competitor": "Mathilda Lily Cook",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "46",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo P",
     "backNo": "106",
     "competitor": "Charis Phay Jia En",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "47",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo J",
+    "backNo": "14",
+    "competitor": "Mathilda Lily Cook",
     "entryType": "Solo"
   },
   {
@@ -3135,16 +3225,6 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo J",
-    "backNo": "98",
-    "competitor": "Keung Yuen Hei Maemi",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "47",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo J",
     "backNo": "91",
     "competitor": "Katy Lin",
     "entryType": "Solo"
@@ -3155,28 +3235,8 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo J",
-    "backNo": "99",
-    "competitor": "Keung Wing Sum",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "47",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo J",
     "backNo": "92",
     "competitor": "Jasmine Liu",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "47",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo J",
-    "backNo": "100",
-    "competitor": "Hsien Ho Kiu",
     "entryType": "Solo"
   },
   {
@@ -3225,8 +3285,28 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo J",
-    "backNo": "14",
-    "competitor": "Mathilda Lily Cook",
+    "backNo": "98",
+    "competitor": "Keung Yuen Hei Maemi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "47",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo J",
+    "backNo": "99",
+    "competitor": "Keung Wing Sum",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "47",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo J",
+    "backNo": "100",
+    "competitor": "Hsien Ho Kiu",
     "entryType": "Solo"
   },
   {
@@ -3317,16 +3397,6 @@
     "event": "Under 15 Solo CR",
     "backNo": "96",
     "competitor": "Leong Chi Kio",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "48",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CR",
-    "backNo": "103",
-    "competitor": "JiMin JEONG",
     "entryType": "Solo"
   },
   {
@@ -3380,6 +3450,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "48",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CR",
+    "backNo": "103",
+    "competitor": "JiMin JEONG",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "49",
     "section": "Under 15",
     "style": "Latin",
@@ -3485,6 +3565,16 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo CRJ",
+    "backNo": "75",
+    "competitor": "Tsai Yu Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "50",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CRJ",
     "backNo": "90",
     "competitor": "Fifi Chang",
     "entryType": "Solo"
@@ -3537,16 +3627,6 @@
     "event": "Under 15 Solo CRJ",
     "backNo": "95",
     "competitor": "Nayool LEE",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "50",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CRJ",
-    "backNo": "75",
-    "competitor": "Tsai Yu Tong",
     "entryType": "Solo"
   },
   {
@@ -3617,106 +3697,6 @@
     "event": "Under 15 Solo CRJ",
     "backNo": "106",
     "competitor": "Charis Phay Jia En",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "90",
-    "competitor": "Fifi Chang",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "95",
-    "competitor": "Nayool LEE",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "91",
-    "competitor": "Katy Lin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "75",
-    "competitor": "Tsai Yu Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "92",
-    "competitor": "Jasmine Liu",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "96",
-    "competitor": "Leong Chi Kio",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "93",
-    "competitor": "Cindy Hsia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "102",
-    "competitor": "Cheang Cheng Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "99",
-    "competitor": "Keung Wing Sum",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 15",
-    "style": "Latin",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSRJ",
-    "backNo": "104",
-    "competitor": "HeeSeo CHOI",
     "entryType": "Solo"
   },
   {
@@ -3735,6 +3715,106 @@
     "style": "Latin",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo CSRJ",
+    "backNo": "75",
+    "competitor": "Tsai Yu Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "90",
+    "competitor": "Fifi Chang",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "91",
+    "competitor": "Katy Lin",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "92",
+    "competitor": "Jasmine Liu",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "93",
+    "competitor": "Cindy Hsia",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "95",
+    "competitor": "Nayool LEE",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "96",
+    "competitor": "Leong Chi Kio",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "99",
+    "competitor": "Keung Wing Sum",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "102",
+    "competitor": "Cheang Cheng Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
+    "backNo": "104",
+    "competitor": "HeeSeo CHOI",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "51",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CSRJ",
     "backNo": "105",
     "competitor": "Lim Qin En",
     "entryType": "Solo"
@@ -3815,8 +3895,8 @@
     "style": "Modern",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo W",
-    "backNo": "102",
-    "competitor": "Cheang Cheng Tong",
+    "backNo": "98",
+    "competitor": "Keung Yuen Hei Maemi",
     "entryType": "Solo"
   },
   {
@@ -3825,8 +3905,8 @@
     "style": "Modern",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo W",
-    "backNo": "98",
-    "competitor": "Keung Yuen Hei Maemi",
+    "backNo": "102",
+    "competitor": "Cheang Cheng Tong",
     "entryType": "Solo"
   },
   {
@@ -3997,6 +4077,16 @@
     "event": "Under 15 Solo Q",
     "backNo": "94",
     "competitor": "Lucie Wang",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "55",
+    "section": "Under 15",
+    "style": "Modern",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo Q",
+    "backNo": "98",
+    "competitor": "Keung Yuen Hei Maemi",
     "entryType": "Solo"
   },
   {
@@ -4010,16 +4100,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "55",
-    "section": "Under 15",
-    "style": "Modern",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo Q",
-    "backNo": "98",
-    "competitor": "Keung Yuen Hei Maemi",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "56",
     "section": "Under 15",
     "style": "Modern",
@@ -4247,6 +4327,16 @@
     "event": "Under 15 Solo WTQ",
     "backNo": "94",
     "competitor": "Lucie Wang",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "59",
+    "section": "Under 15",
+    "style": "Modern",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo WTQ",
+    "backNo": "98",
+    "competitor": "Keung Yuen Hei Maemi",
     "entryType": "Solo"
   },
   {
@@ -4260,16 +4350,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "59",
-    "section": "Under 15",
-    "style": "Modern",
-    "division": "Under 15 Solo",
-    "event": "Under 15 Solo WTQ",
-    "backNo": "98",
-    "competitor": "Keung Yuen Hei Maemi",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "60",
     "section": "Under 15",
     "style": "Modern",
@@ -4325,8 +4405,8 @@
     "style": "Modern",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo WTFQ",
-    "backNo": "102",
-    "competitor": "Cheang Cheng Tong",
+    "backNo": "98",
+    "competitor": "Keung Yuen Hei Maemi",
     "entryType": "Solo"
   },
   {
@@ -4335,8 +4415,8 @@
     "style": "Modern",
     "division": "Under 15 Solo",
     "event": "Under 15 Solo WTFQ",
-    "backNo": "98",
-    "competitor": "Keung Yuen Hei Maemi",
+    "backNo": "102",
+    "competitor": "Cheang Cheng Tong",
     "entryType": "Solo"
   },
   {
@@ -5095,16 +5175,6 @@
     "style": "Latin",
     "division": "Under 10 Solo",
     "event": "Under 10 Solo CR",
-    "backNo": "51",
-    "competitor": "Tan Yi Jia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "69",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo CR",
     "backNo": "46",
     "competitor": "Low Xin Yu",
     "entryType": "Solo"
@@ -5137,6 +5207,16 @@
     "event": "Under 10 Solo CR",
     "backNo": "49",
     "competitor": "Keung Ho Yin Elliot",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "69",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CR",
+    "backNo": "51",
+    "competitor": "Tan Yi Jia",
     "entryType": "Solo"
   },
   {
@@ -5205,16 +5285,6 @@
     "style": "Latin",
     "division": "Under 10 Solo",
     "event": "Under 10 Solo RJ",
-    "backNo": "51",
-    "competitor": "Tan Yi Jia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "70",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo RJ",
     "backNo": "46",
     "competitor": "Low Xin Yu",
     "entryType": "Solo"
@@ -5237,6 +5307,16 @@
     "event": "Under 10 Solo RJ",
     "backNo": "49",
     "competitor": "Keung Ho Yin Elliot",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "70",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo RJ",
+    "backNo": "51",
+    "competitor": "Tan Yi Jia",
     "entryType": "Solo"
   },
   {
@@ -5525,28 +5605,8 @@
     "style": "Latin",
     "division": "Over 35 Solo",
     "event": "Over 35 Solo CR",
-    "backNo": "33",
-    "competitor": "Heon KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "80",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo CR",
     "backNo": "30",
     "competitor": "SeonA JEONG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "80",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo CR",
-    "backNo": "34",
-    "competitor": "HyoSeon PARK",
     "entryType": "Solo"
   },
   {
@@ -5565,8 +5625,8 @@
     "style": "Latin",
     "division": "Over 35 Solo",
     "event": "Over 35 Solo CR",
-    "backNo": "35",
-    "competitor": "SukHee KIM",
+    "backNo": "32",
+    "competitor": "SeongJi CHOI",
     "entryType": "Solo"
   },
   {
@@ -5575,8 +5635,28 @@
     "style": "Latin",
     "division": "Over 35 Solo",
     "event": "Over 35 Solo CR",
-    "backNo": "32",
-    "competitor": "SeongJi CHOI",
+    "backNo": "33",
+    "competitor": "Heon KIM",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "80",
+    "section": "Over 35",
+    "style": "Latin",
+    "division": "Over 35 Solo",
+    "event": "Over 35 Solo CR",
+    "backNo": "34",
+    "competitor": "HyoSeon PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "80",
+    "section": "Over 35",
+    "style": "Latin",
+    "division": "Over 35 Solo",
+    "event": "Over 35 Solo CR",
+    "backNo": "35",
+    "competitor": "SukHee KIM",
     "entryType": "Solo"
   },
   {
@@ -5597,26 +5677,6 @@
     "event": "Over 35 Solo R",
     "backNo": "30",
     "competitor": "SeonA JEONG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "81",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo R",
-    "backNo": "36",
-    "competitor": "Jay KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "81",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo R",
-    "backNo": "35",
-    "competitor": "SukHee KIM",
     "entryType": "Solo"
   },
   {
@@ -5657,6 +5717,26 @@
     "event": "Over 35 Solo R",
     "backNo": "34",
     "competitor": "HyoSeon PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "81",
+    "section": "Over 35",
+    "style": "Latin",
+    "division": "Over 35 Solo",
+    "event": "Over 35 Solo R",
+    "backNo": "35",
+    "competitor": "SukHee KIM",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "81",
+    "section": "Over 35",
+    "style": "Latin",
+    "division": "Over 35 Solo",
+    "event": "Over 35 Solo R",
+    "backNo": "36",
+    "competitor": "Jay KIM",
     "entryType": "Solo"
   },
   {
@@ -5745,16 +5825,6 @@
     "style": "Latin",
     "division": "Over 35 Solo",
     "event": "Over 35 Solo C",
-    "backNo": "35",
-    "competitor": "SukHee KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "84",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo C",
     "backNo": "31",
     "competitor": "HyeKyung LEE",
     "entryType": "Solo"
@@ -5787,6 +5857,16 @@
     "event": "Over 35 Solo C",
     "backNo": "34",
     "competitor": "HyoSeon PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "84",
+    "section": "Over 35",
+    "style": "Latin",
+    "division": "Over 35 Solo",
+    "event": "Over 35 Solo C",
+    "backNo": "35",
+    "competitor": "SukHee KIM",
     "entryType": "Solo"
   },
   {
@@ -5805,16 +5885,6 @@
     "style": "Latin",
     "division": "Over 35 Solo",
     "event": "Over 35 Solo S",
-    "backNo": "35",
-    "competitor": "SukHee KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "85",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo S",
     "backNo": "31",
     "competitor": "HyeKyung LEE",
     "entryType": "Solo"
@@ -5850,63 +5920,13 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "86",
-    "section": "Over 19",
+    "eventNo": "85",
+    "section": "Over 35",
     "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "16",
-    "competitor": "MinJi BAEK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "86",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "17",
-    "competitor": "JiHyeon YANG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "86",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "18",
-    "competitor": "EunJin HWANG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "86",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "19",
-    "competitor": "SiJin YOO",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "86",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "20",
-    "competitor": "DaSom SONG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "86",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "21",
-    "competitor": "Nanaha Kosaka",
+    "division": "Over 35 Solo",
+    "event": "Over 35 Solo S",
+    "backNo": "35",
+    "competitor": "SukHee KIM",
     "entryType": "Solo"
   },
   {
@@ -5917,26 +5937,6 @@
     "event": "Over 19 Solo Latin CSRPJ",
     "backNo": "8",
     "competitor": "JiHyo YOO",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "86",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "22",
-    "competitor": "Chan Hio Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "86",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CSRPJ",
-    "backNo": "23",
-    "competitor": "Cheng Ut Leng",
     "entryType": "Solo"
   },
   {
@@ -5950,81 +5950,81 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "87",
+    "eventNo": "86",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
-    "backNo": "24",
-    "competitor": "GaIn PARK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "87",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
+    "event": "Over 19 Solo Latin CSRPJ",
     "backNo": "16",
     "competitor": "MinJi BAEK",
     "entryType": "Solo"
   },
   {
-    "eventNo": "87",
+    "eventNo": "86",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
+    "event": "Over 19 Solo Latin CSRPJ",
     "backNo": "17",
     "competitor": "JiHyeon YANG",
     "entryType": "Solo"
   },
   {
-    "eventNo": "87",
+    "eventNo": "86",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
+    "event": "Over 19 Solo Latin CSRPJ",
     "backNo": "18",
     "competitor": "EunJin HWANG",
     "entryType": "Solo"
   },
   {
-    "eventNo": "87",
+    "eventNo": "86",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
+    "event": "Over 19 Solo Latin CSRPJ",
     "backNo": "19",
     "competitor": "SiJin YOO",
     "entryType": "Solo"
   },
   {
-    "eventNo": "87",
+    "eventNo": "86",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
+    "event": "Over 19 Solo Latin CSRPJ",
     "backNo": "20",
     "competitor": "DaSom SONG",
     "entryType": "Solo"
   },
   {
-    "eventNo": "87",
+    "eventNo": "86",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
-    "backNo": "25",
-    "competitor": "HaEun KIM",
+    "event": "Over 19 Solo Latin CSRPJ",
+    "backNo": "21",
+    "competitor": "Nanaha Kosaka",
     "entryType": "Solo"
   },
   {
-    "eventNo": "87",
+    "eventNo": "86",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
+    "event": "Over 19 Solo Latin CSRPJ",
+    "backNo": "22",
+    "competitor": "Chan Hio Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "86",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CSRPJ",
     "backNo": "23",
     "competitor": "Cheng Ut Leng",
     "entryType": "Solo"
@@ -6035,28 +6035,8 @@
     "style": "Latin",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo Latin CRS",
-    "backNo": "22",
-    "competitor": "Chan Hio Tong",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "87",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
     "backNo": "8",
     "competitor": "JiHyo YOO",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "87",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo Latin CRS",
-    "backNo": "21",
-    "competitor": "Nanaha Kosaka",
     "entryType": "Solo"
   },
   {
@@ -6080,13 +6060,113 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "16",
+    "competitor": "MinJi BAEK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "17",
+    "competitor": "JiHyeon YANG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "18",
+    "competitor": "EunJin HWANG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "19",
+    "competitor": "SiJin YOO",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "20",
+    "competitor": "DaSom SONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "21",
+    "competitor": "Nanaha Kosaka",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "22",
+    "competitor": "Chan Hio Tong",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "23",
+    "competitor": "Cheng Ut Leng",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "24",
+    "competitor": "GaIn PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "87",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "25",
+    "competitor": "HaEun KIM",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "88",
     "section": "Over 19",
     "style": "Latin",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo CR",
-    "backNo": "25",
-    "competitor": "HaEun KIM",
+    "backNo": "8",
+    "competitor": "JiHyo YOO",
     "entryType": "Solo"
   },
   {
@@ -6115,8 +6195,8 @@
     "style": "Latin",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo CR",
-    "backNo": "8",
-    "competitor": "JiHyo YOO",
+    "backNo": "25",
+    "competitor": "HaEun KIM",
     "entryType": "Solo"
   },
   {
@@ -6135,8 +6215,8 @@
     "style": "Latin",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo CSRJ",
-    "backNo": "22",
-    "competitor": "Chan Hio Tong",
+    "backNo": "13",
+    "competitor": "Choo Yi Xuan",
     "entryType": "Solo"
   },
   {
@@ -6145,8 +6225,8 @@
     "style": "Latin",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo CSRJ",
-    "backNo": "13",
-    "competitor": "Choo Yi Xuan",
+    "backNo": "22",
+    "competitor": "Chan Hio Tong",
     "entryType": "Solo"
   },
   {
@@ -6165,8 +6245,8 @@
     "style": "Latin",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo P",
-    "backNo": "23",
-    "competitor": "Cheng Ut Leng",
+    "backNo": "13",
+    "competitor": "Choo Yi Xuan",
     "entryType": "Solo"
   },
   {
@@ -6175,8 +6255,8 @@
     "style": "Latin",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo P",
-    "backNo": "13",
-    "competitor": "Choo Yi Xuan",
+    "backNo": "23",
+    "competitor": "Cheng Ut Leng",
     "entryType": "Solo"
   },
   {
@@ -6205,8 +6285,8 @@
     "style": "Modern",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo WTFQ",
-    "backNo": "26",
-    "competitor": "Lei Weng I",
+    "backNo": "23",
+    "competitor": "Cheng Ut Leng",
     "entryType": "Solo"
   },
   {
@@ -6215,8 +6295,8 @@
     "style": "Modern",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo WTFQ",
-    "backNo": "23",
-    "competitor": "Cheng Ut Leng",
+    "backNo": "26",
+    "competitor": "Lei Weng I",
     "entryType": "Solo"
   },
   {
@@ -6245,8 +6325,8 @@
     "style": "Modern",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo W",
-    "backNo": "23",
-    "competitor": "Cheng Ut Leng",
+    "backNo": "22",
+    "competitor": "Chan Hio Tong",
     "entryType": "Solo"
   },
   {
@@ -6255,8 +6335,8 @@
     "style": "Modern",
     "division": "Over 19 Solo",
     "event": "Over 19 Solo W",
-    "backNo": "22",
-    "competitor": "Chan Hio Tong",
+    "backNo": "23",
+    "competitor": "Cheng Ut Leng",
     "entryType": "Solo"
   },
   {
@@ -6335,76 +6415,6 @@
     "style": "Latin",
     "division": "Amateur Solo",
     "event": "Amateur Solo Latin",
-    "backNo": "15",
-    "competitor": "ChanByeol PARK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "104",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Solo",
-    "event": "Amateur Solo Latin",
-    "backNo": "16",
-    "competitor": "MinJi BAEK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "104",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Solo",
-    "event": "Amateur Solo Latin",
-    "backNo": "17",
-    "competitor": "JiHyeon YANG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "104",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Solo",
-    "event": "Amateur Solo Latin",
-    "backNo": "18",
-    "competitor": "EunJin HWANG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "104",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Solo",
-    "event": "Amateur Solo Latin",
-    "backNo": "19",
-    "competitor": "SiJin YOO",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "104",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Solo",
-    "event": "Amateur Solo Latin",
-    "backNo": "20",
-    "competitor": "DaSom SONG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "104",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Solo",
-    "event": "Amateur Solo Latin",
-    "backNo": "21",
-    "competitor": "Nanaha Kosaka",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "104",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Solo",
-    "event": "Amateur Solo Latin",
     "backNo": "8",
     "competitor": "JiHyo YOO",
     "entryType": "Solo"
@@ -6467,6 +6477,76 @@
     "event": "Amateur Solo Latin",
     "backNo": "14",
     "competitor": "Mathilda Lily Cook",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "104",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
+    "backNo": "15",
+    "competitor": "ChanByeol PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "104",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
+    "backNo": "16",
+    "competitor": "MinJi BAEK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "104",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
+    "backNo": "17",
+    "competitor": "JiHyeon YANG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "104",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
+    "backNo": "18",
+    "competitor": "EunJin HWANG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "104",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
+    "backNo": "19",
+    "competitor": "SiJin YOO",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "104",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
+    "backNo": "20",
+    "competitor": "DaSom SONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "104",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
+    "backNo": "21",
+    "competitor": "Nanaha Kosaka",
     "entryType": "Solo"
   },
   {
@@ -6555,6 +6635,26 @@
     "style": "Latin",
     "division": "Amateur Couple",
     "event": "Ama Rising Star Latin",
+    "backNo": "3",
+    "competitor": "Gerald Heng & Shen Xuan Hui",
+    "entryType": "Couple"
+  },
+  {
+    "eventNo": "106",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Couple",
+    "event": "Ama Rising Star Latin",
+    "backNo": "4",
+    "competitor": "Wong Qinyuen & Zhu Wanyi",
+    "entryType": "Couple"
+  },
+  {
+    "eventNo": "106",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Couple",
+    "event": "Ama Rising Star Latin",
     "backNo": "5",
     "competitor": "Kengo Izumi & Shima Saito",
     "entryType": "Couple"
@@ -6580,112 +6680,12 @@
     "entryType": "Couple"
   },
   {
-    "eventNo": "106",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Couple",
-    "event": "Ama Rising Star Latin",
-    "backNo": "3",
-    "competitor": "Gerald Heng & Shen Xuan Hui",
-    "entryType": "Couple"
-  },
-  {
-    "eventNo": "106",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Couple",
-    "event": "Ama Rising Star Latin",
-    "backNo": "4",
-    "competitor": "Wong Qinyuen & Zhu Wanyi",
-    "entryType": "Couple"
-  },
-  {
-    "eventNo": "12",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo W",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "13",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo T",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "14",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo Q",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "15",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo F",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "16",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo WT",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "17",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo WQ",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "18",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo WTF",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "19",
-    "section": "Under 12",
-    "style": "Modern",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo WTQ",
-    "backNo": "50",
-    "competitor": "Wong Tsun Yin",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "20",
+    "eventNo": "",
     "section": "Under 12",
     "style": "Modern",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo WTFQ",
-    "backNo": "50",
+    "backNo": "77",
     "competitor": "Wong Tsun Yin",
     "entryType": "Solo"
   }
