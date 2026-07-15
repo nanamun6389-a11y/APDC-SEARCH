@@ -29,5 +29,5 @@ document.getElementById("homeBtn").onclick=goHome;
 document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>showInfo(b.dataset.view));
 document.querySelectorAll("[data-close-info]").forEach(b=>b.onclick=()=>infoModal.classList.add("hidden"));
 document.querySelectorAll("[data-close-player]").forEach(b=>b.onclick=()=>playerModal.classList.add("hidden"));
-document.getElementById("menuBtn").onclick=()=>showInfo("information");
+
 fetch("players.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{entries=d;renderTabs();renderEvents()}).catch(()=>eventList.innerHTML='<div class="empty">FAILED TO LOAD PLAYERS.JSON</div>');
