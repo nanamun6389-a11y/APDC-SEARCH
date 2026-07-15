@@ -1,0 +1,13 @@
+{
+  "rules": {
+    ".read": true,
+    "submissions": {
+      "$round": {
+        "$judge": {
+          ".write": "$judge.matches(/^(T[1-8]|W[1-9])$/)",
+          ".validate": "newData.hasChildren(['judge','eventKey','eventLabel','round','result'])"
+        }
+      }
+    }
+  }
+}

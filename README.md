@@ -1,9 +1,8 @@
-# APDC SEARCH — NO EVENT NUMBERS
+# APDC JUDGE — BACK & HOME UPDATE
 
-- Event numbers are hidden until the timetable is finalized.
-- Section name, entry count and participant list are shown.
-- Amateur Couple Latin is always shown last.
-- Participant names are gray, without underline or blue styling.
-- Thin horizontal lines only.
-- Hosted by Dancefill Academy.
-- Organizer: Tei Kim.
+Changes
+- RESET button replaced with ← BACK
+- BACK returns to the judge selection screen
+- APDC JUDGE header title returns to the judge selection screen
+- APDC ADMIN / APDC LIVE / QR header titles link to Judge main
+- Latest players data included

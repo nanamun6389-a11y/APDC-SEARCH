@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>APDC Live</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="live-body">
+<header><a class="brand brand-link" href="index.html">APDC LIVE</a></header>
+<main>
+  <section class="controls">
+    <label>SECTION<select id="liveEvent"></select></label>
+    <label>ROUND<select id="liveRound">
+      <option value="quarter">Quarter Final</option>
+      <option value="semi">Semi Final</option>
+      <option value="final">Final</option>
+    </select></label>
+    <label>GROUP<select id="liveGroup">
+      <option value="ALL">All Judges</option>
+      <option value="T">T Judges</option>
+      <option value="W">W Judges</option>
+    </select></label>
+  </section>
+
+  <section class="live-center">
+    <div id="liveTitle" class="live-title"></div>
+    <div id="liveCount" class="live-count">0 / 0</div>
+    <div id="liveReady" class="live-ready">WAITING</div>
+    <div id="liveJudgeStatus" class="live-judges"></div>
+  </section>
+
+  <nav class="bottom-nav">
+    <a href="index.html">JUDGE</a>
+    <a href="admin.html">ADMIN</a>
+  </nav>
+</main>
+<script type="module" src="live.js?v=20260715-settings"></script>
+</body>
+</html>

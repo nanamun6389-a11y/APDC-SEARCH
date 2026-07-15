@@ -1,72 +1,89 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#000000">
-  <title>APDC Entry Search</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>APDC Judge</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <div>
-      <div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
-      <h1>APDC ENTRY SEARCH</h1>
-    </div>
-    <button id="menuBtn" class="menu-btn" type="button">MENU</button>
+<header><button id="homeTitleBtn" class="brand brand-button" type="button" aria-label="Return to judge home">APDC JUDGE</button></header>
+
+<main>
+
+<section id="passwordGate" class="password-gate">
+  <div class="password-box">
+    <div class="small-label">APDC JUDGE ACCESS</div>
+    <h1>ENTER PASSWORD</h1>
+    <input id="passwordInput" type="password" inputmode="numeric" maxlength="4"
+           placeholder="••••" autocomplete="off">
+    <button id="passwordBtn" type="button">ENTER</button>
+    <div id="passwordMessage" class="message"></div>
   </div>
-</header>
+</section>
 
-<main class="container">
-  <section class="search-area">
-    <form id="searchForm" class="search-form">
-      <input id="query" type="search" inputmode="search"
-             placeholder="Search by back number, name or section">
-      <button class="search-btn" type="submit">SEARCH</button>
-      <button id="resetBtn" class="reset-btn" type="button">RESET</button>
-    </form>
+<div id="judgeProtected" class="hidden" hidden style="display:none">
+<section id="judgeGate" class="judge-gate hidden">
+    <h1>SELECT JUDGE</h1>
+    <div class="judge-group-title">T JUDGES</div>
+    <div id="tJudgeButtons" class="judge-grid"></div>
+
+    <div class="judge-group-title">W JUDGES</div>
+    <div id="wJudgeButtons" class="judge-grid"></div>
   </section>
 
-  <section id="searchBox" class="search-results hidden">
-    <div class="title-row">
-      <h2 id="searchTitle">SEARCH RESULTS</h2>
-      <span id="searchCount"></span>
+  <section id="scoreScreen" class="hidden">
+    <div class="selected-judge-bar">
+      <div>
+        <div class="small-label">CURRENT JUDGE</div>
+        <strong id="selectedJudgeName"></strong>
+      </div>
+      <button id="changeJudgeBtn" type="button">CHANGE JUDGE</button>
     </div>
-    <div id="searchResults"></div>
+
+    <section class="controls two">
+      <label>SECTION<select id="eventSelect"></select></label>
+      <label>ROUND
+        <select id="roundSelect">
+          <option value="quarter">Quarter Final · Select 12</option>
+          <option value="semi">Semi Final · Select 6</option>
+          <option value="final">Final · Rank All</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="status-line">
+      <span><span id="connectionDot" class="dot"></span><span id="connectionText">Connecting</span></span>
+    </div>
+
+    <section class="score">
+      <div class="score-head">
+        <div>
+          <h1 id="eventTitle"></h1>
+          <div id="roundTitle" class="muted"></div>
+        </div>
+        <div id="counter" class="counter"></div>
+      </div>
+
+      <div id="ballot" class="ballot"></div>
+
+      <div class="actions">
+        <button id="backBtn" class="light" type="button">← BACK</button>
+        <button id="submitBtn" class="dark" type="button">SUBMIT</button>
+      </div>
+      <div id="message" class="message"></div>
+    </section>
   </section>
 
-  <section class="event-browser">
-    <div class="title-row">
-      <h2>FULL SECTION LIST</h2>
-      <span id="eventSummary"></span>
-    </div>
-    <div id="sectionTabs" class="section-tabs"></div>
-    <div id="eventList" class="event-list"></div>
-
-    <div class="bottom-actions">
-      <button type="button" data-view="information">INFORMATION</button>
-      <button type="button" data-view="directions">VENUE & DIRECTIONS</button>
-    </div>
-  </section>
+  <nav class="bottom-nav">
+    <a href="admin.html">ADMIN</a>
+    <a href="live.html">LIVE</a>
+    <a href="qr.html">QR</a>
+  </nav>
+</div>
 </main>
 
-<div id="infoModal" class="modal hidden">
-  <div class="modal-backdrop" data-close-info></div>
-  <div class="modal-card">
-    <button class="modal-close" type="button" data-close-info>×</button>
-    <div id="infoContent"></div>
-  </div>
-</div>
-
-<div id="playerModal" class="modal hidden">
-  <div class="modal-backdrop" data-close-player></div>
-  <div class="modal-card">
-    <button class="modal-close" type="button" data-close-player>×</button>
-    <div id="playerContent"></div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+<script type="module" src="judge.js?v=20260715-back-home"></script>
 </body>
 </html>
