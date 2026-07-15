@@ -301,10 +301,10 @@
   },
   {
     "eventNo": "3",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo R",
     "backNo": "78",
     "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
@@ -451,10 +451,10 @@
   },
   {
     "eventNo": "4",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo C",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo C",
     "backNo": "78",
     "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
@@ -581,10 +581,10 @@
   },
   {
     "eventNo": "5",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo S",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo S",
     "backNo": "78",
     "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
@@ -691,10 +691,10 @@
   },
   {
     "eventNo": "6",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo P",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo P",
     "backNo": "78",
     "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
@@ -821,10 +821,10 @@
   },
   {
     "eventNo": "7",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo J",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo J",
     "backNo": "78",
     "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
@@ -1101,10 +1101,10 @@
   },
   {
     "eventNo": "9",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRS",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRS",
     "backNo": "78",
     "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
@@ -1241,10 +1241,10 @@
   },
   {
     "eventNo": "10",
-    "section": "Under 12",
+    "section": "Under 10",
     "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRJ",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRJ",
     "backNo": "78",
     "competitor": "Marissa Yu En Goh Redimerio",
     "entryType": "Solo"
