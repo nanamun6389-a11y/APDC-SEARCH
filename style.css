@@ -75,3 +75,35 @@ button{cursor:pointer}
  .participant-table th:nth-child(3),.participant-table td:nth-child(3){width:55px}
  .bottom-actions button{font-size:14px}
 }
+
+.language-bar{
+  display:flex;
+  gap:6px;
+  overflow-x:auto;
+  padding:10px 12px;
+  border-bottom:1px solid #ddd;
+  background:#fff;
+  justify-content:center;
+}
+.lang-btn{
+  flex:0 0 auto;
+  min-width:58px;
+  border:1px solid #bbb;
+  background:#fff;
+  padding:6px 8px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:2px;
+  cursor:pointer;
+}
+.lang-btn span{font-size:22px;line-height:1}
+.lang-btn small{font-size:10px;font-weight:800}
+.lang-btn.active{background:#000;color:#fff;border-color:#000}
+.name-phonetic{
+  display:block;
+  margin-top:3px;
+  color:#777;
+  font-size:11px;
+  font-weight:600;
+}

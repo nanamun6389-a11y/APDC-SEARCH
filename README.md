@@ -1,11 +1,12 @@
-# APDC ENTRY SEARCH — COMPLETE PACKAGE
+# APDC SEARCH MULTILINGUAL
 
-Upload all 4 website files to the APDC-SEARCH repository root:
-- index.html
-- style.css
-- script.js
-- players.json
+Languages:
+- English
+- Korean
+- Japanese
+- Traditional Chinese
+- Simplified Chinese
+- Bahasa Melayu
 
-The search input and SEARCH button stay side by side on mobile.
-The APDC header returns to the home screen.
-There is no MENU or RESET button.
+Original official names remain visible.
+A best-effort local pronunciation line is shown where available.
