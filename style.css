@@ -76,34 +76,19 @@ button{cursor:pointer}
  .bottom-actions button{font-size:14px}
 }
 
-.language-bar{
-  display:flex;
-  gap:6px;
-  overflow-x:auto;
-  padding:10px 12px;
-  border-bottom:1px solid #ddd;
-  background:#fff;
-  justify-content:center;
+.header-inner{position:relative}
+.language-host{position:absolute;right:14px;top:50%;transform:translateY(-50%);z-index:50}
+.language-toggle{width:46px;height:46px;border:1px solid rgba(255,255,255,.55);background:#000;color:#fff;display:flex;align-items:center;justify-content:center;gap:2px;cursor:pointer}
+.language-toggle span{font-size:22px}.language-toggle small{font-size:13px}
+.language-menu{position:absolute;right:0;top:54px;width:210px;background:#fff;color:#000;border:1px solid #000;box-shadow:0 12px 30px rgba(0,0,0,.25);padding:6px}
+.language-menu button{width:100%;display:flex;align-items:center;gap:10px;border:0;background:#fff;padding:10px;text-align:left;cursor:pointer}
+.language-menu button.active{background:#000;color:#fff}
+.language-menu button span{font-size:22px}.language-menu button strong{font-size:13px}
+.name-guide{display:block;margin-top:3px;font-size:11px;color:#777;font-weight:600}
+.hidden{display:none!important}
+@media(max-width:640px){
+ .language-host{right:10px}
+ .language-menu{width:190px}
 }
-.lang-btn{
-  flex:0 0 auto;
-  min-width:58px;
-  border:1px solid #bbb;
-  background:#fff;
-  padding:6px 8px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:2px;
-  cursor:pointer;
-}
-.lang-btn span{font-size:22px;line-height:1}
-.lang-btn small{font-size:10px;font-weight:800}
-.lang-btn.active{background:#000;color:#fff;border-color:#000}
-.name-phonetic{
-  display:block;
-  margin-top:3px;
-  color:#777;
-  font-size:11px;
-  font-weight:600;
-}
+
+.analytics-admin-link{text-align:right;margin-top:28px}.analytics-admin-link a{font-size:10px;color:#aaa;text-decoration:none;letter-spacing:.08em}.analytics-header{position:relative}.admin-home-link{color:#fff;border:1px solid #fff;text-decoration:none;padding:10px 14px;font-size:12px;font-weight:900}.analytics-login{max-width:620px;margin:60px auto;border-top:2px solid #000;border-bottom:2px solid #000;padding:28px 0}.analytics-login h2{font-size:34px;margin:8px 0 24px}.analytics-login input{width:100%;height:54px;border:1px solid #000;padding:0 12px}.analytics-login button{width:100%;height:54px;margin-top:10px;background:#000;color:#fff;border:0;font-weight:900}.analytics-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}.analytics-summary div{border:1px solid #000;padding:16px}.analytics-summary span{display:block;font-size:10px;font-weight:900;color:#666}.analytics-summary strong{display:block;font-size:32px;margin-top:8px}.analytics-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.analytics-panel{border-top:1px solid #000;border-bottom:1px solid #000;padding:16px 0;margin:12px 0}.analytics-panel h2{font-size:18px;margin:0 0 14px}.analytics-panel h3{font-size:13px;margin:20px 0 8px;color:#666}.analytics-title{display:flex;justify-content:space-between;align-items:center}.analytics-title button{background:#000;color:#fff;border:0;padding:8px 12px;font-size:11px;font-weight:900}.analytics-row{display:grid;grid-template-columns:minmax(100px,1fr) 2fr 42px;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #eee;font-size:12px}.analytics-row strong{text-align:right}.analytics-bar{height:7px;background:#eee;overflow:hidden}.analytics-bar i{display:block;height:100%;background:#000}.log-row{border-bottom:1px solid #ddd;padding:10px 0}.log-row span{display:block;font-weight:800}.log-row small{display:block;color:#777;margin-top:4px}.analytics-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}.analytics-actions button{height:50px;border:1px solid #000;background:#fff;font-weight:900}.analytics-actions .danger{background:#000;color:#fff}.privacy-note{text-align:center;color:#777;font-size:11px;margin:18px 0}@media(max-width:720px){.analytics-summary{grid-template-columns:repeat(2,1fr)}.analytics-grid{grid-template-columns:1fr}.analytics-actions{grid-template-columns:1fr}}

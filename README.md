@@ -1,12 +1,6 @@
-# APDC SEARCH MULTILINGUAL
+# APDC SEARCH V4 — ANALYTICS ADMIN
 
-Languages:
-- English
-- Korean
-- Japanese
-- Traditional Chinese
-- Simplified Chinese
-- Bahasa Melayu
+Admin URL: search-admin.html
+Password: 0070fill
 
-Original official names remain visible.
-A best-effort local pronunciation line is shown where available.
+Tracks approximate country/city, searches, player views, section clicks, devices, languages and referrers. IP addresses are not stored.
