@@ -1,1 +1,71 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>APDC Mini Live</title><link rel="stylesheet" href="style.css"></head><body class="home"><main class="homebox"><div class="logo">APDC MINI LIVE</div><h1>Sunday Trial Program</h1><p>한 저장소에서 운영, 심사, 현장 송출 화면을 각각 열 수 있습니다.</p><div class="homebuttons three"><a class="homebtn dark" href="control.html">운영자 화면</a><a class="homebtn light" href="judge.html">심사 화면</a><a class="homebtn light" href="live.html">LIVE 송출 화면</a></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>APDC Entry Search</title>
+  <link rel="stylesheet" href="style.css?v=20260717-admin-restore?v=20260715-complete">
+</head>
+<body>
+<header class="site-header">
+  <button id="homeBtn" class="brand" type="button" aria-label="Return to home">
+    <span class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</span>
+    <span class="title">APDC ENTRY SEARCH</span>
+  </button>
+</header>
+
+<main class="container">
+  <section class="search-area">
+    <form id="searchForm" class="search-form">
+      <input id="query" type="search" inputmode="search" autocomplete="off"
+             placeholder="Search by back number, name or section">
+      <button class="search-btn" type="submit">SEARCH</button>
+    </form>
+  </section>
+
+  <section id="searchBox" class="search-results hidden">
+    <div class="title-row">
+      <h2 id="searchTitle">SEARCH RESULTS</h2>
+      <span id="searchCount"></span>
+    </div>
+    <div id="searchResults"></div>
+  </section>
+
+  <section class="event-browser">
+    <div class="title-row">
+      <h2>FULL SECTION LIST</h2>
+      <span id="eventSummary">LOADING…</span>
+    </div>
+    <div id="sectionTabs" class="section-tabs"></div>
+    <div id="eventList" class="event-list"><div class="empty">LOADING ENTRIES…</div></div>
+
+    <div class="bottom-actions">
+      <button type="button" data-view="information">INFORMATION</button>
+      <button type="button" data-view="directions">VENUE &amp; DIRECTIONS</button>
+    </div>
+  </section>
+<div class="analytics-admin-link"><a href="search-admin.html">ADMIN</a></div>
+</main>
+
+<div id="infoModal" class="modal hidden" aria-hidden="true">
+  <div class="modal-backdrop" data-close-info></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close-info aria-label="Close">×</button>
+    <div id="infoContent"></div>
+  </div>
+</div>
+
+<div id="playerModal" class="modal hidden" aria-hidden="true">
+  <div class="modal-backdrop" data-close-player></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close-player aria-label="Close">×</button>
+    <div id="playerContent"></div>
+  </div>
+</div>
+
+<script src="i18n.js?v=v3"></script>
+<script src="script.js?v=20260717-admin-restore?v=20260715-complete"></script>
+<script type="module" src="analytics.js?v=v4"></script>
+</body>
+</html>
