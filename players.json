@@ -2400,36 +2400,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "40",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo 5 Dance",
-    "backNo": "12",
-    "competitor": "Cheng Cheuk Lam",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "40",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo 5 Dance",
-    "backNo": "121",
-    "competitor": "Cheng Ut U, Uta",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "40",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo 5 Dance",
-    "backNo": "122",
-    "competitor": "Leung Pui U",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "41",
     "section": "Under 18",
     "style": "Latin",
@@ -2494,7 +2464,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "75",
     "competitor": "Tsai Yu Tong",
     "entryType": "Solo"
@@ -2504,7 +2474,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "90",
     "competitor": "Fifi Chang",
     "entryType": "Solo"
@@ -2514,7 +2484,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "91",
     "competitor": "Katy Lin",
     "entryType": "Solo"
@@ -2524,7 +2494,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "92",
     "competitor": "Jasmine Liu",
     "entryType": "Solo"
@@ -2534,7 +2504,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "93",
     "competitor": "Cindy Hsia",
     "entryType": "Solo"
@@ -2544,7 +2514,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "94",
     "competitor": "Lucie Wang",
     "entryType": "Solo"
@@ -2554,7 +2524,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "95",
     "competitor": "Nayool LEE",
     "entryType": "Solo"
@@ -2564,7 +2534,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "96",
     "competitor": "Leong Chi Kio",
     "entryType": "Solo"
@@ -2574,7 +2544,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "97",
     "competitor": "HaRim AHN",
     "entryType": "Solo"
@@ -2584,7 +2554,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "98",
     "competitor": "Keung Yuen Hei Maemi",
     "entryType": "Solo"
@@ -2594,7 +2564,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "99",
     "competitor": "Keung Wing Sum",
     "entryType": "Solo"
@@ -2604,7 +2574,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "102",
     "competitor": "Cheang Cheng Tong",
     "entryType": "Solo"
@@ -2614,7 +2584,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "103",
     "competitor": "JiMin JEONG",
     "entryType": "Solo"
@@ -2624,7 +2594,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "104",
     "competitor": "HeeSeo CHOI",
     "entryType": "Solo"
@@ -2634,7 +2604,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "105",
     "competitor": "Lim Qin En",
     "entryType": "Solo"
@@ -2644,7 +2614,7 @@
     "section": "Under 15",
     "style": "Latin",
     "division": "Under 15 Solo",
-    "event": "Under 15 Solo CSR",
+    "event": "Under 15 Solo CRS",
     "backNo": "106",
     "competitor": "Charis Phay Jia En",
     "entryType": "Solo"
@@ -6761,32 +6731,12 @@
   },
   {
     "eventNo": "",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo 5 Dance",
-    "backNo": "140",
-    "competitor": "Song IRANG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "",
     "section": "Amateur",
     "style": "Latin",
     "division": "Asia Pacific Amateur Solo Latin",
     "event": "Asia Pacific Amateur Solo Latin 5 Dance",
     "backNo": "141",
     "competitor": "YuJin HONG",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo 5 Dance",
-    "backNo": "142",
-    "competitor": "EunBin HUH",
     "entryType": "Solo"
   },
   {
