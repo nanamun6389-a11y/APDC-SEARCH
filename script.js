@@ -1,4 +1,4 @@
-apdcBuildLanguageUI();
+apdcRenderLanguageBar();
 "use strict";
 
 let entries=[];
@@ -87,7 +87,7 @@ function renderEvents(){
   eventList.querySelectorAll(".participant-name-btn").forEach(button=>button.onclick=()=>openPlayer(button.dataset.back,button.dataset.name));
 }
 
-function openPlayer(back,name){if(window.apdcTrackPlayer)window.apdcTrackPlayer(back,name);
+function openPlayer(back,name){
   const items=entries.filter(x=>String(x.backNo)===String(back)&&x.competitor===name)
     .sort((a,b)=>sectionIndex(a.section)-sectionIndex(b.section)||natural(a.section,b.section)||natural(a.event,b.event));
   playerContent.innerHTML=`<div class="player-head"><div class="player-back">BACK NO. ${esc(back)}</div><h3>${esc(name)}</h3></div>${items.map(item=>`<div class="player-event"><div class="player-event-title">${esc(item.event)}</div><div class="player-event-meta">${esc(item.section)} · ${esc(item.style)} · ${esc(item.division)}</div></div>`).join("")}`;
@@ -160,9 +160,12 @@ fetch(`players.json?v=${Date.now()}`,{cache:"no-store"})
   });
 
 document.addEventListener("DOMContentLoaded",()=>{
- const query=document.getElementById("query");if(query)query.placeholder=apdcT("searchPlaceholder");
- const searchBtn=document.querySelector(".search-btn");if(searchBtn)searchBtn.textContent=apdcT("search");
- const full=document.querySelector(".event-browser .title-row h2");if(full)full.textContent=apdcT("fullList");
- document.querySelectorAll("[data-view='information']").forEach(b=>b.textContent=apdcT("information"));
- document.querySelectorAll("[data-view='directions']").forEach(b=>b.textContent=apdcT("venue"));
+  const query=document.getElementById("query");
+  if(query)query.placeholder=apdcT("searchPlaceholder");
+  const searchBtn=document.querySelector(".search-btn");
+  if(searchBtn)searchBtn.textContent=apdcT("search");
+  const full=document.querySelector(".event-browser .title-row h2");
+  if(full)full.textContent=apdcT("fullList");
+  document.querySelectorAll("[data-view='information']").forEach(b=>b.textContent=apdcT("information"));
+  document.querySelectorAll("[data-view='directions']").forEach(b=>b.textContent=apdcT("venue"));
 });
