@@ -1,14 +1,9 @@
-# APDC ENTRY SEARCH — COMPLETE PACKAGE
+# APDC SEARCH V4 — ANALYTICS ADMIN
 
-Upload all 4 website files to the APDC-SEARCH repository root:
-- index.html
-- style.css
-- script.js
-- players.json
+Admin URL: search-admin.html
+Password: 0070fill
 
-The search input and SEARCH button stay side by side on mobile.
-The APDC header returns to the home screen.
-There is no MENU or RESET button.
+Tracks approximate country/city, searches, player views, section clicks, devices, languages and referrers. IP addresses are not stored.
 
 
-Update 20260717-1305: Under 18 Solo CSR merged into Under 18 Solo CRS; cache-busting enabled.
+Restored search analytics admin files. Under 15 5 Dance renamed CSRJ. Under 18 CSR merged into CRS.
