@@ -2460,6 +2460,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "41",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo Elite A Latin",
+    "backNo": "150",
+    "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "42",
     "section": "Under 15",
     "style": "Latin",
@@ -6590,6 +6600,16 @@
     "entryType": "Couple"
   },
   {
+    "eventNo": "105",
+    "section": "Amateur",
+    "style": "Latin",
+    "division": "Amateur Couple",
+    "event": "Amateur Latin",
+    "backNo": "8",
+    "competitor": "HyeonWoo CHO & SeoJin BYEON",
+    "entryType": "Couple"
+  },
+  {
     "eventNo": "106",
     "section": "Amateur",
     "style": "Latin",
@@ -6700,6 +6720,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "90",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo 5 Dance",
+    "backNo": "150",
+    "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "",
     "section": "Over 19",
     "style": "Latin",
@@ -6750,6 +6780,16 @@
     "entryType": "Solo"
   },
   {
+    "eventNo": "39",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo 5 Dance",
+    "backNo": "150",
+    "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
+  },
+  {
     "eventNo": "",
     "section": "Under 18",
     "style": "Latin",
@@ -6757,6 +6797,16 @@
     "event": "Under 18 Solo CRS",
     "backNo": "143",
     "competitor": "AhReum KIM",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "35",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo CRS",
+    "backNo": "150",
+    "competitor": "Yugay Anastasiya",
     "entryType": "Solo"
   },
   {
