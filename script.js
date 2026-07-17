@@ -1,4 +1,3 @@
-apdcRenderLanguageBar();
 "use strict";
 
 let entries=[];
@@ -158,14 +157,3 @@ fetch(`players.json?v=${Date.now()}`,{cache:"no-store"})
     eventSummary.textContent="ERROR";
     eventList.innerHTML='<div class="empty">FAILED TO LOAD PLAYERS.JSON<br>PLEASE UPLOAD ALL FILES AGAIN.</div>';
   });
-
-document.addEventListener("DOMContentLoaded",()=>{
-  const query=document.getElementById("query");
-  if(query)query.placeholder=apdcT("searchPlaceholder");
-  const searchBtn=document.querySelector(".search-btn");
-  if(searchBtn)searchBtn.textContent=apdcT("search");
-  const full=document.querySelector(".event-browser .title-row h2");
-  if(full)full.textContent=apdcT("fullList");
-  document.querySelectorAll("[data-view='information']").forEach(b=>b.textContent=apdcT("information"));
-  document.querySelectorAll("[data-view='directions']").forEach(b=>b.textContent=apdcT("venue"));
-});
