@@ -7398,5 +7398,45 @@
     "backNo": "143",
     "competitor": "AhReum KIM",
     "entryType": "Solo"
+  },
+  {
+    "eventNo": "41",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo Elite A Latin",
+    "backNo": "151",
+    "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "39",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo 5 Dance",
+    "backNo": "151",
+    "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "35",
+    "section": "Under 18",
+    "style": "Latin",
+    "division": "Under 18 Solo",
+    "event": "Under 18 Solo CRS",
+    "backNo": "151",
+    "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "86",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin 5 Dance",
+    "backNo": "151",
+    "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
   }
 ]
