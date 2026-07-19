@@ -2460,16 +2460,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "41",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo Elite A Latin",
-    "backNo": "150",
-    "competitor": "Yugay Anastasiya",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "42",
     "section": "Under 15",
     "style": "Latin",
@@ -6340,6 +6330,16 @@
     "entryType": "Couple"
   },
   {
+    "eventNo": "",
+    "section": "Mania",
+    "style": "Latin",
+    "division": "Mania Couple",
+    "event": "Mania Latin R",
+    "backNo": "213",
+    "competitor": "DaRae KIM & SuIm CHAE",
+    "entryType": "Couple"
+  },
+  {
     "eventNo": "101",
     "section": "Mania",
     "style": "Latin",
@@ -6360,6 +6360,16 @@
     "entryType": "Couple"
   },
   {
+    "eventNo": "101",
+    "section": "Mania",
+    "style": "Latin",
+    "division": "Mania Couple",
+    "event": "Mania Latin CR",
+    "backNo": "214",
+    "competitor": "DaRae KIM & SangMi KIM",
+    "entryType": "Couple"
+  },
+  {
     "eventNo": "102",
     "section": "Mania",
     "style": "Latin",
@@ -6377,6 +6387,16 @@
     "event": "Mania Latin CRS",
     "backNo": "211",
     "competitor": "Wen Lei & SukHee KIM",
+    "entryType": "Couple"
+  },
+  {
+    "eventNo": "102",
+    "section": "Mania",
+    "style": "Latin",
+    "division": "Mania Couple",
+    "event": "Mania Latin CRS",
+    "backNo": "214",
+    "competitor": "DaRae KIM & SangMi KIM",
     "entryType": "Couple"
   },
   {
@@ -6393,8 +6413,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "8",
     "competitor": "JiHyo YOO",
     "entryType": "Solo"
@@ -6403,8 +6423,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "9",
     "competitor": "Choy Hoi Ching",
     "entryType": "Solo"
@@ -6413,8 +6433,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "10",
     "competitor": "YuRin LEE",
     "entryType": "Solo"
@@ -6423,8 +6443,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "11",
     "competitor": "SuBin AN",
     "entryType": "Solo"
@@ -6433,8 +6453,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "12",
     "competitor": "Cheng Cheuk Lam",
     "entryType": "Solo"
@@ -6443,8 +6463,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "13",
     "competitor": "Choo Yi Xuan",
     "entryType": "Solo"
@@ -6453,8 +6473,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "14",
     "competitor": "Mathilda Lily Cook",
     "entryType": "Solo"
@@ -6463,8 +6483,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "15",
     "competitor": "ChanByeol PARK",
     "entryType": "Solo"
@@ -6473,8 +6493,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "16",
     "competitor": "MinJi BAEK",
     "entryType": "Solo"
@@ -6483,8 +6503,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "17",
     "competitor": "JiHyeon YANG",
     "entryType": "Solo"
@@ -6493,8 +6513,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "18",
     "competitor": "EunJin HWANG",
     "entryType": "Solo"
@@ -6503,8 +6523,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "19",
     "competitor": "SiJin YOO",
     "entryType": "Solo"
@@ -6513,8 +6533,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "20",
     "competitor": "DaSom SONG",
     "entryType": "Solo"
@@ -6523,8 +6543,8 @@
     "eventNo": "104",
     "section": "Amateur",
     "style": "Latin",
-    "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "division": "Amateur Solo",
+    "event": "Amateur Solo Latin",
     "backNo": "21",
     "competitor": "Nanaha Kosaka",
     "entryType": "Solo"
@@ -6534,7 +6554,7 @@
     "section": "Amateur",
     "style": "Latin",
     "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
+    "event": "Amateur Latin",
     "backNo": "1",
     "competitor": "HyunOuk KIM & JiHye CHOI",
     "entryType": "Couple"
@@ -6544,7 +6564,7 @@
     "section": "Amateur",
     "style": "Latin",
     "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
+    "event": "Amateur Latin",
     "backNo": "2",
     "competitor": "GyuMin PARK & JinYoo KIM",
     "entryType": "Couple"
@@ -6554,7 +6574,7 @@
     "section": "Amateur",
     "style": "Latin",
     "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
+    "event": "Amateur Latin",
     "backNo": "3",
     "competitor": "Gerald Heng & Shen Xuan Hui",
     "entryType": "Couple"
@@ -6564,7 +6584,7 @@
     "section": "Amateur",
     "style": "Latin",
     "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
+    "event": "Amateur Latin",
     "backNo": "4",
     "competitor": "Wong Qinyuen & Zhu Wanyi",
     "entryType": "Couple"
@@ -6574,7 +6594,7 @@
     "section": "Amateur",
     "style": "Latin",
     "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
+    "event": "Amateur Latin",
     "backNo": "5",
     "competitor": "Kengo Izumi & Shima Saito",
     "entryType": "Couple"
@@ -6584,7 +6604,7 @@
     "section": "Amateur",
     "style": "Latin",
     "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
+    "event": "Amateur Latin",
     "backNo": "6",
     "competitor": "KyuWon KIM & Marta Pierog",
     "entryType": "Couple"
@@ -6594,19 +6614,9 @@
     "section": "Amateur",
     "style": "Latin",
     "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
+    "event": "Amateur Latin",
     "backNo": "7",
     "competitor": "Calitin Daniel & Myagmar Delgermaa",
-    "entryType": "Couple"
-  },
-  {
-    "eventNo": "105",
-    "section": "Amateur",
-    "style": "Latin",
-    "division": "Amateur Couple",
-    "event": "Asia Pacific Amateur Latin",
-    "backNo": "8",
-    "competitor": "HyeonWoo CHO & SeoJin BYEON",
     "entryType": "Couple"
   },
   {
@@ -6720,16 +6730,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "90",
-    "section": "Over 19",
-    "style": "Latin",
-    "division": "Over 19 Solo",
-    "event": "Over 19 Solo 5 Dance",
-    "backNo": "150",
-    "competitor": "Yugay Anastasiya",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "",
     "section": "Over 19",
     "style": "Latin",
@@ -6760,11 +6760,11 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "104",
+    "eventNo": "",
     "section": "Amateur",
     "style": "Latin",
     "division": "Asia Pacific Amateur Solo Latin",
-    "event": "Asia Pacific Amateur Solo Latin",
+    "event": "Asia Pacific Amateur Solo Latin 5 Dance",
     "backNo": "141",
     "competitor": "YuJin HONG",
     "entryType": "Solo"
@@ -6780,16 +6780,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "39",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo 5 Dance",
-    "backNo": "150",
-    "competitor": "Yugay Anastasiya",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "",
     "section": "Under 18",
     "style": "Latin",
@@ -6797,16 +6787,6 @@
     "event": "Under 18 Solo CRS",
     "backNo": "143",
     "competitor": "AhReum KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "35",
-    "section": "Under 18",
-    "style": "Latin",
-    "division": "Under 18 Solo",
-    "event": "Under 18 Solo CRS",
-    "backNo": "150",
-    "competitor": "Yugay Anastasiya",
     "entryType": "Solo"
   },
   {
