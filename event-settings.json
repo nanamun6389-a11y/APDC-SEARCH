@@ -1,33 +1,25 @@
 {
   "events": [
     {
-      "eventKey": "Ama Rising Star Latin||Amateur||Latin",
+      "eventKey": "Amateur Rising Star Latin||Amateur||Latin",
       "eventNumber": "",
-      "event": "Ama Rising Star Latin",
+      "event": "Amateur Rising Star Latin",
       "section": "Amateur",
       "style": "Latin",
       "assignedJudges": []
     },
     {
-      "eventKey": "Amateur Latin||Amateur||Latin",
+      "eventKey": "Asia Pacific Amateur Latin||Amateur||Latin",
       "eventNumber": "",
-      "event": "Amateur Latin",
+      "event": "Asia Pacific Amateur Latin",
       "section": "Amateur",
       "style": "Latin",
       "assignedJudges": []
     },
     {
-      "eventKey": "Amateur Solo Latin||Amateur||Latin",
+      "eventKey": "Asia Pacific Amateur Solo Latin||Amateur||Latin",
       "eventNumber": "",
-      "event": "Amateur Solo Latin",
-      "section": "Amateur",
-      "style": "Latin",
-      "assignedJudges": []
-    },
-    {
-      "eventKey": "Asia Pacific Amateur Solo Latin 5 Dance||Amateur||Latin",
-      "eventNumber": "",
-      "event": "Asia Pacific Amateur Solo Latin 5 Dance",
+      "event": "Asia Pacific Amateur Solo Latin",
       "section": "Amateur",
       "style": "Latin",
       "assignedJudges": []
@@ -918,6 +910,30 @@
       "event": "Under 18 Solo WTQ",
       "section": "Under 18",
       "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Korea Closed Amateur Latin||Amateur||Latin",
+      "eventNumber": "",
+      "event": "Korea Closed Amateur Latin",
+      "section": "Amateur",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo 5 Dance||Under 10||Latin",
+      "eventNumber": "",
+      "event": "Under 10 Solo 5 Dance",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo 5 Dance||Under 12||Latin",
+      "eventNumber": "",
+      "event": "Under 12 Solo 5 Dance",
+      "section": "Under 12",
+      "style": "Latin",
       "assignedJudges": []
     }
   ]
