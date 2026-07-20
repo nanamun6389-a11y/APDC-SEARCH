@@ -340,26 +340,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "61",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "61",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "21",
     "section": "Under 10",
     "style": "Latin",
@@ -517,26 +497,6 @@
     "event": "Under 12 Solo C",
     "backNo": "149",
     "competitor": "UiChan KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "52",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo C",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "52",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo C",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
     "entryType": "Solo"
   },
   {
@@ -1070,26 +1030,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "62",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo RJ",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "62",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo RJ",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "24",
     "section": "Under 10",
     "style": "Latin",
@@ -1250,16 +1190,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "56",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRS",
-    "backNo": "152",
-    "competitor": "WANG YUN XI",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "23",
     "section": "Under 10",
     "style": "Latin",
@@ -1407,26 +1337,6 @@
     "event": "Under 12 Solo CRJ",
     "backNo": "149",
     "competitor": "UiChan KIM",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "55",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRJ",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "55",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CRJ",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
     "entryType": "Solo"
   },
   {
@@ -4820,26 +4730,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "29",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo R",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "29",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo R",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "21",
     "section": "Under 10",
     "style": "Latin",
@@ -4977,26 +4867,6 @@
     "event": "Under 10 Solo C",
     "backNo": "53",
     "competitor": "AYoon CHOI",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "21",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo C",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "21",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo C",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
     "entryType": "Solo"
   },
   {
@@ -5280,16 +5150,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "24",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo CRS",
-    "backNo": "152",
-    "competitor": "WANG YUN XI",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "23",
     "section": "Under 10",
     "style": "Latin",
@@ -5397,26 +5257,6 @@
     "event": "Under 10 Solo CRJ",
     "backNo": "51",
     "competitor": "Tan Yi Jia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "23",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo CRJ",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "23",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo CRJ",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
     "entryType": "Solo"
   },
   {
@@ -5627,26 +5467,6 @@
     "event": "Under 10 Solo RJ",
     "backNo": "51",
     "competitor": "Tan Yi Jia",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "30",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo RJ",
-    "backNo": "151",
-    "competitor": "WANG YI YU",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "30",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo RJ",
-    "backNo": "153",
-    "competitor": "JIN YU TONG",
     "entryType": "Solo"
   },
   {
@@ -7140,56 +6960,6 @@
     "entryType": "Solo"
   },
   {
-    "eventNo": "166",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo CR",
-    "backNo": "37",
-    "competitor": "YoungYeon PARK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "168",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo CRS",
-    "backNo": "37",
-    "competitor": "YoungYeon PARK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "170",
-    "section": "Over 35",
-    "style": "Latin",
-    "division": "Over 35 Solo",
-    "event": "Over 35 Solo S",
-    "backNo": "37",
-    "competitor": "YoungYeon PARK",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "20",
-    "section": "Under 10",
-    "style": "Latin",
-    "division": "Under 10 Solo",
-    "event": "Under 10 Solo 5 Dance",
-    "backNo": "152",
-    "competitor": "WANG YUN XI",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "51",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo 5 Dance",
-    "backNo": "152",
-    "competitor": "WANG YUN XI",
-    "entryType": "Solo"
-  },
-  {
     "eventNo": "53",
     "section": "Under 12",
     "style": "Latin",
@@ -7427,6 +7197,356 @@
     "event": "Over 19 Solo Latin 5 Dance",
     "backNo": "28",
     "competitor": "Yugay Anastasiya",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "33",
+    "section": "Under 10",
+    "style": "Modern",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo W",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "32",
+    "section": "Under 10",
+    "style": "Modern",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo T",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "25",
+    "section": "Under 10",
+    "style": "Modern",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo F",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "28",
+    "section": "Under 10",
+    "style": "Modern",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo Q",
+    "backNo": "47",
+    "competitor": "Ng Fong Yi",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "147",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo S",
+    "backNo": "37",
+    "competitor": "YoungYeon PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "141",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo CR",
+    "backNo": "37",
+    "competitor": "YoungYeon PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "143",
+    "section": "Over 19",
+    "style": "Latin",
+    "division": "Over 19 Solo",
+    "event": "Over 19 Solo Latin CRS",
+    "backNo": "37",
+    "competitor": "YoungYeon PARK",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "21",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo C",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "29",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo R",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "26",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo J",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "22",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CR",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "30",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo RJ",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "23",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRJ",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "52",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo C",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "61",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "58",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo J",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "54",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CR",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "62",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo RJ",
+    "backNo": "151",
+    "competitor": "WANG YI YU",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "31",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo S",
+    "backNo": "152",
+    "competitor": "WANG YUN XI",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "24",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRS",
+    "backNo": "152",
+    "competitor": "WANG YUN XI",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "23",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRJ",
+    "backNo": "152",
+    "competitor": "WANG YUN XI",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "63",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo S",
+    "backNo": "152",
+    "competitor": "WANG YUN XI",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "56",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRS",
+    "backNo": "152",
+    "competitor": "WANG YUN XI",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "55",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CRJ",
+    "backNo": "152",
+    "competitor": "WANG YUN XI",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "21",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo C",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "29",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo R",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "26",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo J",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "22",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CR",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "30",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo RJ",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "23",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "event": "Under 10 Solo CRJ",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "52",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo C",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "61",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo R",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "58",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo J",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "54",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo CR",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "62",
+    "section": "Under 12",
+    "style": "Latin",
+    "division": "Under 12 Solo",
+    "event": "Under 12 Solo RJ",
+    "backNo": "153",
+    "competitor": "JIN YU TONG",
     "entryType": "Solo"
   }
 ]
