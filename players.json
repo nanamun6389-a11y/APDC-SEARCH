@@ -135,16 +135,6 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo CR",
-    "backNo": "69",
-    "competitor": "YeRin GA",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "54",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo CR",
     "backNo": "70",
     "competitor": "SaRang KIM",
     "entryType": "Solo"
@@ -305,16 +295,6 @@
     "style": "Latin",
     "division": "Under 12 Solo",
     "event": "Under 12 Solo R",
-    "backNo": "69",
-    "competitor": "YeRin GA",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "61",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo R",
     "backNo": "70",
     "competitor": "SaRang KIM",
     "entryType": "Solo"
@@ -457,16 +437,6 @@
     "event": "Under 12 Solo C",
     "backNo": "68",
     "competitor": "HaBin WOO",
-    "entryType": "Solo"
-  },
-  {
-    "eventNo": "52",
-    "section": "Under 12",
-    "style": "Latin",
-    "division": "Under 12 Solo",
-    "event": "Under 12 Solo C",
-    "backNo": "69",
-    "competitor": "YeRin GA",
     "entryType": "Solo"
   },
   {
@@ -7547,6 +7517,66 @@
     "event": "Under 12 Solo RJ",
     "backNo": "153",
     "competitor": "JIN YU TONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "57",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo C",
+    "backNo": "107",
+    "competitor": "SoHee YONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "63",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo R",
+    "backNo": "107",
+    "competitor": "SoHee YONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "53",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CR",
+    "backNo": "107",
+    "competitor": "SoHee YONG",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "57",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo C",
+    "backNo": "108",
+    "competitor": "NaRin PYEON",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "63",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo R",
+    "backNo": "108",
+    "competitor": "NaRin PYEON",
+    "entryType": "Solo"
+  },
+  {
+    "eventNo": "53",
+    "section": "Under 15",
+    "style": "Latin",
+    "division": "Under 15 Solo",
+    "event": "Under 15 Solo CR",
+    "backNo": "108",
+    "competitor": "NaRin PYEON",
     "entryType": "Solo"
   }
 ]
