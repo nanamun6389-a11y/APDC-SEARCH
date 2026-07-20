@@ -1,0 +1,916 @@
+{
+  "events": [
+    {
+      "eventKey": "Formation||Formation||Other",
+      "eventNumber": "10",
+      "event": "Formation",
+      "section": "Formation",
+      "style": "Other",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo 5 Dance||Under 10||Latin",
+      "eventNumber": "20",
+      "event": "Under 10 Solo 5 Dance",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo C||Under 10||Latin",
+      "eventNumber": "21",
+      "event": "Under 10 Solo C",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo CR||Under 10||Latin",
+      "eventNumber": "22",
+      "event": "Under 10 Solo CR",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo CRJ||Under 10||Latin",
+      "eventNumber": "23",
+      "event": "Under 10 Solo CRJ",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo CRS||Under 10||Latin",
+      "eventNumber": "24",
+      "event": "Under 10 Solo CRS",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo F||Under 10||Modern",
+      "eventNumber": "25",
+      "event": "Under 10 Solo F",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo J||Under 10||Latin",
+      "eventNumber": "26",
+      "event": "Under 10 Solo J",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo P||Under 10||Latin",
+      "eventNumber": "27",
+      "event": "Under 10 Solo P",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo Q||Under 10||Modern",
+      "eventNumber": "28",
+      "event": "Under 10 Solo Q",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo R||Under 10||Latin",
+      "eventNumber": "29",
+      "event": "Under 10 Solo R",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo RJ||Under 10||Latin",
+      "eventNumber": "30",
+      "event": "Under 10 Solo RJ",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo S||Under 10||Latin",
+      "eventNumber": "31",
+      "event": "Under 10 Solo S",
+      "section": "Under 10",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo T||Under 10||Modern",
+      "eventNumber": "32",
+      "event": "Under 10 Solo T",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo W||Under 10||Modern",
+      "eventNumber": "33",
+      "event": "Under 10 Solo W",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo WQ||Under 10||Modern",
+      "eventNumber": "34",
+      "event": "Under 10 Solo WQ",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo WT||Under 10||Modern",
+      "eventNumber": "35",
+      "event": "Under 10 Solo WT",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo WTF||Under 10||Modern",
+      "eventNumber": "36",
+      "event": "Under 10 Solo WTF",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 10 Solo WTQ||Under 10||Modern",
+      "eventNumber": "37",
+      "event": "Under 10 Solo WTQ",
+      "section": "Under 10",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 CRS||Under 12||Latin",
+      "eventNumber": "50",
+      "event": "Under 12 CRS",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo 5 Dance||Under 12||Latin",
+      "eventNumber": "51",
+      "event": "Under 12 Solo 5 Dance",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo C||Under 12||Latin",
+      "eventNumber": "52",
+      "event": "Under 12 Solo C",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo CJ||Under 12||Latin",
+      "eventNumber": "53",
+      "event": "Under 12 Solo CJ",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo CR||Under 12||Latin",
+      "eventNumber": "54",
+      "event": "Under 12 Solo CR",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo CRJ||Under 12||Latin",
+      "eventNumber": "55",
+      "event": "Under 12 Solo CRJ",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo CRS||Under 12||Latin",
+      "eventNumber": "56",
+      "event": "Under 12 Solo CRS",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo F||Under 12||Modern",
+      "eventNumber": "57",
+      "event": "Under 12 Solo F",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo J||Under 12||Latin",
+      "eventNumber": "58",
+      "event": "Under 12 Solo J",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo P||Under 12||Latin",
+      "eventNumber": "59",
+      "event": "Under 12 Solo P",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo Q||Under 12||Modern",
+      "eventNumber": "60",
+      "event": "Under 12 Solo Q",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo R||Under 12||Latin",
+      "eventNumber": "61",
+      "event": "Under 12 Solo R",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo RJ||Under 12||Latin",
+      "eventNumber": "62",
+      "event": "Under 12 Solo RJ",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo S||Under 12||Latin",
+      "eventNumber": "63",
+      "event": "Under 12 Solo S",
+      "section": "Under 12",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo T||Under 12||Modern",
+      "eventNumber": "64",
+      "event": "Under 12 Solo T",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo W||Under 12||Modern",
+      "eventNumber": "65",
+      "event": "Under 12 Solo W",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo WQ||Under 12||Modern",
+      "eventNumber": "66",
+      "event": "Under 12 Solo WQ",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo WT||Under 12||Modern",
+      "eventNumber": "67",
+      "event": "Under 12 Solo WT",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo WTF||Under 12||Modern",
+      "eventNumber": "68",
+      "event": "Under 12 Solo WTF",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo WTFQ||Under 12||Modern",
+      "eventNumber": "69",
+      "event": "Under 12 Solo WTFQ",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 Solo WTQ||Under 12||Modern",
+      "eventNumber": "70",
+      "event": "Under 12 Solo WTQ",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 12 WTF||Under 12||Modern",
+      "eventNumber": "71",
+      "event": "Under 12 WTF",
+      "section": "Under 12",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 CRS||Under 15||Latin",
+      "eventNumber": "80",
+      "event": "Under 15 CRS",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo C||Under 15||Latin",
+      "eventNumber": "81",
+      "event": "Under 15 Solo C",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo CJ||Under 15||Latin",
+      "eventNumber": "82",
+      "event": "Under 15 Solo CJ",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo CR||Under 15||Latin",
+      "eventNumber": "83",
+      "event": "Under 15 Solo CR",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo CRJ||Under 15||Latin",
+      "eventNumber": "84",
+      "event": "Under 15 Solo CRJ",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo CRS||Under 15||Latin",
+      "eventNumber": "85",
+      "event": "Under 15 Solo CRS",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo CSRJ||Under 15||Latin",
+      "eventNumber": "86",
+      "event": "Under 15 Solo CSRJ",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo F||Under 15||Modern",
+      "eventNumber": "87",
+      "event": "Under 15 Solo F",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo J||Under 15||Latin",
+      "eventNumber": "88",
+      "event": "Under 15 Solo J",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo P||Under 15||Latin",
+      "eventNumber": "89",
+      "event": "Under 15 Solo P",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo Q||Under 15||Modern",
+      "eventNumber": "90",
+      "event": "Under 15 Solo Q",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo R||Under 15||Latin",
+      "eventNumber": "91",
+      "event": "Under 15 Solo R",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo RJ||Under 15||Latin",
+      "eventNumber": "92",
+      "event": "Under 15 Solo RJ",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo S||Under 15||Latin",
+      "eventNumber": "93",
+      "event": "Under 15 Solo S",
+      "section": "Under 15",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo T||Under 15||Modern",
+      "eventNumber": "94",
+      "event": "Under 15 Solo T",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo W||Under 15||Modern",
+      "eventNumber": "95",
+      "event": "Under 15 Solo W",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo WQ||Under 15||Modern",
+      "eventNumber": "96",
+      "event": "Under 15 Solo WQ",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo WT||Under 15||Modern",
+      "eventNumber": "97",
+      "event": "Under 15 Solo WT",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo WTF||Under 15||Modern",
+      "eventNumber": "98",
+      "event": "Under 15 Solo WTF",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo WTFQ||Under 15||Modern",
+      "eventNumber": "99",
+      "event": "Under 15 Solo WTFQ",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 Solo WTQ||Under 15||Modern",
+      "eventNumber": "100",
+      "event": "Under 15 Solo WTQ",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 15 WTF||Under 15||Modern",
+      "eventNumber": "101",
+      "event": "Under 15 WTF",
+      "section": "Under 15",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo 5 Dance||Under 18||Latin",
+      "eventNumber": "110",
+      "event": "Under 18 Solo 5 Dance",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo C||Under 18||Latin",
+      "eventNumber": "111",
+      "event": "Under 18 Solo C",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo CJ||Under 18||Latin",
+      "eventNumber": "112",
+      "event": "Under 18 Solo CJ",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo CR||Under 18||Latin",
+      "eventNumber": "113",
+      "event": "Under 18 Solo CR",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo CRJ||Under 18||Latin",
+      "eventNumber": "114",
+      "event": "Under 18 Solo CRJ",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo CRS||Under 18||Latin",
+      "eventNumber": "115",
+      "event": "Under 18 Solo CRS",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo Elite A Latin||Under 18||Latin",
+      "eventNumber": "116",
+      "event": "Under 18 Solo Elite A Latin",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo F||Under 18||Modern",
+      "eventNumber": "117",
+      "event": "Under 18 Solo F",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo J||Under 18||Latin",
+      "eventNumber": "118",
+      "event": "Under 18 Solo J",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo P||Under 18||Latin",
+      "eventNumber": "119",
+      "event": "Under 18 Solo P",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo Q||Under 18||Modern",
+      "eventNumber": "120",
+      "event": "Under 18 Solo Q",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo R||Under 18||Latin",
+      "eventNumber": "121",
+      "event": "Under 18 Solo R",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo RJ||Under 18||Latin",
+      "eventNumber": "122",
+      "event": "Under 18 Solo RJ",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo S||Under 18||Latin",
+      "eventNumber": "123",
+      "event": "Under 18 Solo S",
+      "section": "Under 18",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo T||Under 18||Modern",
+      "eventNumber": "124",
+      "event": "Under 18 Solo T",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo W||Under 18||Modern",
+      "eventNumber": "125",
+      "event": "Under 18 Solo W",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo WQ||Under 18||Modern",
+      "eventNumber": "126",
+      "event": "Under 18 Solo WQ",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo WT||Under 18||Modern",
+      "eventNumber": "127",
+      "event": "Under 18 Solo WT",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo WTF||Under 18||Modern",
+      "eventNumber": "128",
+      "event": "Under 18 Solo WTF",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo WTFQ||Under 18||Modern",
+      "eventNumber": "129",
+      "event": "Under 18 Solo WTFQ",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Under 18 Solo WTQ||Under 18||Modern",
+      "eventNumber": "130",
+      "event": "Under 18 Solo WTQ",
+      "section": "Under 18",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo C||Over 19||Latin",
+      "eventNumber": "140",
+      "event": "Over 19 Solo C",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo CR||Over 19||Latin",
+      "eventNumber": "141",
+      "event": "Over 19 Solo CR",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo Latin 5 Dance||Over 19||Latin",
+      "eventNumber": "142",
+      "event": "Over 19 Solo Latin 5 Dance",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo Latin CRS||Over 19||Latin",
+      "eventNumber": "143",
+      "event": "Over 19 Solo Latin CRS",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo P||Over 19||Latin",
+      "eventNumber": "144",
+      "event": "Over 19 Solo P",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo R||Over 19||Latin",
+      "eventNumber": "145",
+      "event": "Over 19 Solo R",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo RJ||Over 19||Latin",
+      "eventNumber": "146",
+      "event": "Over 19 Solo RJ",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo S||Over 19||Latin",
+      "eventNumber": "147",
+      "event": "Over 19 Solo S",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo T||Over 19||Modern",
+      "eventNumber": "148",
+      "event": "Over 19 Solo T",
+      "section": "Over 19",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo W||Over 19||Modern",
+      "eventNumber": "149",
+      "event": "Over 19 Solo W",
+      "section": "Over 19",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo WTF||Over 19||Modern",
+      "eventNumber": "150",
+      "event": "Over 19 Solo WTF",
+      "section": "Over 19",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo WTFQ||Over 19||Modern",
+      "eventNumber": "151",
+      "event": "Over 19 Solo WTFQ",
+      "section": "Over 19",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo WTQ||Over 19||Modern",
+      "eventNumber": "152",
+      "event": "Over 19 Solo WTQ",
+      "section": "Over 19",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 19 Solo Latin CSRJ||Over 19||Latin",
+      "eventNumber": "153",
+      "event": "Over 19 Solo Latin CSRJ",
+      "section": "Over 19",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 35 Solo C||Over 35||Latin",
+      "eventNumber": "165",
+      "event": "Over 35 Solo C",
+      "section": "Over 35",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 35 Solo CR||Over 35||Latin",
+      "eventNumber": "166",
+      "event": "Over 35 Solo CR",
+      "section": "Over 35",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 35 Solo CRJ||Over 35||Latin",
+      "eventNumber": "167",
+      "event": "Over 35 Solo CRJ",
+      "section": "Over 35",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 35 Solo CRS||Over 35||Latin",
+      "eventNumber": "168",
+      "event": "Over 35 Solo CRS",
+      "section": "Over 35",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 35 Solo R||Over 35||Latin",
+      "eventNumber": "169",
+      "event": "Over 35 Solo R",
+      "section": "Over 35",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Over 35 Solo S||Over 35||Latin",
+      "eventNumber": "170",
+      "event": "Over 35 Solo S",
+      "section": "Over 35",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Senior 50 CR||Senior||Other",
+      "eventNumber": "180",
+      "event": "Senior 50 CR",
+      "section": "Senior",
+      "style": "Other",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Mania Latin CR||Mania||Latin",
+      "eventNumber": "190",
+      "event": "Mania Latin CR",
+      "section": "Mania",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Mania Latin CRS||Mania||Latin",
+      "eventNumber": "191",
+      "event": "Mania Latin CRS",
+      "section": "Mania",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Mania Latin R||Mania||Latin",
+      "eventNumber": "192",
+      "event": "Mania Latin R",
+      "section": "Mania",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Pro-Am Standard 3 Dance||Pro-Am||Modern",
+      "eventNumber": "200",
+      "event": "Pro-Am Standard 3 Dance",
+      "section": "Pro-Am",
+      "style": "Modern",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Pro-Am Latin CR||Pro-Am||Latin",
+      "eventNumber": "201",
+      "event": "Pro-Am Latin CR",
+      "section": "Pro-Am",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Amateur Rising Star Latin||Amateur||Latin",
+      "eventNumber": "220",
+      "event": "Amateur Rising Star Latin",
+      "section": "Amateur",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Asia Pacific Amateur Latin||Amateur||Latin",
+      "eventNumber": "221",
+      "event": "Asia Pacific Amateur Latin",
+      "section": "Amateur",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Asia Pacific Amateur Solo Latin||Amateur||Latin",
+      "eventNumber": "222",
+      "event": "Asia Pacific Amateur Solo Latin",
+      "section": "Amateur",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
+      "eventKey": "Korea Closed Amateur Latin||Amateur||Latin",
+      "eventNumber": "223",
+      "event": "Korea Closed Amateur Latin",
+      "section": "Amateur",
+      "style": "Latin",
+      "assignedJudges": []
+    }
+  ]
+}
