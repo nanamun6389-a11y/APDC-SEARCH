@@ -20,15 +20,15 @@
       "event": "Formation",
       "entries": "3",
       "danceOrder": "Formation",
-      "duration": 1.17,
+      "duration": 10.0,
       "note": "",
-      "durationSeconds": 70,
-      "durationText": "1:10",
+      "durationSeconds": 600,
+      "durationText": "10:00",
       "sourceEventNo": "143",
       "priorEventNo": "140"
     },
     {
-      "start": "12:01:10",
+      "start": "12:10",
       "no": "2",
       "round": "Quarter Final",
       "style": "Latin",
@@ -45,7 +45,7 @@
       "priorEventNo": "2"
     },
     {
-      "start": "12:02:35",
+      "start": "12:11:25",
       "no": "3",
       "round": "Quarter Final",
       "style": "Latin",
@@ -62,7 +62,7 @@
       "priorEventNo": "3"
     },
     {
-      "start": "12:05:20",
+      "start": "12:14:10",
       "no": "4",
       "round": "Quarter Final",
       "style": "Latin",
@@ -79,7 +79,7 @@
       "priorEventNo": "4"
     },
     {
-      "start": "12:06:45",
+      "start": "12:15:35",
       "no": "5",
       "round": "Quarter Final",
       "style": "Latin",
@@ -96,7 +96,7 @@
       "priorEventNo": "5"
     },
     {
-      "start": "12:09:30",
+      "start": "12:18:20",
       "no": "6",
       "round": "Quarter Final",
       "style": "Latin",
@@ -113,7 +113,7 @@
       "priorEventNo": "6"
     },
     {
-      "start": "12:13:35",
+      "start": "12:22:25",
       "no": "7",
       "round": "Quarter Final",
       "style": "Latin",
@@ -130,7 +130,7 @@
       "priorEventNo": "7"
     },
     {
-      "start": "12:17:40",
+      "start": "12:26:30",
       "no": "8",
       "round": "Quarter Final",
       "style": "Latin",
@@ -147,7 +147,7 @@
       "priorEventNo": "8"
     },
     {
-      "start": "12:19:05",
+      "start": "12:27:55",
       "no": "9",
       "round": "Quarter Final",
       "style": "Latin",
@@ -164,7 +164,7 @@
       "priorEventNo": "9"
     },
     {
-      "start": "12:21:50",
+      "start": "12:30:40",
       "no": "10",
       "round": "Quarter Final",
       "style": "Latin",
@@ -181,7 +181,7 @@
       "priorEventNo": "10"
     },
     {
-      "start": "12:25:55",
+      "start": "12:34:45",
       "no": "11",
       "round": "Quarter Final",
       "style": "Latin",
@@ -198,7 +198,7 @@
       "priorEventNo": "11"
     },
     {
-      "start": "12:31:20",
+      "start": "12:40:10",
       "no": "12",
       "round": "Quarter Final",
       "style": "Latin",
@@ -215,7 +215,7 @@
       "priorEventNo": "12"
     },
     {
-      "start": "12:32:45",
+      "start": "12:41:35",
       "no": "13",
       "round": "Quarter Final",
       "style": "Latin",
@@ -232,7 +232,7 @@
       "priorEventNo": "13"
     },
     {
-      "start": "12:34:10",
+      "start": "12:43",
       "no": "14",
       "round": "Quarter Final",
       "style": "Latin",
@@ -249,7 +249,7 @@
       "priorEventNo": "14"
     },
     {
-      "start": "12:35:35",
+      "start": "12:44:25",
       "no": "15",
       "round": "Quarter Final",
       "style": "Latin",
@@ -266,7 +266,7 @@
       "priorEventNo": "15"
     },
     {
-      "start": "12:37",
+      "start": "12:45:50",
       "no": "16",
       "round": "Quarter Final",
       "style": "Latin",
@@ -283,7 +283,7 @@
       "priorEventNo": "16"
     },
     {
-      "start": "12:41:05",
+      "start": "12:49:55",
       "no": "17",
       "round": "Quarter Final",
       "style": "Latin",
@@ -300,14 +300,14 @@
       "priorEventNo": "17"
     },
     {
-      "start": "12:45:10",
+      "start": "12:54",
       "no": "18",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo C",
-      "entries": "16",
+      "entries": "12",
       "danceOrder": "C",
       "duration": 1.42,
       "note": "",
@@ -317,14 +317,14 @@
       "priorEventNo": "18"
     },
     {
-      "start": "12:46:35",
+      "start": "12:55:25",
       "no": "19",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo CR",
-      "entries": "18",
+      "entries": "12",
       "danceOrder": "C → R",
       "duration": 2.75,
       "note": "",
@@ -334,14 +334,14 @@
       "priorEventNo": "19"
     },
     {
-      "start": "12:49:20",
+      "start": "12:58:10",
       "no": "20",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo R",
-      "entries": "16",
+      "entries": "12",
       "danceOrder": "R",
       "duration": 1.42,
       "note": "",
@@ -351,14 +351,14 @@
       "priorEventNo": "20"
     },
     {
-      "start": "12:50:45",
+      "start": "12:59:35",
       "no": "21",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo RJ",
-      "entries": "16",
+      "entries": "12",
       "danceOrder": "R → J",
       "duration": 2.75,
       "note": "",
@@ -368,7 +368,7 @@
       "priorEventNo": "21"
     },
     {
-      "start": "12:53:30",
+      "start": "13:02:20",
       "no": "22",
       "round": "Semi Final",
       "style": "Latin",
@@ -385,14 +385,14 @@
       "priorEventNo": "22"
     },
     {
-      "start": "12:54:55",
+      "start": "13:03:45",
       "no": "23",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo CRJ",
-      "entries": "16",
+      "entries": "12",
       "danceOrder": "C → R → J",
       "duration": 4.08,
       "note": "",
@@ -402,7 +402,7 @@
       "priorEventNo": "23"
     },
     {
-      "start": "12:59",
+      "start": "13:07:50",
       "no": "24",
       "round": "Final",
       "style": "Latin",
@@ -419,14 +419,14 @@
       "priorEventNo": "48"
     },
     {
-      "start": "13:05:45",
+      "start": "13:14:35",
       "no": "25",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo CRS",
-      "entries": "16",
+      "entries": "12",
       "danceOrder": "C → R → S",
       "duration": 4.08,
       "note": "",
@@ -436,14 +436,14 @@
       "priorEventNo": "24"
     },
     {
-      "start": "13:09:50",
+      "start": "13:18:40",
       "no": "26",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo C",
-      "entries": "19",
+      "entries": "12",
       "danceOrder": "C",
       "duration": 1.42,
       "note": "",
@@ -453,14 +453,14 @@
       "priorEventNo": "25"
     },
     {
-      "start": "13:11:15",
+      "start": "13:20:05",
       "no": "27",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CR",
-      "entries": "18",
+      "entries": "12",
       "danceOrder": "C → R",
       "duration": 2.75,
       "note": "",
@@ -470,14 +470,14 @@
       "priorEventNo": "26"
     },
     {
-      "start": "13:14",
+      "start": "13:22:50",
       "no": "28",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CRJ",
-      "entries": "17",
+      "entries": "12",
       "danceOrder": "C → R → J",
       "duration": 4.08,
       "note": "",
@@ -487,14 +487,14 @@
       "priorEventNo": "27"
     },
     {
-      "start": "13:18:05",
+      "start": "13:26:55",
       "no": "29",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CSRJ",
-      "entries": "15",
+      "entries": "12",
       "danceOrder": "C → S → R → J",
       "duration": 5.42,
       "note": "",
@@ -504,14 +504,14 @@
       "priorEventNo": "28"
     },
     {
-      "start": "13:23:30",
+      "start": "13:32:20",
       "no": "30",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo R",
-      "entries": "18",
+      "entries": "12",
       "danceOrder": "R",
       "duration": 1.42,
       "note": "",
@@ -521,7 +521,7 @@
       "priorEventNo": "29"
     },
     {
-      "start": "13:24:55",
+      "start": "13:33:45",
       "no": "31",
       "round": "Quarter Final",
       "style": "Latin",
@@ -538,14 +538,14 @@
       "priorEventNo": "141"
     },
     {
-      "start": "13:26:20",
+      "start": "13:35:10",
       "no": "32",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo C",
-      "entries": "19",
+      "entries": "12",
       "danceOrder": "C",
       "duration": 1.42,
       "note": "",
@@ -555,14 +555,14 @@
       "priorEventNo": "30"
     },
     {
-      "start": "13:27:45",
+      "start": "13:36:35",
       "no": "33",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo J",
-      "entries": "15",
+      "entries": "12",
       "danceOrder": "J",
       "duration": 1.42,
       "note": "",
@@ -572,7 +572,7 @@
       "priorEventNo": "32"
     },
     {
-      "start": "13:29:10",
+      "start": "13:38",
       "no": "34",
       "round": "Semi Final",
       "style": "Latin",
@@ -589,14 +589,14 @@
       "priorEventNo": "33"
     },
     {
-      "start": "13:30:35",
+      "start": "13:39:25",
       "no": "35",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo R",
-      "entries": "20",
+      "entries": "12",
       "danceOrder": "R",
       "duration": 1.42,
       "note": "",
@@ -606,14 +606,14 @@
       "priorEventNo": "31"
     },
     {
-      "start": "13:32",
+      "start": "13:40:50",
       "no": "36",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CRS",
-      "entries": "18",
+      "entries": "12",
       "danceOrder": "C → S → R",
       "duration": 4.08,
       "note": "",
@@ -623,7 +623,7 @@
       "priorEventNo": "35"
     },
     {
-      "start": "13:36:05",
+      "start": "13:44:55",
       "no": "37",
       "round": "Semi Final",
       "style": "Latin",
@@ -640,7 +640,7 @@
       "priorEventNo": "36"
     },
     {
-      "start": "13:37:30",
+      "start": "13:46:20",
       "no": "38",
       "round": "Semi Final",
       "style": "Latin",
@@ -657,7 +657,7 @@
       "priorEventNo": "37"
     },
     {
-      "start": "13:38:55",
+      "start": "13:47:45",
       "no": "39",
       "round": "Semi Final",
       "style": "Latin",
@@ -674,7 +674,7 @@
       "priorEventNo": "38"
     },
     {
-      "start": "13:41:40",
+      "start": "13:50:30",
       "no": "40",
       "round": "Semi Final",
       "style": "Latin",
@@ -691,14 +691,14 @@
       "priorEventNo": "39"
     },
     {
-      "start": "13:43:05",
+      "start": "13:51:55",
       "no": "41",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo CRJ",
-      "entries": "17",
+      "entries": "12",
       "danceOrder": "C → R → J",
       "duration": 4.08,
       "note": "",
@@ -708,7 +708,7 @@
       "priorEventNo": "34"
     },
     {
-      "start": "13:47:10",
+      "start": "13:56",
       "no": "42",
       "round": "Semi Final",
       "style": "Latin",
@@ -725,7 +725,7 @@
       "priorEventNo": "40"
     },
     {
-      "start": "13:49:55",
+      "start": "13:58:45",
       "no": "43",
       "round": "Semi Final",
       "style": "Latin",
@@ -742,14 +742,14 @@
       "priorEventNo": "41"
     },
     {
-      "start": "13:54",
+      "start": "14:02:50",
       "no": "44",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo J",
-      "entries": "15",
+      "entries": "12",
       "danceOrder": "J",
       "duration": 1.42,
       "note": "",
@@ -759,7 +759,7 @@
       "priorEventNo": "42"
     },
     {
-      "start": "13:55:25",
+      "start": "14:04:15",
       "no": "45",
       "round": "Semi Final",
       "style": "Latin",
@@ -776,7 +776,7 @@
       "priorEventNo": "43"
     },
     {
-      "start": "13:58:10",
+      "start": "14:07",
       "no": "46",
       "round": "Semi Final",
       "style": "Latin",
@@ -793,7 +793,7 @@
       "priorEventNo": "45"
     },
     {
-      "start": "14:04:55",
+      "start": "14:13:45",
       "no": "47",
       "round": "Semi Final",
       "style": "Latin",
@@ -810,7 +810,7 @@
       "priorEventNo": "46"
     },
     {
-      "start": "14:09",
+      "start": "14:17:50",
       "no": "48",
       "round": "Semi Final",
       "style": "Modern",
@@ -827,11 +827,11 @@
       "priorEventNo": "47"
     },
     {
-      "start": "14:10:25",
+      "start": "14:19:15",
       "no": "49",
-      "round": "Special Program",
+      "round": "",
       "style": "",
-      "section": "Special Program",
+      "section": "",
       "division": "",
       "event": "Opening Ceremony & Judges Introduction",
       "entries": "",
@@ -844,11 +844,11 @@
       "priorEventNo": "49"
     },
     {
-      "start": "14:20:25",
+      "start": "14:29:15",
       "no": "50",
-      "round": "Special Program",
+      "round": "",
       "style": "",
-      "section": "Special Program",
+      "section": "",
       "division": "",
       "event": "Country Team Match Entrance",
       "entries": "",
@@ -861,7 +861,7 @@
       "priorEventNo": "50"
     },
     {
-      "start": "14:35:25",
+      "start": "14:44:15",
       "no": "51",
       "round": "Final",
       "style": "Latin",
@@ -878,14 +878,14 @@
       "priorEventNo": "139"
     },
     {
-      "start": "14:41:15",
+      "start": "14:50:05",
       "no": "52",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo C",
-      "entries": "16",
+      "entries": "6",
       "danceOrder": "C",
       "duration": 1.42,
       "note": "",
@@ -895,14 +895,14 @@
       "priorEventNo": "51"
     },
     {
-      "start": "14:42:40",
+      "start": "14:51:30",
       "no": "53",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo CR",
-      "entries": "18",
+      "entries": "6",
       "danceOrder": "C → R",
       "duration": 2.75,
       "note": "",
@@ -912,14 +912,14 @@
       "priorEventNo": "52"
     },
     {
-      "start": "14:45:25",
+      "start": "14:54:15",
       "no": "54",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo R",
-      "entries": "16",
+      "entries": "6",
       "danceOrder": "R",
       "duration": 1.42,
       "note": "",
@@ -929,14 +929,14 @@
       "priorEventNo": "53"
     },
     {
-      "start": "14:46:50",
+      "start": "14:55:40",
       "no": "55",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo CRJ",
-      "entries": "16",
+      "entries": "6",
       "danceOrder": "C → R → J",
       "duration": 4.08,
       "note": "",
@@ -946,14 +946,14 @@
       "priorEventNo": "54"
     },
     {
-      "start": "14:50:55",
+      "start": "14:59:45",
       "no": "56",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo CRS",
-      "entries": "16",
+      "entries": "6",
       "danceOrder": "C → R → S",
       "duration": 4.08,
       "note": "",
@@ -963,14 +963,14 @@
       "priorEventNo": "55"
     },
     {
-      "start": "14:55",
+      "start": "15:03:50",
       "no": "57",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo C",
-      "entries": "19",
+      "entries": "6",
       "danceOrder": "C",
       "duration": 1.42,
       "note": "",
@@ -980,14 +980,14 @@
       "priorEventNo": "56"
     },
     {
-      "start": "14:56:25",
+      "start": "15:05:15",
       "no": "58",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CR",
-      "entries": "18",
+      "entries": "6",
       "danceOrder": "C → R",
       "duration": 2.75,
       "note": "",
@@ -997,14 +997,14 @@
       "priorEventNo": "57"
     },
     {
-      "start": "14:59:10",
+      "start": "15:08",
       "no": "59",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CRJ",
-      "entries": "17",
+      "entries": "6",
       "danceOrder": "C → R → J",
       "duration": 4.08,
       "note": "",
@@ -1014,14 +1014,14 @@
       "priorEventNo": "58"
     },
     {
-      "start": "15:03:15",
+      "start": "15:12:05",
       "no": "60",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CSRJ",
-      "entries": "15",
+      "entries": "6",
       "danceOrder": "C → S → R → J",
       "duration": 5.42,
       "note": "",
@@ -1031,14 +1031,14 @@
       "priorEventNo": "59"
     },
     {
-      "start": "15:08:40",
+      "start": "15:17:30",
       "no": "61",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo R",
-      "entries": "18",
+      "entries": "6",
       "danceOrder": "R",
       "duration": 1.42,
       "note": "",
@@ -1048,7 +1048,7 @@
       "priorEventNo": "60"
     },
     {
-      "start": "15:10:05",
+      "start": "15:18:55",
       "no": "62",
       "round": "Semi Final",
       "style": "Latin",
@@ -1065,14 +1065,14 @@
       "priorEventNo": "44"
     },
     {
-      "start": "15:11:30",
+      "start": "15:20:20",
       "no": "63",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo C",
-      "entries": "19",
+      "entries": "6",
       "danceOrder": "C",
       "duration": 1.42,
       "note": "",
@@ -1082,14 +1082,14 @@
       "priorEventNo": "61"
     },
     {
-      "start": "15:12:55",
+      "start": "15:21:45",
       "no": "64",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo J",
-      "entries": "15",
+      "entries": "6",
       "danceOrder": "J",
       "duration": 1.42,
       "note": "",
@@ -1099,14 +1099,14 @@
       "priorEventNo": "63"
     },
     {
-      "start": "15:14:20",
+      "start": "15:23:10",
       "no": "65",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo RJ",
-      "entries": "16",
+      "entries": "6",
       "danceOrder": "R → J",
       "duration": 2.75,
       "note": "",
@@ -1116,14 +1116,14 @@
       "priorEventNo": "64"
     },
     {
-      "start": "15:17:05",
+      "start": "15:25:55",
       "no": "66",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo S",
-      "entries": "14",
+      "entries": "6",
       "danceOrder": "S",
       "duration": 1.42,
       "note": "",
@@ -1133,14 +1133,14 @@
       "priorEventNo": "65"
     },
     {
-      "start": "15:18:30",
+      "start": "15:27:20",
       "no": "67",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo J",
-      "entries": "14",
+      "entries": "6",
       "danceOrder": "J",
       "duration": 1.42,
       "note": "",
@@ -1150,14 +1150,14 @@
       "priorEventNo": "66"
     },
     {
-      "start": "15:19:55",
+      "start": "15:28:45",
       "no": "68",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo R",
-      "entries": "20",
+      "entries": "6",
       "danceOrder": "R",
       "duration": 1.42,
       "note": "",
@@ -1167,14 +1167,14 @@
       "priorEventNo": "62"
     },
     {
-      "start": "15:21:20",
+      "start": "15:30:10",
       "no": "69",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo CRS",
-      "entries": "18",
+      "entries": "6",
       "danceOrder": "C → S → R",
       "duration": 4.08,
       "note": "",
@@ -1184,14 +1184,14 @@
       "priorEventNo": "68"
     },
     {
-      "start": "15:25:25",
+      "start": "15:34:15",
       "no": "70",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
       "division": "Under 12 Solo",
       "event": "Under 12 Solo P",
-      "entries": "10",
+      "entries": "6",
       "danceOrder": "P",
       "duration": 1.42,
       "note": "",
@@ -1201,7 +1201,7 @@
       "priorEventNo": "69"
     },
     {
-      "start": "15:26:50",
+      "start": "15:35:40",
       "no": "71",
       "round": "Semi Final",
       "style": "Latin",
@@ -1218,14 +1218,14 @@
       "priorEventNo": "164"
     },
     {
-      "start": "15:28:15",
+      "start": "15:37:05",
       "no": "72",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo P",
-      "entries": "12",
+      "entries": "6",
       "danceOrder": "P",
       "duration": 1.42,
       "note": "",
@@ -1235,14 +1235,14 @@
       "priorEventNo": "70"
     },
     {
-      "start": "15:29:40",
+      "start": "15:38:30",
       "no": "73",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo RJ",
-      "entries": "10",
+      "entries": "6",
       "danceOrder": "R → J",
       "duration": 2.75,
       "note": "",
@@ -1252,14 +1252,14 @@
       "priorEventNo": "71"
     },
     {
-      "start": "15:32:25",
+      "start": "15:41:15",
       "no": "74",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo S",
-      "entries": "13",
+      "entries": "6",
       "danceOrder": "S",
       "duration": 1.42,
       "note": "",
@@ -1269,14 +1269,14 @@
       "priorEventNo": "72"
     },
     {
-      "start": "15:33:50",
+      "start": "15:42:40",
       "no": "75",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo CRJ",
-      "entries": "17",
+      "entries": "6",
       "danceOrder": "C → R → J",
       "duration": 4.08,
       "note": "",
@@ -1286,14 +1286,14 @@
       "priorEventNo": "67"
     },
     {
-      "start": "15:37:55",
+      "start": "15:46:45",
       "no": "76",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo CR",
-      "entries": "14",
+      "entries": "6",
       "danceOrder": "C → R",
       "duration": 2.75,
       "note": "",
@@ -1303,14 +1303,14 @@
       "priorEventNo": "73"
     },
     {
-      "start": "15:40:40",
+      "start": "15:49:30",
       "no": "77",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo CRS",
-      "entries": "11",
+      "entries": "6",
       "danceOrder": "C → R → S",
       "duration": 4.08,
       "note": "",
@@ -1320,14 +1320,14 @@
       "priorEventNo": "74"
     },
     {
-      "start": "15:44:45",
+      "start": "15:53:35",
       "no": "78",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo J",
-      "entries": "15",
+      "entries": "6",
       "danceOrder": "J",
       "duration": 1.42,
       "note": "",
@@ -1337,14 +1337,14 @@
       "priorEventNo": "75"
     },
     {
-      "start": "15:46:10",
+      "start": "15:55",
       "no": "79",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo RJ",
-      "entries": "13",
+      "entries": "6",
       "danceOrder": "R → J",
       "duration": 2.75,
       "note": "",
@@ -1354,7 +1354,7 @@
       "priorEventNo": "76"
     },
     {
-      "start": "15:48:55",
+      "start": "15:57:45",
       "no": "80",
       "round": "Final",
       "style": "Latin",
@@ -1371,14 +1371,14 @@
       "priorEventNo": "78"
     },
     {
-      "start": "15:51:40",
+      "start": "16:00:30",
       "no": "81",
       "round": "Final",
       "style": "Latin",
       "section": "Over 19",
       "division": "Over 19 Solo",
       "event": "Over 19 Solo Latin 5 Dance",
-      "entries": "12",
+      "entries": "6",
       "danceOrder": "C → S → R → P → J",
       "duration": 6.75,
       "note": "",
@@ -1388,14 +1388,14 @@
       "priorEventNo": "79"
     },
     {
-      "start": "15:58:25",
+      "start": "16:07:15",
       "no": "82",
       "round": "Final",
       "style": "Latin",
       "section": "Over 19",
       "division": "Over 19 Solo",
       "event": "Over 19 Solo Latin CRS",
-      "entries": "14",
+      "entries": "6",
       "danceOrder": "C → R → S",
       "duration": 4.08,
       "note": "",
@@ -1405,14 +1405,14 @@
       "priorEventNo": "80"
     },
     {
-      "start": "16:02:30",
+      "start": "16:11:20",
       "no": "83",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
       "division": "Under 15 Solo",
       "event": "Under 15 Solo W",
-      "entries": "8",
+      "entries": "6",
       "danceOrder": "W",
       "duration": 1.42,
       "note": "",
@@ -1422,7 +1422,7 @@
       "priorEventNo": "81"
     },
     {
-      "start": "16:03:55",
+      "start": "16:12:45",
       "no": "84",
       "round": "Final",
       "style": "Latin",
@@ -1440,7 +1440,7 @@
       "exitGuide": "C → S → R 진행 후 해당 종목 종료 선수 퇴장"
     },
     {
-      "start": "16:07:25",
+      "start": "16:16:15",
       "no": "85",
       "round": "Semi Final",
       "style": "Latin",
@@ -1457,7 +1457,7 @@
       "priorEventNo": "152"
     },
     {
-      "start": "16:08:50",
+      "start": "16:17:40",
       "no": "86",
       "round": "Final",
       "style": "Latin",
@@ -1474,7 +1474,7 @@
       "priorEventNo": "84"
     },
     {
-      "start": "16:10:15",
+      "start": "16:19:05",
       "no": "87",
       "round": "Final",
       "style": "Latin",
@@ -1491,7 +1491,7 @@
       "priorEventNo": "85"
     },
     {
-      "start": "16:12:35",
+      "start": "16:21:25",
       "no": "88",
       "round": "Final",
       "style": "Latin",
@@ -1508,7 +1508,7 @@
       "priorEventNo": "86"
     },
     {
-      "start": "16:16:05",
+      "start": "16:24:55",
       "no": "89",
       "round": "Final",
       "style": "Latin",
@@ -1525,7 +1525,7 @@
       "priorEventNo": "87"
     },
     {
-      "start": "16:19:35",
+      "start": "16:28:25",
       "no": "90",
       "round": "Final",
       "style": "Latin",
@@ -1542,7 +1542,7 @@
       "priorEventNo": "88"
     },
     {
-      "start": "16:20:45",
+      "start": "16:29:35",
       "no": "91",
       "round": "Final",
       "style": "Latin",
@@ -1559,7 +1559,7 @@
       "priorEventNo": "89"
     },
     {
-      "start": "16:21:55",
+      "start": "16:30:45",
       "no": "92",
       "round": "Final",
       "style": "Latin",
@@ -1576,7 +1576,7 @@
       "priorEventNo": "90"
     },
     {
-      "start": "16:23:20",
+      "start": "16:32:10",
       "no": "93",
       "round": "Final",
       "style": "Latin",
@@ -1593,14 +1593,14 @@
       "priorEventNo": "91"
     },
     {
-      "start": "16:24:30",
+      "start": "16:33:20",
       "no": "94",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
       "division": "Under 10 Solo",
       "event": "Under 10 Solo S",
-      "entries": "11",
+      "entries": "6",
       "danceOrder": "S",
       "duration": 1.42,
       "note": "",
@@ -1610,7 +1610,7 @@
       "priorEventNo": "77"
     },
     {
-      "start": "16:25:55",
+      "start": "16:34:45",
       "no": "95",
       "round": "Final",
       "style": "Latin",
@@ -1627,26 +1627,59 @@
       "priorEventNo": "93"
     },
     {
-      "start": "16:27:05",
-      "no": "96",
       "round": "Final",
       "style": "Latin",
-      "section": "Mixed Age / Mixed Division",
-      "division": "Combined",
-      "event": "Over 35 Solo CRJ + Over 19 Solo C + Over 19 Solo R",
-      "entries": "3",
+      "note": "",
+      "start": "16:35:55",
+      "no": "96",
+      "section": "Over 35",
+      "division": "Over 35 Solo",
+      "event": "Over 35 Solo CRJ",
+      "entries": "1",
       "danceOrder": "C → R → J",
       "duration": 3.5,
-      "note": "",
       "durationSeconds": 210,
       "durationText": "3:30",
-      "sourceEventNos": "94-97-100",
-      "priorEventNo": "94",
-      "exitGuide": "C 종료 → C 단독 출전 선수 퇴장 | R 종료 → R 단독 출전 선수 퇴장 | J 종료 → 남은 선수 전원 퇴장"
+      "sourceEventNo": "167",
+      "priorEventNo": "96"
     },
     {
-      "start": "16:30:35",
+      "round": "Final",
+      "style": "Latin",
+      "note": "",
+      "start": "16:39:25",
       "no": "97",
+      "section": "Over 19",
+      "division": "Over 19 Solo",
+      "event": "Over 19 Solo C",
+      "entries": "1",
+      "danceOrder": "C",
+      "duration": 1.17,
+      "durationSeconds": 70,
+      "durationText": "1:10",
+      "sourceEventNo": "140",
+      "priorEventNo": "97"
+    },
+    {
+      "round": "Final",
+      "style": "Latin",
+      "note": "",
+      "start": "16:40:35",
+      "no": "98",
+      "section": "Over 19",
+      "division": "Over 19 Solo",
+      "event": "Over 19 Solo R",
+      "entries": "1",
+      "danceOrder": "R",
+      "duration": 1.42,
+      "durationSeconds": 85,
+      "durationText": "1:25",
+      "sourceEventNo": "145",
+      "priorEventNo": "98"
+    },
+    {
+      "start": "16:42",
+      "no": "99",
       "round": "Final",
       "style": "Latin",
       "section": "Over 35",
@@ -1662,8 +1695,8 @@
       "priorEventNo": "95"
     },
     {
-      "start": "16:32",
-      "no": "98",
+      "start": "16:43:25",
+      "no": "100",
       "round": "Final",
       "style": "Latin",
       "section": "Over 35",
@@ -1679,8 +1712,8 @@
       "priorEventNo": "96"
     },
     {
-      "start": "16:33:10",
-      "no": "99",
+      "start": "16:44:35",
+      "no": "101",
       "round": "Final",
       "style": "Latin",
       "section": "Over 19",
@@ -1696,8 +1729,8 @@
       "priorEventNo": "97"
     },
     {
-      "start": "16:35:30",
-      "no": "100",
+      "start": "16:46:55",
+      "no": "102",
       "round": "Final",
       "style": "Latin",
       "section": "Over 19",
@@ -1713,8 +1746,8 @@
       "priorEventNo": "98"
     },
     {
-      "start": "16:36:40",
-      "no": "101",
+      "start": "16:48:05",
+      "no": "103",
       "round": "Final",
       "style": "Latin",
       "section": "Over 19",
@@ -1730,8 +1763,8 @@
       "priorEventNo": "99"
     },
     {
-      "start": "16:37:50",
-      "no": "102",
+      "start": "16:49:15",
+      "no": "104",
       "round": "Final · Combined",
       "style": "Latin",
       "section": "Mixed Age",
@@ -1748,8 +1781,8 @@
       "exitGuide": "R 종료 → 전원 잔류 | J 종료 → 남은 선수 전원 퇴장"
     },
     {
-      "start": "16:40:10",
-      "no": "103",
+      "start": "16:51:35",
+      "no": "105",
       "round": "Final",
       "style": "Modern",
       "section": "Over 19",
@@ -1765,8 +1798,8 @@
       "priorEventNo": "101"
     },
     {
-      "start": "16:41:20",
-      "no": "104",
+      "start": "16:52:45",
+      "no": "106",
       "round": "Final",
       "style": "Latin",
       "section": "Under 10",
@@ -1782,8 +1815,8 @@
       "priorEventNo": "92"
     },
     {
-      "start": "16:42:30",
-      "no": "105",
+      "start": "16:53:55",
+      "no": "107",
       "round": "Final",
       "style": "Modern",
       "section": "Over 19",
@@ -1799,8 +1832,8 @@
       "priorEventNo": "103"
     },
     {
-      "start": "16:43:40",
-      "no": "106",
+      "start": "16:55:05",
+      "no": "108",
       "round": "Final",
       "style": "Modern",
       "section": "Under 10",
@@ -1816,8 +1849,8 @@
       "priorEventNo": "102"
     },
     {
-      "start": "16:44:50",
-      "no": "107",
+      "start": "16:56:15",
+      "no": "109",
       "round": "Final",
       "style": "Modern",
       "section": "Under 10",
@@ -1833,8 +1866,8 @@
       "priorEventNo": "104"
     },
     {
-      "start": "16:46",
-      "no": "108",
+      "start": "16:57:25",
+      "no": "110",
       "round": "Final · Combined",
       "style": "Modern",
       "section": "Mixed Age",
@@ -1851,8 +1884,8 @@
       "exitGuide": "W/T/F 종료 → 전원 잔류 | Q 종료 → 남은 선수 전원 퇴장"
     },
     {
-      "start": "16:50:40",
-      "no": "109",
+      "start": "17:02:05",
+      "no": "111",
       "round": "Final · Combined",
       "style": "Modern",
       "section": "Mixed Age",
@@ -1869,8 +1902,8 @@
       "exitGuide": "W → T → F 진행 후 해당 종목 종료 선수 퇴장"
     },
     {
-      "start": "16:54:10",
-      "no": "110",
+      "start": "17:05:35",
+      "no": "112",
       "round": "Final · Combined",
       "style": "Modern",
       "section": "Mixed Age",
@@ -1887,8 +1920,8 @@
       "exitGuide": "W → T → Q 진행 후 해당 종목 종료 선수 퇴장"
     },
     {
-      "start": "16:58:15",
-      "no": "111",
+      "start": "17:09:40",
+      "no": "113",
       "round": "Final",
       "style": "Modern",
       "section": "Under 10",
@@ -1904,8 +1937,8 @@
       "priorEventNo": "108"
     },
     {
-      "start": "16:59:25",
-      "no": "112",
+      "start": "17:10:50",
+      "no": "114",
       "round": "Final",
       "style": "Modern",
       "section": "Under 18",
@@ -1921,8 +1954,8 @@
       "priorEventNo": "110"
     },
     {
-      "start": "17:00:35",
-      "no": "113",
+      "start": "17:12",
+      "no": "115",
       "round": "Final",
       "style": "Modern",
       "section": "Under 10",
@@ -1938,8 +1971,8 @@
       "priorEventNo": "109"
     },
     {
-      "start": "17:01:45",
-      "no": "114",
+      "start": "17:13:10",
+      "no": "116",
       "round": "Final · Combined",
       "style": "Modern",
       "section": "Mixed Age",
@@ -1956,8 +1989,8 @@
       "exitGuide": "W → Q 진행 후 해당 종목 종료 선수 퇴장"
     },
     {
-      "start": "17:04:05",
-      "no": "115",
+      "start": "17:15:30",
+      "no": "117",
       "round": "Final · Combined",
       "style": "Latin",
       "section": "Mixed Age",
@@ -1974,8 +2007,8 @@
       "exitGuide": "C 종료 → 전원 잔류 | J 종료 → 남은 선수 전원 퇴장"
     },
     {
-      "start": "17:06:25",
-      "no": "116",
+      "start": "17:17:50",
+      "no": "118",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -1991,8 +2024,8 @@
       "priorEventNo": "115"
     },
     {
-      "start": "17:07:35",
-      "no": "117",
+      "start": "17:19",
+      "no": "119",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2008,8 +2041,8 @@
       "priorEventNo": "116"
     },
     {
-      "start": "17:08:45",
-      "no": "118",
+      "start": "17:20:10",
+      "no": "120",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2025,8 +2058,8 @@
       "priorEventNo": "117"
     },
     {
-      "start": "17:09:55",
-      "no": "119",
+      "start": "17:21:20",
+      "no": "121",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2042,8 +2075,8 @@
       "priorEventNo": "118"
     },
     {
-      "start": "17:11:05",
-      "no": "120",
+      "start": "17:22:30",
+      "no": "122",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2059,8 +2092,8 @@
       "priorEventNo": "119"
     },
     {
-      "start": "17:13:25",
-      "no": "121",
+      "start": "17:24:50",
+      "no": "123",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2076,8 +2109,8 @@
       "priorEventNo": "120"
     },
     {
-      "start": "17:15:45",
-      "no": "122",
+      "start": "17:27:10",
+      "no": "124",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2093,8 +2126,8 @@
       "priorEventNo": "121"
     },
     {
-      "start": "17:19:15",
-      "no": "123",
+      "start": "17:30:40",
+      "no": "125",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2110,8 +2143,8 @@
       "priorEventNo": "122"
     },
     {
-      "start": "17:22:45",
-      "no": "124",
+      "start": "17:34:10",
+      "no": "126",
       "round": "Final",
       "style": "Latin",
       "section": "Under 12",
@@ -2127,8 +2160,8 @@
       "priorEventNo": "50"
     },
     {
-      "start": "17:26:15",
-      "no": "125",
+      "start": "17:37:40",
+      "no": "127",
       "round": "Final",
       "style": "Latin",
       "section": "Under 15",
@@ -2144,8 +2177,8 @@
       "priorEventNo": "80"
     },
     {
-      "start": "17:29:45",
-      "no": "126",
+      "start": "17:41:10",
+      "no": "128",
       "round": "Final",
       "style": "Modern",
       "section": "Under 12",
@@ -2163,8 +2196,8 @@
       "sourceEventNo": "71"
     },
     {
-      "start": "17:33:15",
-      "no": "127",
+      "start": "17:44:40",
+      "no": "129",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2182,8 +2215,8 @@
       "sourceEventNo": "101"
     },
     {
-      "start": "17:36:45",
-      "no": "128",
+      "start": "17:48:10",
+      "no": "130",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2199,8 +2232,8 @@
       "priorEventNo": "124"
     },
     {
-      "start": "17:37:55",
-      "no": "129",
+      "start": "17:49:20",
+      "no": "131",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2216,8 +2249,8 @@
       "priorEventNo": "125"
     },
     {
-      "start": "17:39:20",
-      "no": "130",
+      "start": "17:50:45",
+      "no": "132",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2233,8 +2266,8 @@
       "priorEventNo": "126"
     },
     {
-      "start": "17:40:30",
-      "no": "131",
+      "start": "17:51:55",
+      "no": "133",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2250,8 +2283,8 @@
       "priorEventNo": "127"
     },
     {
-      "start": "17:42:50",
-      "no": "132",
+      "start": "17:54:15",
+      "no": "134",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2267,8 +2300,8 @@
       "priorEventNo": "128"
     },
     {
-      "start": "17:45:10",
-      "no": "133",
+      "start": "17:56:35",
+      "no": "135",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2284,8 +2317,8 @@
       "priorEventNo": "129"
     },
     {
-      "start": "17:48:40",
-      "no": "134",
+      "start": "18:00:05",
+      "no": "136",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2301,8 +2334,8 @@
       "priorEventNo": "130"
     },
     {
-      "start": "17:54:05",
-      "no": "135",
+      "start": "18:05:30",
+      "no": "137",
       "round": "Final",
       "style": "Modern",
       "section": "Under 15",
@@ -2318,8 +2351,8 @@
       "priorEventNo": "131"
     },
     {
-      "start": "17:58:10",
-      "no": "136",
+      "start": "18:09:35",
+      "no": "138",
       "round": "Final",
       "style": "Modern",
       "section": "Under 18",
@@ -2335,8 +2368,8 @@
       "priorEventNo": "132"
     },
     {
-      "start": "17:59:20",
-      "no": "137",
+      "start": "18:10:45",
+      "no": "139",
       "round": "Final",
       "style": "Modern",
       "section": "Under 18",
@@ -2352,8 +2385,8 @@
       "priorEventNo": "133"
     },
     {
-      "start": "18:00:30",
-      "no": "138",
+      "start": "18:11:55",
+      "no": "140",
       "round": "Final",
       "style": "Modern",
       "section": "Under 18",
@@ -2369,8 +2402,8 @@
       "priorEventNo": "134"
     },
     {
-      "start": "18:01:40",
-      "no": "139",
+      "start": "18:13:05",
+      "no": "141",
       "round": "Final",
       "style": "Other",
       "section": "Senior",
@@ -2386,8 +2419,8 @@
       "priorEventNo": "180"
     },
     {
-      "start": "18:04",
-      "no": "140",
+      "start": "18:15:25",
+      "no": "142",
       "round": "Final",
       "style": "Latin",
       "section": "Mania",
@@ -2404,8 +2437,8 @@
       "exitGuide": ""
     },
     {
-      "start": "18:05:10",
-      "no": "141",
+      "start": "18:16:35",
+      "no": "143",
       "round": "Final",
       "style": "Latin",
       "section": "Mania",
@@ -2422,8 +2455,8 @@
       "exitGuide": ""
     },
     {
-      "start": "18:07:30",
-      "no": "142",
+      "start": "18:18:55",
+      "no": "144",
       "round": "Final",
       "style": "Latin",
       "section": "Mania",
@@ -2440,8 +2473,8 @@
       "exitGuide": ""
     },
     {
-      "start": "18:11",
-      "no": "143",
+      "start": "18:22:25",
+      "no": "145",
       "round": "Final",
       "style": "Latin",
       "section": "Pro-Am",
@@ -2457,8 +2490,8 @@
       "priorEventNo": "201"
     },
     {
-      "start": "18:13:20",
-      "no": "144",
+      "start": "18:24:45",
+      "no": "146",
       "round": "Final",
       "style": "Modern",
       "section": "Pro-Am",
@@ -2474,8 +2507,8 @@
       "priorEventNo": "136"
     },
     {
-      "start": "18:16:50",
-      "no": "145",
+      "start": "18:28:15",
+      "no": "147",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Amateur",
@@ -2491,8 +2524,8 @@
       "priorEventNo": "166"
     },
     {
-      "start": "18:18:15",
-      "no": "146",
+      "start": "18:29:40",
+      "no": "148",
       "round": "Semi Final",
       "style": "Latin",
       "section": "Under 18",
@@ -2508,8 +2541,8 @@
       "priorEventNo": "153"
     },
     {
-      "start": "18:19:40",
-      "no": "147",
+      "start": "18:31:05",
+      "no": "149",
       "round": "Final · Combined",
       "style": "Modern",
       "section": "Mixed Age",
@@ -2526,14 +2559,14 @@
       "exitGuide": "W → T 진행 후 해당 종목 종료 선수 퇴장"
     },
     {
-      "start": "18:22",
-      "no": "148",
+      "start": "18:33:25",
+      "no": "150",
       "round": "Final",
       "style": "Latin",
       "section": "Under 18",
       "division": "Under 18 Solo",
       "event": "Under 18 Solo 5 Dance",
-      "entries": "8",
+      "entries": "6",
       "danceOrder": "C → S → R → P → J",
       "duration": 6.75,
       "note": "",
@@ -2543,14 +2576,14 @@
       "priorEventNo": "83"
     },
     {
-      "start": "18:28:45",
-      "no": "149",
+      "start": "18:40:10",
+      "no": "151",
       "round": "Final",
       "style": "Latin",
       "section": "Under 18",
       "division": "Under 18 Solo",
       "event": "Under 18 Solo Elite A Latin",
-      "entries": "9",
+      "entries": "6",
       "danceOrder": "C → S → R → P → J",
       "duration": 6.75,
       "note": "",
@@ -2560,8 +2593,8 @@
       "priorEventNo": "138"
     },
     {
-      "start": "18:35:30",
-      "no": "150",
+      "start": "18:46:55",
+      "no": "152",
       "round": "Final",
       "style": "Latin",
       "section": "Over 19",
@@ -2577,14 +2610,14 @@
       "priorEventNo": "161"
     },
     {
-      "start": "18:40:10",
-      "no": "151",
+      "start": "18:51:35",
+      "no": "153",
       "round": "Final",
       "style": "Latin",
       "section": "Amateur",
       "division": "Amateur Solo",
       "event": "Asia Pacific Amateur Solo Latin",
-      "entries": "14",
+      "entries": "6",
       "danceOrder": "C → S → R → P → J",
       "duration": 6.75,
       "note": "",
@@ -2594,8 +2627,8 @@
       "priorEventNo": "137"
     },
     {
-      "start": "18:46:55",
-      "no": "152",
+      "start": "18:58:20",
+      "no": "154",
       "round": "Grand Final",
       "style": "Latin",
       "section": "Amateur",
@@ -2612,5 +2645,5 @@
     }
   ],
   "projectedStart": "12:00",
-  "projectedFinish": "18:46:40"
+  "projectedFinish": "19:05:05"
 }
