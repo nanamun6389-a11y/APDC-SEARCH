@@ -2162,22 +2162,27 @@
     {
       "start": "17:37:40",
       "no": "127",
-      "round": "Final",
+      "round": "Final · Combined",
       "style": "Latin",
-      "section": "Under 15",
-      "division": "Under 15 Couple",
-      "event": "Under 15 CRS",
-      "entries": "1",
-      "danceOrder": "C → R → S",
-      "duration": 3.5,
+      "section": "Under 15 + Over 19",
+      "division": "Under 15 Couple + Over 19 Solo",
+      "event": "Under 15 CRS + Over 19 Solo Latin CSRJ",
+      "entries": "CRS 2 / J 1",
+      "danceOrder": "C → R → S → J",
+      "duration": 4.67,
       "note": "",
-      "durationSeconds": 210,
-      "durationText": "3:30",
+      "durationSeconds": 280,
+      "durationText": "4:40",
       "sourceEventNo": "80",
-      "priorEventNo": "80"
+      "priorEventNo": "169",
+      "combinedEventNos": [
+        "80",
+        "169"
+      ],
+      "exitGuide": "S 종료 → Wong Tsun Yin & Chin Choi Ni Charlie 퇴장 | MinJi BAEK만 J 진행 후 종료"
     },
     {
-      "start": "17:41:10",
+      "start": "17:42:20",
       "no": "128",
       "round": "Final",
       "style": "Modern",
@@ -2196,7 +2201,7 @@
       "sourceEventNo": "71"
     },
     {
-      "start": "17:44:40",
+      "start": "17:45:50",
       "no": "129",
       "round": "Final",
       "style": "Modern",
@@ -2215,7 +2220,7 @@
       "sourceEventNo": "101"
     },
     {
-      "start": "17:48:10",
+      "start": "17:49:20",
       "no": "130",
       "round": "Final",
       "style": "Modern",
@@ -2232,7 +2237,7 @@
       "priorEventNo": "124"
     },
     {
-      "start": "17:49:20",
+      "start": "17:50:30",
       "no": "131",
       "round": "Final",
       "style": "Modern",
@@ -2249,7 +2254,7 @@
       "priorEventNo": "125"
     },
     {
-      "start": "17:50:45",
+      "start": "17:51:55",
       "no": "132",
       "round": "Final",
       "style": "Modern",
@@ -2266,7 +2271,7 @@
       "priorEventNo": "126"
     },
     {
-      "start": "17:51:55",
+      "start": "17:53:05",
       "no": "133",
       "round": "Final",
       "style": "Modern",
@@ -2283,7 +2288,7 @@
       "priorEventNo": "127"
     },
     {
-      "start": "17:54:15",
+      "start": "17:55:25",
       "no": "134",
       "round": "Final",
       "style": "Modern",
@@ -2300,7 +2305,7 @@
       "priorEventNo": "128"
     },
     {
-      "start": "17:56:35",
+      "start": "17:57:45",
       "no": "135",
       "round": "Final",
       "style": "Modern",
@@ -2317,7 +2322,7 @@
       "priorEventNo": "129"
     },
     {
-      "start": "18:00:05",
+      "start": "18:01:15",
       "no": "136",
       "round": "Final",
       "style": "Modern",
@@ -2334,7 +2339,7 @@
       "priorEventNo": "130"
     },
     {
-      "start": "18:05:30",
+      "start": "18:06:40",
       "no": "137",
       "round": "Final",
       "style": "Modern",
@@ -2351,7 +2356,7 @@
       "priorEventNo": "131"
     },
     {
-      "start": "18:09:35",
+      "start": "18:10:45",
       "no": "138",
       "round": "Final",
       "style": "Modern",
@@ -2368,7 +2373,7 @@
       "priorEventNo": "132"
     },
     {
-      "start": "18:10:45",
+      "start": "18:11:55",
       "no": "139",
       "round": "Final",
       "style": "Modern",
@@ -2385,7 +2390,7 @@
       "priorEventNo": "133"
     },
     {
-      "start": "18:11:55",
+      "start": "18:13:05",
       "no": "140",
       "round": "Final",
       "style": "Modern",
@@ -2402,7 +2407,7 @@
       "priorEventNo": "134"
     },
     {
-      "start": "18:13:05",
+      "start": "18:14:15",
       "no": "141",
       "round": "Final",
       "style": "Other",
@@ -2419,7 +2424,7 @@
       "priorEventNo": "180"
     },
     {
-      "start": "18:15:25",
+      "start": "18:16:35",
       "no": "142",
       "round": "Final",
       "style": "Latin",
@@ -2437,7 +2442,7 @@
       "exitGuide": ""
     },
     {
-      "start": "18:16:35",
+      "start": "18:17:45",
       "no": "143",
       "round": "Final",
       "style": "Latin",
@@ -2455,7 +2460,7 @@
       "exitGuide": ""
     },
     {
-      "start": "18:18:55",
+      "start": "18:20:05",
       "no": "144",
       "round": "Final",
       "style": "Latin",
@@ -2473,7 +2478,7 @@
       "exitGuide": ""
     },
     {
-      "start": "18:22:25",
+      "start": "18:23:35",
       "no": "145",
       "round": "Final · Combined",
       "style": "Latin",
@@ -2491,7 +2496,7 @@
       "exitGuide": "R 종료 → DaRae KIM & SuIm CHAE 퇴장 | Melissa & HyunHyuk SHIN만 C 진행 후 종료"
     },
     {
-      "start": "18:24:45",
+      "start": "18:25:55",
       "no": "146",
       "round": "Final",
       "style": "Modern",
@@ -2508,7 +2513,7 @@
       "priorEventNo": "136"
     },
     {
-      "start": "18:28:15",
+      "start": "18:29:25",
       "no": "147",
       "round": "Semi Final",
       "style": "Latin",
@@ -2525,7 +2530,7 @@
       "priorEventNo": "166"
     },
     {
-      "start": "18:29:40",
+      "start": "18:30:50",
       "no": "148",
       "round": "Semi Final",
       "style": "Latin",
@@ -2542,7 +2547,7 @@
       "priorEventNo": "153"
     },
     {
-      "start": "18:31:05",
+      "start": "18:32:15",
       "no": "149",
       "round": "Final · Combined",
       "style": "Modern",
@@ -2560,7 +2565,7 @@
       "exitGuide": "W → T 진행 후 해당 종목 종료 선수 퇴장"
     },
     {
-      "start": "18:33:25",
+      "start": "18:34:35",
       "no": "150",
       "round": "Final",
       "style": "Latin",
@@ -2577,7 +2582,7 @@
       "priorEventNo": "83"
     },
     {
-      "start": "18:40:10",
+      "start": "18:41:20",
       "no": "151",
       "round": "Final",
       "style": "Latin",
@@ -2594,25 +2599,8 @@
       "priorEventNo": "138"
     },
     {
-      "start": "18:46:55",
+      "start": "18:48:05",
       "no": "152",
-      "round": "Final",
-      "style": "Latin",
-      "section": "Over 19",
-      "division": "Over 19 Solo",
-      "event": "Over 19 Solo Latin CSRJ",
-      "entries": "1",
-      "danceOrder": "C → S → R → J",
-      "duration": 4.67,
-      "note": "",
-      "durationSeconds": 280,
-      "durationText": "4:40",
-      "sourceEventNo": "169",
-      "priorEventNo": "161"
-    },
-    {
-      "start": "18:51:35",
-      "no": "153",
       "round": "Final",
       "style": "Latin",
       "section": "Amateur",
@@ -2628,8 +2616,8 @@
       "priorEventNo": "137"
     },
     {
-      "start": "18:58:20",
-      "no": "154",
+      "start": "18:54:50",
+      "no": "153",
       "round": "Grand Final",
       "style": "Latin",
       "section": "Amateur",
