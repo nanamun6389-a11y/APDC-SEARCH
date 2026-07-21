@@ -2475,19 +2475,20 @@
     {
       "start": "18:22:25",
       "no": "145",
-      "round": "Final",
+      "round": "Final · Combined",
       "style": "Latin",
       "section": "Pro-Am",
       "division": "Pro-Am Couple",
-      "event": "Pro-Am Latin CR",
-      "entries": "1",
-      "danceOrder": "C → R",
+      "event": "Pro-Am Latin R + Pro-Am Latin CR",
+      "entries": "R 2 / C 1",
+      "danceOrder": "R → C",
       "duration": 2.33,
       "note": "",
       "durationSeconds": 140,
       "durationText": "2:20",
-      "sourceEventNo": "201",
-      "priorEventNo": "201"
+      "sourceEventNo": "202",
+      "priorEventNo": "201",
+      "exitGuide": "R 종료 → DaRae KIM & SuIm CHAE 퇴장 | Melissa & HyunHyuk SHIN만 C 진행 후 종료"
     },
     {
       "start": "18:24:45",
@@ -2645,5 +2646,5 @@
     }
   ],
   "projectedStart": "12:00",
-  "projectedFinish": "19:05:05"
+  "projectedFinish": "19:03:55"
 }

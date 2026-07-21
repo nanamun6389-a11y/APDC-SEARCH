@@ -873,6 +873,14 @@
       "assignedJudges": []
     },
     {
+      "eventKey": "Pro-Am Latin R||Pro-Am||Latin",
+      "eventNumber": "202",
+      "event": "Pro-Am Latin R",
+      "section": "Pro-Am",
+      "style": "Latin",
+      "assignedJudges": []
+    },
+    {
       "eventKey": "Pro-Am Latin CR||Pro-Am||Latin",
       "eventNumber": "201",
       "event": "Pro-Am Latin CR",
