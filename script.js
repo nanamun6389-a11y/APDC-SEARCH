@@ -1,7 +1,3 @@
-import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
-import { firebaseConfig } from "./firebase-config.js";
-const firebaseApp=getApps().length?getApps()[0]:initializeApp(firebaseConfig),db=getDatabase(firebaseApp);
 apdcBuildLanguageUI();
 "use strict";
 let entries=[];let activeSection="ALL";
@@ -19,6 +15,6 @@ function showInfo(type){infoContent.innerHTML=type==="information"?`<h2 class="i
 function closeInfo(){infoModal.classList.add("hidden");infoModal.setAttribute("aria-hidden","true")}function closePlayer(){playerModal.classList.add("hidden");playerModal.setAttribute("aria-hidden","true")}
 function goHome(){q.value="";activeSection="ALL";searchBox.classList.add("hidden");closeInfo();closePlayer();renderTabs();renderEvents();window.scrollTo({top:0,behavior:"smooth"})}
 $("searchForm").onsubmit=e=>{e.preventDefault();doSearch();q.blur()};$("homeBtn").onclick=goHome;document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>showInfo(b.dataset.view));document.querySelectorAll("[data-close-info]").forEach(b=>b.onclick=closeInfo);document.querySelectorAll("[data-close-player]").forEach(b=>b.onclick=closePlayer);
-async function loadEntries(){try{const snap=await get(ref(db,"apdcPublic/players"));if(snap.exists()&&Array.isArray(snap.val()))return snap.val()}catch(e){console.warn("Firebase player data unavailable",e)}const r=await fetch(`players.json?v=${Date.now()}`,{cache:"no-store"});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}
+async function loadEntries(){const base="https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app/apdcPublic/players.json";try{const r=await fetch(`${base}?v=${Date.now()}`,{cache:"no-store"});if(r.ok){const data=await r.json();if(Array.isArray(data)&&data.length)return data}}catch(e){console.warn("Online player data unavailable",e)}const r=await fetch(`players.json?v=${Date.now()}`,{cache:"no-store"});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}
 loadEntries().then(data=>{entries=(Array.isArray(data)?data:[]).filter(item=>item&&item.competitor&&item.event&&item.section);renderTabs();renderEvents()}).catch(e=>{console.error(e);eventSummary.textContent="ERROR";eventList.innerHTML='<div class="empty">FAILED TO LOAD ENTRY DATA.</div>'});
 document.addEventListener("DOMContentLoaded",()=>{const query=$("query");if(query)query.placeholder=apdcT("searchPlaceholder");const sb=document.querySelector(".search-btn");if(sb)sb.textContent=apdcT("search")});
