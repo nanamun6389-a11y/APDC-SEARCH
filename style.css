@@ -193,3 +193,12 @@ button{cursor:pointer}
     font-size:12px!important;
   }
 }
+
+/* Back number safety + event picker dedupe UI */
+.backno-status{margin-top:8px;font-size:13px;line-height:1.35;padding:10px;border:1px solid #d5d5d5;background:#fafafa}
+.backno-status.backno-good{border-color:#222}
+.backno-status.backno-bad{border:2px solid #111;background:#fff4f4;font-weight:700}
+.backno-available-label{margin-top:10px;font-size:11px;font-weight:800;letter-spacing:.12em;color:#666}
+.backno-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.backno-chip{width:auto!important;min-width:42px!important;padding:8px 10px!important;border:1px solid #111!important;background:#fff!important;color:#111!important;font-size:13px!important}
+@media(max-width:700px){.backno-chip{min-width:44px!important;padding:9px!important}.event-menu-list button small{white-space:normal}}

@@ -1,4 +1,4 @@
-const CACHE_NAME='apdc-search-rest5-playeredit4-loginfix3';
+const CACHE_NAME = 'apdc-search-backno8';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",
