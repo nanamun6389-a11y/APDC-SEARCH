@@ -17,6 +17,15 @@ function usedBackNumbers(exceptIndex=-1){const used=new Map();groups.forEach((g,
 function availableBackNumbers(limit=12){const used=usedBackNumbers(selected);const out=[];for(let n=1;n<=299&&out.length<limit;n++)if(!used.has(String(n)))out.push(n);return out}
 function renderBackNoStatus(){const box=$('backNoStatus');if(!box)return;const raw=String($('backNo').value||'').trim();const used=usedBackNumbers(selected);let msg='';let cls='backno-neutral';if(raw){if(!/^\d+$/.test(raw)||Number(raw)<1||Number(raw)>299){msg='Back No. must be between 1 and 299.';cls='backno-bad'}else if(used.has(raw)){msg=`NO. ${esc(raw)} is already used by ${esc(used.get(raw))}.`;cls='backno-bad'}else{msg=`NO. ${esc(raw)} is available.`;cls='backno-good'}}else{msg='Choose an unused Back No.'}const avail=availableBackNumbers().map(n=>`<button type="button" class="backno-chip" data-backno="${n}">${n}</button>`).join('');box.className=`backno-status ${cls}`;box.innerHTML=`<div>${msg}</div><div class="backno-available-label">AVAILABLE</div><div class="backno-chips">${avail}</div>`;box.querySelectorAll('[data-backno]').forEach(b=>b.onclick=()=>{$('backNo').value=b.dataset.backno;if(selected>=0)groups[selected].backNo=b.dataset.backno;renderBackNoStatus();renderList()})}
 
+function parseSourceEventNos(row){
+  const raw=[];
+  if(row&&row.sourceEventNo!==undefined&&row.sourceEventNo!==null)raw.push(String(row.sourceEventNo));
+  if(row&&row.sourceEventNos!==undefined&&row.sourceEventNos!==null){
+    if(Array.isArray(row.sourceEventNos)) raw.push(...row.sourceEventNos.map(String));
+    else raw.push(String(row.sourceEventNos));
+  }
+  return [...new Set(raw.flatMap(v=>String(v).split(/\s*[/,|+]\s*/)).map(v=>v.trim()).filter(Boolean))];
+}
 function syncTimetableEntryCounts(tt,players){
   const rows=Array.isArray(tt?.rows)?tt.rows.map(r=>({...r})):[];
   if(!rows.length)return null;
@@ -32,37 +41,44 @@ function syncTimetableEntryCounts(tt,players){
   }
   const firstIndexByKey=new Map();
   rows.forEach((r,i)=>{
-    const eno=String(r.sourceEventNo||'').trim();
+    const nos=parseSourceEventNos(r);
     const ident=`${String(r.event||'').trim().toLowerCase()}|${String(r.section||'').trim().toLowerCase()}`;
-    const key=eno?`no:${eno}`:`id:${ident}`;
+    const key=nos.length?`no:${nos.join('/')}`:`id:${ident}`;
     if(!firstIndexByKey.has(key))firstIndexByKey.set(key,i);
   });
   let changed=0;
   rows.forEach((r,i)=>{
-    const eno=String(r.sourceEventNo||'').trim();
+    const nos=parseSourceEventNos(r);
     const ident=`${String(r.event||'').trim().toLowerCase()}|${String(r.section||'').trim().toLowerCase()}`;
-    const key=eno?`no:${eno}`:`id:${ident}`;
-    if(firstIndexByKey.get(key)!==i)return; // Only the first scheduled round shows the live entry total.
-    const matches=(eno&&byEventNo.has(eno))?byEventNo.get(eno):byIdentity.get(ident);
-    if(!matches)return; // Leave breaks/special rows and unknown mappings untouched.
-    const vals=[...matches.values()];
+    const key=nos.length?`no:${nos.join('/')}`:`id:${ident}`;
+    if(firstIndexByKey.get(key)!==i)return;
+    const merged=new Map();
+    if(nos.length){
+      nos.forEach(no=>{const m=byEventNo.get(no);if(m)m.forEach((v,k)=>merged.set(k,v))});
+    }else{
+      const m=byIdentity.get(ident);if(m)m.forEach((v,k)=>merged.set(k,v));
+    }
+    if(!merged.size)return;
+    const vals=[...merged.values()];
     const count=vals.length;
     const backNumbers=[...new Set(vals.map(p=>String(p.backNo||'').trim()).filter(Boolean))].sort((a,b)=>(Number(a)||99999)-(Number(b)||99999));
     if(String(r.entries||'')!==String(count) || JSON.stringify(r.backNumbers||[])!==JSON.stringify(backNumbers))changed++;
     r.entries=String(count);
     r.backNumbers=backNumbers;
   });
-  return {startTime:tt.startTime||rows[0]?.start?.slice(0,5)||'12:00',rows,updatedAt:Date.now(),entrySyncAt:new Date().toISOString(),entrySyncChanges:changed};
+  return {...tt,rows,updatedAt:Date.now(),entrySyncAt:new Date().toISOString(),entrySyncChanges:changed};
 }
 async function syncJudgeTimetable(players){
+  // The JUDGE timetable-data.json is the single canonical structure.
+  // Never rebuild order/time/rounds from an older Firebase override.
   let source=null;
-  try{const saved=await rootGet('timetableOverride');if(saved&&Array.isArray(saved.rows)&&saved.rows.length)source=saved}catch(err){console.warn('Judge timetable override read failed',err)}
-  if(!source){try{const publicTt=await restGet('timetable');if(publicTt&&Array.isArray(publicTt.rows)&&publicTt.rows.length)source=publicTt}catch(err){console.warn('Public timetable read failed',err)}}
-  if(!source){source=await fetchJson('timetable-data.json')}
+  try{source=await fetchJson('timetable-data.json')}catch(err){console.warn('Canonical timetable load failed',err)}
+  if(!source){try{const saved=await rootGet('timetableOverride');if(saved&&Array.isArray(saved.rows)&&saved.rows.length)source=saved}catch(err){console.warn('Judge timetable override read failed',err)}}
+  if(!source)throw new Error('Canonical timetable data is empty');
   const synced=syncTimetableEntryCounts(source,players);
   if(!synced)throw new Error('Timetable data is empty');
-  await rootPut('timetableOverride',synced); // This is the data APDC_JUDGE timetable/MC listens to.
-  await restPut('timetable',synced);        // Keep the public mirror in sync as well.
+  await rootPut('timetableOverride',synced);
+  await restPut('timetable',synced);
   return synced;
 }
 function validateBackNumbers(){const seen=new Map();const conflicts=[];groups.forEach(g=>{const n=String(g.backNo||'').trim();if(!n)return;if(!/^\d+$/.test(n)||Number(n)<1||Number(n)>299){conflicts.push(`Invalid Back No. ${n} (${g.competitor||'Unnamed'})`);return}if(seen.has(n)&&seen.get(n)!==g.competitor)conflicts.push(`NO. ${n}: ${seen.get(n)} / ${g.competitor}`);else seen.set(n,g.competitor)});return conflicts}
