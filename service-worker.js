@@ -1,4 +1,4 @@
-const CACHE_NAME = 'apdc-search-pwa-v3-section-picker';
+const CACHE_NAME = 'apdc-search-pwa-v4-version-history-10';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",
@@ -17,6 +17,8 @@ const APP_SHELL = [
   "./search-admin.js",
   "./entry-admin.html",
   "./entry-admin.js",
+  "./version-history.html",
+  "./version-history.js",
   "./data-common.js",
   "./style.css"
 ];
