@@ -120,3 +120,76 @@ button{cursor:pointer}
 .event-menu-list button{display:grid;text-align:left;gap:2px;padding:9px 10px;background:#fff;border:1px solid #ddd}.event-menu-list button:hover{border-color:#111;background:#f6f6f6}.event-menu-list span{font-weight:700}.event-menu-list small{color:#666}
 .empty-note{padding:18px 4px;color:#777}
 @media(max-width:760px){.player-edit-info{grid-template-columns:70px 1fr}.player-edit-info small{grid-column:2}.entry-picker-row{grid-template-columns:1fr 42px}.entry-picker-row>.event-no-wrap,.entry-picker-row>input{grid-column:1}.entry-delete{grid-column:2;grid-row:1}.event-menu{position:fixed;left:4vw;right:4vw;top:18vh;width:92vw;max-height:64vh}.event-menu-list{max-height:52vh}}
+
+/* 2026-07-22 mobile player list layout fix */
+.player-edit-list .player-edit-btn{
+  width:auto!important;
+  min-width:68px!important;
+  max-width:88px!important;
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto!important;
+  padding:10px 12px!important;
+  border:1px solid #111!important;
+  background:#fff!important;
+  color:#111!important;
+  font-weight:900!important;
+  text-align:center!important;
+}
+.player-edit-list .player-edit-item{
+  width:100%;
+  overflow:hidden;
+}
+.player-edit-list .player-edit-info{
+  overflow:hidden;
+}
+@media(max-width:760px){
+  .player-edit-list{gap:6px}
+  .player-edit-list .player-edit-item{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) 72px!important;
+    gap:8px!important;
+    align-items:center!important;
+    padding:11px 10px!important;
+  }
+  .player-edit-list .player-edit-info{
+    display:grid!important;
+    grid-template-columns:64px minmax(0,1fr)!important;
+    gap:3px 8px!important;
+    align-items:center!important;
+    min-width:0!important;
+  }
+  .player-edit-list .player-edit-info b{
+    grid-column:1;
+    grid-row:1;
+    white-space:nowrap;
+    overflow:visible;
+    font-size:11px;
+  }
+  .player-edit-list .player-edit-info span{
+    grid-column:2;
+    grid-row:1;
+    display:block;
+    min-width:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-size:14px;
+  }
+  .player-edit-list .player-edit-info small{
+    grid-column:2!important;
+    grid-row:2;
+    font-size:10px;
+    color:#777;
+  }
+  .player-edit-list .player-edit-btn{
+    grid-column:2;
+    grid-row:1 / span 2;
+    width:72px!important;
+    min-width:72px!important;
+    max-width:72px!important;
+    padding:10px 4px!important;
+    font-size:12px!important;
+  }
+}
