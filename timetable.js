@@ -1,0 +1,3 @@
+import {loadTimetable} from './data-common.js';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+loadTimetable().then(tt=>{const rows=tt.rows||[];document.getElementById('ttStatus').textContent=`${rows.length} EVENTS · ${tt.projectedStart||''}–${tt.projectedFinish||''}`;document.getElementById('ttBody').innerHTML=rows.map(r=>`<tr><td>${esc(r.start)}</td><td><strong>${esc(r.no)}</strong> ${esc(r.event)}</td><td class="round-badge">${esc(r.round)}</td><td>${esc(r.section)}</td><td>${esc(r.entries)}</td><td>${esc(r.danceOrder)}</td></tr>`).join('')}).catch(()=>document.getElementById('ttStatus').textContent='TIMETABLE LOAD FAILED');

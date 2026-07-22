@@ -1,0 +1,10 @@
+import {db,ref,set,PASSWORD,loadPlayers,loadTimetable,syncTimetable} from './data-common.js';
+let tt={rows:[]};const $=id=>document.getElementById(id),status=t=>$('status').textContent=t;
+function unlock(){sessionStorage.setItem('apdcTimetableAdmin','yes');$('loginBox').classList.add('hidden');$('adminBox').classList.remove('hidden');load()}
+$('loginBtn').onclick=()=>{$('password').value===PASSWORD?unlock():$('loginMsg').textContent='WRONG PASSWORD'};$('password').onkeydown=e=>{if(e.key==='Enter')$('loginBtn').click()};if(sessionStorage.getItem('apdcTimetableAdmin')==='yes')unlock();
+async function load(){status('Loading…');tt=await loadTimetable();render();status(`Loaded ${(tt.rows||[]).length} timetable rows.`)}
+function render(){const keys=['start','no','round','event','section','entries','danceOrder'];$('rows').innerHTML=(tt.rows||[]).map((r,i)=>`<tr data-i="${i}">${keys.map(k=>`<td><input data-k="${k}" value="${String(r[k]??'').replace(/"/g,'&quot;')}"></td>`).join('')}<td><button data-del="${i}">×</button></td></tr>`).join('');$('rows').querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{commit();tt.rows.splice(Number(b.dataset.del),1);render()})}
+function commit(){[...$('rows').querySelectorAll('tr')].forEach(tr=>{const r=tt.rows[Number(tr.dataset.i)]||{};tr.querySelectorAll('input[data-k]').forEach(inp=>r[inp.dataset.k]=inp.value.trim());tt.rows[Number(tr.dataset.i)]=r})}
+$('reload').onclick=load;$('addRow').onclick=()=>{commit();tt.rows.push({start:'',no:String(tt.rows.length+1),round:'Final',event:'',section:'',entries:'0',danceOrder:'',duration:1.42,durationSeconds:85,durationText:'1:25'});render()};
+$('syncEntries').onclick=async()=>{commit();tt=syncTimetable(tt,await loadPlayers());render();status('Entry counts and rounds synced from current search entries.')};
+$('save').onclick=async()=>{commit();tt.updatedAt=new Date().toISOString();await set(ref(db,'apdcPublic/timetable'),tt);await set(ref(db,'apdcPublic/meta'),{updatedAt:tt.updatedAt,updatedBy:'timetable-admin'});status('Timetable saved. Public timetable is updated.')};

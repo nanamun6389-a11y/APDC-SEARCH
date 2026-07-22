@@ -1,168 +1,24 @@
+import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
+import { firebaseConfig } from "./firebase-config.js";
+const firebaseApp=getApps().length?getApps()[0]:initializeApp(firebaseConfig),db=getDatabase(firebaseApp);
 apdcBuildLanguageUI();
 "use strict";
-
-let entries=[];
-let activeSection="ALL";
-
-const $=id=>document.getElementById(id);
-const q=$("query");
-const tabs=$("sectionTabs");
-const eventList=$("eventList");
-const eventSummary=$("eventSummary");
-const searchBox=$("searchBox");
-const searchResults=$("searchResults");
-const searchTitle=$("searchTitle");
-const searchCount=$("searchCount");
-const infoModal=$("infoModal");
-const infoContent=$("infoContent");
-const playerModal=$("playerModal");
-const playerContent=$("playerContent");
-
+let entries=[];let activeSection="ALL";
+const $=id=>document.getElementById(id),q=$("query"),tabs=$("sectionTabs"),eventList=$("eventList"),eventSummary=$("eventSummary"),searchBox=$("searchBox"),searchResults=$("searchResults"),searchTitle=$("searchTitle"),searchCount=$("searchCount"),infoModal=$("infoModal"),infoContent=$("infoContent"),playerModal=$("playerModal"),playerContent=$("playerContent");
 const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
-const norm=value=>String(value??"").toLowerCase().replace(/\s+/g," ").trim();
-const natural=(a,b)=>String(a??"").localeCompare(String(b??""),undefined,{numeric:true,sensitivity:"base"});
-
-const preferredSections=["Formation","Under 10","Under 12","Under 15","Under 18","Over 19","Over 35","Amateur","Senior","Mania","Pro-Am"];
-const sectionIndex=s=>{const i=preferredSections.indexOf(s);return i<0?999:i};
-
-function uniquePlayers(items){
-  const map=new Map();
-  items.forEach(item=>{
-    const key=`${item.backNo}||${item.competitor}`;
-    if(!map.has(key)) map.set(key,{backNo:item.backNo,competitor:item.competitor,entryType:item.entryType});
-  });
-  return [...map.values()].sort((a,b)=>natural(a.backNo,b.backNo)||natural(a.competitor,b.competitor));
-}
-
-function groupEvents(items){
-  const map=new Map();
-  items.forEach(item=>{
-    const key=[item.event,item.section,item.style,item.division,item.entryType].join("||");
-    if(!map.has(key)) map.set(key,{event:item.event,section:item.section,style:item.style,division:item.division,entryType:item.entryType,items:[]});
-    map.get(key).items.push(item);
-  });
-  return [...map.values()].sort((a,b)=>
-    sectionIndex(a.section)-sectionIndex(b.section)||
-    natural(a.section,b.section)||
-    natural(a.style,b.style)||
-    natural(a.event,b.event)
-  );
-}
-
-function renderTabs(){
-  const sections=[...new Set(entries.map(x=>x.section).filter(Boolean))]
-    .sort((a,b)=>sectionIndex(a)-sectionIndex(b)||natural(a,b));
-  const all=["ALL",...sections];
-  tabs.innerHTML=all.map(section=>`<button class="section-tab ${section===activeSection?"active":""}" data-section="${esc(section)}" type="button">${esc(section)}</button>`).join("");
-  tabs.querySelectorAll("button").forEach(button=>{
-    button.onclick=()=>{
-      activeSection=button.dataset.section;
-      renderTabs();
-      renderEvents();
-    };
-  });
-}
-
-function renderEvents(){
-  const filtered=activeSection==="ALL"?entries:entries.filter(x=>x.section===activeSection);
-  const events=groupEvents(filtered);
-  eventSummary.textContent=`${events.length} SECTIONS`;
-  if(!events.length){
-    eventList.innerHTML='<div class="empty">NO ENTRIES FOUND.</div>';
-    return;
-  }
-  eventList.innerHTML=events.map(event=>{
-    const players=uniquePlayers(event.items);
-    return `<article class="event-card">
-      <div class="event-head">
-        <span><span class="event-name">${esc(event.event)}</span><span class="event-meta">${esc(event.section)} · ${esc(event.style)}</span></span>
-        <span class="entry-count">${players.length} ENTRIES</span>
-      </div>
-      <table class="participant-table">
-        <thead><tr><th>BACK NO.</th><th>COMPETITOR / TEAM</th><th>TYPE</th></tr></thead>
-        <tbody>${players.map(player=>`<tr><td>${esc(player.backNo)}</td><td><button class="participant-name-btn" data-back="${esc(player.backNo)}" data-name="${esc(player.competitor)}" type="button">${esc(player.competitor)}</button></td><td>${esc(player.entryType||"")}</td></tr>`).join("")}</tbody>
-      </table>
-    </article>`;
-  }).join("");
-  eventList.querySelectorAll(".participant-name-btn").forEach(button=>button.onclick=()=>openPlayer(button.dataset.back,button.dataset.name));
-}
-
-function openPlayer(back,name){if(window.apdcTrackPlayer)window.apdcTrackPlayer(back,name);
-  const items=entries.filter(x=>String(x.backNo)===String(back)&&x.competitor===name)
-    .sort((a,b)=>sectionIndex(a.section)-sectionIndex(b.section)||natural(a.section,b.section)||natural(a.event,b.event));
-  playerContent.innerHTML=`<div class="player-head"><div class="player-back">BACK NO. ${esc(back)}</div><h3>${esc(name)}</h3></div>${items.map(item=>`<div class="player-event"><div class="player-event-title">${esc(item.event)}</div><div class="player-event-meta">${esc(item.section)} · ${esc(item.style)} · ${esc(item.division)}</div></div>`).join("")}`;
-  playerModal.classList.remove("hidden");
-  playerModal.setAttribute("aria-hidden","false");
-}
-
-function doSearch(){
-  const term=norm(q.value);
-  if(!term){
-    searchBox.classList.add("hidden");
-    return;
-  }
-  const matched=entries.filter(item=>norm([item.backNo,item.competitor,item.event,item.section,item.style,item.division].join(" ")).includes(term));
-  const players=uniquePlayers(matched);
-  searchTitle.textContent=`SEARCH RESULTS: ${q.value.trim()}`;
-  searchCount.textContent=`${players.length} FOUND`;
-  searchBox.classList.remove("hidden");
-  searchResults.innerHTML=players.length?players.map(player=>{
-    const count=entries.filter(x=>String(x.backNo)===String(player.backNo)&&x.competitor===player.competitor).length;
-    return `<div class="result-card"><button data-back="${esc(player.backNo)}" data-name="${esc(player.competitor)}" type="button"><span class="result-back">${esc(player.backNo)}</span><span><span class="result-name">${esc(player.competitor)}</span><span class="result-sub">${count} SECTIONS</span></span><span>›</span></button></div>`;
-  }).join(""):'<div class="empty">NO RESULTS FOUND.</div>';
-  searchResults.querySelectorAll("button").forEach(button=>button.onclick=()=>openPlayer(button.dataset.back,button.dataset.name));
-}
-
-function showInfo(type){
-  if(type==="information"){
-    infoContent.innerHTML=`<h2 class="info-title">INFORMATION</h2><div class="info-grid"><div><span>DATE</span><strong>2026.08.08 (SAT)</strong></div><div><span>VENUE</span><strong>Seocho Sports Complex</strong></div><div><span>HOSTED BY</span><strong>Dancefill Academy</strong></div><div><span>ORGANIZER</span><strong>Tei Kim</strong></div><div><span>SANCTIONED BY</span><strong>KDC (Korea Professional Dance Council)</strong></div></div>`;
-  }else{
-    infoContent.innerHTML=`<h2 class="info-title">VENUE &amp; DIRECTIONS</h2><div class="direction-box"><h3>SEOCHO SPORTS COMPLEX</h3><p><strong>Address</strong><br>73-48, Yangjae-daero 12-gil, Seocho-gu, Seoul</p><p><strong>Public Transportation</strong><br>From Yangjae Station Exit 10, take Seocho Village Bus No. 08 and get off at Seocho Sports Complex.</p><div class="map-links"><a href="https://map.naver.com/p/search/%EC%84%9C%EC%B4%88%EC%A2%85%ED%95%A9%EC%B2%B4%EC%9C%A1%EA%B4%80" target="_blank" rel="noopener">NAVER MAP</a><a href="https://map.kakao.com/?q=%EC%84%9C%EC%B4%88%EC%A2%85%ED%95%A9%EC%B2%B4%EC%9C%A1%EA%B4%80" target="_blank" rel="noopener">KAKAO MAP</a></div></div>`;
-  }
-  infoModal.classList.remove("hidden");
-  infoModal.setAttribute("aria-hidden","false");
-}
-
-function closeInfo(){infoModal.classList.add("hidden");infoModal.setAttribute("aria-hidden","true");}
-function closePlayer(){playerModal.classList.add("hidden");playerModal.setAttribute("aria-hidden","true");}
-function goHome(){
-  q.value="";
-  activeSection="ALL";
-  searchBox.classList.add("hidden");
-  searchResults.innerHTML="";
-  searchCount.textContent="";
-  closeInfo();
-  closePlayer();
-  renderTabs();
-  renderEvents();
-  window.scrollTo({top:0,behavior:"smooth"});
-}
-
-$("searchForm").onsubmit=event=>{event.preventDefault();doSearch();q.blur();};
-$("homeBtn").onclick=goHome;
-document.querySelectorAll("[data-view]").forEach(button=>button.onclick=()=>showInfo(button.dataset.view));
-document.querySelectorAll("[data-close-info]").forEach(button=>button.onclick=closeInfo);
-document.querySelectorAll("[data-close-player]").forEach(button=>button.onclick=closePlayer);
-document.addEventListener("keydown",event=>{if(event.key==="Escape"){closeInfo();closePlayer();}});
-
-fetch(`players.json?v=${Date.now()}`,{cache:"no-store"})
-  .then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json();})
-  .then(data=>{
-    if(!Array.isArray(data))throw new Error("players.json must contain an array");
-    entries=data.filter(item=>item&&item.competitor&&item.event&&item.section);
-    renderTabs();
-    renderEvents();
-  })
-  .catch(error=>{
-    console.error(error);
-    eventSummary.textContent="ERROR";
-    eventList.innerHTML='<div class="empty">FAILED TO LOAD PLAYERS.JSON<br>PLEASE UPLOAD ALL FILES AGAIN.</div>';
-  });
-
-document.addEventListener("DOMContentLoaded",()=>{
- const query=document.getElementById("query");if(query)query.placeholder=apdcT("searchPlaceholder");
- const searchBtn=document.querySelector(".search-btn");if(searchBtn)searchBtn.textContent=apdcT("search");
- const full=document.querySelector(".event-browser .title-row h2");if(full)full.textContent=apdcT("fullList");
- document.querySelectorAll("[data-view='information']").forEach(b=>b.textContent=apdcT("information"));
- document.querySelectorAll("[data-view='directions']").forEach(b=>b.textContent=apdcT("venue"));
-});
+const norm=value=>String(value??"").toLowerCase().replace(/\s+/g," ").trim(),natural=(a,b)=>String(a??"").localeCompare(String(b??""),undefined,{numeric:true,sensitivity:"base"});
+const preferredSections=["Formation","Under 10","Under 12","Under 15","Under 18","Over 19","Over 35","Amateur","Senior","Mania","Pro-Am"],sectionIndex=s=>{const i=preferredSections.indexOf(s);return i<0?999:i};
+function uniquePlayers(items){const map=new Map();items.forEach(item=>{const key=`${item.backNo}||${item.competitor}`;if(!map.has(key))map.set(key,{backNo:item.backNo,competitor:item.competitor,entryType:item.entryType})});return[...map.values()].sort((a,b)=>natural(a.backNo,b.backNo)||natural(a.competitor,b.competitor))}
+function groupEvents(items){const map=new Map();items.forEach(item=>{const key=[item.event,item.section,item.style,item.division,item.entryType].join("||");if(!map.has(key))map.set(key,{event:item.event,section:item.section,style:item.style,division:item.division,entryType:item.entryType,items:[]});map.get(key).items.push(item)});return[...map.values()].sort((a,b)=>sectionIndex(a.section)-sectionIndex(b.section)||natural(a.section,b.section)||natural(a.style,b.style)||natural(a.event,b.event))}
+function renderTabs(){const sections=[...new Set(entries.map(x=>x.section).filter(Boolean))].sort((a,b)=>sectionIndex(a)-sectionIndex(b)||natural(a,b));tabs.innerHTML=["ALL",...sections].map(section=>`<button class="section-tab ${section===activeSection?"active":""}" data-section="${esc(section)}" type="button">${esc(section)}</button>`).join("");tabs.querySelectorAll("button").forEach(button=>button.onclick=()=>{activeSection=button.dataset.section;renderTabs();renderEvents()})}
+function renderEvents(){const filtered=activeSection==="ALL"?entries:entries.filter(x=>x.section===activeSection),events=groupEvents(filtered);eventSummary.textContent=`${events.length} SECTIONS`;eventList.innerHTML=events.length?events.map(event=>{const players=uniquePlayers(event.items);return`<article class="event-card"><div class="event-head"><span><span class="event-name">${esc(event.event)}</span><span class="event-meta">${esc(event.section)} · ${esc(event.style)}</span></span><span class="entry-count">${players.length} ENTRIES</span></div><table class="participant-table"><thead><tr><th>BACK NO.</th><th>COMPETITOR / TEAM</th><th>TYPE</th></tr></thead><tbody>${players.map(player=>`<tr><td>${esc(player.backNo)}</td><td><button class="participant-name-btn" data-back="${esc(player.backNo)}" data-name="${esc(player.competitor)}" type="button">${esc(player.competitor)}</button></td><td>${esc(player.entryType||"")}</td></tr>`).join("")}</tbody></table></article>`}).join(""):'<div class="empty">NO ENTRIES FOUND.</div>';eventList.querySelectorAll(".participant-name-btn").forEach(button=>button.onclick=()=>openPlayer(button.dataset.back,button.dataset.name))}
+function openPlayer(back,name){if(window.apdcTrackPlayer)window.apdcTrackPlayer(back,name);const items=entries.filter(x=>String(x.backNo)===String(back)&&x.competitor===name).sort((a,b)=>sectionIndex(a.section)-sectionIndex(b.section)||natural(a.section,b.section)||natural(a.event,b.event));playerContent.innerHTML=`<div class="player-head"><div class="player-back">BACK NO. ${esc(back)}</div><h3>${esc(name)}</h3></div>${items.map(item=>`<div class="player-event"><div class="player-event-title">${esc(item.event)}</div><div class="player-event-meta">${esc(item.section)} · ${esc(item.style)} · ${esc(item.division)}</div></div>`).join("")}`;playerModal.classList.remove("hidden");playerModal.setAttribute("aria-hidden","false")}
+function doSearch(){const term=norm(q.value);if(!term){searchBox.classList.add("hidden");return}const matched=entries.filter(item=>norm([item.backNo,item.competitor,item.event,item.section,item.style,item.division].join(" ")).includes(term)),players=uniquePlayers(matched);searchTitle.textContent=`SEARCH RESULTS: ${q.value.trim()}`;searchCount.textContent=`${players.length} FOUND`;searchBox.classList.remove("hidden");searchResults.innerHTML=players.length?players.map(player=>{const count=entries.filter(x=>String(x.backNo)===String(player.backNo)&&x.competitor===player.competitor).length;return`<div class="result-card"><button data-back="${esc(player.backNo)}" data-name="${esc(player.competitor)}" type="button"><span class="result-back">${esc(player.backNo)}</span><span><span class="result-name">${esc(player.competitor)}</span><span class="result-sub">${count} SECTIONS</span></span><span>›</span></button></div>`}).join(""):'<div class="empty">NO RESULTS FOUND.</div>';searchResults.querySelectorAll("button").forEach(button=>button.onclick=()=>openPlayer(button.dataset.back,button.dataset.name))}
+function showInfo(type){infoContent.innerHTML=type==="information"?`<h2 class="info-title">INFORMATION</h2><div class="info-grid"><div><span>DATE</span><strong>2026.08.08 (SAT)</strong></div><div><span>VENUE</span><strong>Seocho Sports Complex</strong></div><div><span>HOSTED BY</span><strong>Dancefill Academy</strong></div><div><span>ORGANIZER</span><strong>Tei Kim</strong></div><div><span>SANCTIONED BY</span><strong>KDC (Korea Professional Dance Council)</strong></div></div>`:`<h2 class="info-title">VENUE &amp; DIRECTIONS</h2><div class="direction-box"><h3>SEOCHO SPORTS COMPLEX</h3><p><strong>Address</strong><br>73-48, Yangjae-daero 12-gil, Seocho-gu, Seoul</p></div>`;infoModal.classList.remove("hidden");infoModal.setAttribute("aria-hidden","false")}
+function closeInfo(){infoModal.classList.add("hidden");infoModal.setAttribute("aria-hidden","true")}function closePlayer(){playerModal.classList.add("hidden");playerModal.setAttribute("aria-hidden","true")}
+function goHome(){q.value="";activeSection="ALL";searchBox.classList.add("hidden");closeInfo();closePlayer();renderTabs();renderEvents();window.scrollTo({top:0,behavior:"smooth"})}
+$("searchForm").onsubmit=e=>{e.preventDefault();doSearch();q.blur()};$("homeBtn").onclick=goHome;document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>showInfo(b.dataset.view));document.querySelectorAll("[data-close-info]").forEach(b=>b.onclick=closeInfo);document.querySelectorAll("[data-close-player]").forEach(b=>b.onclick=closePlayer);
+async function loadEntries(){try{const snap=await get(ref(db,"apdcPublic/players"));if(snap.exists()&&Array.isArray(snap.val()))return snap.val()}catch(e){console.warn("Firebase player data unavailable",e)}const r=await fetch(`players.json?v=${Date.now()}`,{cache:"no-store"});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}
+loadEntries().then(data=>{entries=(Array.isArray(data)?data:[]).filter(item=>item&&item.competitor&&item.event&&item.section);renderTabs();renderEvents()}).catch(e=>{console.error(e);eventSummary.textContent="ERROR";eventList.innerHTML='<div class="empty">FAILED TO LOAD ENTRY DATA.</div>'});
+document.addEventListener("DOMContentLoaded",()=>{const query=$("query");if(query)query.placeholder=apdcT("searchPlaceholder");const sb=document.querySelector(".search-btn");if(sb)sb.textContent=apdcT("search")});
