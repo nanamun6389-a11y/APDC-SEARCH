@@ -1,4 +1,4 @@
-const CACHE_NAME='apdc-search-noworker-20260722';
+const CACHE_NAME='apdc-search-loginfix3';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",
