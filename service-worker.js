@@ -1,4 +1,4 @@
-const CACHE_NAME = 'apdc-search-pwa-v4-version-history-10';
+const CACHE_NAME='apdc-search-noworker-20260722';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",
