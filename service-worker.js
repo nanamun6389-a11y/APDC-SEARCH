@@ -1,4 +1,4 @@
-const CACHE_NAME = 'apdc-search-backno8';
+const CACHE_NAME='apdc-search-20260722-judge-entry-sync-v1';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",
