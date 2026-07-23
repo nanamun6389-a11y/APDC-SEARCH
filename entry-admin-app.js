@@ -1,6 +1,6 @@
 const FIREBASE_ROOT='https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app';
 const FIREBASE_BASE=FIREBASE_ROOT+'/apdcPublic';
-let groups=[],selected=-1,eventCatalog=[];
+let groups=[],selected=-1,eventCatalog=[],masterReady=false,masterSource='';
 const $=id=>document.getElementById(id),status=t=>$('status').textContent=t;
 const esc=v=>String(v??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const fetchJson=async(path)=>{const r=await fetch(`${path}${path.includes('?')?'&':'?'}v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`${path}: ${r.status}`);return r.json()};
@@ -90,17 +90,46 @@ function initEntryAdmin(){
 }
 initEntryAdmin();
 async function loadAll(){
-  status('Loading players…');
+  status('Connecting to ONLINE MASTER…');
+  masterReady=false;masterSource='';
+  if($('saveAll'))$('saveAll').disabled=true;
   try{
-    const [basePlayers,settings]=await Promise.all([fetchJson('players.json'),fetchJson('event-settings.json')]);
-    groups=playerGroups(basePlayers);eventCatalog=buildEventCatalog(basePlayers,settings);selected=-1;renderList();renderEditor();
-    status(`Loaded ${groups.length} players. Checking latest saved data…`);
+    const [settings,basePlayers]=await Promise.all([fetchJson('event-settings.json'),fetchJson('players.json')]);
+    let remote;
     try{
-      const remote=await restGet('players');
-      if(Array.isArray(remote)&&remote.length){groups=playerGroups(remote);eventCatalog=buildEventCatalog([...basePlayers,...remote],settings);renderList();status(`Loaded ${groups.length} players · ${eventCatalog.length} saved sections.`)}
-      else status(`Loaded ${groups.length} players · ${eventCatalog.length} saved sections.`);
-    }catch(err){console.warn(err);status(`Loaded ${groups.length} players from site data · ${eventCatalog.length} saved sections.`)}
-  }catch(err){console.error(err);status('Could not load players.json. Please upload the full ZIP again.')}
+      remote=await restGet('players');
+    }catch(err){
+      console.error('ONLINE MASTER read failed',err);
+      groups=playerGroups(basePlayers);
+      eventCatalog=buildEventCatalog(basePlayers,settings);
+      selected=-1;renderList();renderEditor();
+      status('ONLINE MASTER unavailable. Local GitHub data is VIEW ONLY. SAVE is locked to protect current web entries.');
+      return;
+    }
+
+    // Firebase is the permanent master. GitHub players.json is used only once,
+    // when the online master does not exist at all (null).
+    if(remote === null){
+      await restPut('players',basePlayers);
+      await restPut('meta/masterInitialized',{initializedAt:new Date().toISOString(),source:'players.json',records:basePlayers.length});
+      remote=basePlayers;
+      masterSource='INITIALIZED FROM GITHUB ONCE';
+    }else if(Array.isArray(remote)){
+      masterSource='ONLINE MASTER';
+    }else{
+      throw new Error('ONLINE MASTER has an invalid data format');
+    }
+
+    groups=playerGroups(remote);
+    eventCatalog=buildEventCatalog([...basePlayers,...remote],settings);
+    selected=-1;renderList();renderEditor();
+    masterReady=true;
+    if($('saveAll'))$('saveAll').disabled=false;
+    status(`Loaded ${groups.length} players from ${masterSource}. GitHub updates will NOT replace these online entries.`);
+  }catch(err){
+    console.error(err);
+    status('Could not load ONLINE MASTER. SAVE is locked for safety.');
+  }
 }
 function renderList(){const q=String($('filter').value||'').trim().toLowerCase();const visible=groups.map((g,i)=>({g,i})).filter(x=>`${x.g.backNo} ${x.g.competitor}`.toLowerCase().includes(q));$('playerList').innerHTML=visible.map(({g,i})=>`<div class="player-edit-item ${i===selected?'active':''}"><div class="player-edit-info"><b>NO. ${esc(g.backNo)}</b><span>${esc(g.competitor)}</span><small>${g.entries.length} entries</small></div><button type="button" class="player-edit-btn" data-edit="${i}">EDIT</button></div>`).join('')||'<p class="empty-note">No player found.</p>';$('playerList').querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>openPlayer(Number(b.dataset.edit)))}
 function openPlayer(i){commitEditor();selected=i;renderList();renderEditor();setTimeout(()=>$('playerEditor').scrollIntoView({behavior:'smooth',block:'start'}),0)}
@@ -111,5 +140,21 @@ function openMenu(row){document.querySelectorAll('.event-menu').forEach(m=>m.cla
 function renderEditor(){const editor=$('playerEditor');if(selected<0||!groups[selected]){editor.classList.add('hidden');$('backNo').value='';$('competitor').value='';$('entryRows').innerHTML='';if($('backNoStatus'))$('backNoStatus').innerHTML='';return}editor.classList.remove('hidden');const g=groups[selected];$('editorName').textContent=g.competitor||'NEW PLAYER';$('backNo').value=g.backNo;$('competitor').value=g.competitor;renderBackNoStatus();$('entryRows').innerHTML=g.entries.map(rowHtml).join('')||'<p class="empty-note">No entries. Press ADD ENTRY and select a saved section.</p>';$('entryRows').querySelectorAll('.entry-picker-row').forEach(row=>{row.querySelector('.event-no-input').onclick=()=>openMenu(row);row.querySelector('.event-open').onclick=()=>openMenu(row);row.querySelectorAll('.picker-trigger-input').forEach(inp=>inp.onclick=()=>openMenu(row))});$('entryRows').querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{commitEditor();groups[selected].entries.splice(Number(b.dataset.del),1);renderEditor();renderList()})}
 function commitEditor(){if(selected<0||!groups[selected]||$('playerEditor').classList.contains('hidden'))return;const g=groups[selected];g.backNo=$('backNo').value.trim();g.competitor=$('competitor').value.trim();g.entries=[...$('entryRows').querySelectorAll('.entry-row')].map(row=>{const old=g.entries[Number(row.dataset.i)]||{};const out={...old};row.querySelectorAll('[data-k]').forEach(inp=>out[inp.dataset.k]=inp.value.trim());out.eventNo=row.querySelector('.event-no-input')?.value.trim()||old.eventNo||'';out.backNo=g.backNo;out.competitor=g.competitor;out.entryType=out.entryType||out.division||'';return out}).filter(e=>e.event&&e.section)}
 $('filter').oninput=renderList;$('backNo').oninput=()=>{if(selected>=0){groups[selected].backNo=$('backNo').value;renderBackNoStatus();renderList()}};$('competitor').oninput=()=>{if(selected>=0){groups[selected].competitor=$('competitor').value;$('editorName').textContent=$('competitor').value||'NEW PLAYER';renderList()}};$('closeEditor').onclick=closePlayer;$('newPlayer').onclick=()=>{commitEditor();groups.push({backNo:'',competitor:'',entries:[]});openPlayer(groups.length-1)};$('addEntry').onclick=()=>{if(selected<0)return;commitEditor();groups[selected].entries.push({eventNo:'',event:'',section:'',style:'',division:'',entryType:''});renderEditor();setTimeout(()=>{const rows=$('entryRows').querySelectorAll('.entry-row');if(rows.length)openMenu(rows[rows.length-1])},0)};$('deletePlayer').onclick=()=>{if(selected>=0&&confirm('Delete this player and all entries?')){groups.splice(selected,1);selected=-1;renderList();renderEditor()}};$('loadBase').onclick=loadAll;
-$('saveAll').onclick=async()=>{commitEditor();const conflicts=validateBackNumbers();if(conflicts.length){status('SAVE BLOCKED: duplicate or invalid Back No.');alert('Back No. problem:\n\n'+conflicts.join('\n'));renderBackNoStatus();return}const players=flattenGroups(groups).filter(x=>x.backNo&&x.competitor&&x.event&&x.section);const device=sessionStorage.getItem('apdcDeviceInfo')||deviceInfo();status('Saving entries and creating restore point…');try{let current=[];try{const c=await restGet('players');if(Array.isArray(c))current=c}catch{}let versions=[];try{const v=await restGet('entryVersions');if(Array.isArray(v))versions=v}catch{}versions.unshift({id:Date.now(),createdAt:new Date().toISOString(),device,records:current.length,players:current});versions=versions.slice(0,10);await restPut('entryVersions',versions);await restPut('players',players);const syncedTimetable=await syncJudgeTimetable(players);await restPut('meta',{updatedAt:new Date().toISOString(),device,timetableEntrySyncAt:new Date().toISOString()});status(`Saved ${players.length} entry records. Search + Judge timetable entries synced (${syncedTimetable.entrySyncChanges||0} timetable rows updated). Restore points: ${versions.length}/10.`)}catch(err){console.error(err);status('SAVE FAILED. Please check internet connection and try again.')}};
+$('saveAll').onclick=async()=>{if(!masterReady){status('SAVE BLOCKED: ONLINE MASTER is not connected. Reload and try again.');return}commitEditor();const conflicts=validateBackNumbers();if(conflicts.length){status('SAVE BLOCKED: duplicate or invalid Back No.');alert('Back No. problem:\n\n'+conflicts.join('\n'));renderBackNoStatus();return}const players=flattenGroups(groups).filter(x=>x.backNo&&x.competitor&&x.event&&x.section);const device=sessionStorage.getItem('apdcDeviceInfo')||deviceInfo();status('Saving entries and creating restore point…');try{const current=await restGet('players');if(!Array.isArray(current))throw new Error('ONLINE MASTER could not be verified before save');let versions=[];try{const v=await restGet('entryVersions');if(Array.isArray(v))versions=v}catch{}versions.unshift({id:Date.now(),createdAt:new Date().toISOString(),device,records:current.length,players:current});versions=versions.slice(0,10);await restPut('entryVersions',versions);await restPut('players',players);const syncedTimetable=await syncJudgeTimetable(players);await restPut('meta',{updatedAt:new Date().toISOString(),device,timetableEntrySyncAt:new Date().toISOString()});status(`Saved ${players.length} entry records. Search + Judge timetable entries synced (${syncedTimetable.entrySyncChanges||0} timetable rows updated). Restore points: ${versions.length}/10.`)}catch(err){console.error(err);status('SAVE FAILED. Please check internet connection and try again.')}};
+function downloadJson(filename,data){
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function stamp(){const d=new Date(),p=n=>String(n).padStart(2,'0');return `${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`}
+if($('exportCurrent'))$('exportCurrent').onclick=async()=>{
+  status('Exporting ONLINE MASTER…');
+  try{
+    const players=await restGet('players');
+    if(!Array.isArray(players))throw new Error('Online players data is unavailable');
+    let timetable=null;try{timetable=await rootGet('timetableOverride')}catch{}
+    let meta=null;try{meta=await restGet('meta')}catch{}
+    downloadJson(`APDC_CURRENT_MASTER_${stamp()}.json`,{exportedAt:new Date().toISOString(),source:'Firebase ONLINE MASTER',players,timetable,meta});
+    status(`Exported current ONLINE MASTER · ${players.length} entry records.`);
+  }catch(err){console.error(err);status('EXPORT FAILED. Online master was not changed.');}
+};
 document.addEventListener('click',e=>{if(!e.target.closest('.event-no-wrap')&&!e.target.classList.contains('picker-trigger-input'))document.querySelectorAll('.event-menu').forEach(m=>m.classList.add('hidden'))});

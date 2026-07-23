@@ -1,4 +1,4 @@
-const CACHE_NAME='apdc-search-20260722-unified-timetable-v1';
+const CACHE_NAME='apdc-search-20260723-online-master-safe-v1';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",
