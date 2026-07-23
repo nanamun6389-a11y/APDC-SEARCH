@@ -158,3 +158,27 @@ if($('exportCurrent'))$('exportCurrent').onclick=async()=>{
   }catch(err){console.error(err);status('EXPORT FAILED. Online master was not changed.');}
 };
 document.addEventListener('click',e=>{if(!e.target.closest('.event-no-wrap')&&!e.target.classList.contains('picker-trigger-input'))document.querySelectorAll('.event-menu').forEach(m=>m.classList.add('hidden'))});
+
+if($('restorePdf'))$('restorePdf').onclick=async()=>{
+  const ok1=confirm('Restore the saved PDF backup?\n\nThis will replace the current ONLINE MASTER entries with the verified PDF snapshot (109 sections / 791 entry records). The current online data will first be saved to VERSION HISTORY.');
+  if(!ok1)return;
+  const ok2=confirm('FINAL CONFIRMATION\n\nRestore PDF backup now?');
+  if(!ok2)return;
+  status('Creating restore point and restoring PDF backup…');
+  try{
+    const [current,pdfPlayers]=await Promise.all([restGet('players'),fetchJson('pdf-restore-players.json')]);
+    if(!Array.isArray(current))throw new Error('Current ONLINE MASTER could not be verified');
+    if(!Array.isArray(pdfPlayers)||pdfPlayers.length!==791)throw new Error('PDF restore data is invalid');
+    let versions=[];try{const v=await restGet('entryVersions');if(Array.isArray(v))versions=v}catch{}
+    const device=sessionStorage.getItem('apdcDeviceInfo')||deviceInfo();
+    versions.unshift({id:Date.now(),createdAt:new Date().toISOString(),device,records:current.length,note:'Before PDF backup restore',players:current});
+    versions=versions.slice(0,10);
+    await restPut('entryVersions',versions);
+    await restPut('players',pdfPlayers);
+    const syncedTimetable=await syncJudgeTimetable(pdfPlayers);
+    await restPut('meta',{updatedAt:new Date().toISOString(),device,restoreSource:'TalkFile_APDC Entry Search.pdf',restoreSections:109,restoreRecords:791,timetableEntrySyncAt:new Date().toISOString()});
+    alert('PDF backup restored successfully.\n109 sections / 791 entry records');
+    await loadAll();
+    status(`PDF BACKUP RESTORED · 109 sections · 791 entry records · Judge timetable entry counts synced (${syncedTimetable.entrySyncChanges||0} rows updated).`);
+  }catch(err){console.error(err);status('PDF RESTORE FAILED. Current online data was not intentionally removed.');alert('Restore failed. Please check the internet connection and try again.');}
+};
