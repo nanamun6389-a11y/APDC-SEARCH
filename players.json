@@ -7908,5 +7908,35 @@
     "backNo": "212",
     "competitor": "JaeHo KO & JinShun",
     "entryType": "Couple"
+  },
+  {
+    "eventNo": "21",
+    "event": "Under 10 Solo C",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "entryType": "Solo",
+    "backNo": "82",
+    "competitor": "Alice"
+  },
+  {
+    "eventNo": "29",
+    "event": "Under 10 Solo R",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "entryType": "Solo",
+    "backNo": "82",
+    "competitor": "Alice"
+  },
+  {
+    "eventNo": "22",
+    "event": "Under 10 Solo CR",
+    "section": "Under 10",
+    "style": "Latin",
+    "division": "Under 10 Solo",
+    "entryType": "Solo",
+    "backNo": "82",
+    "competitor": "Alice"
   }
 ]

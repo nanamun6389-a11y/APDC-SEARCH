@@ -15,31 +15,28 @@ function showInfo(type){infoContent.innerHTML=type==="information"?`<h2 class="i
 function closeInfo(){infoModal.classList.add("hidden");infoModal.setAttribute("aria-hidden","true")}function closePlayer(){playerModal.classList.add("hidden");playerModal.setAttribute("aria-hidden","true")}
 function goHome(){q.value="";activeSection="ALL";searchBox.classList.add("hidden");closeInfo();closePlayer();renderTabs();renderEvents();window.scrollTo({top:0,behavior:"smooth"})}
 $("searchForm").onsubmit=e=>{e.preventDefault();doSearch();q.blur()};$("homeBtn").onclick=goHome;document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>showInfo(b.dataset.view));document.querySelectorAll("[data-close-info]").forEach(b=>b.onclick=closeInfo);document.querySelectorAll("[data-close-player]").forEach(b=>b.onclick=closePlayer);
-const PDF_EXACT_RESTORE_MARKER="pdf-exact-109sections-791records-20260723-v1";
-const FIREBASE_ROOT_RESTORE="https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app";
-const FIREBASE_PUBLIC_RESTORE=FIREBASE_ROOT_RESTORE+"/apdcPublic";
-async function fbGetRestore(path){const r=await fetch(`${FIREBASE_PUBLIC_RESTORE}/${path}.json?v=${Date.now()}`,{cache:"no-store"});if(!r.ok)throw new Error(`Firebase GET ${path}: ${r.status}`);return r.json()}
-async function fbPutRestore(path,value){const r=await fetch(`${FIREBASE_PUBLIC_RESTORE}/${path}.json`,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(value)});if(!r.ok)throw new Error(`Firebase PUT ${path}: ${r.status}`);return r.json()}
-async function loadLocalPdfExact(){const r=await fetch(`players.json?v=${Date.now()}`,{cache:"no-store"});if(!r.ok)throw new Error(`players.json HTTP ${r.status}`);const data=await r.json();if(!Array.isArray(data)||data.length!==791)throw new Error("PDF exact players.json is invalid");return data}
-async function ensurePdfExactMaster(localData){
-  try{
-    const marker=await fbGetRestore("restoreMarkers/pdfExact");
-    if(marker===PDF_EXACT_RESTORE_MARKER)return;
-    const current=await fbGetRestore("players");
-    if(Array.isArray(current)&&current.length){
-      let versions=[];try{const v=await fbGetRestore("entryVersions");if(Array.isArray(v))versions=v}catch{}
-      versions.unshift({id:Date.now(),createdAt:new Date().toISOString(),device:"AUTO PDF EXACT RESTORE",records:current.length,players:current});
-      await fbPutRestore("entryVersions",versions.slice(0,10));
-    }
-    await fbPutRestore("players",localData);
-    await fbPutRestore("restoreMarkers/pdfExact",PDF_EXACT_RESTORE_MARKER);
-  }catch(e){console.warn("PDF exact online restore could not be completed; local PDF data will still be shown.",e)}
+const FIREBASE_ROOT="https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app";
+const FIREBASE_PUBLIC=FIREBASE_ROOT+"/apdcPublic";
+async function fbGet(path){
+  const r=await fetch(`${FIREBASE_PUBLIC}/${path}.json?v=${Date.now()}`,{cache:"no-store"});
+  if(!r.ok)throw new Error(`Firebase GET ${path}: ${r.status}`);
+  return r.json();
+}
+async function loadLocalPlayers(){
+  const r=await fetch(`players.json?v=${Date.now()}`,{cache:"no-store"});
+  if(!r.ok)throw new Error(`players.json HTTP ${r.status}`);
+  const data=await r.json();
+  if(!Array.isArray(data))throw new Error("players.json must contain an array");
+  return data;
 }
 async function loadEntries(){
-  const local=await loadLocalPdfExact();
-  await ensurePdfExactMaster(local);
-  try{const data=await fbGetRestore("players");if(Array.isArray(data)&&data.length===791)return data}catch(e){console.warn("Online master unavailable after PDF restore",e)}
-  return local;
+  // ENTRY ADMIN saves to Firebase. Always show that live master first.
+  // Static GitHub players.json is fallback only when Firebase is unavailable/empty.
+  try{
+    const online=await fbGet("players");
+    if(Array.isArray(online)&&online.length)return online;
+  }catch(e){console.warn("Online entry master unavailable; using local fallback",e)}
+  return loadLocalPlayers();
 }
 loadEntries().then(data=>{entries=(Array.isArray(data)?data:[]).filter(item=>item&&item.competitor&&item.event&&item.section);renderTabs();renderEvents()}).catch(e=>{console.error(e);eventSummary.textContent="ERROR";eventList.innerHTML='<div class="empty">FAILED TO LOAD ENTRY DATA.</div>'});
 document.addEventListener("DOMContentLoaded",()=>{const query=$("query");if(query)query.placeholder=apdcT("searchPlaceholder");const sb=document.querySelector(".search-btn");if(sb)sb.textContent=apdcT("search")});
