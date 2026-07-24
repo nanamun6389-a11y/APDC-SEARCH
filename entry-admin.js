@@ -43,7 +43,7 @@ function rowHtml(e,i){return `<div class="entry-row entry-picker-row" data-i="${
 function fillMenu(row,query=''){
  const menu=row.querySelector('.event-menu'); const q=query.toLowerCase();
  const list=eventCatalog.filter(e=>`${e.eventNo} ${e.event} ${e.section} ${e.style} ${e.division}`.toLowerCase().includes(q));
- menu.innerHTML=`<div class="event-menu-search"><input placeholder="Search event no. or section" value="${esc(query)}"></div><div class="event-menu-list">${list.map((e)=>`<button type="button" data-key="${esc([e.eventNo,e.event,e.section,e.style,e.division].join('|'))}"><b>EVENT ${esc(e.eventNo)}</b><span>${esc(e.event)}</span><small>${esc(e.section)} · ${esc(e.style)} · ${esc(e.division)}</small></button>`).join('')||'<p>No saved section found.</p>'}</div>`;
+ menu.innerHTML=`<div class="event-menu-search"><input placeholder="Search event / section" value="${esc(query)}"></div><div class="event-menu-list">${list.map((e)=>`<button type="button" data-key="${esc([e.eventNo,e.event,e.section,e.style,e.division].join('|'))}"><span>${esc(e.event)}</span><small>${esc(e.section)} · ${esc(e.style)} · ${esc(e.division)}</small></button>`).join('')||'<p>No saved section found.</p>'}</div>`;
  const search=menu.querySelector('input'); search.oninput=()=>fillMenu(row,search.value); search.focus();
  menu.querySelectorAll('[data-key]').forEach(btn=>btn.onclick=()=>{
   const key=btn.dataset.key; const picked=eventCatalog.find(e=>[e.eventNo,e.event,e.section,e.style,e.division].join('|')===key); if(!picked)return;
