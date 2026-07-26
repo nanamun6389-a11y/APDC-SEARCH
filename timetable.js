@@ -16,7 +16,6 @@ let searchEntryCounts=null;
 let latestPlayers=[];
 let backNumbersByEvent=new Map();
 let currentFloorIndex=-1;
-let ttSet=null;
 let QUALIFIERS={};
 
 const APDC_FIREBASE_PLAYERS_URL='https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app/apdcPublic/players.json';
@@ -238,7 +237,7 @@ async function loadDefault(){
 
 async function connectFirebase(){
   try{
-    const [{initializeApp,getApps},{getDatabase,ref,get,onValue,set},{firebaseConfig}] = await Promise.all([
+    const [{initializeApp,getApps},{getDatabase,ref,get,onValue},{firebaseConfig}] = await Promise.all([
       import("https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js"),
       import("https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js"),
       import("./firebase-config.js?v=20260722-unified-v2")
@@ -247,7 +246,6 @@ async function connectFirebase(){
     ttDb=getDatabase(app);
     ttRef=ref;
     ttOnValue=onValue;
-    ttSet=set;
     firebaseReady=true;
 
     let loadedRemote=false;
@@ -327,38 +325,7 @@ async function loadTimetable(){
   }
 }
 
-async function setCurrentFloor(index){
-  index=Math.max(0,Math.min(Number(index)||0,TT.length-1));
-  currentFloorIndex=index;
-  render();
-  const row=TT[index]||{};
-  const payload={
-    timetableIndex:index,
-    now:row.event||(row.no?`EVENT ${row.no}`:'WAITING'),
-    eventNo:row.no||'',
-    onDeck:TT[index+1]?.event||(TT[index+1]?.no?`EVENT ${TT[index+1].no}`:'—'),
-    next:TT[index+2]?.event||(TT[index+2]?.no?`EVENT ${TT[index+2].no}`:'—'),
-    round:row.round||'',
-    danceOrder:row.danceOrder||'',
-    updatedAt:Date.now()
-  };
-  try{localStorage.setItem('apdcFloorStatusV2',JSON.stringify(payload));}catch(_){ }
-  if(firebaseReady&&ttDb&&ttRef&&ttSet){
-    try{
-      await Promise.all([
-        ttSet(ttRef(ttDb,'floorStatus'),payload),
-        ttSet(ttRef(ttDb,'apdcPublic/liveState'),payload)
-      ]);
-    }catch(e){console.warn('Current floor position write failed',e)}
-  }
-}
-
-document.getElementById('ttCards').addEventListener('click',e=>{
-  const card=e.target.closest('.tt-card[data-index]');
-  if(!card)return;
-  setCurrentFloor(Number(card.dataset.index));
-});
-
+// PUBLIC TIMETABLE: read-only. Card clicks never write MC/LIVE/Floor state.
 document.getElementById('ttSearch').addEventListener('input',render);
 
 document.getElementById('ttNowBtn').addEventListener('click',()=>{

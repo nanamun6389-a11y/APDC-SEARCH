@@ -4,69 +4,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#000000">
-  <title>APDC Entry Search</title>
-  <link rel="stylesheet" href="style.css?v=20260717-admin-restore?v=20260715-complete">
+  <title>APDC 2026</title>
+  <style>
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{margin:0;min-height:100svh;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif}
+    .home{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:max(30px,env(safe-area-inset-top)) 24px max(30px,env(safe-area-inset-bottom))}
+    .home-inner{width:min(760px,100%)}
+    .eyebrow{font-size:clamp(11px,2.8vw,14px);letter-spacing:.28em;font-weight:500;color:#cfcfcf;line-height:1.8;text-align:center}
+    h1{margin:14px 0 42px;text-align:center;font-size:clamp(42px,11vw,82px);line-height:.95;letter-spacing:-.04em;font-weight:950}
+    .year{display:block;font-size:.28em;letter-spacing:.22em;margin-bottom:12px;font-weight:700;color:#d8d8d8}
+    .choices{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .choice{min-height:178px;border:1px solid #fff;color:#fff;text-decoration:none;padding:28px;display:flex;flex-direction:column;justify-content:space-between;transition:.16s ease;background:#000}
+    .choice:hover,.choice:focus-visible{background:#fff;color:#000;outline:none}
+    .choice-no{font-size:11px;font-weight:900;letter-spacing:.18em;opacity:.7}
+    .choice-title{font-size:clamp(24px,5vw,38px);font-weight:950;letter-spacing:-.03em;line-height:1}
+    .choice-sub{font-size:12px;font-weight:700;letter-spacing:.06em;opacity:.7;margin-top:10px}
+    .arrow{font-size:24px;line-height:1;align-self:flex-end}
+    .foot{text-align:center;margin-top:30px;color:#8e8e8e;font-size:10px;letter-spacing:.16em}
+    @media(max-width:620px){
+      .home{align-items:flex-start;padding-top:max(72px,env(safe-area-inset-top))}
+      h1{margin-bottom:34px}
+      .choices{grid-template-columns:1fr;gap:10px}
+      .choice{min-height:142px;padding:22px}
+    }
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <a class="header-timetable-link" href="timetable.html">TIMETABLE</a>
-  <button id="homeBtn" class="brand" type="button" aria-label="Return to home">
-    <span class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</span>
-    <span class="title">APDC ENTRY SEARCH</span>
-  </button>
-</header>
-
-<main class="container">
-  <section class="search-area">
-    <form id="searchForm" class="search-form">
-      <input id="query" type="search" inputmode="search" autocomplete="off"
-             placeholder="Search by back number, name or section">
-      <button class="search-btn" type="submit">SEARCH</button>
-    </form>
-  </section>
-
-  <section id="searchBox" class="search-results hidden">
-    <div class="title-row">
-      <h2 id="searchTitle">SEARCH RESULTS</h2>
-      <span id="searchCount"></span>
+<main class="home">
+  <div class="home-inner">
+    <div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
+    <h1><span class="year">APDC 2026</span>WELCOME</h1>
+    <div class="choices">
+      <a class="choice" href="entry.html">
+        <span class="choice-no">01 · COMPETITORS</span>
+        <span>
+          <span class="choice-title">ENTRY<br>SEARCH</span>
+          <span class="choice-sub">Back number · Name · Section</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="choice" href="timetable.html">
+        <span class="choice-no">02 · SCHEDULE</span>
+        <span>
+          <span class="choice-title">TIMETABLE</span>
+          <span class="choice-sub">Official competition schedule</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
     </div>
-    <div id="searchResults"></div>
-  </section>
-
-  <section class="event-browser">
-    <div class="title-row">
-      <h2>FULL SECTION LIST</h2>
-      <span id="eventSummary">LOADING…</span>
-    </div>
-    <div id="sectionTabs" class="section-tabs"></div>
-    <div id="eventList" class="event-list"><div class="empty">LOADING ENTRIES…</div></div>
-
-    <div class="bottom-actions">
-      <button type="button" data-view="information">INFORMATION</button>
-      <button type="button" data-view="directions">VENUE &amp; DIRECTIONS</button>
-    </div>
-  </section>
-<div class="analytics-admin-link"><a href="search-admin.html">ADMIN</a><a href="entry-admin.html">ENTRY ADMIN</a><a href="version-history.html">VERSION HISTORY</a></div>
+    <div class="foot">SEOCHO SPORTS COMPLEX · AUGUST 8</div>
+  </div>
 </main>
-
-<div id="infoModal" class="modal hidden" aria-hidden="true">
-  <div class="modal-backdrop" data-close-info></div>
-  <div class="modal-card">
-    <button class="modal-close" type="button" data-close-info aria-label="Close">×</button>
-    <div id="infoContent"></div>
-  </div>
-</div>
-
-<div id="playerModal" class="modal hidden" aria-hidden="true">
-  <div class="modal-backdrop" data-close-player></div>
-  <div class="modal-card">
-    <button class="modal-close" type="button" data-close-player aria-label="Close">×</button>
-    <div id="playerContent"></div>
-  </div>
-</div>
-
-<script src="i18n.js?v=v3"></script>
-<script type="module" src="script.js?v=20260724-live-master-v2"></script>
-<script type="module" src="analytics.js?v=v4"></script>
 </body>
 </html>

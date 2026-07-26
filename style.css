@@ -240,3 +240,4 @@ button{cursor:pointer}
 .header-timetable-link{position:absolute;right:max(16px,calc((100% - 1080px)/2 + 16px));top:50%;transform:translateY(-50%);z-index:5;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.65);padding:9px 12px;font-size:10px;font-weight:900;letter-spacing:.08em;background:#000}
 .header-timetable-link:hover,.header-timetable-link:focus{background:#fff;color:#000}
 @media(max-width:720px){.header-timetable-link{right:14px;top:14px;transform:none;padding:7px 9px;font-size:9px}}
+.entry-brand-link{display:block;text-decoration:none;color:#fff}

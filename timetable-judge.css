@@ -517,3 +517,6 @@ main {
   .tt-card.tt-search-result .tt-main h2{font-size:19px;line-height:1.25;}
   .tt-card.tt-search-result .tt-meta,.tt-card.tt-search-result .tt-info{font-size:14px;line-height:1.55;}
 }
+/* Public schedule is intentionally read-only: cards are not MC/LIVE controls. */
+.tt-card{cursor:default}
+.tt-card:hover{border-color:#d8d8d8}
