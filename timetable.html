@@ -1,1 +1,41 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>APDC Timetable</title><link rel="stylesheet" href="style.css?v=20260722-admin"></head><body><header class="site-header"><div class="header-inner analytics-header"><div><div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div><h1>APDC TIMETABLE</h1></div><a href="index.html" class="admin-home-link">ENTRY SEARCH</a></div></header><main class="container timetable-public"><div id="ttStatus">LOADING…</div><table><thead><tr><th>TIME</th><th>EVENT</th><th>ROUND</th><th>SECTION</th><th>ENTRIES</th><th>DANCE</th></tr></thead><tbody id="ttBody"></tbody></table></main><script type="module" src="timetable.js?v=20260722"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>APDC Timetable</title>
+<link rel="stylesheet" href="timetable-judge.css?v=20260726-search-timetable-v1">
+</head>
+<body>
+<header style="position:relative"><a class="brand brand-link" href="index.html">APDC ENTRY SEARCH</a></header>
+<nav class="top-category-nav apdc-main-nav">
+  <a href="index.html">ENTRY SEARCH</a>
+  <a href="timetable.html" class="timetable-nav-link active">TIMETABLE</a>
+</nav>
+<main>
+<section id="ttPasswordGate" class="password-gate">
+  <div class="password-box">
+    <div class="small-label">APDC TIMETABLE ACCESS</div>
+    <h1>ENTER PASSWORD</h1>
+    <input id="ttPasswordInput" type="password" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off">
+    <button id="ttPasswordBtn" type="button">ENTER</button>
+    <div id="ttPasswordMessage" class="message"></div>
+  </div>
+</section>
+<section id="ttProtected" class="hidden" hidden style="display:none">
+  <div class="tt-head">
+    <div>
+      <div class="small-label">APDC 2026 · JUDGE PROGRAM ONLY</div>
+      <h1>TIMETABLE</h1>
+      <p id="ttSummary" class="muted"></p>
+    </div>
+    <div class="tt-tools"><input id="ttSearch" type="search" placeholder="Search back number / player name"><button id="ttNowBtn" class="light" type="button">NOW</button></div>
+  </div>
+  <div id="ttCards" class="tt-cards"></div>
+</section>
+</main>
+<script src="i18n.js?v=20260717-1305"></script>
+<script type="module" src="timetable.js?v=20260724-backno-fallback-v2"></script>
+</body>
+</html>
