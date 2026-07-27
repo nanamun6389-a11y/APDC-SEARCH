@@ -1,4 +1,4 @@
-const CACHE_NAME='apdc-search-20260724-live-master-v2';
+const CACHE_NAME='apdc-search-20260728-timing-80s-v1';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",

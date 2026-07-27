@@ -1,0 +1,12 @@
+APDC TIMING UPDATE · 2026-07-28
+
+Applied timing basis:
+- Quarter Final: 1:20 per dance
+- Semi Final: 1:20 per dance
+- Final / Grand Final / Combined Final: 1:20 per dance
+- 1:20 includes MC transition time.
+- Formation and Country Team Match fixed durations were not changed.
+- All subsequent timetable start times were recalculated sequentially.
+
+IMPORTANT: The public timetable reads Firebase apdcPublic/timetable first.
+If Firebase already contains an older timetable, deploy this package and then use Timetable Admin to save/publish the updated timetable so the remote copy is replaced.
