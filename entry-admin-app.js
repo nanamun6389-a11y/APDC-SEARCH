@@ -1,8 +1,10 @@
 import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
 import { getDatabase, ref, get, set } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, setPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 import { firebaseConfig } from "./firebase-config.js";
 const firebaseApp=getApps().length?getApps()[0]:initializeApp(firebaseConfig);
 const firebaseDb=getDatabase(firebaseApp);
+const firebaseAuth=getAuth(firebaseApp);
 const FIREBASE_ROOT='https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app';
 const FIREBASE_BASE=FIREBASE_ROOT+'/apdcPublic';
 let groups=[],selected=-1,eventCatalog=[],masterReady=false,masterSource='';
@@ -82,12 +84,34 @@ async function syncJudgeTimetable(players){
 }
 function validateBackNumbers(){const seen=new Map();const conflicts=[];groups.forEach(g=>{const n=String(g.backNo||'').trim();if(!n)return;if(!/^\d+$/.test(n)||Number(n)<1||Number(n)>299){conflicts.push(`Invalid Back No. ${n} (${g.competitor||'Unnamed'})`);return}if(seen.has(n)&&seen.get(n)!==g.competitor)conflicts.push(`NO. ${n}: ${seen.get(n)} / ${g.competitor}`);else seen.set(n,g.competitor)});return conflicts}
 
-function initEntryAdmin(){
+let adminInitialized=false;
+function showAdmin(user){
   $('loginBox').classList.add('hidden');$('adminBox').classList.remove('hidden');
-  $('sessionInfo').textContent=`Device: ${sessionStorage.getItem('apdcDeviceInfo')||deviceInfo()}`;
-  loadAll();
+  sessionStorage.setItem('apdcDeviceInfo',deviceInfo());
+  $('sessionInfo').textContent=`Signed in: ${user?.email||'Firebase admin'} · Device: ${sessionStorage.getItem('apdcDeviceInfo')||deviceInfo()}`;
+  if(!adminInitialized){adminInitialized=true;loadAll();}
 }
-initEntryAdmin();
+function showLogin(){
+  $('adminBox').classList.add('hidden');$('loginBox').classList.remove('hidden');
+  $('loginMsg').textContent='';
+}
+await setPersistence(firebaseAuth,browserLocalPersistence);
+$('loginBtn').onclick=async()=>{
+  const email=String($('adminEmail').value||'').trim();
+  const password=String($('adminPassword').value||'');
+  if(!email||!password){$('loginMsg').textContent='ENTER EMAIL AND PASSWORD';return;}
+  $('loginBtn').disabled=true;$('loginMsg').textContent='SIGNING IN…';
+  try{await signInWithEmailAndPassword(firebaseAuth,email,password);$('loginMsg').textContent='';}
+  catch(err){console.error('ENTRY ADMIN login failed',err);$('loginMsg').textContent='LOGIN FAILED · CHECK EMAIL / PASSWORD';}
+  finally{$('loginBtn').disabled=false;}
+};
+$('adminPassword').onkeydown=e=>{if(e.key==='Enter')$('loginBtn').click();};
+$('adminEmail').onkeydown=e=>{if(e.key==='Enter')$('adminPassword').focus();};
+if($('logoutBtn'))$('logoutBtn').onclick=async()=>{try{await signOut(firebaseAuth);}catch(err){console.error(err);}};
+onAuthStateChanged(firebaseAuth,user=>{
+  if(user)showAdmin(user);
+  else{adminInitialized=false;masterReady=false;showLogin();}
+});
 async function loadAll(){
   status('Connecting to ONLINE MASTER…');
   masterReady=false;masterSource='';
@@ -139,6 +163,7 @@ function eventDisplayMeta(e,title){const titleLower=String(title||'').toLowerCas
 function fillMenu(row,query=''){const menu=row.querySelector('.event-menu');const q=query.toLowerCase();const list=eventCatalog.filter(e=>`${e.eventNo} ${e.event} ${e.section} ${e.style} ${e.division}`.toLowerCase().includes(q));menu.innerHTML=`<div class="event-menu-search"><input placeholder="Search event / section" value="${esc(query)}"></div><div class="event-menu-list">${list.map(e=>{const title=eventDisplayTitle(e);const meta=eventDisplayMeta(e,title);return `<button type="button" data-key="${esc([e.eventNo,e.event,e.section,e.style,e.division].join('|'))}"><span>${esc(title)}</span>${meta?`<small>${esc(meta)}</small>`:''}</button>`}).join('')||'<p>No saved section found.</p>'}</div>`;const search=menu.querySelector('input');search.oninput=()=>fillMenu(row,search.value);setTimeout(()=>search.focus(),0);menu.querySelectorAll('[data-key]').forEach(btn=>btn.onclick=()=>{const picked=eventCatalog.find(e=>[e.eventNo,e.event,e.section,e.style,e.division].join('|')===btn.dataset.key);if(!picked)return;const idx=Number(row.dataset.i);groups[selected].entries[idx]={...groups[selected].entries[idx],...picked,backNo:groups[selected].backNo,competitor:groups[selected].competitor};renderEditor()})}
 function openMenu(row){document.querySelectorAll('.event-menu').forEach(m=>m.classList.add('hidden'));const menu=row.querySelector('.event-menu');menu.classList.remove('hidden');fillMenu(row,'')}
 async function saveOnlineMaster(reason='SAVE'){
+  if(!firebaseAuth.currentUser)throw new Error('ADMIN LOGIN REQUIRED');
   if(!masterReady)throw new Error('ONLINE MASTER is not connected');
   commitEditor();
   const conflicts=validateBackNumbers();
