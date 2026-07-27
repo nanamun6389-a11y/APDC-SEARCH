@@ -1,4 +1,4 @@
-const CACHE_NAME='apdc-search-20260726-public-home-v1';
+const CACHE_NAME='apdc-search-20260724-live-master-v2';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",
@@ -9,10 +9,6 @@ const APP_SHELL = [
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./index.html",
-  "./entry.html",
-  "./timetable.html",
-  "./timetable.js",
-  "./timetable-judge.css",
   "./judge.js",
   "./manifest.webmanifest",
   "./players.json",

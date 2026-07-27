@@ -4,70 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#000000">
-  <title>APDC 2026</title>
-  <style>
-    *{box-sizing:border-box}
-    html{-webkit-text-size-adjust:100%}
-    body{margin:0;min-height:100svh;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif}
-    .home{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:max(28px,env(safe-area-inset-top)) 5.5vw max(28px,env(safe-area-inset-bottom))}
-    .home-inner{width:min(760px,100%);text-align:center}
-    .eyebrow{font-size:clamp(10px,2.65vw,14px);letter-spacing:.23em;font-weight:500;color:#d0d0d0;line-height:1.35;white-space:nowrap}
-    h1{margin:38px 0 72px;text-align:center;font-size:clamp(48px,12vw,86px);line-height:.92;letter-spacing:-.045em;font-weight:950}
-    .year{display:block;font-size:.31em;letter-spacing:.20em;margin-bottom:22px;font-weight:750;color:#ddd;white-space:nowrap}
-    .choices{display:grid;grid-template-columns:1fr;gap:40px}
-    .choice{height:292px;border:2px solid #fff;color:#fff;text-decoration:none;padding:42px 46px;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr;column-gap:20px;background:#000;text-align:left}
-    .choice-no{grid-column:1;font-size:clamp(11px,2.8vw,15px);font-weight:900;letter-spacing:.19em;color:#d4d4d4;white-space:nowrap}
-    .choice>span:nth-child(2){grid-column:1;align-self:center}
-    .choice-title{display:block;font-size:clamp(29px,7vw,43px);font-weight:950;letter-spacing:-.035em;line-height:1;white-space:nowrap}
-    .choice-sub{display:block;font-size:clamp(11px,2.8vw,15px);font-weight:700;letter-spacing:.055em;color:#d4d4d4;margin-top:22px;white-space:nowrap}
-    .arrow{grid-column:2;grid-row:1 / span 2;align-self:center;font-size:clamp(34px,8vw,48px);line-height:1;font-weight:300}
-    .foot{text-align:center;margin-top:72px;color:#a7a7a7;font-size:clamp(9px,2.35vw,12px);letter-spacing:.19em;white-space:nowrap}
-    @media(max-width:620px){
-      .home{padding-left:5.5vw;padding-right:5.5vw}
-      .home-inner{width:100%}
-      h1{margin:34px 0 58px}
-      .choices{gap:20px}
-      .choice{height:162px;padding:23px 20px 22px 24px;border-width:1.5px}
-      .choice-no{font-size:11px}
-      .choice-title{font-size:30px}
-      .choice-sub{font-size:11px;margin-top:13px}
-      .arrow{font-size:36px}
-      .foot{margin-top:54px}
-    }
-    @media(max-height:760px) and (max-width:620px){
-      h1{margin:24px 0 36px;font-size:46px}
-      .year{margin-bottom:12px}
-      .choices{gap:12px}
-      .choice{height:138px}
-      .foot{margin-top:30px}
-    }
-  </style>
+  <title>APDC Entry Search</title>
+  <link rel="stylesheet" href="style.css?v=20260717-admin-restore?v=20260715-complete">
 </head>
 <body>
-<main class="home">
-  <div class="home-inner">
-    <div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
-    <h1><span class="year">2026 APDC</span>WELCOME</h1>
-    <div class="choices">
-      <a class="choice" href="entry.html">
-        <span class="choice-no">01 · COMPETITORS</span>
-        <span>
-          <span class="choice-title">ENTRY SEARCH</span>
-          <span class="choice-sub">Back number · Name · Section</span>
-        </span>
-        <span class="arrow">→</span>
-      </a>
-      <a class="choice" href="timetable.html">
-        <span class="choice-no">02 · SCHEDULE</span>
-        <span>
-          <span class="choice-title">TIMETABLE</span>
-          <span class="choice-sub">Official competition schedule</span>
-        </span>
-        <span class="arrow">→</span>
-      </a>
+<header class="site-header">
+  <a class="header-timetable-link" href="timetable.html">TIMETABLE</a>
+  <button id="homeBtn" class="brand" type="button" aria-label="Return to home">
+    <span class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</span>
+    <span class="title">APDC ENTRY SEARCH</span>
+  </button>
+</header>
+
+<main class="container">
+  <section class="search-area">
+    <form id="searchForm" class="search-form">
+      <input id="query" type="search" inputmode="search" autocomplete="off"
+             placeholder="Search by back number, name or section">
+      <button class="search-btn" type="submit">SEARCH</button>
+    </form>
+  </section>
+
+  <section id="searchBox" class="search-results hidden">
+    <div class="title-row">
+      <h2 id="searchTitle">SEARCH RESULTS</h2>
+      <span id="searchCount"></span>
     </div>
-    <div class="foot">SEOCHO SPORTS COMPLEX · AUGUST 8</div>
-  </div>
+    <div id="searchResults"></div>
+  </section>
+
+  <section class="event-browser">
+    <div class="title-row">
+      <h2>FULL SECTION LIST</h2>
+      <span id="eventSummary">LOADING…</span>
+    </div>
+    <div id="sectionTabs" class="section-tabs"></div>
+    <div id="eventList" class="event-list"><div class="empty">LOADING ENTRIES…</div></div>
+
+    <div class="bottom-actions">
+      <button type="button" data-view="information">INFORMATION</button>
+      <button type="button" data-view="directions">VENUE &amp; DIRECTIONS</button>
+    </div>
+  </section>
+<div class="analytics-admin-link"><a href="search-admin.html">ADMIN</a><a href="entry-admin.html">ENTRY ADMIN</a><a href="version-history.html">VERSION HISTORY</a></div>
 </main>
+
+<div id="infoModal" class="modal hidden" aria-hidden="true">
+  <div class="modal-backdrop" data-close-info></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close-info aria-label="Close">×</button>
+    <div id="infoContent"></div>
+  </div>
+</div>
+
+<div id="playerModal" class="modal hidden" aria-hidden="true">
+  <div class="modal-backdrop" data-close-player></div>
+  <div class="modal-card">
+    <button class="modal-close" type="button" data-close-player aria-label="Close">×</button>
+    <div id="playerContent"></div>
+  </div>
+</div>
+
+<script src="i18n.js?v=v3"></script>
+<script type="module" src="script.js?v=20260724-live-master-v2"></script>
+<script type="module" src="analytics.js?v=v4"></script>
 </body>
 </html>

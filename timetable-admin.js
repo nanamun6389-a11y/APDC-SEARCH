@@ -7,4 +7,4 @@ function render(){const keys=['start','no','round','event','section','entries','
 function commit(){[...$('rows').querySelectorAll('tr')].forEach(tr=>{const r=tt.rows[Number(tr.dataset.i)]||{};tr.querySelectorAll('input[data-k]').forEach(inp=>r[inp.dataset.k]=inp.value.trim());tt.rows[Number(tr.dataset.i)]=r})}
 $('reload').onclick=load;$('addRow').onclick=()=>{commit();tt.rows.push({start:'',no:String(tt.rows.length+1),round:'Final',event:'',section:'',entries:'0',danceOrder:'',duration:1.42,durationSeconds:85,durationText:'1:25'});render()};
 $('syncEntries').onclick=async()=>{commit();tt=syncTimetable(tt,await loadPlayers());render();status('Entry counts and rounds synced from current search entries.')};
-$('save').onclick=async()=>{commit();tt.updatedAt=new Date().toISOString();await set(ref(db,'apdcPublic/timetable'),tt);await set(ref(db,'apdcPublic/meta'),{updatedAt:tt.updatedAt,updatedBy:'timetable-admin'});status('Timetable saved. Public timetable is updated.')};
+$('save').onclick=async()=>{status('CONFIRMED TIMETABLE IS LOCKED. Entry changes do not change order/time.');alert('Confirmed timetable is locked.');};

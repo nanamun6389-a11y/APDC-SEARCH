@@ -16,7 +16,7 @@ let searchEntryCounts=null;
 let latestPlayers=[];
 let backNumbersByEvent=new Map();
 let currentFloorIndex=-1;
-let currentFloorStatus={};
+let ttSet=null;
 let QUALIFIERS={};
 
 const APDC_FIREBASE_PLAYERS_URL='https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app/apdcPublic/players.json';
@@ -149,39 +149,6 @@ function qualifierStateForRow(row,index){
   return {requiresSaved:true,saved,numbers:nums};
 }
 
-function liveRoundLabel(v){
-  const s=String(v||'').toLowerCase();
-  if(s.includes('quarter')) return 'QUARTER FINAL';
-  if(s.includes('semi')) return 'SEMI FINAL';
-  if(s.includes('grand')) return 'GRAND FINAL';
-  if(s.includes('final')) return 'FINAL';
-  return String(v||'').toUpperCase();
-}
-function renderLiveNow(){
-  const eventEl=document.getElementById('ttLiveEvent');
-  const roundEl=document.getElementById('ttLiveRound');
-  const bar=document.getElementById('ttLiveNow');
-  if(!eventEl||!roundEl||!bar)return;
-  const row=(Number.isInteger(currentFloorIndex)&&currentFloorIndex>=0)?TT[currentFloorIndex]:null;
-  const now=String(currentFloorStatus?.now||row?.event||'').trim();
-  const round=String(currentFloorStatus?.round||row?.round||'').trim();
-  const no=String(row?.no||'').trim();
-  if(!now){
-    eventEl.textContent='WAITING';
-    roundEl.textContent='';
-    bar.classList.remove('is-live');
-    return;
-  }
-  eventEl.textContent=`${no?`EVENT ${no} · `:''}${now}`;
-  roundEl.textContent=liveRoundLabel(round);
-  bar.classList.add('is-live');
-}
-function scrollToCurrent(){
-  if(!Number.isInteger(currentFloorIndex)||currentFloorIndex<0)return;
-  const card=document.querySelector(`.tt-card[data-index="${currentFloorIndex}"]`);
-  if(card)card.scrollIntoView({behavior:'smooth',block:'center'});
-}
-
 function render(){
   const q=(document.getElementById('ttSearch').value||'').trim();
   const qLower=q.toLowerCase();
@@ -218,31 +185,25 @@ function render(){
     const rowBackNos=qualifierState.numbers.map(n=>String(n).trim());
     const matchedBackNos=q ? rowBackNos.filter(n=>wantedBackNos?.has(n)) : [];
     const searchLabel=q && matchedBackNos.length ? `BACK NO. ${matchedBackNos.map(esc).join(' · ')}` : '';
-    const displayEntries=(qualifierState.requiresSaved&&qualifierState.saved) ? String(rowBackNos.length) : String(x.entries||'');
-    const backNoLine=qualifierState.requiresSaved&&!qualifierState.saved
-      ? '<div class="tt-info tt-pending"><b>BACK NO.</b> WAITING FOR RESULTS</div>'
-      : (rowBackNos.length?`<div class="tt-info tt-backnos"><b>BACK NO.</b> ${rowBackNos.map(esc).join(' · ')}</div>`:'');
     return `
     <article class="tt-card ${q?'tt-search-result':''} ${index===currentFloorIndex?'tt-current':''}" data-index="${index}" data-start="${esc(x.start)}">
       ${q ? '' : `<div class="tt-time">${esc(x.start)}</div>`}
       <div class="tt-main">
         <div class="tt-topline">
           <span class="tt-run">${q ? searchLabel : (x.no ? `EVENT ${esc(x.no)}` : '')}</span>
-          ${index===currentFloorIndex?'<span class="tt-now-badge">NOW</span>':''}
           <span class="tt-round">${esc(x.round)}</span>
         </div>
         <h2>${esc(x.event).replace(/\n/g,'<br>')}</h2>
         <div class="tt-meta">${[x.section,x.division,x.style].filter(Boolean).map(esc).join(' · ')}</div>
-        ${displayEntries?`<div class="tt-info"><b>ENTRIES</b> ${esc(displayEntries)}</div>`:''}
+        ${x.entries?`<div class="tt-info"><b>ENTRIES</b> ${esc(x.entries)}</div>`:''}
         ${x.danceOrder?`<div class="tt-info"><b>DANCE</b> ${esc(x.danceOrder)}</div>`:''}
-        ${backNoLine}
+        ${qualifierState.numbers.length?`<div class="tt-info tt-backnos"><b>BACK NO.</b> ${qualifierState.numbers.map(esc).join(' · ')}</div>`:''}
         ${x.note?`<div class="tt-note">${esc(x.note)}</div>`:''}
       </div>
       ${q ? '' : `<div class="tt-duration">${esc(x.durationText||x.duration)}${x.durationText?'':(x.duration?' min':'')}</div>`}
     </article>
   `;
   }).join('') || '<div class="message">No timetable results.</div>';
-  renderLiveNow();
 }
 
 function loadLocal(){
@@ -277,7 +238,7 @@ async function loadDefault(){
 
 async function connectFirebase(){
   try{
-    const [{initializeApp,getApps},{getDatabase,ref,get,onValue},{firebaseConfig}] = await Promise.all([
+    const [{initializeApp,getApps},{getDatabase,ref,get,onValue,set},{firebaseConfig}] = await Promise.all([
       import("https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js"),
       import("https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js"),
       import("./firebase-config.js?v=20260722-unified-v2")
@@ -286,47 +247,25 @@ async function connectFirebase(){
     ttDb=getDatabase(app);
     ttRef=ref;
     ttOnValue=onValue;
+    ttSet=set;
     firebaseReady=true;
 
-    let loadedRemote=false;
-    try{
-      const s=await get(ref(ttDb,'timetableOverride'));
-      const v=s.val();
-      const rows=normalizeRows(v?.rows);
-      if(rows.length){
-        TT=applySearchEntryCounts(rows,searchEntryCounts);
-        render();
-        loadedRemote=true;
-      }
-    }catch(e){
-      console.warn('Firebase timetable initial read failed',e);
-    }
-
-    onValue(ref(ttDb,'timetableOverride'),snap=>{
-      const v=snap.val();
-      const rows=normalizeRows(v?.rows);
-      if(rows.length){
-        TT=applySearchEntryCounts(rows,searchEntryCounts);
-        render();
-      }
-    });
-
+    // TIMETABLE LOCK 2026-07-27: public schedule uses the confirmed packaged timetable only.
     try{const qs=await get(ref(ttDb,'qualifiers'));QUALIFIERS=qs.val()||{};render();}catch(_){QUALIFIERS={};}
     onValue(ref(ttDb,'qualifiers'),snap=>{QUALIFIERS=snap.val()||{};render();});
 
     try{
       const fs=await get(ref(ttDb,'floorStatus'));
-      currentFloorStatus=fs.val()||{};
-      const idx=Number(currentFloorStatus?.timetableIndex);
-      if(Number.isInteger(idx))currentFloorIndex=idx;
-      render();
+      const idx=Number(fs.val()?.timetableIndex);
+      if(Number.isInteger(idx)){currentFloorIndex=idx;render();}
     }catch(e){console.warn('Current floor position read failed',e)}
 
     onValue(ref(ttDb,'floorStatus'),snap=>{
-      currentFloorStatus=snap.val()||{};
-      const idx=Number(currentFloorStatus?.timetableIndex);
-      if(Number.isInteger(idx))currentFloorIndex=idx;
-      render();
+      const idx=Number(snap.val()?.timetableIndex);
+      if(Number.isInteger(idx)&&idx!==currentFloorIndex){
+        currentFloorIndex=idx;
+        render();
+      }
     });
     return loadedRemote;
   }catch(e){
@@ -366,11 +305,54 @@ async function loadTimetable(){
   }
 }
 
-// PUBLIC TIMETABLE: read-only. Nothing on this page writes MC/LIVE/Floor state.
-const ttSearchInput=document.getElementById('ttSearch');
-const ttSearchBtn=document.getElementById('ttSearchBtn');
-function runTimetableSearch(){render();}
-ttSearchBtn.addEventListener('click',runTimetableSearch);
-ttSearchInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();runTimetableSearch();}});
-ttSearchInput.addEventListener('search',()=>{if(!ttSearchInput.value)render();});
-document.getElementById('ttLiveNow')?.addEventListener('click',scrollToCurrent);
+async function setCurrentFloor(index){
+  index=Math.max(0,Math.min(Number(index)||0,TT.length-1));
+  currentFloorIndex=index;
+  render();
+  const row=TT[index]||{};
+  const payload={
+    timetableIndex:index,
+    now:row.event||(row.no?`EVENT ${row.no}`:'WAITING'),
+    eventNo:row.no||'',
+    onDeck:TT[index+1]?.event||(TT[index+1]?.no?`EVENT ${TT[index+1].no}`:'—'),
+    next:TT[index+2]?.event||(TT[index+2]?.no?`EVENT ${TT[index+2].no}`:'—'),
+    round:row.round||'',
+    danceOrder:row.danceOrder||'',
+    updatedAt:Date.now()
+  };
+  try{localStorage.setItem('apdcFloorStatusV2',JSON.stringify(payload));}catch(_){ }
+  if(firebaseReady&&ttDb&&ttRef&&ttSet){
+    try{
+      await Promise.all([
+        ttSet(ttRef(ttDb,'floorStatus'),payload),
+        ttSet(ttRef(ttDb,'apdcPublic/liveState'),payload)
+      ]);
+    }catch(e){console.warn('Current floor position write failed',e)}
+  }
+}
+
+document.getElementById('ttCards').addEventListener('click',e=>{
+  const card=e.target.closest('.tt-card[data-index]');
+  if(!card)return;
+  setCurrentFloor(Number(card.dataset.index));
+});
+
+document.getElementById('ttSearch').addEventListener('input',render);
+
+document.getElementById('ttNowBtn').addEventListener('click',()=>{
+  const cards=[...document.querySelectorAll('.tt-card')];
+  if(!cards.length)return;
+  const now=new Date();
+  const cur=now.getHours()*60+now.getMinutes();
+  let best=cards[0],bestDiff=1e9;
+  for(const c of cards){
+    const m=/^(\d{1,2}):(\d{2})(?::(\d{2}))?$/.exec(c.dataset.start||'');
+    if(!m)continue;
+    const v=+m[1]*60 + +m[2] + (+(m[3]||0))/60;
+    const diff=Math.abs(v-cur);
+    if(diff<bestDiff){bestDiff=diff;best=c;}
+  }
+  best.scrollIntoView({behavior:'smooth',block:'center'});
+  best.classList.add('tt-highlight');
+  setTimeout(()=>best.classList.remove('tt-highlight'),1800);
+});
