@@ -517,3 +517,29 @@ main {
   .tt-card.tt-search-result .tt-main h2{font-size:19px;line-height:1.25;}
   .tt-card.tt-search-result .tt-meta,.tt-card.tt-search-result .tt-info{font-size:14px;line-height:1.55;}
 }
+
+/* 2026-07-27 PUBLIC LIVE TIMETABLE: JUDGE is the only controller */
+.tt-card{cursor:default!important}
+.tt-card.tt-current{
+  border:4px solid #000!important;
+  outline:none!important;
+  background:#fff!important;
+  box-shadow:0 0 0 1px #000 inset;
+  padding:13px!important;
+}
+.tt-now-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:48px;
+  padding:4px 9px;
+  border:2px solid #000;
+  background:#000;
+  color:#fff;
+  font-size:11px;
+  line-height:1;
+  font-weight:1000;
+  letter-spacing:.12em;
+}
+.tt-card.tt-current .tt-time{font-weight:1000}
+.tt-card.tt-current h2{font-weight:1000}

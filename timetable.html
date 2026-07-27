@@ -5,37 +5,28 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#000000">
 <title>APDC Timetable</title>
-<link rel="stylesheet" href="timetable-judge.css?v=20260726-search-timetable-v1">
+<link rel="stylesheet" href="timetable-judge.css?v=20260727-live-sync-v3">
 </head>
 <body>
-<header style="position:relative"><a class="brand brand-link" href="index.html">APDC ENTRY SEARCH</a></header>
+<header style="position:relative"><a class="brand brand-link" href="index.html">2026 APDC</a></header>
 <nav class="top-category-nav apdc-main-nav">
-  <a href="index.html">ENTRY SEARCH</a>
+  <a href="entry.html">ENTRY SEARCH</a>
   <a href="timetable.html" class="timetable-nav-link active">TIMETABLE</a>
 </nav>
 <main>
-<section id="ttPasswordGate" class="password-gate">
-  <div class="password-box">
-    <div class="small-label">APDC TIMETABLE ACCESS</div>
-    <h1>ENTER PASSWORD</h1>
-    <input id="ttPasswordInput" type="password" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off">
-    <button id="ttPasswordBtn" type="button">ENTER</button>
-    <div id="ttPasswordMessage" class="message"></div>
-  </div>
-</section>
-<section id="ttProtected" class="hidden" hidden style="display:none">
+<section id="ttProtected">
   <div class="tt-head">
     <div>
-      <div class="small-label">APDC 2026 · JUDGE PROGRAM ONLY</div>
+      <div class="small-label">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
       <h1>TIMETABLE</h1>
       <p id="ttSummary" class="muted"></p>
     </div>
     <div class="tt-tools"><input id="ttSearch" type="search" placeholder="Search back number / player name"><button id="ttNowBtn" class="light" type="button">NOW</button></div>
   </div>
-  <div id="ttCards" class="tt-cards"></div>
+  <div id="ttCards" class="tt-cards"><div class="message">LOADING TIMETABLE…</div></div>
 </section>
 </main>
 <script src="i18n.js?v=20260717-1305"></script>
-<script type="module" src="timetable.js?v=20260724-backno-fallback-v2"></script>
+<script type="module" src="timetable.js?v=20260727-live-sync-v3"></script>
 </body>
 </html>
