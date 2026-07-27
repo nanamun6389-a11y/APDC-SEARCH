@@ -12,7 +12,7 @@ h1{text-align:center;margin:18px 0 58px;font-size:clamp(56px,13.8vw,92px);line-h
 .card-kicker{font-size:clamp(13px,3vw,18px);font-weight:850;letter-spacing:.22em;color:#d8d8dd}
 .card-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;margin-top:28px}
 .card-row strong{font-size:clamp(35px,8.3vw,57px);line-height:.95;letter-spacing:-.04em;font-weight:950;white-space:nowrap}
-.arrow{font-size:clamp(52px,9vw,70px);font-family:Arial,sans-serif;font-weight:200;line-height:.7;transform:translateY(-1px)}
+.arrow{font-size:clamp(30px,5.2vw,42px);font-family:Arial,sans-serif;font-weight:200;line-height:.8;transform:translateY(-1px)}
 .card-copy{margin-top:22px;font-size:clamp(14px,3vw,19px);font-weight:650;letter-spacing:.06em;color:#d0d0d5}
 .venue{text-align:center;margin-top:54px;font-size:clamp(10px,2.5vw,15px);letter-spacing:.28em;color:#aaaab0;white-space:nowrap}
 @media(max-width:430px){
