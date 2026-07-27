@@ -1,0 +1,14 @@
+APDC 2026 TIMING UPDATE
+
+ALL COMPETITION ROUNDS: 1 dance = 1:20 timetable allocation.
+Quarter Final = 1:20 per dance
+Semi Final = 1:20 per dance
+Final / Grand Final = 1:20 per dance
+MC transition time is included in this allocation.
+
+IMPORTANT FIX:
+An older Firebase timetable previously overrode the newly uploaded timetable-data.json,
+which is why the public SEARCH page still showed 1:00 after uploading the first timing ZIP.
+This version prevents an older Firebase timingVersion from masking the deployed 1:20 schedule.
+In JUDGE Admin, the packaged 1:20 schedule is loaded when Firebase is older. Press SAVE once
+to publish the same schedule to timetableOverride and apdcPublic/timetable for SEARCH / MC / LIVE.

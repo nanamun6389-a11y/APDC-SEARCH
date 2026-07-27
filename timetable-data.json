@@ -2337,5 +2337,7 @@
   ],
   "projectedStart": "11:30",
   "projectedEnd": "18:16:45",
-  "totalEvents": 144
+  "totalEvents": 144,
+  "timingVersion": "20260728-ALL-80S-V2",
+  "timingRule": "Quarter Final / Semi Final / Final: 1 dance = 1:20 total timetable allocation (MC transition included)."
 }

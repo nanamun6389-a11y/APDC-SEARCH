@@ -5,6 +5,7 @@ let currentFloorIndex=-1;
 let QUALIFIERS={};
 let searchEntryCounts=null;
 let remoteTimetableLoaded=false;
+let localTimingVersion='';
 
 const APDC_FIREBASE_PLAYERS_URL='https://apdc-judge-default-rtdb.asia-southeast1.firebasedatabase.app/apdcPublic/players.json';
 const APDC_SEARCH_PLAYERS_URL='https://nanamun6389-a11y.github.io/APDC-SEARCH/players.json';
@@ -156,6 +157,7 @@ async function loadDefault(){
     if(!r.ok) throw new Error(`HTTP ${r.status}`);
     const d=await r.json();
     if(d.summary) $('ttSummary').textContent=d.summary;
+    localTimingVersion=String(d.timingVersion||'');
     return normalizeRows(d.rows);
   }catch(e){console.warn('Default timetable load failed',e);return [];}
 }
@@ -183,13 +185,18 @@ async function connectFirebase(){
     if(first.exists()){
       const val=first.val()||{};
       const rows=normalizeRows(val.rows??val);
-      if(rows.length){TT=applySearchEntryCounts(rows,searchEntryCounts);remoteTimetableLoaded=true;if(val.summary)$('ttSummary').textContent=val.summary;render();}
+      const remoteVersion=String(val.timingVersion||'');
+      const remoteIsCurrent=!localTimingVersion || (remoteVersion && remoteVersion>=localTimingVersion);
+      if(rows.length && remoteIsCurrent){TT=applySearchEntryCounts(rows,searchEntryCounts);remoteTimetableLoaded=true;if(val.summary)$('ttSummary').textContent=val.summary;render();}
     }
     onValue(ttRef,snap=>{
       if(!snap.exists()) return;
       const val=snap.val()||{};
       const rows=normalizeRows(val.rows??val);
       if(!rows.length) return;
+      const remoteVersion=String(val.timingVersion||'');
+      const remoteIsCurrent=!localTimingVersion || (remoteVersion && remoteVersion>=localTimingVersion);
+      if(!remoteIsCurrent) return;
       TT=applySearchEntryCounts(rows,searchEntryCounts); remoteTimetableLoaded=true;
       if(val.summary) $('ttSummary').textContent=val.summary;
       render();
@@ -203,12 +210,12 @@ async function connectFirebase(){
 }
 async function init(){
   searchEntryCounts=await loadSearchEntryCounts();
-  const remote=await connectFirebase();
-  if(!remote){
-    const fallback=await loadDefault();
-    TT=applySearchEntryCounts(fallback,searchEntryCounts);
-    render();
-  }
+  // Load the packaged timetable first. This prevents an older Firebase timetable
+  // from masking a newly deployed timing update.
+  const fallback=await loadDefault();
+  TT=applySearchEntryCounts(fallback,searchEntryCounts);
+  render();
+  await connectFirebase();
   if(!TT.length) $('ttCards').innerHTML='<div class="message">TIMETABLE LOAD ERROR · Please refresh once.</div>';
 }
 $('ttSearch')?.addEventListener('input',render);
