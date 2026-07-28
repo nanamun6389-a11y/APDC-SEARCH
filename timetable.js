@@ -44,6 +44,45 @@ function normalizeRows(value){
   if(value&&typeof value==='object') return Object.keys(value).sort((a,b)=>Number(a)-Number(b)).map(k=>value[k]).filter(Boolean);
   return [];
 }
+
+function timingDanceCount(row){
+  const round=String(row?.round||'').toLowerCase();
+  if(!/(quarter|semi|final)/.test(round)) return 0;
+  const order=String(row?.danceOrder||'').toUpperCase();
+  const dances=order.match(/[CSRPJWTFQ]/g)||[];
+  return [...new Set(dances)].length;
+}
+function fmtDuration(seconds){
+  seconds=Math.max(0,Math.round(seconds));
+  const m=Math.floor(seconds/60), s=seconds%60;
+  return `${m}:${String(s).padStart(2,'0')}`;
+}
+function clockFromSeconds(total){
+  total=((total%86400)+86400)%86400;
+  const h=Math.floor(total/3600),m=Math.floor((total%3600)/60),s=total%60;
+  return s?`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`:`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+}
+function normalize80sTiming(rows,startTime){
+  const out=normalizeRows(rows).map(r=>({...r}));
+  const base=String(startTime||out[0]?.start||'11:30').split(':').map(Number);
+  let sec=(base[0]||0)*3600+(base[1]||0)*60+(base[2]||0);
+  for(const r of out){
+    r.start=clockFromSeconds(sec);
+    const n=timingDanceCount(r);
+    if(n>0){
+      r.durationSeconds=n*80;
+      r.duration=+(r.durationSeconds/60).toFixed(3);
+      r.durationText=fmtDuration(r.durationSeconds);
+    }else{
+      const existing=Number.isFinite(Number(r.durationSeconds))?Number(r.durationSeconds):Math.round((Number(r.duration)||0)*60);
+      r.durationSeconds=existing;
+      r.duration=+(existing/60).toFixed(3);
+      r.durationText=fmtDuration(existing);
+    }
+    sec+=r.durationSeconds;
+  }
+  return out;
+}
 async function fetchLatestPlayers(){
   const urls=[APDC_FIREBASE_PLAYERS_URL,APDC_SEARCH_PLAYERS_URL,'./players.json'];
   let lastError=null;
@@ -158,7 +197,7 @@ async function loadDefault(){
     const d=await r.json();
     if(d.summary) $('ttSummary').textContent=d.summary;
     localTimingVersion=String(d.timingVersion||'');
-    return normalizeRows(d.rows);
+    return normalize80sTiming(d.rows,d.startTime||d.rows?.[0]?.start||'11:30');
   }catch(e){console.warn('Default timetable load failed',e);return [];}
 }
 function updateCurrentFromState(state){
@@ -184,7 +223,7 @@ async function connectFirebase(){
     const first=await get(ttRef);
     if(first.exists()){
       const val=first.val()||{};
-      const rows=normalizeRows(val.rows??val);
+      const rows=normalize80sTiming(val.rows??val,val.startTime||'11:30');
       const remoteVersion=String(val.timingVersion||'');
       const remoteIsCurrent=!localTimingVersion || (remoteVersion && remoteVersion>=localTimingVersion);
       if(rows.length && remoteIsCurrent){TT=applySearchEntryCounts(rows,searchEntryCounts);remoteTimetableLoaded=true;if(val.summary)$('ttSummary').textContent=val.summary;render();}
@@ -192,7 +231,7 @@ async function connectFirebase(){
     onValue(ttRef,snap=>{
       if(!snap.exists()) return;
       const val=snap.val()||{};
-      const rows=normalizeRows(val.rows??val);
+      const rows=normalize80sTiming(val.rows??val,val.startTime||'11:30');
       if(!rows.length) return;
       const remoteVersion=String(val.timingVersion||'');
       const remoteIsCurrent=!localTimingVersion || (remoteVersion && remoteVersion>=localTimingVersion);

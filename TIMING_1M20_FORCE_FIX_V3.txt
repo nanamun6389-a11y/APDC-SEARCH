@@ -1,0 +1,1 @@
+Public timetable normalizes any Firebase competition row to 80 seconds per dance and recalculates subsequent start times.
