@@ -1,0 +1,4 @@
+PUBLIC TIMETABLE UPDATE
+- Timetable access password removed.
+- Public notice updated to bilingual Korean/English text.
+- Event order and timing data otherwise unchanged.

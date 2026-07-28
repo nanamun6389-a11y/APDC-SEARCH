@@ -11,32 +11,9 @@ const APDC_FIREBASE_PLAYERS_URL='https://apdc-judge-default-rtdb.asia-southeast1
 const APDC_SEARCH_PLAYERS_URL='https://nanamun6389-a11y.github.io/APDC-SEARCH/players.json';
 
 const $=id=>document.getElementById(id);
-const TIMETABLE_ACCESS_PASSWORD='0070';
+const PUBLIC_TIMETABLE_NOTICE='경기의 원활한 운영을 위해 경기 순서 및 일정은 변경될 수 있습니다.\nFor smooth event operations, the competition order and schedule are subject to change.';
 let timetableStarted=false;
-function unlockTimetable(){
-  sessionStorage.setItem('apdcTimetableUnlocked','yes');
-  const gate=$('ttPasswordGate');
-  const protectedArea=$('ttProtected');
-  if(gate){ gate.classList.add('hidden'); gate.hidden=true; }
-  if(protectedArea){ protectedArea.classList.remove('hidden'); protectedArea.hidden=false; }
-  if($('ttPasswordMessage')) $('ttPasswordMessage').textContent='';
-  if(!timetableStarted){ timetableStarted=true; init(); }
-}
-function lockTimetable(){
-  const gate=$('ttPasswordGate');
-  const protectedArea=$('ttProtected');
-  if(gate){ gate.classList.remove('hidden'); gate.hidden=false; }
-  if(protectedArea){ protectedArea.classList.add('hidden'); protectedArea.hidden=true; }
-}
-function checkTimetablePassword(){
-  const input=$('ttPasswordInput');
-  const msg=$('ttPasswordMessage');
-  if((input?.value||'').trim()===TIMETABLE_ACCESS_PASSWORD){ unlockTimetable(); }
-  else {
-    if(msg) msg.textContent='INCORRECT PASSWORD';
-    if(input){ input.value=''; input.focus(); }
-  }
-}
+function setPublicNotice(){ const el=$('ttSummary'); if(el) el.textContent=PUBLIC_TIMETABLE_NOTICE; }
 
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
 function normalizeRows(value){
@@ -195,7 +172,7 @@ async function loadDefault(){
     const r=await fetch(`./timetable-data.json?v=${Date.now()}`,{cache:'no-store'});
     if(!r.ok) throw new Error(`HTTP ${r.status}`);
     const d=await r.json();
-    if(d.summary) $('ttSummary').textContent=d.summary;
+    setPublicNotice();
     localTimingVersion=String(d.timingVersion||'');
     return normalize80sTiming(d.rows,d.startTime||d.rows?.[0]?.start||'11:30');
   }catch(e){console.warn('Default timetable load failed',e);return [];}
@@ -226,7 +203,7 @@ async function connectFirebase(){
       const rows=normalize80sTiming(val.rows??val,val.startTime||'11:30');
       const remoteVersion=String(val.timingVersion||'');
       const remoteIsCurrent=!localTimingVersion || (remoteVersion && remoteVersion>=localTimingVersion);
-      if(rows.length && remoteIsCurrent){TT=applySearchEntryCounts(rows,searchEntryCounts);remoteTimetableLoaded=true;if(val.summary)$('ttSummary').textContent=val.summary;render();}
+      if(rows.length && remoteIsCurrent){TT=applySearchEntryCounts(rows,searchEntryCounts);remoteTimetableLoaded=true;setPublicNotice();render();}
     }
     onValue(ttRef,snap=>{
       if(!snap.exists()) return;
@@ -237,7 +214,7 @@ async function connectFirebase(){
       const remoteIsCurrent=!localTimingVersion || (remoteVersion && remoteVersion>=localTimingVersion);
       if(!remoteIsCurrent) return;
       TT=applySearchEntryCounts(rows,searchEntryCounts); remoteTimetableLoaded=true;
-      if(val.summary) $('ttSummary').textContent=val.summary;
+      setPublicNotice();
       render();
     });
 
@@ -248,6 +225,7 @@ async function connectFirebase(){
   }catch(e){console.warn('Firebase unavailable',e);return false;}
 }
 async function init(){
+  setPublicNotice();
   searchEntryCounts=await loadSearchEntryCounts();
   // Load the packaged timetable first. This prevents an older Firebase timetable
   // from masking a newly deployed timing update.
@@ -263,7 +241,4 @@ $('ttNowBtn')?.addEventListener('click',()=>{
   if(current){current.scrollIntoView({behavior:'smooth',block:'center'});current.classList.add('tt-highlight');setTimeout(()=>current.classList.remove('tt-highlight'),1600);return;}
   $('ttCards')?.scrollIntoView({behavior:'smooth',block:'start'});
 });
-$('ttPasswordBtn')?.addEventListener('click',checkTimetablePassword);
-$('ttPasswordInput')?.addEventListener('keydown',e=>{if(e.key==='Enter')checkTimetablePassword();});
-if(sessionStorage.getItem('apdcTimetableUnlocked')==='yes') unlockTimetable();
-else { lockTimetable(); setTimeout(()=>$('ttPasswordInput')?.focus(),0); }
+if(!timetableStarted){ timetableStarted=true; init(); }
