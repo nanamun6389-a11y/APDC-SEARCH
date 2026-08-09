@@ -18,6 +18,23 @@ function matches(row,query){
   const name=norm(row.name);
   return terms.every(term=>name.includes(term));
 }
+function sectionOf(category){
+  const c=String(category||"");
+  if(c.startsWith("Formation")) return "FORMATION";
+  if(c.startsWith("Under 10")) return "UNDER 10";
+  if(c.startsWith("Under 12")) return "UNDER 12";
+  if(c.startsWith("Under 15")) return "UNDER 15";
+  if(c.startsWith("Under 18")) return "UNDER 18";
+  if(c.startsWith("Over 19")) return "OVER 19";
+  if(c.startsWith("Over 35")) return "OVER 35";
+  if(c.startsWith("Asia Pacific Amateur")||c.startsWith("Amateur")||c.startsWith("Korea Closed Amateur")) return "AMATEUR";
+  if(c.startsWith("Senior")) return "SENIOR";
+  if(c.startsWith("Mania")) return "MANIA";
+  if(c.startsWith("Pro-Am")) return "PRO-AM";
+  return "OTHER";
+}
+const SECTION_ORDER=["FORMATION","UNDER 10","UNDER 12","UNDER 15","UNDER 18","OVER 19","OVER 35","AMATEUR","SENIOR","MANIA","PRO-AM","OTHER"];
+
 function render(){
   const q=norm(searchEl.value);
   const filtered=RESULTS.filter(row=>matches(row,q));
@@ -29,16 +46,33 @@ function render(){
     listEl.innerHTML='<div class="results-empty">NO RESULTS FOUND.<br>Check the back number or player name.</div>';
     return;
   }
-  listEl.innerHTML=filtered.map(row=>`
-    <article class="result-row">
-      <div class="result-place">${esc(row.place)}</div>
-      <div>
-        <div class="result-name">${esc(row.name)}</div>
-        <div class="result-category">${esc(row.category)}</div>
-      </div>
-      <div class="result-back"><span>BACK NO.</span><strong>${esc(row.backNo||"—")}</strong></div>
-    </article>
-  `).join("");
+
+  const groups=new Map();
+  filtered.forEach(row=>{
+    const sec=sectionOf(row.category);
+    if(!groups.has(sec)) groups.set(sec,[]);
+    groups.get(sec).push(row);
+  });
+
+  listEl.innerHTML=SECTION_ORDER.filter(sec=>groups.has(sec)).map(sec=>{
+    const rows=groups.get(sec);
+    return `
+      <section class="result-section">
+        <div class="result-section-head"><h2>${esc(sec)}</h2><span>${rows.length} RESULTS</span></div>
+        <div class="result-section-list">
+          ${rows.map(row=>`
+            <article class="result-row">
+              <div class="result-place">${esc(row.place)}</div>
+              <div>
+                <div class="result-name">${esc(row.name)}</div>
+                <div class="result-category">${esc(row.category)}</div>
+              </div>
+              <div class="result-back"><span>BACK NO.</span><strong>${esc(row.backNo||"—")}</strong></div>
+            </article>
+          `).join("")}
+        </div>
+      </section>`;
+  }).join("");
 }
 
 fetch("results.json",{cache:"no-store"})
