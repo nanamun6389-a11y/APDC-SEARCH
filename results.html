@@ -13,10 +13,19 @@
 .results-tools{display:flex;gap:8px;align-items:center}
 .results-tools input{min-width:280px;padding:12px 14px;border:1px solid #cfcfcf;background:#fff;color:#111}
 .results-summary{margin:0 0 12px;font-size:12px;font-weight:900;letter-spacing:.08em;color:#555}
+.results-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+.legend-item{display:inline-flex;align-items:center;gap:6px;border:1px solid #d8d8d8;background:#fff;padding:8px 10px;font-size:12px;font-weight:800}
 .results-list{display:grid;gap:26px}.result-section{display:grid;gap:10px}.result-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:2px solid #111;padding:0 0 8px}.result-section-head h2{margin:0;font-size:20px;letter-spacing:.04em}.result-section-head span{font-size:10px;font-weight:900;letter-spacing:.08em;color:#666}.result-event-list{display:grid;gap:16px}.result-event{border-left:3px solid #111;padding-left:12px}.result-event-head{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:0 0 8px;padding:0 0 7px;border-bottom:1px solid #bbb}.result-event-head h3{margin:0;font-size:16px;line-height:1.25}.result-event-head span{font-size:9px;font-weight:900;letter-spacing:.08em;color:#777;white-space:nowrap}.result-section-list{display:grid;gap:8px}
-.result-row{display:grid;grid-template-columns:72px minmax(0,1fr) 76px;gap:14px;align-items:center;border:1px solid #d8d8d8;background:#fff;padding:14px 16px}
+.event-awards{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.event-award{display:inline-flex;align-items:center;gap:4px;border:1px solid #ddd;background:#fff;padding:4px 7px;font-size:11px;font-weight:900}
+.result-row{display:grid;grid-template-columns:72px minmax(0,1fr) auto 76px;gap:14px;align-items:center;border:1px solid #d8d8d8;background:#fff;padding:14px 16px}
+.result-row.has-award{border-color:#111}
 .result-place{font-size:18px;font-weight:900}
+.result-name-wrap{min-width:0}
 .result-name{font-size:16px;font-weight:900;line-height:1.25}
+.result-note{font-size:11px;color:#666;font-weight:700;margin-top:4px}
+.result-awards{display:flex;gap:6px;justify-content:center;min-width:68px}
+.award-badge{font-size:20px;line-height:1}
 .result-back{text-align:right}
 .result-back span{display:block;font-size:9px;font-weight:900;letter-spacing:.08em;color:#777}
 .result-back strong{display:block;font-size:20px;margin-top:2px}
@@ -25,8 +34,16 @@
   .results-head{align-items:stretch;flex-direction:column}
   .results-tools{width:100%}
   .results-tools input{min-width:0;width:100%}
-  .result-row{grid-template-columns:58px minmax(0,1fr) 58px;padding:12px}
-  .result-place{font-size:15px}.result-name{font-size:15px}.result-back strong{font-size:18px}
+  .result-event-head{flex-direction:column;align-items:flex-start}
+  .event-awards{justify-content:flex-start}
+  .result-row{grid-template-columns:58px minmax(0,1fr) 58px;grid-template-areas:'place name awards' 'back back back';padding:12px}
+  .result-place{grid-area:place;font-size:15px}
+  .result-name-wrap{grid-area:name}
+  .result-name{font-size:15px}
+  .result-awards{grid-area:awards;justify-content:flex-end;min-width:0}
+  .award-badge{font-size:18px}
+  .result-back{grid-area:back;text-align:left;padding-top:2px}
+  .result-back strong{font-size:18px}
 }
 </style>
 </head>
@@ -50,10 +67,15 @@
       <input id="resultSearch" type="search" inputmode="search" autocomplete="off" placeholder="Search back number / player name">
     </div>
   </div>
+  <div class="results-legend">
+    <span class="legend-item">🏆 TROPHY</span>
+    <span class="legend-item">🏅 MEDAL</span>
+    <span class="legend-item">💵 PRIZE MONEY</span>
+  </div>
   <div id="resultSummary" class="results-summary">LOADING RESULTS…</div>
   <div id="resultList" class="results-list"><div class="results-empty">LOADING RESULTS…</div></div>
 </section>
 </main>
-<script src="results.js?v=20260810-results-v3"></script>
+<script src="results.js?v=20260810-results-v5-emoji"></script>
 </body>
 </html>
