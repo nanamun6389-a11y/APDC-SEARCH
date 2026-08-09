@@ -50,25 +50,35 @@ function render(){
   const groups=new Map();
   filtered.forEach(row=>{
     const sec=sectionOf(row.category);
-    if(!groups.has(sec)) groups.set(sec,[]);
-    groups.get(sec).push(row);
+    if(!groups.has(sec)) groups.set(sec,new Map());
+    const eventName=String(row.category||"OTHER").trim()||"OTHER";
+    if(!groups.get(sec).has(eventName)) groups.get(sec).set(eventName,[]);
+    groups.get(sec).get(eventName).push(row);
   });
 
   listEl.innerHTML=SECTION_ORDER.filter(sec=>groups.has(sec)).map(sec=>{
-    const rows=groups.get(sec);
+    const events=groups.get(sec);
+    const sectionCount=[...events.values()].reduce((sum,rows)=>sum+rows.length,0);
     return `
       <section class="result-section">
-        <div class="result-section-head"><h2>${esc(sec)}</h2><span>${rows.length} RESULTS</span></div>
-        <div class="result-section-list">
-          ${rows.map(row=>`
-            <article class="result-row">
-              <div class="result-place">${esc(row.place)}</div>
-              <div>
-                <div class="result-name">${esc(row.name)}</div>
-                <div class="result-category">${esc(row.category)}</div>
+        <div class="result-section-head"><h2>${esc(sec)}</h2><span>${events.size} EVENTS · ${sectionCount} RESULTS</span></div>
+        <div class="result-event-list">
+          ${[...events.entries()].map(([eventName,rows])=>`
+            <section class="result-event">
+              <div class="result-event-head">
+                <h3>${esc(eventName)}</h3>
+                <span>${rows.length} PLACES</span>
               </div>
-              <div class="result-back"><span>BACK NO.</span><strong>${esc(row.backNo||"—")}</strong></div>
-            </article>
+              <div class="result-section-list">
+                ${rows.map(row=>`
+                  <article class="result-row">
+                    <div class="result-place">${esc(row.place)}</div>
+                    <div class="result-name">${esc(row.name)}</div>
+                    <div class="result-back"><span>BACK NO.</span><strong>${esc(row.backNo||"—")}</strong></div>
+                  </article>
+                `).join("")}
+              </div>
+            </section>
           `).join("")}
         </div>
       </section>`;
