@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>APDC Results</title>
+<link rel="stylesheet" href="timetable-judge.css?v=20260727-live-sync-v4">
+<style>
+.results-main{width:min(1000px,100%);margin:0 auto;padding:24px 18px 60px}
+.results-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;margin:22px 0 18px}
+.results-head h1{margin:4px 0 6px;font-size:clamp(30px,6vw,54px)}
+.results-tools{display:flex;gap:8px;align-items:center}
+.results-tools input{min-width:280px;padding:12px 14px;border:1px solid #cfcfcf;background:#fff;color:#111}
+.results-summary{margin:0 0 12px;font-size:12px;font-weight:900;letter-spacing:.08em;color:#555}
+.results-list{display:grid;gap:8px}
+.result-row{display:grid;grid-template-columns:72px minmax(0,1fr) 76px;gap:14px;align-items:center;border:1px solid #d8d8d8;background:#fff;padding:14px 16px}
+.result-place{font-size:18px;font-weight:900}
+.result-name{font-size:16px;font-weight:900;line-height:1.25}
+.result-category{font-size:12px;color:#666;margin-top:4px;line-height:1.35}
+.result-back{text-align:right}
+.result-back span{display:block;font-size:9px;font-weight:900;letter-spacing:.08em;color:#777}
+.result-back strong{display:block;font-size:20px;margin-top:2px}
+.results-empty{border:1px solid #ddd;padding:30px 16px;text-align:center;color:#666}
+@media(max-width:720px){
+  .results-head{align-items:stretch;flex-direction:column}
+  .results-tools{width:100%}
+  .results-tools input{min-width:0;width:100%}
+  .result-row{grid-template-columns:58px minmax(0,1fr) 58px;padding:12px}
+  .result-place{font-size:15px}.result-name{font-size:15px}.result-back strong{font-size:18px}
+}
+</style>
+</head>
+<body>
+<header style="position:relative"><a class="brand brand-link" href="index.html">2026 APDC</a></header>
+<nav class="top-category-nav apdc-main-nav">
+  <a href="entry.html">ENTRY SEARCH</a>
+  <a href="timetable.html" class="timetable-nav-link">TIMETABLE</a>
+  <a href="results.html" class="active">RESULTS</a>
+</nav>
+
+<main class="results-main">
+<section>
+  <div class="results-head">
+    <div>
+      <div class="small-label">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
+      <h1>RESULTS</h1>
+      <p class="muted">Official final results</p>
+    </div>
+    <div class="results-tools">
+      <input id="resultSearch" type="search" inputmode="search" autocomplete="off" placeholder="Search back number / player name">
+    </div>
+  </div>
+  <div id="resultSummary" class="results-summary">LOADING RESULTS…</div>
+  <div id="resultList" class="results-list"><div class="results-empty">LOADING RESULTS…</div></div>
+</section>
+</main>
+<script src="results.js?v=20260810-results-v1"></script>
+</body>
+</html>

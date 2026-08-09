@@ -1,67 +1,79 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#000000">
-  <title>APDC Entry Search</title>
-  <link rel="stylesheet" href="style.css?v=20260717-admin-restore?v=20260715-complete">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>APDC Entry Search</title>
+<link rel="stylesheet" href="style.css?v=20260717-admin-restore?v=20260715-complete">
+<style>
+.apdc-results-nav{display:flex;overflow-x:auto;white-space:nowrap;border-bottom:1px solid #000;background:#fff;position:sticky;top:0;z-index:100}
+.apdc-results-nav a{flex:0 0 auto;color:#000;text-decoration:none;padding:13px 16px;border-right:1px solid #ddd;font-size:12px;font-weight:900}
+.apdc-results-nav a:hover,.apdc-results-nav a:focus,.apdc-results-nav a.active{background:#000;color:#fff}
+@media(max-width:640px){.apdc-results-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;white-space:normal}.apdc-results-nav a{min-width:0;justify-content:center;text-align:center;padding:11px 4px;font-size:11px}}
+</style>
 </head>
 <body>
 <header class="site-header">
-  <a id="homeBtn" class="brand entry-brand-link" href="index.html" aria-label="Return to APDC home">
-    <span class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</span>
-    <span class="title">APDC ENTRY SEARCH</span>
-  </a>
+<a id="homeBtn" class="brand entry-brand-link" href="index.html" aria-label="Return to APDC home">
+<span class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</span>
+<span class="title">APDC ENTRY SEARCH</span>
+</a>
 </header>
 
+<nav class="apdc-results-nav">
+<a href="entry.html" class="active">ENTRY SEARCH</a>
+<a href="timetable.html">TIMETABLE</a>
+<a href="results.html">RESULTS</a>
+</nav>
+
 <main class="container">
-  <section class="search-area">
-    <form id="searchForm" class="search-form">
-      <input id="query" type="search" inputmode="search" autocomplete="off"
-             placeholder="Search by back number, name or section">
-      <button class="search-btn" type="submit">SEARCH</button>
-    </form>
-  </section>
+<section class="search-area">
+<form id="searchForm" class="search-form">
+<input id="query" type="search" inputmode="search" autocomplete="off"
+placeholder="Search by back number, name or section">
+<button class="search-btn" type="submit">SEARCH</button>
+</form>
+</section>
 
-  <section id="searchBox" class="search-results hidden">
-    <div class="title-row">
-      <h2 id="searchTitle">SEARCH RESULTS</h2>
-      <span id="searchCount"></span>
-    </div>
-    <div id="searchResults"></div>
-  </section>
+<section id="searchBox" class="search-results hidden">
+<div class="title-row">
+<h2 id="searchTitle">SEARCH RESULTS</h2>
+<span id="searchCount"></span>
+</div>
+<div id="searchResults"></div>
+</section>
 
-  <section class="event-browser">
-    <div class="title-row">
-      <h2>FULL SECTION LIST</h2>
-      <span id="eventSummary">LOADING…</span>
-    </div>
-    <div id="sectionTabs" class="section-tabs"></div>
-    <div id="eventList" class="event-list"><div class="empty">LOADING ENTRIES…</div></div>
+<section class="event-browser">
+<div class="title-row">
+<h2>FULL SECTION LIST</h2>
+<span id="eventSummary">LOADING…</span>
+</div>
+<div id="sectionTabs" class="section-tabs"></div>
+<div id="eventList" class="event-list"><div class="empty">LOADING ENTRIES…</div></div>
+<div class="bottom-actions">
+<button type="button" data-view="information">INFORMATION</button>
+<button type="button" data-view="directions">VENUE &amp; DIRECTIONS</button>
+</div>
+</section>
 
-    <div class="bottom-actions">
-      <button type="button" data-view="information">INFORMATION</button>
-      <button type="button" data-view="directions">VENUE &amp; DIRECTIONS</button>
-    </div>
-  </section>
 <div class="analytics-admin-link"><a href="search-admin.html">ADMIN</a><a href="entry-admin.html">ENTRY ADMIN</a><a href="version-history.html">VERSION HISTORY</a></div>
 </main>
 
 <div id="infoModal" class="modal hidden" aria-hidden="true">
-  <div class="modal-backdrop" data-close-info></div>
-  <div class="modal-card">
-    <button class="modal-close" type="button" data-close-info aria-label="Close">×</button>
-    <div id="infoContent"></div>
-  </div>
+<div class="modal-backdrop" data-close-info></div>
+<div class="modal-card">
+<button class="modal-close" type="button" data-close-info aria-label="Close">×</button>
+<div id="infoContent"></div>
+</div>
 </div>
 
 <div id="playerModal" class="modal hidden" aria-hidden="true">
-  <div class="modal-backdrop" data-close-player></div>
-  <div class="modal-card">
-    <button class="modal-close" type="button" data-close-player aria-label="Close">×</button>
-    <div id="playerContent"></div>
-  </div>
+<div class="modal-backdrop" data-close-player></div>
+<div class="modal-card">
+<button class="modal-close" type="button" data-close-player aria-label="Close">×</button>
+<div id="playerContent"></div>
+</div>
 </div>
 
 <script src="i18n.js?v=v3"></script>
