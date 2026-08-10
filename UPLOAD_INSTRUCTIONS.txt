@@ -1,0 +1,19 @@
+APDC PRIZE SHIPPING - SAFE MENU UPDATE
+
+Upload/replace ONLY these files in the same GitHub Pages folder:
+- entry.html
+- timetable.html
+- results.html
+- shipping.html
+- shipping-thanks.html
+
+IMPORTANT:
+- This package intentionally contains NO results.js and NO results.json.
+- Do NOT delete or replace your existing results.js/results.json.
+- Existing result ranking/search data therefore remains untouched.
+- PRIZE SHIPPING password: APDC0070
+
+What changed:
+- Added PRIZE SHIPPING link to ENTRY SEARCH / TIMETABLE / RESULTS navigation.
+- Added password-protected shipping page.
+- Shipping form includes prize-money bank fields.
