@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>APDC Prize Shipping</title>
+<style>
+:root{--black:#000;--white:#fff;--line:#d7d7d7;--muted:#666;--soft:#f5f5f5}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}
+header{background:#000;color:#fff;padding:22px 18px}.brand{color:#fff;text-decoration:none;font-weight:900;letter-spacing:.08em;font-size:20px}
+.apdc-main-nav{display:flex;overflow-x:auto;white-space:nowrap;border-bottom:1px solid #000;background:#fff;position:sticky;top:0;z-index:50}
+.apdc-main-nav a{flex:0 0 auto;color:#000;text-decoration:none;padding:13px 16px;border-right:1px solid #ddd;font-size:12px;font-weight:900}.apdc-main-nav a.active{background:#000;color:#fff}
+main{width:min(820px,100%);margin:0 auto;padding:28px 18px 64px}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.1em}.head h1{font-size:clamp(30px,7vw,54px);margin:7px 0 8px}.head p{margin:0;color:#555;line-height:1.55}
+.notice{margin:22px 0;padding:16px;border:1px solid #000;background:#fafafa;font-size:13px;line-height:1.6}.notice strong{display:block;margin-bottom:4px}
+form{display:grid;gap:18px}.group{border-top:2px solid #000;padding-top:18px}.group h2{font-size:17px;margin:0 0 14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}
+label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}input,select,textarea{width:100%;border:1px solid #aaa;border-radius:0;background:#fff;padding:13px 12px;font:inherit;color:#111}textarea{min-height:100px;resize:vertical}input:focus,select:focus,textarea:focus{outline:2px solid #000;outline-offset:1px}
+.address-tools{display:grid;grid-template-columns:1fr auto;gap:8px}.address-tools button,.results-link,.submit-btn{border:1px solid #000;background:#000;color:#fff;padding:12px 15px;font-weight:900;text-decoration:none;cursor:pointer}.results-link{display:inline-block;background:#fff;color:#000;margin-top:6px;font-size:12px}.help{font-size:11px;color:#666;line-height:1.45}
+.checks{display:grid;gap:12px}.check{display:flex;gap:10px;align-items:flex-start;border:1px solid #cfcfcf;padding:14px}.check input{width:20px;height:20px;margin:0;flex:0 0 auto}.check label{font-size:13px;line-height:1.45;letter-spacing:0}
+.submit-wrap{padding-top:4px}.submit-btn{width:100%;min-height:54px;font-size:14px}.submit-btn:disabled{background:#ccc;border-color:#ccc;color:#777;cursor:not-allowed}.status{font-size:12px;color:#555;text-align:center;margin-top:8px;min-height:18px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.address-tools{grid-template-columns:1fr}.apdc-main-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));white-space:normal}.apdc-main-nav a{text-align:center;padding:11px 5px;font-size:10px}}
+
+.lock-screen{position:fixed;inset:0;background:#fff;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px}.lock-card{width:min(460px,100%);border:2px solid #000;padding:28px;background:#fff}.lock-card .eyebrow{margin-bottom:8px}.lock-card h1{margin:0 0 8px;font-size:30px}.lock-card p{margin:0 0 20px;color:#555;line-height:1.55}.lock-row{display:grid;grid-template-columns:1fr auto;gap:8px}.lock-row input{min-height:50px}.lock-row button{border:1px solid #000;background:#000;color:#fff;padding:0 18px;font-weight:900;cursor:pointer}.lock-error{min-height:18px;margin-top:10px;font-size:12px;color:#b00020;font-weight:700}.locked-content{display:none}.locked-content.unlocked{display:block}@media(max-width:520px){.lock-row{grid-template-columns:1fr}.lock-row button{min-height:48px}}
+</style>
+</head>
+<body>
+<div id="lockScreen" class="lock-screen" role="dialog" aria-modal="true" aria-labelledby="lockTitle">
+  <div class="lock-card">
+    <div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
+    <h1 id="lockTitle">PRIZE SHIPPING</h1>
+    <p>This page is for APDC prize shipping and prize-money information. Please enter the access password.</p>
+    <div class="lock-row">
+      <input id="shippingPassword" type="password" autocomplete="current-password" placeholder="Password" aria-label="Prize Shipping password">
+      <button id="unlockBtn" type="button">ENTER</button>
+    </div>
+    <div id="lockError" class="lock-error" aria-live="polite"></div>
+  </div>
+</div>
+<div id="protectedContent" class="locked-content">
+<script>
+(function(){
+  const EXPECTED_HASH='0d2eec9f0109c3ae9a39827c174b6c005729949d47505bf28d66ba6494c2961d';
+  const lock=document.getElementById('lockScreen');
+  const content=document.getElementById('protectedContent');
+  const input=document.getElementById('shippingPassword');
+  const btn=document.getElementById('unlockBtn');
+  const err=document.getElementById('lockError');
+  async function sha256(value){
+    const data=new TextEncoder().encode(value);
+    const digest=await crypto.subtle.digest('SHA-256',data);
+    return Array.from(new Uint8Array(digest)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  }
+  function showContent(){
+    lock.style.display='none';
+    content.classList.add('unlocked');
+    sessionStorage.setItem('apdcShippingUnlocked','1');
+  }
+  async function unlock(){
+    err.textContent='';
+    const value=input.value;
+    if(!value){err.textContent='Please enter the password.';input.focus();return;}
+    try{
+      if(await sha256(value)===EXPECTED_HASH){showContent();}
+      else{err.textContent='Incorrect password.';input.value='';input.focus();}
+    }catch(e){err.textContent='Unable to verify password in this browser.';}
+  }
+  btn.addEventListener('click',unlock);
+  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();unlock();}});
+  if(sessionStorage.getItem('apdcShippingUnlocked')==='1')showContent();
+  else setTimeout(()=>input.focus(),0);
+})();
+</script>
+
+<header><a class="brand" href="index.html">2026 APDC</a></header>
+<nav class="apdc-main-nav">
+  <a href="entry.html">ENTRY SEARCH</a>
+  <a href="timetable.html">TIMETABLE</a>
+  <a href="results.html">RESULTS</a>
+  <a href="shipping.html" class="active">PRIZE SHIPPING</a>
+</nav>
+<main>
+<section class="head">
+  <div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
+  <h1>PRIZE SHIPPING</h1>
+  <p>Please enter the international shipping information carefully. Only complete submissions can be sent.</p>
+</section>
+<div class="notice">
+  <strong>IMPORTANT</strong>
+  Please check your official APDC result and shipping address before submitting. APDC will use the information entered here for international delivery of certificates, medals, trophies and other awarded items.
+</div>
+<form id="shippingForm" action="https://formsubmit.co/nanamun6389@gmail.com" method="POST" novalidate>
+  <input type="hidden" name="_subject" value="[2026 APDC] International Prize Shipping Information">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://nanamun6389-a11y.github.io/APDC-SEARCH/shipping-thanks.html">
+
+  <section class="group">
+    <h2>1. Participant Information</h2>
+    <div class="grid">
+      <div class="field">
+        <label for="country">Country / Region <span class="req">*</span></label>
+        <select id="country" name="Country / Region" required>
+          <option value="">Select country / region</option>
+          <option>Hong Kong</option><option>Japan</option><option>Macau</option><option>Malaysia</option><option>Singapore</option><option>Taiwan</option><option>South Korea</option><option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="dancerName">Dancer / Participant Name <span class="req">*</span></label>
+        <input id="dancerName" name="Dancer / Participant Name" autocomplete="name" required placeholder="Full name as registered in APDC">
+      </div>
+    </div>
+  </section>
+
+  <section class="group">
+    <h2>2. Recipient & Contact</h2>
+    <div class="grid">
+      <div class="field">
+        <label for="recipientName">Recipient Name <span class="req">*</span></label>
+        <input id="recipientName" name="Recipient Name" autocomplete="name" required placeholder="Name on the parcel">
+      </div>
+      <div class="field">
+        <label for="phone">Phone Number <span class="req">*</span></label>
+        <input id="phone" name="Phone Number" type="tel" autocomplete="tel" required placeholder="Include country code, e.g. +65 ...">
+      </div>
+      <div class="field full">
+        <label for="contactEmail">Contact Email <span class="req">*</span></label>
+        <input id="contactEmail" name="Contact Email" type="email" autocomplete="email" required placeholder="Email for shipping questions">
+      </div>
+    </div>
+  </section>
+
+  <section class="group">
+    <h2>3. Shipping Address</h2>
+    <div class="grid">
+      <div class="field full">
+        <label for="addressSearch">Address Search <span class="req">*</span></label>
+        <div class="address-tools">
+          <input id="addressSearch" name="Address Search Text" required placeholder="Type your address in English">
+          <button id="mapSearchBtn" type="button">CHECK ON GOOGLE MAPS</button>
+        </div>
+        <div class="help">Search the address first, confirm the location, then enter the complete postal address below.</div>
+      </div>
+      <div class="field">
+        <label for="postalCode">Postal / ZIP Code <span class="req">*</span></label>
+        <input id="postalCode" name="Postal / ZIP Code" autocomplete="postal-code" required placeholder="Postal / ZIP code">
+      </div>
+      <div class="field">
+        <label for="city">City / State / Province <span class="req">*</span></label>
+        <input id="city" name="City / State / Province" autocomplete="address-level1" required placeholder="City / State / Province">
+      </div>
+      <div class="field full">
+        <label for="shippingAddress">Full Shipping Address <span class="req">*</span></label>
+        <textarea id="shippingAddress" name="Full Shipping Address" autocomplete="street-address" required placeholder="Building, street, district, city, country — please write the full address in English"></textarea>
+      </div>
+      <div class="field full">
+        <label for="detailAddress">Apartment / Unit / Floor / Additional Detail <span class="req">*</span></label>
+        <input id="detailAddress" name="Address Detail" required placeholder="Enter unit/floor details, or type N/A if none">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="group">
+    <h2>4. Prize Money / Bank Information</h2>
+    <div class="grid">
+      <div class="field full">
+        <label for="prizeMoneyRecipient">Are you receiving APDC prize money? <span class="req">*</span></label>
+        <select id="prizeMoneyRecipient" name="Prize Money Recipient" required>
+          <option value="">Select YES or NO</option>
+          <option value="YES">YES — I am receiving prize money</option>
+          <option value="NO">NO — I am not receiving prize money</option>
+        </select>
+      </div>
+    </div>
+    <div id="bankFields" class="grid" style="margin-top:14px;display:none">
+      <div class="field">
+        <label for="bankCountry">Bank Country / Region <span class="req">*</span></label>
+        <input id="bankCountry" name="Bank Country / Region" data-bank-required placeholder="Country / region where the bank is located">
+      </div>
+      <div class="field">
+        <label for="bankName">Bank Name <span class="req">*</span></label>
+        <input id="bankName" name="Bank Name" data-bank-required placeholder="Full bank name in English">
+      </div>
+      <div class="field">
+        <label for="accountHolder">Account Holder Name <span class="req">*</span></label>
+        <input id="accountHolder" name="Account Holder Name" data-bank-required placeholder="Name exactly as registered with the bank">
+      </div>
+      <div class="field">
+        <label for="accountNumber">Account Number / IBAN <span class="req">*</span></label>
+        <input id="accountNumber" name="Account Number / IBAN" data-bank-required placeholder="Account number or IBAN">
+      </div>
+      <div class="field">
+        <label for="swiftCode">SWIFT / BIC Code <span class="req">*</span></label>
+        <input id="swiftCode" name="SWIFT / BIC Code" data-bank-required placeholder="SWIFT / BIC code">
+      </div>
+      <div class="field">
+        <label for="bankBranch">Bank Branch / Branch Address <span class="req">*</span></label>
+        <input id="bankBranch" name="Bank Branch / Branch Address" data-bank-required placeholder="Branch name or branch address">
+      </div>
+      <div class="field full">
+        <div class="help">Please enter international remittance information exactly as registered with your bank. Incorrect information may delay prize payment.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="group">
+    <h2>5. Final Confirmation</h2>
+    <a class="results-link" href="results.html" target="_blank" rel="noopener">OPEN OFFICIAL RESULTS</a>
+    <div class="checks" style="margin-top:12px">
+      <div class="check"><input id="addressConfirmed" name="Address Confirmed" type="checkbox" value="YES" required><label for="addressConfirmed">I have checked the address and confirm that all shipping information is complete and correct. <span class="req">*</span></label></div>
+      <div class="check"><input id="awardConfirmed" name="Award List Confirmed" type="checkbox" value="YES" required><label for="awardConfirmed">I have checked the APDC award/result list and confirm my result. <span class="req">*</span></label></div>
+    </div>
+  </section>
+
+  <div class="submit-wrap">
+    <button id="submitBtn" class="submit-btn" type="submit" disabled>SUBMIT SHIPPING INFORMATION</button>
+    <div id="formStatus" class="status">Complete every required field and both confirmations to submit.</div>
+  </div>
+</form>
+</main>
+<script>
+const form=document.getElementById('shippingForm');
+const submitBtn=document.getElementById('submitBtn');
+const status=document.getElementById('formStatus');
+let required=[...form.querySelectorAll('[required]')];
+const prizeMoneyRecipient=document.getElementById('prizeMoneyRecipient');
+const bankFields=document.getElementById('bankFields');
+const bankRequired=[...document.querySelectorAll('[data-bank-required]')];
+function syncBankFields(){
+  const needsBank=prizeMoneyRecipient.value==='YES';
+  bankFields.style.display=needsBank?'grid':'none';
+  bankRequired.forEach(el=>{el.required=needsBank;if(!needsBank) el.value='';});
+  required=[...form.querySelectorAll('[required]')];
+}
+prizeMoneyRecipient.addEventListener('change',()=>{syncBankFields();refresh();});
+function complete(){
+  return required.every(el => el.type==='checkbox' ? el.checked : el.value.trim()!=='') && document.getElementById('contactEmail').validity.valid;
+}
+function refresh(){
+  const ok=complete(); submitBtn.disabled=!ok;
+  status.textContent=ok?'All required information is complete. You may submit now.':'Complete every required field and both confirmations to submit.';
+}
+form.addEventListener('input',refresh);form.addEventListener('change',refresh);
+document.getElementById('mapSearchBtn').addEventListener('click',()=>{
+  const q=document.getElementById('addressSearch').value.trim();
+  if(!q){alert('Please enter an address first.');return;}
+  window.open('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q),'_blank','noopener');
+});
+form.addEventListener('submit',e=>{
+  if(!complete() || !form.checkValidity()){
+    e.preventDefault(); form.reportValidity(); refresh();
+    status.textContent='Please complete and verify every required item before submitting.';
+    return;
+  }
+  submitBtn.disabled=true;submitBtn.textContent='SUBMITTING…';status.textContent='Sending your shipping information…';
+});
+syncBankFields();
+refresh();
+</script>
+</div>
+</body>
+</html>
