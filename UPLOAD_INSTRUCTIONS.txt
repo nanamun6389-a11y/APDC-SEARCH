@@ -1,6 +1,6 @@
-APDC PRIZE SHIPPING - SAFE MENU UPDATE
+APDC PRIZE SHIPPING - TEAM SUBMISSION SAFE UPDATE
 
-Upload/replace ONLY these files in the same GitHub Pages folder:
+Upload/replace these 5 HTML files only:
 - entry.html
 - timetable.html
 - results.html
@@ -8,12 +8,8 @@ Upload/replace ONLY these files in the same GitHub Pages folder:
 - shipping-thanks.html
 
 IMPORTANT:
-- This package intentionally contains NO results.js and NO results.json.
-- Do NOT delete or replace your existing results.js/results.json.
-- Existing result ranking/search data therefore remains untouched.
-- PRIZE SHIPPING password: APDC0070
-
-What changed:
-- Added PRIZE SHIPPING link to ENTRY SEARCH / TIMETABLE / RESULTS navigation.
-- Added password-protected shipping page.
-- Shipping form includes prize-money bank fields.
+- results.js and results.json are NOT included and are NOT changed.
+- Existing result rankings/data logic remain untouched.
+- PRIZE SHIPPING is password protected with APDC0070.
+- Shipping form is ONE SUBMISSION PER TEAM.
+- Team awards are grouped and shipped to one representative address.

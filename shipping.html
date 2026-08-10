@@ -82,11 +82,11 @@ label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}inp
 <section class="head">
   <div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
   <h1>PRIZE SHIPPING</h1>
-  <p>Please enter the international shipping information carefully. Only complete submissions can be sent.</p>
+  <p>Please submit this form once per team. All awarded items for the team will be grouped and shipped together to the address provided below.</p>
 </section>
 <div class="notice">
   <strong>IMPORTANT</strong>
-  Please check your official APDC result and shipping address before submitting. APDC will use the information entered here for international delivery of certificates, medals, trophies and other awarded items.
+  Please check the official APDC results for your team before submitting. APDC will group the team's certificates, medals, trophies and other awarded items into one shipment and send them to the representative address entered below.
 </div>
 <form id="shippingForm" action="https://formsubmit.co/nanamun6389@gmail.com" method="POST" novalidate>
   <input type="hidden" name="_subject" value="[2026 APDC] International Prize Shipping Information">
@@ -95,7 +95,7 @@ label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}inp
   <input type="hidden" name="_next" value="https://nanamun6389-a11y.github.io/APDC-SEARCH/shipping-thanks.html">
 
   <section class="group">
-    <h2>1. Participant Information</h2>
+    <h2>1. Team Information</h2>
     <div class="grid">
       <div class="field">
         <label for="country">Country / Region <span class="req">*</span></label>
@@ -105,18 +105,22 @@ label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}inp
         </select>
       </div>
       <div class="field">
-        <label for="dancerName">Dancer / Participant Name <span class="req">*</span></label>
-        <input id="dancerName" name="Dancer / Participant Name" autocomplete="name" required placeholder="Full name as registered in APDC">
+        <label for="teamName">Team Name <span class="req">*</span></label>
+        <input id="teamName" name="Team Name" required placeholder="Official team / academy name">
+      </div>
+      <div class="field">
+        <label for="teamRepresentative">Team Representative <span class="req">*</span></label>
+        <input id="teamRepresentative" name="Team Representative" autocomplete="name" required placeholder="Coach / leader / person responsible for this submission">
       </div>
     </div>
   </section>
 
   <section class="group">
-    <h2>2. Recipient & Contact</h2>
+    <h2>2. Team Shipping Representative & Contact</h2>
     <div class="grid">
       <div class="field">
         <label for="recipientName">Recipient Name <span class="req">*</span></label>
-        <input id="recipientName" name="Recipient Name" autocomplete="name" required placeholder="Name on the parcel">
+        <input id="recipientName" name="Recipient Name" autocomplete="name" required placeholder="Team representative / recipient name on the parcel">
       </div>
       <div class="field">
         <label for="phone">Phone Number <span class="req">*</span></label>
@@ -124,7 +128,7 @@ label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}inp
       </div>
       <div class="field full">
         <label for="contactEmail">Contact Email <span class="req">*</span></label>
-        <input id="contactEmail" name="Contact Email" type="email" autocomplete="email" required placeholder="Email for shipping questions">
+        <input id="contactEmail" name="Contact Email" type="email" autocomplete="email" required placeholder="Representative email for shipping questions">
       </div>
     </div>
   </section>
@@ -164,11 +168,11 @@ label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}inp
     <h2>4. Prize Money / Bank Information</h2>
     <div class="grid">
       <div class="field full">
-        <label for="prizeMoneyRecipient">Are you receiving APDC prize money? <span class="req">*</span></label>
+        <label for="prizeMoneyRecipient">Will this team receive APDC prize money? <span class="req">*</span></label>
         <select id="prizeMoneyRecipient" name="Prize Money Recipient" required>
           <option value="">Select YES or NO</option>
-          <option value="YES">YES — I am receiving prize money</option>
-          <option value="NO">NO — I am not receiving prize money</option>
+          <option value="YES">YES — This team is receiving prize money</option>
+          <option value="NO">NO — This team is not receiving prize money</option>
         </select>
       </div>
     </div>
@@ -198,7 +202,7 @@ label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}inp
         <input id="bankBranch" name="Bank Branch / Branch Address" data-bank-required placeholder="Branch name or branch address">
       </div>
       <div class="field full">
-        <div class="help">Please enter international remittance information exactly as registered with your bank. Incorrect information may delay prize payment.</div>
+        <div class="help">Enter one representative bank account for the entire team. APDC will send the team's prize money to this single account. Please enter international remittance information exactly as registered with the bank.</div>
       </div>
     </div>
   </section>
@@ -208,13 +212,13 @@ label{font-size:12px;font-weight:900;letter-spacing:.03em}.req{color:#b00020}inp
     <a class="results-link" href="results.html" target="_blank" rel="noopener">OPEN OFFICIAL RESULTS</a>
     <div class="checks" style="margin-top:12px">
       <div class="check"><input id="addressConfirmed" name="Address Confirmed" type="checkbox" value="YES" required><label for="addressConfirmed">I have checked the address and confirm that all shipping information is complete and correct. <span class="req">*</span></label></div>
-      <div class="check"><input id="awardConfirmed" name="Award List Confirmed" type="checkbox" value="YES" required><label for="awardConfirmed">I have checked the APDC award/result list and confirm my result. <span class="req">*</span></label></div>
+      <div class="check"><input id="awardConfirmed" name="Award List Confirmed" type="checkbox" value="YES" required><label for="awardConfirmed">I have checked the APDC award/result list and confirm the team award list. <span class="req">*</span></label></div>
     </div>
   </section>
 
   <div class="submit-wrap">
-    <button id="submitBtn" class="submit-btn" type="submit" disabled>SUBMIT SHIPPING INFORMATION</button>
-    <div id="formStatus" class="status">Complete every required field and both confirmations to submit.</div>
+    <button id="submitBtn" class="submit-btn" type="submit" disabled>SUBMIT TEAM SHIPPING INFORMATION</button>
+    <div id="formStatus" class="status">Complete every required field and both confirmations to submit this team information.</div>
   </div>
 </form>
 </main>
@@ -238,7 +242,7 @@ function complete(){
 }
 function refresh(){
   const ok=complete(); submitBtn.disabled=!ok;
-  status.textContent=ok?'All required information is complete. You may submit now.':'Complete every required field and both confirmations to submit.';
+  status.textContent=ok?'All required information is complete. You may submit now.':'Complete every required field and both confirmations to submit this team information.';
 }
 form.addEventListener('input',refresh);form.addEventListener('change',refresh);
 document.getElementById('mapSearchBtn').addEventListener('click',()=>{
