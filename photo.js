@@ -429,7 +429,8 @@ function closeUpload() {
 }
 const openUploadButton = document.getElementById("openUpload");
 if (openUploadButton && !IS_STANDALONE_ADMIN) openUploadButton.onclick = openUpload;
-document.getElementById("scrollTop").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+const scrollTopButton = document.getElementById("scrollTop");
+if (scrollTopButton) scrollTopButton.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 document.getElementById("closeUpload").onclick = closeUpload;
 
 function unlockUpload() {
