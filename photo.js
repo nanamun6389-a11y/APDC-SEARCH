@@ -409,7 +409,10 @@ document.addEventListener("keydown", e => {
 
 function openUpload() {
   uploadPanel.classList.remove("hidden");
-  document.body.style.overflow = "hidden";
+  // The standalone Admin page must remain vertically scrollable on mobile.
+  // Only the gallery overlay version should lock the page behind it.
+  if (!IS_STANDALONE_ADMIN) document.body.style.overflow = "hidden";
+  else document.body.style.overflow = "";
   if (sessionStorage.getItem("apdc_gallery_upload") === "1") {
     passwordGate.classList.add("hidden");
     uploadControls.classList.remove("hidden");

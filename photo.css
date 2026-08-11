@@ -39,7 +39,7 @@
 .gallery-admin-footer-wrap{padding:34px 16px calc(100px + env(safe-area-inset-bottom));text-align:center}
 .gallery-admin-footer-link{display:inline-flex;align-items:center;justify-content:center;min-width:118px;height:44px;padding:0 22px;border:1px solid #3f3f3f;background:#090909;color:#a8a8a8;text-decoration:none;font-size:10px;font-weight:900;letter-spacing:.15em}
 .gallery-admin-footer-link:active{background:#151515;color:#fff}
-.gallery-admin-page{background:#000;color:#fff}
+.gallery-admin-page{background:#000;color:#fff;overflow-x:hidden;overflow-y:auto!important;-webkit-overflow-scrolling:touch;touch-action:pan-y}
 .admin-page-header{position:relative}
 .admin-page-panel{position:static!important;inset:auto!important;z-index:auto!important;background:#000!important;overflow:visible!important;padding:0 14px max(50px,env(safe-area-inset-bottom))!important}
 .admin-page-sheet{width:min(760px,100%)!important;margin:0 auto!important;border:1px solid #2f2f2f!important;background:#0c0c0c!important}
