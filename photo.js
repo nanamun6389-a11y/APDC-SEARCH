@@ -35,11 +35,9 @@ const selectedInfo = document.getElementById("selectedInfo");
 const uploadMsg = document.getElementById("uploadMessage");
 const progressWrap = document.getElementById("uploadProgress");
 const progressBar = document.getElementById("uploadProgressBar");
-const selectionBar = document.getElementById("selectionBar");
-const selectedCount = document.getElementById("selectedCount");
 
 let media = [];
-const selectedIds = new Set();
+let lightboxIndex = -1;
 
 function escapeHtml(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
@@ -61,12 +59,6 @@ function renderGallery() {
   grid.innerHTML = media.map((item,i) => {
     const kind = mediaKind(item);
     const src = mediaUrl(item);
-    const checked = selectedIds.has(item.id) ? "checked" : "";
-    const selector = kind === "image" ? `
-      <label class="photo-select" title="다운로드할 사진 선택">
-        <input type="checkbox" data-select-id="${escapeHtml(item.id)}" ${checked}>
-        <span></span>
-      </label>` : "";
     if (kind === "video") {
       return `<article class="public-photo-card-wrap">
         <button class="public-photo-card video-card" type="button" data-index="${i}" aria-label="동영상 크게 보기">
@@ -76,8 +68,7 @@ function renderGallery() {
         </button>
       </article>`;
     }
-    return `<article class="public-photo-card-wrap ${checked ? "is-selected" : ""}">
-      ${selector}
+    return `<article class="public-photo-card-wrap">
       <button class="public-photo-card" type="button" data-index="${i}" aria-label="사진 크게 보기">
         <img src="${escapeHtml(src)}" alt="${escapeHtml(item.caption || "APDC photo")}" loading="lazy">
         ${item.caption ? `<span class="card-caption">${escapeHtml(item.caption)}</span>` : ""}
@@ -86,74 +77,22 @@ function renderGallery() {
   }).join("");
 
   grid.querySelectorAll(".public-photo-card").forEach(el => {
-    el.onclick = () => openLightbox(media[Number(el.dataset.index)]);
+    el.onclick = () => openLightbox(Number(el.dataset.index));
   });
-  grid.querySelectorAll("input[data-select-id]").forEach(cb => {
-    cb.onchange = e => {
-      e.stopPropagation();
-      const id = cb.dataset.selectId;
-      cb.checked ? selectedIds.add(id) : selectedIds.delete(id);
-      cb.closest(".public-photo-card-wrap")?.classList.toggle("is-selected", cb.checked);
-      updateSelectionBar();
-    };
-    cb.onclick = e => e.stopPropagation();
-  });
-  updateSelectionBar();
 }
 
-function updateSelectionBar() {
-  selectedCount.textContent = selectedIds.size;
-  selectionBar.classList.toggle("hidden", selectedIds.size === 0);
-}
-document.getElementById("clearSelection").onclick = () => {
-  selectedIds.clear();
-  renderGallery();
-};
-
-document.getElementById("downloadSelected").onclick = async () => {
-  const btn = document.getElementById("downloadSelected");
-  const chosen = media.filter(item => selectedIds.has(item.id) && mediaKind(item) === "image");
-  if (!chosen.length) return;
-
-  btn.disabled = true;
-  const original = btn.textContent;
-  try {
-    if (!window.JSZip) throw new Error("ZIP library unavailable");
-    const zip = new JSZip();
-    for (let i = 0; i < chosen.length; i++) {
-      btn.textContent = `다운로드 준비 ${i+1}/${chosen.length}`;
-      const item = chosen[i];
-      const response = await fetch(mediaUrl(item));
-      if (!response.ok) throw new Error("사진 다운로드 실패");
-      const blob = await response.blob();
-      const ext = (blob.type.split("/")[1] || "jpg").replace("jpeg","jpg").split("+")[0];
-      const base = (item.originalName || `APDC_${i+1}`).replace(/\.[^.]+$/, "").replace(/[\\/:*?"<>|]+/g, "_");
-      zip.file(`${String(i+1).padStart(3,"0")}_${base}.${ext}`, blob);
-    }
-    btn.textContent = "ZIP 만드는 중...";
-    const content = await zip.generateAsync({type:"blob"});
-    const url = URL.createObjectURL(content);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `APDC_SELECTED_PHOTOS_${new Date().toISOString().slice(0,10)}.zip`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 10000);
-  } catch (err) {
-    console.error(err);
-    alert("선택한 사진을 다운로드하지 못했습니다. 잠시 후 다시 시도해 주세요.");
-  } finally {
-    btn.disabled = false;
-    btn.textContent = original;
-  }
-};
-
-function openLightbox(item) {
+function showLightboxItem(index) {
+  if (!media.length) return;
+  lightboxIndex = (index + media.length) % media.length;
+  const item = media[lightboxIndex];
   const kind = mediaKind(item);
   const src = mediaUrl(item);
+
   lightboxImage.classList.add("hidden");
+  lightboxVideo.pause();
   lightboxVideo.classList.add("hidden");
+  lightboxVideo.removeAttribute("src");
+
   if (kind === "video") {
     lightboxVideo.src = src;
     lightboxVideo.classList.remove("hidden");
@@ -162,20 +101,39 @@ function openLightbox(item) {
     lightboxImage.classList.remove("hidden");
   }
   lightboxCaption.textContent = item.caption || "";
+
+  const showNav = media.length > 1;
+  document.getElementById("lightboxPrev").classList.toggle("hidden", !showNav);
+  document.getElementById("lightboxNext").classList.toggle("hidden", !showNav);
+}
+
+function openLightbox(index) {
+  showLightboxItem(index);
   lightbox.classList.remove("hidden");
   document.body.style.overflow = "hidden";
 }
 function closeLightbox() {
   lightbox.classList.add("hidden");
+  lightboxIndex = -1;
   lightboxImage.src = "";
   lightboxVideo.pause();
   lightboxVideo.removeAttribute("src");
   lightboxVideo.load();
   document.body.style.overflow = "";
 }
+function moveLightbox(step) {
+  if (lightbox.classList.contains("hidden") || lightboxIndex < 0 || media.length < 2) return;
+  showLightboxItem(lightboxIndex + step);
+}
 document.getElementById("lightboxClose").onclick = closeLightbox;
+document.getElementById("lightboxPrev").onclick = e => { e.stopPropagation(); moveLightbox(-1); };
+document.getElementById("lightboxNext").onclick = e => { e.stopPropagation(); moveLightbox(1); };
 lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape") { closeLightbox(); closeUpload(); } });
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { closeLightbox(); closeUpload(); }
+  if (e.key === "ArrowLeft") moveLightbox(-1);
+  if (e.key === "ArrowRight") moveLightbox(1);
+});
 
 function openUpload() {
   uploadPanel.classList.remove("hidden");
@@ -256,22 +214,46 @@ async function compressImageToBlob(file) {
   }
 }
 async function uploadToStorage(blob, path, contentType, onProgress) {
-  const target = storageRef(storage, path);
+  // Use the Firebase Storage REST upload endpoint directly here.
+  // This avoids the Web SDK's long automatic retry loop in some mobile/in-app browsers.
+  const bucket = firebaseConfig.storageBucket;
+  const endpoint = `https://firebasestorage.googleapis.com/v0/b/${encodeURIComponent(bucket)}/o?uploadType=media&name=${encodeURIComponent(path)}`;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 30000);
   onProgress?.(0.05);
   try {
-    const snapshot = await uploadBytes(target, blob, { contentType });
-    onProgress?.(0.95);
-    const url = await getDownloadURL(snapshot.ref);
-    onProgress?.(1);
-    return { url, storagePath: snapshot.ref.fullPath };
-  } catch (err) {
-    console.error("Firebase Storage upload failed", {
-      code: err?.code,
-      message: err?.message,
-      serverResponse: err?.serverResponse
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": contentType || "application/octet-stream" },
+      body: blob,
+      signal: controller.signal,
+      cache: "no-store"
     });
-    const server = err?.serverResponse ? ` · ${String(err.serverResponse).slice(0, 220)}` : "";
-    throw new Error(`Firebase Storage: ${err?.code || err?.message || "업로드 실패"}${server}`);
+    const text = await response.text();
+    let meta = {};
+    try { meta = text ? JSON.parse(text) : {}; } catch {}
+
+    if (!response.ok) {
+      const detail = meta?.error?.message || text || `HTTP ${response.status}`;
+      throw new Error(`Firebase Storage HTTP ${response.status}: ${String(detail).slice(0, 260)}`);
+    }
+
+    onProgress?.(0.9);
+    const tokenRaw = meta.downloadTokens || meta.downloadToken || "";
+    const token = String(tokenRaw).split(",")[0].trim();
+    const encodedPath = encodeURIComponent(meta.name || path);
+    const baseUrl = `https://firebasestorage.googleapis.com/v0/b/${encodeURIComponent(bucket)}/o/${encodedPath}?alt=media`;
+    const url = token ? `${baseUrl}&token=${encodeURIComponent(token)}` : baseUrl;
+    onProgress?.(1);
+    return { url, storagePath: meta.name || path };
+  } catch (err) {
+    console.error("Firebase Storage REST upload failed", err);
+    if (err?.name === "AbortError") {
+      throw new Error("Firebase Storage: 30초 동안 서버 응답이 없습니다. Storage 활성화/버킷 연결 상태를 확인해 주세요.");
+    }
+    throw err;
+  } finally {
+    clearTimeout(timeoutId);
   }
 }
 
