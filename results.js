@@ -35,6 +35,43 @@ function sectionOf(category){
 }
 const SECTION_ORDER=["FORMATION","UNDER 10","UNDER 12","UNDER 15","UNDER 18","OVER 19","OVER 35","AMATEUR","SENIOR","MANIA","PRO-AM","OTHER"];
 
+const AWARD_RULES={
+  "Formation":{medal:[1,2,3]},
+  "Under 10 Solo C":{medal:[1,2,3]},
+  "Under 10 Solo CRJ":{medal:[1,2,3]},
+  "Under 10 Solo R":{medal:[1,2,3]},
+  "Under 12 Solo CR":{medal:[1,2,3]},
+  "Under 12 Solo CRJ":{medal:[1,2,3]},
+  "Under 15 Solo CRS":{medal:[1,2,3]},
+  "Under 15 Solo CSRJ":{medal:[1,2,3]},
+  "Under 15 Solo WTFQ":{medal:[1,2,3]},
+  "Under 18 Solo Elite A Latin":{trophy:[1],medal:[2,3],prize:[1,2,3]},
+  "Over 19 Solo Latin 5 Dance":{medal:[1,2,3]},
+  "Over 19 Solo Latin CRS":{medal:[1,2,3]},
+  "Over 35 Solo CRS":{medal:[1,2,3]},
+  "Amateur Rising Star Latin":{medal:[1,2,3]},
+  "Asia Pacific Amateur Latin":{trophy:[1],medal:[2,3],prize:[1,2,3]},
+  "Asia Pacific Amateur Solo Latin":{trophy:[1],medal:[2,3],prize:[1,2,3]},
+  "Korea Closed Amateur Latin":{trophy:[1],medal:[2,3]},
+  "Pro-Am Latin R":{medal:[1]},
+  "Pro-Am Standard 3 Dance":{medal:[1]}
+};
+function placeNumber(place){
+  const m=String(place||"").match(/^(\d+)/);
+  return m?Number(m[1]):0;
+}
+function awardBadges(row){
+  const rule=AWARD_RULES[String(row.category||"").trim()];
+  if(!rule)return "";
+  const p=placeNumber(row.place);
+  const badges=[];
+  if(rule.trophy?.includes(p))badges.push('<span class="award-badge trophy">🏆 TROPHY</span>');
+  if(rule.medal?.includes(p))badges.push('<span class="award-badge medal">🏅 MEDAL</span>');
+  if(rule.prize?.includes(p))badges.push('<span class="award-badge prize">💰 PRIZE MONEY</span>');
+  return badges.length?`<div class="award-badges">${badges.join("")}</div>`:"";
+}
+
+
 function render(){
   const q=norm(searchEl.value);
   const filtered=RESULTS.filter(row=>matches(row,q));
@@ -73,7 +110,7 @@ function render(){
                 ${rows.map(row=>`
                   <article class="result-row">
                     <div class="result-place">${esc(row.place)}</div>
-                    <div class="result-name">${esc(row.name)}</div>
+                    <div class="result-name">${esc(row.name)}${awardBadges(row)}</div>
                     <div class="result-back"><span>BACK NO.</span><strong>${esc(row.backNo||"—")}</strong></div>
                   </article>
                 `).join("")}

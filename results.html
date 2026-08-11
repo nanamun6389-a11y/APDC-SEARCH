@@ -29,7 +29,20 @@
   .result-place{font-size:15px}.result-name{font-size:15px}.result-back strong{font-size:18px}
 }
 </style>
-<style>.page-back-btn{position:fixed;z-index:999;left:10px;top:10px;padding:8px 10px;border:1px solid #777;background:#000;color:#fff;text-decoration:none;font:900 10px Arial;letter-spacing:.08em}</style></head>
+<style>.page-back-btn{position:fixed;z-index:999;left:10px;top:10px;padding:8px 10px;border:1px solid #777;background:#000;color:#fff;text-decoration:none;font:900 10px Arial;letter-spacing:.08em}</style>
+<style>
+.award-badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.award-badge{display:inline-flex;align-items:center;min-height:23px;padding:4px 7px;border:1px solid #111;font-size:9px;line-height:1;font-weight:900;letter-spacing:.04em;background:#fff;color:#000;white-space:nowrap}
+.award-badge.trophy{background:#111;color:#fff}
+.award-badge.prize{border-style:double;border-width:3px;padding:2px 6px}
+.results-award-key{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+@media(max-width:600px){
+  .award-badges{gap:4px;margin-top:6px}
+  .award-badge{font-size:8px;padding:4px 5px;min-height:21px}
+  .result-name{min-width:0}
+}
+</style>
+</head>
 <body><a class="page-back-btn" href="index.html">← BACK</a>
 <header style="position:relative"><a class="brand brand-link" href="index.html">2026 APDC</a></header>
 <main class="results-main">
@@ -48,6 +61,6 @@
   <div id="resultList" class="results-list"><div class="results-empty">LOADING RESULTS…</div></div>
 </section>
 </main>
-<script src="results.js?v=20260810-results-v3"></script>
+<script src="results.js?v=20260811-awards-v1"></script>
 </body>
 </html>
