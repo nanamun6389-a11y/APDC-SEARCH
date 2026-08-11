@@ -1,4 +1,4 @@
-const CACHE_NAME='apdc-search-20260728-recovered-order-v4';
+const CACHE_NAME='apdc-search-20260811-gallery-no-checkbox-v5';
 const APP_SHELL = [
   "./analytics.js",
   "./app.js",

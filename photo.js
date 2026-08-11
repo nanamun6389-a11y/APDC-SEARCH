@@ -1,5 +1,5 @@
 import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-import { getDatabase, ref, onValue, push, set } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
+import { getDatabase, ref, onValue, push, set, remove } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
 import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-storage.js";
 import { firebaseConfig } from "./firebase-config.js";
 
@@ -35,6 +35,9 @@ const selectedInfo = document.getElementById("selectedInfo");
 const uploadMsg = document.getElementById("uploadMessage");
 const progressWrap = document.getElementById("uploadProgress");
 const progressBar = document.getElementById("uploadProgressBar");
+const adminMediaGrid = document.getElementById("adminMediaGrid");
+const adminMediaEmpty = document.getElementById("adminMediaEmpty");
+const adminMediaCount = document.getElementById("adminMediaCount");
 let media = [];
 
 function escapeHtml(v) {
@@ -49,9 +52,66 @@ onValue(ref(db, DB_PATH), snap => {
   media = Object.entries(raw).map(([id,v])=>({id,...v})).sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
   empty.classList.toggle("hidden", media.length !== 0);
   renderGallery();
+  if (sessionStorage.getItem("apdc_gallery_upload") === "1") renderAdminMedia();
 }, () => {
   loading.textContent = "사진과 동영상을 불러오지 못했습니다.";
 });
+
+async function deleteStorageObject(path) {
+  if (!path) return;
+  const bucket = firebaseConfig.storageBucket;
+  const endpoint = `https://firebasestorage.googleapis.com/v0/b/${encodeURIComponent(bucket)}/o/${encodeURIComponent(path)}`;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 15000);
+  try {
+    const response = await fetch(endpoint, { method: "DELETE", signal: controller.signal, cache: "no-store" });
+    if (!response.ok && response.status !== 404) {
+      const text = await response.text();
+      let detail = text;
+      try { detail = JSON.parse(text)?.error?.message || text; } catch {}
+      throw new Error(`Storage 삭제 실패 (${response.status}): ${String(detail).slice(0, 180)}`);
+    }
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
+function renderAdminMedia() {
+  if (!adminMediaGrid) return;
+  adminMediaCount.textContent = String(media.length);
+  adminMediaEmpty.classList.toggle("hidden", media.length !== 0);
+  adminMediaGrid.innerHTML = media.map(item => {
+    const kind = mediaKind(item);
+    const src = mediaUrl(item);
+    const preview = kind === "video"
+      ? `<video src="${escapeHtml(src)}" preload="metadata" muted playsinline></video>`
+      : `<img src="${escapeHtml(src)}" alt="APDC photo" loading="lazy">`;
+    return `<article class="admin-media-item">
+      <div class="admin-media-thumb">${preview}<span>${kind === "video" ? "VIDEO" : "PHOTO"}</span></div>
+      <button class="admin-delete-btn" type="button" data-delete-id="${escapeHtml(item.id)}">DELETE</button>
+    </article>`;
+  }).join("");
+
+  adminMediaGrid.querySelectorAll(".admin-delete-btn").forEach(btn => {
+    btn.onclick = async () => {
+      const item = media.find(v => v.id === btn.dataset.deleteId);
+      if (!item) return;
+      const label = mediaKind(item) === "video" ? "이 동영상을 삭제할까요?" : "이 사진을 삭제할까요?";
+      if (!confirm(label)) return;
+      btn.disabled = true;
+      btn.textContent = "DELETING...";
+      try {
+        await deleteStorageObject(item.storagePath);
+        await remove(ref(db, `${DB_PATH}/${item.id}`));
+      } catch (err) {
+        console.error(err);
+        alert(err?.message || "삭제에 실패했습니다.");
+        btn.disabled = false;
+        btn.textContent = "DELETE";
+      }
+    };
+  });
+}
 
 function renderGallery() {
   grid.innerHTML = media.map((item,i) => {
@@ -113,6 +173,7 @@ function openUpload() {
   if (sessionStorage.getItem("apdc_gallery_upload") === "1") {
     passwordGate.classList.add("hidden");
     uploadControls.classList.remove("hidden");
+    renderAdminMedia();
   } else {
     passwordGate.classList.remove("hidden");
     uploadControls.classList.add("hidden");
@@ -135,6 +196,7 @@ function unlockUpload() {
     passwordMessage.textContent = "";
     passwordGate.classList.add("hidden");
     uploadControls.classList.remove("hidden");
+    renderAdminMedia();
   } else {
     passwordMessage.textContent = "비밀번호가 올바르지 않습니다.";
     passwordInput.value = "";

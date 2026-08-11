@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#000000">
   <title>APDC Gallery</title>
-  <link rel="stylesheet" href="photo.css?v=20260811-4">
+  <link rel="stylesheet" href="photo.css?v=20260811-6">
 </head>
 <body>
 <header class="photo-header public-header">
@@ -51,6 +51,16 @@
       <div id="selectedInfo" class="selected-info">선택된 파일 없음</div>
       <div id="uploadProgress" class="progress-wrap hidden"><div id="uploadProgressBar"></div></div>
       <div id="uploadMessage" class="message"></div>
+
+      <div class="admin-manage-head">
+        <div>
+          <div class="small-label">MANAGE</div>
+          <h3>DELETE PHOTOS & VIDEOS</h3>
+        </div>
+        <span id="adminMediaCount" class="admin-media-count">0</span>
+      </div>
+      <div id="adminMediaGrid" class="admin-media-grid"></div>
+      <div id="adminMediaEmpty" class="admin-media-empty hidden">삭제할 사진이나 동영상이 없습니다.</div>
     </section>
   </div>
 </div>
@@ -63,6 +73,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<script type="module" src="photo.js?v=20260811-4"></script>
+<script type="module" src="photo.js?v=20260811-6"></script>
 </body>
 </html>
