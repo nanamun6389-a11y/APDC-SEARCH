@@ -325,15 +325,26 @@ function renderGallery() {
   }).join("");
 
   grid.querySelectorAll(".public-photo-card").forEach(el => {
-    el.onclick = () => openLightbox(media[Number(el.dataset.index)]);
+    el.onclick = () => openLightbox(Number(el.dataset.index));
   });
 }
 
-function openLightbox(item) {
+let lightboxIndex = -1;
+let lightboxTouchStartX = 0;
+let lightboxTouchStartY = 0;
+
+function showLightboxItem(index) {
+  if (!media.length) return;
+  lightboxIndex = (index + media.length) % media.length;
+  const item = media[lightboxIndex];
   const kind = mediaKind(item);
   const src = mediaUrl(item);
+
   lightboxImage.classList.add("hidden");
+  lightboxVideo.pause();
   lightboxVideo.classList.add("hidden");
+  lightboxVideo.removeAttribute("src");
+
   if (kind === "video") {
     lightboxVideo.src = src;
     lightboxVideo.classList.remove("hidden");
@@ -342,20 +353,59 @@ function openLightbox(item) {
     lightboxImage.classList.remove("hidden");
   }
   lightboxCaption.textContent = item.caption || "";
+}
+
+function openLightbox(indexOrItem) {
+  const index = Number.isInteger(indexOrItem) ? indexOrItem : media.indexOf(indexOrItem);
+  showLightboxItem(index >= 0 ? index : 0);
   lightbox.classList.remove("hidden");
   document.body.style.overflow = "hidden";
 }
 function closeLightbox() {
   lightbox.classList.add("hidden");
+  lightboxIndex = -1;
   lightboxImage.src = "";
   lightboxVideo.pause();
   lightboxVideo.removeAttribute("src");
   lightboxVideo.load();
   document.body.style.overflow = "";
 }
+
+function lightboxNext() {
+  if (lightboxIndex >= 0) showLightboxItem(lightboxIndex + 1);
+}
+function lightboxPrev() {
+  if (lightboxIndex >= 0) showLightboxItem(lightboxIndex - 1);
+}
+
 document.getElementById("lightboxClose").onclick = closeLightbox;
 lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape") { closeLightbox(); closeUpload(); closeSponsor(); } });
+
+// Mobile gallery swipe: swipe left for next, right for previous.
+lightbox.addEventListener("touchstart", e => {
+  if (lightbox.classList.contains("hidden") || e.touches.length !== 1) return;
+  lightboxTouchStartX = e.touches[0].clientX;
+  lightboxTouchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+lightbox.addEventListener("touchend", e => {
+  if (lightbox.classList.contains("hidden") || !lightboxTouchStartX || !e.changedTouches.length) return;
+  const dx = e.changedTouches[0].clientX - lightboxTouchStartX;
+  const dy = e.changedTouches[0].clientY - lightboxTouchStartY;
+  lightboxTouchStartX = 0;
+  lightboxTouchStartY = 0;
+
+  // Ignore taps/vertical scrolling. A deliberate horizontal swipe must be at least 45px.
+  if (Math.abs(dx) < 45 || Math.abs(dx) <= Math.abs(dy) * 1.15) return;
+  if (dx < 0) lightboxNext();
+  else lightboxPrev();
+}, { passive: true });
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { closeLightbox(); closeUpload(); closeSponsor(); }
+  if (!lightbox.classList.contains("hidden") && e.key === "ArrowRight") lightboxNext();
+  if (!lightbox.classList.contains("hidden") && e.key === "ArrowLeft") lightboxPrev();
+});
 
 function openUpload() {
   uploadPanel.classList.remove("hidden");
