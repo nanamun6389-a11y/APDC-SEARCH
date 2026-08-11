@@ -10,7 +10,7 @@ storage.maxUploadRetryTime = 15000;
 storage.maxOperationRetryTime = 15000;
 
 const DB_PATH = "photoGallery";
-const SPONSOR_DB_PATH = "sponsorInquiries";
+const SPONSOR_EMAIL = "nanamun6389@gmail.com";
 const STORAGE_FOLDER = "apdc-media";
 const UPLOAD_PASSWORD = "fill0070";
 const MAX_DIMENSION = 2000;
@@ -45,12 +45,7 @@ const sponsorContact = document.getElementById("sponsorContact");
 const sponsorMessage = document.getElementById("sponsorMessage");
 const sponsorSubmitMessage = document.getElementById("sponsorSubmitMessage");
 const submitSponsor = document.getElementById("submitSponsor");
-const adminInquiryList = document.getElementById("adminInquiryList");
-const adminInquiryEmpty = document.getElementById("adminInquiryEmpty");
-const adminInquiryCount = document.getElementById("adminInquiryCount");
 let media = [];
-let sponsorInquiries = [];
-let sponsorAdminListening = false;
 
 function escapeHtml(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
@@ -125,63 +120,6 @@ function renderAdminMedia() {
   });
 }
 
-function formatInquiryDate(value) {
-  if (!value) return "";
-  try {
-    return new Intl.DateTimeFormat("ko-KR", {
-      year: "numeric", month: "2-digit", day: "2-digit",
-      hour: "2-digit", minute: "2-digit"
-    }).format(new Date(value));
-  } catch { return ""; }
-}
-
-function renderSponsorInquiries() {
-  if (!adminInquiryList) return;
-  adminInquiryCount.textContent = String(sponsorInquiries.length);
-  adminInquiryEmpty.classList.toggle("hidden", sponsorInquiries.length !== 0);
-  adminInquiryList.innerHTML = sponsorInquiries.map(item => `
-    <article class="admin-inquiry-item">
-      <div class="admin-inquiry-top">
-        <div class="admin-inquiry-name">${escapeHtml(item.name || "-")}<span class="admin-inquiry-new">NEW</span></div>
-        <div class="admin-inquiry-date">${escapeHtml(formatInquiryDate(item.createdAt))}</div>
-      </div>
-      <div class="admin-inquiry-contact">${escapeHtml(item.contact || "-")}</div>
-      ${item.message ? `<div class="admin-inquiry-message">${escapeHtml(item.message)}</div>` : ""}
-      <div class="admin-inquiry-actions"><button class="admin-inquiry-delete" type="button" data-inquiry-delete="${escapeHtml(item.id)}">DELETE</button></div>
-    </article>`).join("");
-  adminInquiryList.querySelectorAll("[data-inquiry-delete]").forEach(btn => {
-    btn.onclick = async () => {
-      if (!confirm("이 문의를 삭제할까요?")) return;
-      btn.disabled = true;
-      try {
-        await remove(ref(db, `${SPONSOR_DB_PATH}/${btn.dataset.inquiryDelete}`));
-      } catch (err) {
-        console.error(err);
-        alert("문의 삭제에 실패했습니다.");
-        btn.disabled = false;
-      }
-    };
-  });
-}
-
-function startSponsorAdminListener() {
-  if (sponsorAdminListening) return;
-  sponsorAdminListening = true;
-  onValue(ref(db, SPONSOR_DB_PATH), snap => {
-    const raw = snap.val() || {};
-    sponsorInquiries = Object.entries(raw)
-      .map(([id, value]) => ({ id, ...value }))
-      .sort((a,b) => (b.createdAt || 0) - (a.createdAt || 0));
-    renderSponsorInquiries();
-  }, err => {
-    console.error("Sponsor inquiry load failed", err);
-    if (adminInquiryEmpty) {
-      adminInquiryEmpty.classList.remove("hidden");
-      adminInquiryEmpty.textContent = "문의 내역을 불러오지 못했습니다.";
-    }
-  });
-}
-
 function openSponsor() {
   sponsorPanel.classList.remove("hidden");
   sponsorSubmitMessage.textContent = "";
@@ -198,7 +136,7 @@ document.getElementById("openSponsor").onclick = openSponsor;
 document.getElementById("closeSponsor").onclick = closeSponsor;
 sponsorPanel.addEventListener("click", e => { if (e.target === sponsorPanel) closeSponsor(); });
 
-submitSponsor.onclick = async () => {
+submitSponsor.onclick = () => {
   const name = sponsorName.value.trim();
   const contact = sponsorContact.value.trim();
   const message = sponsorMessage.value.trim();
@@ -208,28 +146,19 @@ submitSponsor.onclick = async () => {
     sponsorSubmitMessage.classList.add("sponsor-error");
     return;
   }
-  submitSponsor.disabled = true;
-  sponsorSubmitMessage.textContent = "보내는 중...";
-  try {
-    const itemRef = push(ref(db, SPONSOR_DB_PATH));
-    await set(itemRef, {
-      name,
-      contact,
-      message,
-      createdAt: Date.now()
-    });
-    sponsorName.value = "";
-    sponsorContact.value = "";
-    sponsorMessage.value = "";
-    sponsorSubmitMessage.textContent = "문의가 접수되었습니다. 감사합니다.";
-    sponsorSubmitMessage.classList.add("sponsor-success");
-  } catch (err) {
-    console.error("Sponsor inquiry submit failed", err);
-    sponsorSubmitMessage.textContent = "전송에 실패했습니다. 잠시 후 다시 시도해 주세요.";
-    sponsorSubmitMessage.classList.add("sponsor-error");
-  } finally {
-    submitSponsor.disabled = false;
-  }
+
+  const subject = `[APDC SPONSOR AD] ${name}`;
+  const body = [
+    "APDC 스폰서 광고 문의",
+    "",
+    `이름: ${name}`,
+    `연락처: ${contact}`,
+    `문의내용: ${message || "-"}`
+  ].join("\n");
+
+  sponsorSubmitMessage.textContent = "이메일 작성 화면을 여는 중입니다.";
+  sponsorSubmitMessage.classList.add("sponsor-success");
+  window.location.href = `mailto:${SPONSOR_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };
 
 function renderGallery() {
@@ -293,7 +222,6 @@ function openUpload() {
     passwordGate.classList.add("hidden");
     uploadControls.classList.remove("hidden");
     renderAdminMedia();
-    startSponsorAdminListener();
   } else {
     passwordGate.classList.remove("hidden");
     uploadControls.classList.add("hidden");
@@ -317,7 +245,6 @@ function unlockUpload() {
     passwordGate.classList.add("hidden");
     uploadControls.classList.remove("hidden");
     renderAdminMedia();
-    startSponsorAdminListener();
   } else {
     passwordMessage.textContent = "비밀번호가 올바르지 않습니다.";
     passwordInput.value = "";
