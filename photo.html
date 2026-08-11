@@ -66,40 +66,64 @@
     </section>
 
     <section id="uploadControls" class="upload-section hidden">
-      <div class="small-label">UPLOAD</div>
-      <h2>ADD PHOTOS & VIDEOS</h2>
-      <label class="file-picker" for="galleryFiles">
-        <strong>사진 · 동영상 선택</strong>
-        <span>여러 파일을 한 번에 선택할 수 있습니다.</span>
-      </label>
-      <input id="galleryFiles" type="file" accept="image/*,video/*" multiple hidden>
-      <input id="galleryCaption" type="text" maxlength="80" placeholder="캡션 (선택)">
-      <button id="galleryUploadBtn" type="button" class="primary-btn" disabled>UPLOAD</button>
-      <div id="selectedInfo" class="selected-info">선택된 파일 없음</div>
-      <div id="uploadProgress" class="progress-wrap hidden"><div id="uploadProgressBar"></div></div>
-      <div id="uploadMessage" class="message"></div>
-
-      <div class="admin-manage-head">
-        <div>
-          <div class="small-label">MANAGE</div>
-          <h3>DELETE PHOTOS & VIDEOS</h3>
-        </div>
-        <span id="adminMediaCount" class="admin-media-count">0</span>
+      <div class="admin-dashboard-title">
+        <div class="small-label">GALLERY ADMIN</div>
+        <h2>GALLERY MANAGEMENT</h2>
       </div>
-      <div id="adminMediaGrid" class="admin-media-grid"></div>
-      <div id="adminMediaEmpty" class="admin-media-empty hidden">삭제할 사진이나 동영상이 없습니다.</div>
 
-      <div class="admin-sponsor-head">
-        <div>
-          <div class="small-label">SPONSORS</div>
-          <h3>EDIT SPONSOR NAMES</h3>
+      <div class="admin-section-card admin-sponsor-card">
+        <div class="admin-section-head">
+          <div>
+            <div class="small-label">SPONSORS</div>
+            <h3>SPONSOR MANAGEMENT</h3>
+            <p>업체명 철자 수정 · 추가 · 삭제</p>
+          </div>
+          <button id="addSponsorName" class="admin-sponsor-add" type="button">+ ADD</button>
         </div>
-        <button id="addSponsorName" class="admin-sponsor-add" type="button">+ ADD</button>
+        <div id="adminSponsorList" class="admin-sponsor-list"></div>
+        <button id="saveSponsorNames" type="button" class="primary-btn admin-sponsor-save">SAVE SPONSORS</button>
+        <div id="sponsorAdminMessage" class="message"></div>
       </div>
-      <div id="adminSponsorList" class="admin-sponsor-list"></div>
-      <button id="saveSponsorNames" type="button" class="primary-btn admin-sponsor-save">SAVE SPONSORS</button>
-      <div id="sponsorAdminMessage" class="message"></div>
 
+      <div class="admin-section-card">
+        <div class="admin-section-head">
+          <div>
+            <div class="small-label">ADD MEDIA</div>
+            <h3>ADD PHOTOS & VIDEOS</h3>
+            <p>사진에는 APDC 워터마크가 자동 적용됩니다.</p>
+          </div>
+        </div>
+        <label class="file-picker" for="galleryFiles">
+          <strong>사진 · 동영상 선택</strong>
+          <span>여러 파일을 한 번에 선택할 수 있습니다.</span>
+        </label>
+        <input id="galleryFiles" type="file" accept="image/*,video/*" multiple hidden>
+        <input id="galleryCaption" type="text" maxlength="80" placeholder="캡션 (선택)">
+        <button id="galleryUploadBtn" type="button" class="primary-btn" disabled>UPLOAD</button>
+        <div id="selectedInfo" class="selected-info">선택된 파일 없음</div>
+        <div id="uploadProgress" class="progress-wrap hidden"><div id="uploadProgressBar"></div></div>
+        <div id="uploadMessage" class="message"></div>
+      </div>
+
+      <div class="admin-section-card admin-delete-card">
+        <div class="admin-section-head admin-delete-head">
+          <div>
+            <div class="small-label">MANAGE MEDIA</div>
+            <h3>SELECT & DELETE</h3>
+            <p>사진을 눌러 여러 장을 선택한 뒤 한 번에 삭제하세요.</p>
+          </div>
+          <span id="adminMediaCount" class="admin-media-count">0</span>
+        </div>
+        <div class="admin-bulk-toolbar">
+          <button id="selectAllMedia" type="button" class="admin-tool-btn">SELECT ALL</button>
+          <button id="clearMediaSelection" type="button" class="admin-tool-btn">CLEAR</button>
+          <span id="selectedMediaCount" class="admin-selected-count">0 SELECTED</span>
+        </div>
+        <div id="adminMediaGrid" class="admin-media-grid"></div>
+        <div id="adminMediaEmpty" class="admin-media-empty hidden">삭제할 사진이나 동영상이 없습니다.</div>
+        <button id="deleteSelectedMedia" type="button" class="primary-btn admin-delete-selected" disabled>DELETE SELECTED (0)</button>
+        <div id="bulkDeleteMessage" class="message"></div>
+      </div>
     </section>
   </div>
 </div>
@@ -112,6 +136,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<script type="module" src="photo.js?v=20260811-10"></script>
+<script type="module" src="photo.js?v=20260811-12"></script>
 </body>
 </html>

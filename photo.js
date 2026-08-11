@@ -39,6 +39,11 @@ const progressBar = document.getElementById("uploadProgressBar");
 const adminMediaGrid = document.getElementById("adminMediaGrid");
 const adminMediaEmpty = document.getElementById("adminMediaEmpty");
 const adminMediaCount = document.getElementById("adminMediaCount");
+const selectAllMediaBtn = document.getElementById("selectAllMedia");
+const clearMediaSelectionBtn = document.getElementById("clearMediaSelection");
+const deleteSelectedMediaBtn = document.getElementById("deleteSelectedMedia");
+const selectedMediaCount = document.getElementById("selectedMediaCount");
+const bulkDeleteMessage = document.getElementById("bulkDeleteMessage");
 const sponsorPanel = document.getElementById("sponsorPanel");
 const sponsorName = document.getElementById("sponsorName");
 const sponsorContact = document.getElementById("sponsorContact");
@@ -56,6 +61,7 @@ let sponsorTimer = null;
 
 const submitSponsor = document.getElementById("submitSponsor");
 let media = [];
+const selectedMediaIds = new Set();
 
 function escapeHtml(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
@@ -170,42 +176,91 @@ if (saveSponsorNamesBtn) saveSponsorNamesBtn.onclick = async () => {
   }
 };
 
+function updateBulkDeleteUI() {
+  const count = selectedMediaIds.size;
+  if (selectedMediaCount) selectedMediaCount.textContent = `${count} SELECTED`;
+  if (deleteSelectedMediaBtn) {
+    deleteSelectedMediaBtn.disabled = count === 0;
+    deleteSelectedMediaBtn.textContent = `DELETE SELECTED (${count})`;
+  }
+}
+
 function renderAdminMedia() {
   if (!adminMediaGrid) return;
+  // Remove ids that no longer exist.
+  const validIds = new Set(media.map(v => v.id));
+  for (const id of [...selectedMediaIds]) if (!validIds.has(id)) selectedMediaIds.delete(id);
+
   adminMediaCount.textContent = String(media.length);
   adminMediaEmpty.classList.toggle("hidden", media.length !== 0);
   adminMediaGrid.innerHTML = media.map(item => {
     const kind = mediaKind(item);
     const src = mediaUrl(item);
+    const isSelected = selectedMediaIds.has(item.id);
     const preview = kind === "video"
       ? `<video src="${escapeHtml(src)}" preload="metadata" muted playsinline></video>`
       : `<img src="${escapeHtml(src)}" alt="APDC photo" loading="lazy">`;
-    return `<article class="admin-media-item">
-      <div class="admin-media-thumb">${preview}<span>${kind === "video" ? "VIDEO" : "PHOTO"}</span></div>
-      <button class="admin-delete-btn" type="button" data-delete-id="${escapeHtml(item.id)}">DELETE</button>
-    </article>`;
+    return `<button class="admin-media-item admin-selectable-media ${isSelected ? "selected" : ""}" type="button" data-media-id="${escapeHtml(item.id)}" aria-pressed="${isSelected}">
+      <div class="admin-media-thumb">${preview}<span class="media-kind-badge">${kind === "video" ? "VIDEO" : "PHOTO"}</span><span class="admin-select-mark">✓</span></div>
+    </button>`;
   }).join("");
 
-  adminMediaGrid.querySelectorAll(".admin-delete-btn").forEach(btn => {
-    btn.onclick = async () => {
-      const item = media.find(v => v.id === btn.dataset.deleteId);
-      if (!item) return;
-      const label = mediaKind(item) === "video" ? "이 동영상을 삭제할까요?" : "이 사진을 삭제할까요?";
-      if (!confirm(label)) return;
-      btn.disabled = true;
-      btn.textContent = "DELETING...";
-      try {
-        await deleteStorageObject(item.storagePath);
-        await remove(ref(db, `${DB_PATH}/${item.id}`));
-      } catch (err) {
-        console.error(err);
-        alert(err?.message || "삭제에 실패했습니다.");
-        btn.disabled = false;
-        btn.textContent = "DELETE";
-      }
+  adminMediaGrid.querySelectorAll("[data-media-id]").forEach(card => {
+    card.onclick = () => {
+      const id = card.dataset.mediaId;
+      if (selectedMediaIds.has(id)) selectedMediaIds.delete(id); else selectedMediaIds.add(id);
+      card.classList.toggle("selected", selectedMediaIds.has(id));
+      card.setAttribute("aria-pressed", selectedMediaIds.has(id) ? "true" : "false");
+      updateBulkDeleteUI();
     };
   });
+  updateBulkDeleteUI();
 }
+
+if (selectAllMediaBtn) selectAllMediaBtn.onclick = () => {
+  media.forEach(item => selectedMediaIds.add(item.id));
+  renderAdminMedia();
+};
+
+if (clearMediaSelectionBtn) clearMediaSelectionBtn.onclick = () => {
+  selectedMediaIds.clear();
+  renderAdminMedia();
+};
+
+if (deleteSelectedMediaBtn) deleteSelectedMediaBtn.onclick = async () => {
+  const ids = [...selectedMediaIds];
+  if (!ids.length) return;
+  if (!confirm(`선택한 ${ids.length}개의 사진/동영상을 삭제할까요?`)) return;
+
+  deleteSelectedMediaBtn.disabled = true;
+  selectAllMediaBtn && (selectAllMediaBtn.disabled = true);
+  clearMediaSelectionBtn && (clearMediaSelectionBtn.disabled = true);
+  if (bulkDeleteMessage) bulkDeleteMessage.textContent = `0 / ${ids.length} 삭제 중...`;
+
+  let done = 0;
+  let failed = 0;
+  for (const id of ids) {
+    const item = media.find(v => v.id === id);
+    if (!item) { selectedMediaIds.delete(id); continue; }
+    try {
+      await deleteStorageObject(item.storagePath);
+      await remove(ref(db, `${DB_PATH}/${item.id}`));
+      selectedMediaIds.delete(id);
+      done++;
+    } catch (err) {
+      console.error("Bulk delete failed:", item.id, err);
+      failed++;
+    }
+    if (bulkDeleteMessage) bulkDeleteMessage.textContent = `${done + failed} / ${ids.length} 삭제 중...`;
+  }
+
+  selectAllMediaBtn && (selectAllMediaBtn.disabled = false);
+  clearMediaSelectionBtn && (clearMediaSelectionBtn.disabled = false);
+  updateBulkDeleteUI();
+  if (bulkDeleteMessage) bulkDeleteMessage.textContent = failed
+    ? `${done}개 삭제 완료 · ${failed}개 실패`
+    : `${done}개 삭제 완료`;
+};
 
 function openSponsor() {
   sponsorPanel.classList.remove("hidden");
