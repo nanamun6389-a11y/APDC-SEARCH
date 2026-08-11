@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#000000">
   <title>APDC Gallery</title>
-  <link rel="stylesheet" href="photo.css?v=20260811-8">
+  <link rel="stylesheet" href="photo.css?v=20260811-10">
 </head>
 <body>
 <header class="photo-header public-header">
@@ -23,38 +23,7 @@
   <div id="galleryEmpty" class="empty-state hidden">아직 공개된 사진이나 동영상이 없습니다.</div>
 </main>
 
-<div class="floating-sponsor sponsor-rotator" id="sponsorRotator" aria-live="polite">
-  <div class="sponsor-slide active" aria-label="Top Dream Dance sponsor">
-    <span class="floating-sponsor-label">SPONSOR</span>
-    <strong>TOP DREAM DANCE</strong>
-    <small>APDC 2026</small>
-  </div>
-  <div class="sponsor-slide" aria-label="Rael sponsor">
-    <span class="floating-sponsor-label">SPONSOR</span>
-    <strong>RAEL</strong>
-    <small>APDC 2026</small>
-  </div>
-  <div class="sponsor-slide" aria-label="M Project sponsor">
-    <span class="floating-sponsor-label">SPONSOR</span>
-    <strong>M PROJECT</strong>
-    <small>APDC 2026</small>
-  </div>
-  <div class="sponsor-slide" aria-label="Park Ji Woo Dance Studio sponsor">
-    <span class="floating-sponsor-label">SPONSOR</span>
-    <strong>PARK JI WOO DANCE STUDIO</strong>
-    <small>APDC 2026</small>
-  </div>
-  <div class="sponsor-slide" aria-label="Dancefill Academy sponsor">
-    <span class="floating-sponsor-label">SPONSOR</span>
-    <strong>DANCEFILL ACADEMY</strong>
-    <small>APDC 2026</small>
-  </div>
-  <button id="openSponsor" class="sponsor-slide sponsor-inquiry-slide" type="button" aria-label="Sponsor advertising inquiry">
-    <span class="floating-sponsor-label">SPONSOR AD</span>
-    <strong>ADVERTISING INQUIRY</strong>
-    <small>Name · Contact</small>
-  </button>
-</div>
+<div class="floating-sponsor sponsor-rotator" id="sponsorRotator" aria-live="polite"></div>
 <button id="openUpload" class="floating-admin" type="button" aria-label="갤러리 관리자">ADMIN</button>
 <button id="scrollTop" class="floating-top" type="button" aria-label="맨 위로 이동">↑</button>
 
@@ -120,6 +89,17 @@
       <div id="adminMediaGrid" class="admin-media-grid"></div>
       <div id="adminMediaEmpty" class="admin-media-empty hidden">삭제할 사진이나 동영상이 없습니다.</div>
 
+      <div class="admin-sponsor-head">
+        <div>
+          <div class="small-label">SPONSORS</div>
+          <h3>EDIT SPONSOR NAMES</h3>
+        </div>
+        <button id="addSponsorName" class="admin-sponsor-add" type="button">+ ADD</button>
+      </div>
+      <div id="adminSponsorList" class="admin-sponsor-list"></div>
+      <button id="saveSponsorNames" type="button" class="primary-btn admin-sponsor-save">SAVE SPONSORS</button>
+      <div id="sponsorAdminMessage" class="message"></div>
+
     </section>
   </div>
 </div>
@@ -132,6 +112,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<script type="module" src="photo.js?v=20260811-9"></script>
+<script type="module" src="photo.js?v=20260811-10"></script>
 </body>
 </html>

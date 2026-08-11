@@ -26,3 +26,6 @@
 .sponsor-slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;width:100%;padding:9px 10px 10px;border:0;border-radius:inherit;background:transparent;color:inherit;text-align:left;opacity:0;visibility:hidden;transform:translateY(5px);transition:opacity .45s ease,transform .45s ease,visibility .45s}
 .sponsor-slide.active{opacity:1;visibility:visible;transform:translateY(0)}
 .sponsor-inquiry-slide{cursor:pointer;font:inherit}
+
+/* Admin sponsor manager */
+.admin-sponsor-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-top:30px;padding-top:24px;border-top:1px solid #2f2f2f}.admin-sponsor-head h3{margin:7px 0 0;font-size:16px;letter-spacing:.03em}.admin-sponsor-add{border:1px solid #444;background:#0b0b0b;color:#fff;padding:9px 11px;font-size:9px;font-weight:900;letter-spacing:.08em}.admin-sponsor-list{display:flex;flex-direction:column;gap:8px;margin-top:14px}.admin-sponsor-row{display:grid;grid-template-columns:1fr auto;gap:8px}.admin-sponsor-row input{width:100%;padding:12px;background:#050505;border:1px solid #444;color:#fff;font:inherit;outline:none;text-transform:uppercase}.admin-sponsor-remove{border:1px solid #3a3a3a;background:#0b0b0b;color:#aaa;padding:0 11px;font-size:9px;font-weight:900;letter-spacing:.06em}.admin-sponsor-save{margin-top:12px}

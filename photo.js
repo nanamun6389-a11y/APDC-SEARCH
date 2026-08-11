@@ -44,15 +44,15 @@ const sponsorName = document.getElementById("sponsorName");
 const sponsorContact = document.getElementById("sponsorContact");
 const sponsorMessage = document.getElementById("sponsorMessage");
 const sponsorSubmitMessage = document.getElementById("sponsorSubmitMessage");
-const sponsorSlides = Array.from(document.querySelectorAll("#sponsorRotator .sponsor-slide"));
+const sponsorRotator = document.getElementById("sponsorRotator");
+const adminSponsorList = document.getElementById("adminSponsorList");
+const addSponsorNameBtn = document.getElementById("addSponsorName");
+const saveSponsorNamesBtn = document.getElementById("saveSponsorNames");
+const sponsorAdminMessage = document.getElementById("sponsorAdminMessage");
+const DEFAULT_SPONSORS = ["TOP DREAM DANCE", "RAEL", "M PROJECT", "PARK JI WOO DANCE STUDIO", "DANCEFILL ACADEMY"];
+let sponsorNames = [...DEFAULT_SPONSORS];
 let sponsorSlideIndex = 0;
-if (sponsorSlides.length > 1) {
-  setInterval(() => {
-    sponsorSlides[sponsorSlideIndex].classList.remove("active");
-    sponsorSlideIndex = (sponsorSlideIndex + 1) % sponsorSlides.length;
-    sponsorSlides[sponsorSlideIndex].classList.add("active");
-  }, 3200);
-}
+let sponsorTimer = null;
 
 const submitSponsor = document.getElementById("submitSponsor");
 let media = [];
@@ -66,10 +66,17 @@ function mediaKind(item) { return item.mediaType || (item.mimeType?.startsWith("
 onValue(ref(db, DB_PATH), snap => {
   loading.classList.add("hidden");
   const raw = snap.val() || {};
-  media = Object.entries(raw).map(([id,v])=>({id,...v})).sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
+  const sponsorConfig = raw._sponsors;
+  sponsorNames = Array.isArray(sponsorConfig?.names) && sponsorConfig.names.length
+    ? sponsorConfig.names.map(v => String(v || "").trim()).filter(Boolean)
+    : [...DEFAULT_SPONSORS];
+  media = Object.entries(raw)
+    .filter(([id,v]) => id !== "_sponsors" && v?.kind !== "sponsorConfig")
+    .map(([id,v])=>({id,...v})).sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
   empty.classList.toggle("hidden", media.length !== 0);
+  renderSponsorRotator();
   renderGallery();
-  if (sessionStorage.getItem("apdc_gallery_upload") === "1") renderAdminMedia();
+  if (sessionStorage.getItem("apdc_gallery_upload") === "1") { renderAdminMedia(); renderAdminSponsors(); }
 }, () => {
   loading.textContent = "사진과 동영상을 불러오지 못했습니다.";
 });
@@ -92,6 +99,76 @@ async function deleteStorageObject(path) {
     clearTimeout(timeoutId);
   }
 }
+
+function renderSponsorRotator() {
+  if (!sponsorRotator) return;
+  const sponsorHtml = sponsorNames.map((name,i) => `
+    <div class="sponsor-slide ${i === 0 ? "active" : ""}" aria-label="${escapeHtml(name)} sponsor">
+      <span class="floating-sponsor-label">SPONSOR</span>
+      <strong>${escapeHtml(name)}</strong>
+      <small>APDC 2026</small>
+    </div>`).join("");
+  sponsorRotator.innerHTML = sponsorHtml + `
+    <button id="openSponsor" class="sponsor-slide sponsor-inquiry-slide ${sponsorNames.length === 0 ? "active" : ""}" type="button" aria-label="Sponsor advertising inquiry">
+      <span class="floating-sponsor-label">SPONSOR AD</span>
+      <strong>ADVERTISING INQUIRY</strong>
+      <small>Name · Contact</small>
+    </button>`;
+  document.getElementById("openSponsor").onclick = openSponsor;
+    sponsorSlideIndex = 0;
+  clearInterval(sponsorTimer);
+  const slides = Array.from(sponsorRotator.querySelectorAll(".sponsor-slide"));
+  if (slides.length > 1) {
+    sponsorTimer = setInterval(() => {
+      slides[sponsorSlideIndex]?.classList.remove("active");
+      sponsorSlideIndex = (sponsorSlideIndex + 1) % slides.length;
+      slides[sponsorSlideIndex]?.classList.add("active");
+    }, 3200);
+  }
+}
+
+function renderAdminSponsors() {
+  if (!adminSponsorList) return;
+  adminSponsorList.innerHTML = sponsorNames.map((name,i) => `
+    <div class="admin-sponsor-row">
+      <input type="text" maxlength="60" value="${escapeHtml(name)}" data-sponsor-index="${i}" aria-label="Sponsor name ${i+1}">
+      <button type="button" class="admin-sponsor-remove" data-sponsor-remove="${i}">REMOVE</button>
+    </div>`).join("");
+  adminSponsorList.querySelectorAll("[data-sponsor-remove]").forEach(btn => {
+    btn.onclick = () => {
+      sponsorNames.splice(Number(btn.dataset.sponsorRemove), 1);
+      renderAdminSponsors();
+    };
+  });
+}
+
+if (addSponsorNameBtn) addSponsorNameBtn.onclick = () => {
+  sponsorNames.push("NEW SPONSOR");
+  renderAdminSponsors();
+  const inputs = adminSponsorList.querySelectorAll("input");
+  const last = inputs[inputs.length - 1];
+  if (last) { last.focus(); last.select(); }
+};
+
+if (saveSponsorNamesBtn) saveSponsorNamesBtn.onclick = async () => {
+  const names = Array.from(adminSponsorList.querySelectorAll("input"))
+    .map(input => input.value.trim().toUpperCase())
+    .filter(Boolean);
+  sponsorAdminMessage.textContent = "저장 중...";
+  saveSponsorNamesBtn.disabled = true;
+  try {
+    await set(ref(db, `${DB_PATH}/_sponsors`), { kind: "sponsorConfig", names, updatedAt: Date.now() });
+    sponsorNames = names;
+    renderSponsorRotator();
+    renderAdminSponsors();
+    sponsorAdminMessage.textContent = "스폰서 목록을 저장했습니다.";
+  } catch (err) {
+    console.error(err);
+    sponsorAdminMessage.textContent = "저장에 실패했습니다. 다시 시도해 주세요.";
+  } finally {
+    saveSponsorNamesBtn.disabled = false;
+  }
+};
 
 function renderAdminMedia() {
   if (!adminMediaGrid) return;
@@ -142,7 +219,6 @@ function closeSponsor() {
   document.body.style.overflow = "";
 }
 
-document.getElementById("openSponsor").onclick = openSponsor;
 document.getElementById("closeSponsor").onclick = closeSponsor;
 sponsorPanel.addEventListener("click", e => { if (e.target === sponsorPanel) closeSponsor(); });
 
@@ -232,6 +308,7 @@ function openUpload() {
     passwordGate.classList.add("hidden");
     uploadControls.classList.remove("hidden");
     renderAdminMedia();
+    renderAdminSponsors();
   } else {
     passwordGate.classList.remove("hidden");
     uploadControls.classList.add("hidden");
@@ -255,6 +332,7 @@ function unlockUpload() {
     passwordGate.classList.add("hidden");
     uploadControls.classList.remove("hidden");
     renderAdminMedia();
+    renderAdminSponsors();
   } else {
     passwordMessage.textContent = "비밀번호가 올바르지 않습니다.";
     passwordInput.value = "";
