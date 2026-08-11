@@ -5,7 +5,7 @@ import { firebaseConfig } from "./firebase-config.js";
 
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 const db = getDatabase(app);
-const storage = getStorage(app);
+const storage = getStorage(app, `gs://${firebaseConfig.storageBucket}`);
 
 const DB_PATH = "photoGallery";
 const STORAGE_FOLDER = "apdc-media";
