@@ -21,7 +21,12 @@ const APP_SHELL = [
   "./version-history.js",
   "./data-common.js",
   "./style.css"
-];
+,
+  "./photo.html",
+  "./photo.css",
+  "./photo.js",
+  "./photo-admin.html",
+  "./photo-admin.js"];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL)));

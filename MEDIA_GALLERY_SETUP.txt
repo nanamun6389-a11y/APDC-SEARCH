@@ -1,0 +1,10 @@
+APDC PHOTO + VIDEO GALLERY
+
+1) Firebase Storage를 활성화합니다.
+2) 이 폴더의 storage.rules 내용을 Firebase Storage Rules에 배포합니다.
+3) Realtime Database Rules는 기존 database.rules.json처럼 인증 사용자만 write 허용 상태를 사용합니다.
+4) photo-admin.html은 Firebase Authentication의 관리자 이메일/비밀번호로 로그인합니다.
+5) 사진/동영상은 Firebase Storage의 apdc-media/ 폴더에 저장됩니다.
+6) 공개 gallery(photo.html)는 로그인 없이 사진/동영상을 볼 수 있습니다.
+7) 기존 photoGallery 데이터의 dataUrl 사진도 계속 표시됩니다.
+8) 동영상은 파일당 500MB 제한을 프론트엔드에서 적용했습니다.
