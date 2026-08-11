@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#000000">
   <title>APDC Gallery</title>
-  <link rel="stylesheet" href="photo.css?v=20260811-6">
+  <link rel="stylesheet" href="photo.css?v=20260811-7">
 </head>
 <body>
 <header class="photo-header public-header">
@@ -23,8 +23,39 @@
   <div id="galleryEmpty" class="empty-state hidden">아직 공개된 사진이나 동영상이 없습니다.</div>
 </main>
 
+<button id="openSponsor" class="floating-sponsor" type="button" aria-label="스폰서 광고 문의">
+  <span class="floating-sponsor-label">SPONSOR AD</span>
+  <strong>광고 문의</strong>
+  <small>이름 · 연락처 남기기</small>
+</button>
 <button id="openUpload" class="floating-admin" type="button" aria-label="갤러리 관리자">ADMIN</button>
 <button id="scrollTop" class="floating-top" type="button" aria-label="맨 위로 이동">↑</button>
+
+
+<div id="sponsorPanel" class="sponsor-panel hidden" role="dialog" aria-modal="true" aria-label="Sponsor advertising inquiry">
+  <div class="sponsor-sheet">
+    <button id="closeSponsor" class="panel-back" type="button">← BACK TO GALLERY</button>
+    <section class="upload-section">
+      <div class="small-label">SPONSOR AD</div>
+      <h2>ADVERTISING INQUIRY</h2>
+      <p class="sponsor-intro">APDC 스폰서 광고를 원하시면 이름과 연락처를 남겨주세요. 확인 후 연락드리겠습니다.</p>
+      <label class="sponsor-field">
+        <span>NAME</span>
+        <input id="sponsorName" type="text" maxlength="60" autocomplete="name" placeholder="이름" required>
+      </label>
+      <label class="sponsor-field">
+        <span>CONTACT</span>
+        <input id="sponsorContact" type="text" maxlength="80" autocomplete="tel" placeholder="연락처" required>
+      </label>
+      <label class="sponsor-field">
+        <span>MESSAGE <em>OPTIONAL</em></span>
+        <textarea id="sponsorMessage" maxlength="300" placeholder="업체명 또는 문의 내용을 남겨주세요. (선택)"></textarea>
+      </label>
+      <button id="submitSponsor" type="button" class="primary-btn">SEND</button>
+      <div id="sponsorSubmitMessage" class="message"></div>
+    </section>
+  </div>
+</div>
 
 <div id="uploadPanel" class="upload-panel hidden" role="dialog" aria-modal="true" aria-label="Gallery upload">
   <div class="upload-sheet">
@@ -61,6 +92,16 @@
       </div>
       <div id="adminMediaGrid" class="admin-media-grid"></div>
       <div id="adminMediaEmpty" class="admin-media-empty hidden">삭제할 사진이나 동영상이 없습니다.</div>
+
+      <div class="admin-inquiry-head">
+        <div>
+          <div class="small-label">SPONSOR</div>
+          <h3>AD INQUIRIES</h3>
+        </div>
+        <span id="adminInquiryCount" class="admin-media-count">0</span>
+      </div>
+      <div id="adminInquiryList" class="admin-inquiry-list"></div>
+      <div id="adminInquiryEmpty" class="admin-media-empty">아직 접수된 스폰서 광고 문의가 없습니다.</div>
     </section>
   </div>
 </div>
@@ -73,6 +114,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<script type="module" src="photo.js?v=20260811-6"></script>
+<script type="module" src="photo.js?v=20260811-7"></script>
 </body>
 </html>
