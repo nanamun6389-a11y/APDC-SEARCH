@@ -1,11 +1,13 @@
 import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
 import { getDatabase, ref, onValue, push, set } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
-import { getStorage, ref as storageRef, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-storage.js";
+import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-storage.js";
 import { firebaseConfig } from "./firebase-config.js";
 
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const storage = getStorage(app, `gs://${firebaseConfig.storageBucket}`);
+storage.maxUploadRetryTime = 15000;
+storage.maxOperationRetryTime = 15000;
 
 const DB_PATH = "photoGallery";
 const STORAGE_FOLDER = "apdc-media";
@@ -253,17 +255,24 @@ async function compressImageToBlob(file) {
     URL.revokeObjectURL(url);
   }
 }
-function uploadToStorage(blob, path, contentType, onProgress) {
-  return new Promise((resolve, reject) => {
-    const target = storageRef(storage, path);
-    const task = uploadBytesResumable(target, blob, { contentType });
-    task.on("state_changed", snap => {
-      const ratio = snap.totalBytes ? snap.bytesTransferred / snap.totalBytes : 0;
-      onProgress?.(ratio);
-    }, reject, async () => {
-      resolve({ url: await getDownloadURL(task.snapshot.ref), storagePath: task.snapshot.ref.fullPath });
+async function uploadToStorage(blob, path, contentType, onProgress) {
+  const target = storageRef(storage, path);
+  onProgress?.(0.05);
+  try {
+    const snapshot = await uploadBytes(target, blob, { contentType });
+    onProgress?.(0.95);
+    const url = await getDownloadURL(snapshot.ref);
+    onProgress?.(1);
+    return { url, storagePath: snapshot.ref.fullPath };
+  } catch (err) {
+    console.error("Firebase Storage upload failed", {
+      code: err?.code,
+      message: err?.message,
+      serverResponse: err?.serverResponse
     });
-  });
+    const server = err?.serverResponse ? ` · ${String(err.serverResponse).slice(0, 220)}` : "";
+    throw new Error(`Firebase Storage: ${err?.code || err?.message || "업로드 실패"}${server}`);
+  }
 }
 
 uploadBtn.addEventListener("click", async () => {
