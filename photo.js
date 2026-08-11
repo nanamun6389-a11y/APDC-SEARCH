@@ -241,6 +241,26 @@ async function compressImageToBlob(file) {
     ctx.fillStyle = "#fff";
     ctx.fillRect(0, 0, w, h);
     ctx.drawImage(img, 0, 0, w, h);
+
+    // APDC watermark: use only the supplied official APDC logo image.
+    const watermark = await new Promise((resolve, reject) => {
+      const mark = new Image();
+      mark.onload = () => resolve(mark);
+      mark.onerror = () => reject(new Error("APDC watermark logo could not be loaded"));
+      mark.src = "./apdc-watermark.png";
+    });
+    const minSide = Math.min(w, h);
+    const margin = Math.max(18, Math.round(minSide * 0.035));
+    const maxMarkW = Math.round(w * 0.22);
+    const maxMarkH = Math.round(h * 0.16);
+    const markScale = Math.min(maxMarkW / watermark.naturalWidth, maxMarkH / watermark.naturalHeight, 1);
+    const markW = Math.max(1, Math.round(watermark.naturalWidth * markScale));
+    const markH = Math.max(1, Math.round(watermark.naturalHeight * markScale));
+    ctx.save();
+    ctx.globalAlpha = 0.82;
+    ctx.drawImage(watermark, w - margin - markW, h - margin - markH, markW, markH);
+    ctx.restore();
+
     return await new Promise((resolve, reject) =>
       canvas.toBlob(b => b ? resolve(b) : reject(new Error("Image compression failed")), "image/jpeg", JPEG_QUALITY)
     );
