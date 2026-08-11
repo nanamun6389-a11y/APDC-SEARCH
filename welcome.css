@@ -26,3 +26,36 @@ h1{text-align:center;margin:18px 0 58px;font-size:clamp(56px,13.8vw,92px);line-h
  .venue{margin-top:55px}
 }
 @media(max-width:360px){.championship{font-size:9px}.welcome-card{padding-left:20px;padding-right:20px}.card-row strong{font-size:31px}}
+
+/* 2026-08-11 compact home menu */
+.welcome-inner{padding-top:34px!important;padding-bottom:34px!important}
+.welcome-inner .championship{margin-bottom:22px!important}
+.welcome-inner .apdc{margin-bottom:12px!important}
+.welcome-inner>h1{margin-top:0!important;margin-bottom:30px!important}
+.welcome-menu{gap:12px!important}
+.welcome-card{min-height:0!important;padding:24px 28px!important}
+.welcome-card .card-kicker{margin-bottom:18px!important;font-size:13px!important}
+.welcome-card .card-row strong{font-size:clamp(30px,6.7vw,52px)!important;line-height:.98!important}
+.welcome-card .card-copy{margin-top:15px!important;font-size:15px!important}
+.venue{margin-top:24px!important}
+
+@media(max-width:600px){
+  .welcome-page{padding:0 14px!important}
+  .welcome-inner{padding-top:24px!important;padding-bottom:24px!important}
+  .welcome-inner .championship{font-size:8px!important;letter-spacing:.20em!important;margin-bottom:15px!important}
+  .welcome-inner .apdc{font-size:13px!important;margin-bottom:7px!important}
+  .welcome-inner>h1{font-size:44px!important;margin-bottom:20px!important}
+  .welcome-menu{gap:8px!important}
+  .welcome-card{padding:14px 18px!important;min-height:118px!important}
+  .welcome-card .card-kicker{font-size:9px!important;letter-spacing:.20em!important;margin-bottom:10px!important}
+  .welcome-card .card-row{align-items:center!important}
+  .welcome-card .card-row strong{font-size:clamp(25px,7vw,34px)!important;line-height:1!important;white-space:nowrap!important}
+  .welcome-card .arrow{font-size:30px!important}
+  .welcome-card .card-copy{font-size:11px!important;margin-top:10px!important;line-height:1.2!important}
+  .venue{font-size:8px!important;margin-top:14px!important}
+}
+@media(max-width:390px){
+  .welcome-card{padding:12px 15px!important;min-height:108px!important}
+  .welcome-card .card-row strong{font-size:24px!important}
+  .welcome-card .card-copy{font-size:10px!important}
+}
