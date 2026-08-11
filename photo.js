@@ -35,9 +35,11 @@ const selectedInfo = document.getElementById("selectedInfo");
 const uploadMsg = document.getElementById("uploadMessage");
 const progressWrap = document.getElementById("uploadProgress");
 const progressBar = document.getElementById("uploadProgressBar");
+const selectionBar = document.getElementById("selectionBar");
+const selectedCount = document.getElementById("selectedCount");
 
 let media = [];
-let lightboxIndex = -1;
+const selectedIds = new Set();
 
 function escapeHtml(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
@@ -59,6 +61,12 @@ function renderGallery() {
   grid.innerHTML = media.map((item,i) => {
     const kind = mediaKind(item);
     const src = mediaUrl(item);
+    const checked = selectedIds.has(item.id) ? "checked" : "";
+    const selector = kind === "image" ? `
+      <label class="photo-select" title="다운로드할 사진 선택">
+        <input type="checkbox" data-select-id="${escapeHtml(item.id)}" ${checked}>
+        <span></span>
+      </label>` : "";
     if (kind === "video") {
       return `<article class="public-photo-card-wrap">
         <button class="public-photo-card video-card" type="button" data-index="${i}" aria-label="동영상 크게 보기">
@@ -68,7 +76,8 @@ function renderGallery() {
         </button>
       </article>`;
     }
-    return `<article class="public-photo-card-wrap">
+    return `<article class="public-photo-card-wrap ${checked ? "is-selected" : ""}">
+      ${selector}
       <button class="public-photo-card" type="button" data-index="${i}" aria-label="사진 크게 보기">
         <img src="${escapeHtml(src)}" alt="${escapeHtml(item.caption || "APDC photo")}" loading="lazy">
         ${item.caption ? `<span class="card-caption">${escapeHtml(item.caption)}</span>` : ""}
@@ -77,22 +86,74 @@ function renderGallery() {
   }).join("");
 
   grid.querySelectorAll(".public-photo-card").forEach(el => {
-    el.onclick = () => openLightbox(Number(el.dataset.index));
+    el.onclick = () => openLightbox(media[Number(el.dataset.index)]);
   });
+  grid.querySelectorAll("input[data-select-id]").forEach(cb => {
+    cb.onchange = e => {
+      e.stopPropagation();
+      const id = cb.dataset.selectId;
+      cb.checked ? selectedIds.add(id) : selectedIds.delete(id);
+      cb.closest(".public-photo-card-wrap")?.classList.toggle("is-selected", cb.checked);
+      updateSelectionBar();
+    };
+    cb.onclick = e => e.stopPropagation();
+  });
+  updateSelectionBar();
 }
 
-function showLightboxItem(index) {
-  if (!media.length) return;
-  lightboxIndex = (index + media.length) % media.length;
-  const item = media[lightboxIndex];
+function updateSelectionBar() {
+  selectedCount.textContent = selectedIds.size;
+  selectionBar.classList.toggle("hidden", selectedIds.size === 0);
+}
+document.getElementById("clearSelection").onclick = () => {
+  selectedIds.clear();
+  renderGallery();
+};
+
+document.getElementById("downloadSelected").onclick = async () => {
+  const btn = document.getElementById("downloadSelected");
+  const chosen = media.filter(item => selectedIds.has(item.id) && mediaKind(item) === "image");
+  if (!chosen.length) return;
+
+  btn.disabled = true;
+  const original = btn.textContent;
+  try {
+    if (!window.JSZip) throw new Error("ZIP library unavailable");
+    const zip = new JSZip();
+    for (let i = 0; i < chosen.length; i++) {
+      btn.textContent = `다운로드 준비 ${i+1}/${chosen.length}`;
+      const item = chosen[i];
+      const response = await fetch(mediaUrl(item));
+      if (!response.ok) throw new Error("사진 다운로드 실패");
+      const blob = await response.blob();
+      const ext = (blob.type.split("/")[1] || "jpg").replace("jpeg","jpg").split("+")[0];
+      const base = (item.originalName || `APDC_${i+1}`).replace(/\.[^.]+$/, "").replace(/[\\/:*?"<>|]+/g, "_");
+      zip.file(`${String(i+1).padStart(3,"0")}_${base}.${ext}`, blob);
+    }
+    btn.textContent = "ZIP 만드는 중...";
+    const content = await zip.generateAsync({type:"blob"});
+    const url = URL.createObjectURL(content);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `APDC_SELECTED_PHOTOS_${new Date().toISOString().slice(0,10)}.zip`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+  } catch (err) {
+    console.error(err);
+    alert("선택한 사진을 다운로드하지 못했습니다. 잠시 후 다시 시도해 주세요.");
+  } finally {
+    btn.disabled = false;
+    btn.textContent = original;
+  }
+};
+
+function openLightbox(item) {
   const kind = mediaKind(item);
   const src = mediaUrl(item);
-
   lightboxImage.classList.add("hidden");
-  lightboxVideo.pause();
   lightboxVideo.classList.add("hidden");
-  lightboxVideo.removeAttribute("src");
-
   if (kind === "video") {
     lightboxVideo.src = src;
     lightboxVideo.classList.remove("hidden");
@@ -101,39 +162,20 @@ function showLightboxItem(index) {
     lightboxImage.classList.remove("hidden");
   }
   lightboxCaption.textContent = item.caption || "";
-
-  const showNav = media.length > 1;
-  document.getElementById("lightboxPrev").classList.toggle("hidden", !showNav);
-  document.getElementById("lightboxNext").classList.toggle("hidden", !showNav);
-}
-
-function openLightbox(index) {
-  showLightboxItem(index);
   lightbox.classList.remove("hidden");
   document.body.style.overflow = "hidden";
 }
 function closeLightbox() {
   lightbox.classList.add("hidden");
-  lightboxIndex = -1;
   lightboxImage.src = "";
   lightboxVideo.pause();
   lightboxVideo.removeAttribute("src");
   lightboxVideo.load();
   document.body.style.overflow = "";
 }
-function moveLightbox(step) {
-  if (lightbox.classList.contains("hidden") || lightboxIndex < 0 || media.length < 2) return;
-  showLightboxItem(lightboxIndex + step);
-}
 document.getElementById("lightboxClose").onclick = closeLightbox;
-document.getElementById("lightboxPrev").onclick = e => { e.stopPropagation(); moveLightbox(-1); };
-document.getElementById("lightboxNext").onclick = e => { e.stopPropagation(); moveLightbox(1); };
 lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") { closeLightbox(); closeUpload(); }
-  if (e.key === "ArrowLeft") moveLightbox(-1);
-  if (e.key === "ArrowRight") moveLightbox(1);
-});
+document.addEventListener("keydown", e => { if (e.key === "Escape") { closeLightbox(); closeUpload(); } });
 
 function openUpload() {
   uploadPanel.classList.remove("hidden");
@@ -153,6 +195,7 @@ function closeUpload() {
   history.replaceState(null, "", location.pathname);
 }
 document.getElementById("openUpload").onclick = openUpload;
+document.getElementById("scrollTop").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 document.getElementById("closeUpload").onclick = closeUpload;
 
 function unlockUpload() {

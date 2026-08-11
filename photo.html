@@ -23,8 +23,14 @@
   <div id="galleryEmpty" class="empty-state hidden">아직 공개된 사진이나 동영상이 없습니다.</div>
 </main>
 
-<button id="openUpload" class="floating-upload" type="button" aria-label="사진 또는 동영상 업로드">↑</button>
+<button id="openUpload" class="floating-admin" type="button" aria-label="갤러리 관리자">ADMIN</button>
+<button id="scrollTop" class="floating-top" type="button" aria-label="맨 위로 이동">↑</button>
 
+<div id="selectionBar" class="selection-bar hidden">
+  <span><strong id="selectedCount">0</strong>장 선택</span>
+  <button id="clearSelection" type="button">선택 해제</button>
+  <button id="downloadSelected" type="button">선택 사진 다운로드</button>
+</div>
 
 <div id="uploadPanel" class="upload-panel hidden" role="dialog" aria-modal="true" aria-label="Gallery upload">
   <div class="upload-sheet">
@@ -57,13 +63,12 @@
 
 <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Media preview">
   <button id="lightboxClose" class="lightbox-back" type="button">← BACK</button>
-  <button id="lightboxPrev" class="lightbox-nav lightbox-prev" type="button" aria-label="이전 사진">‹</button>
-  <button id="lightboxNext" class="lightbox-nav lightbox-next" type="button" aria-label="다음 사진">›</button>
   <img id="lightboxImage" class="hidden" alt="APDC photo">
   <video id="lightboxVideo" class="hidden" controls playsinline preload="metadata"></video>
   <div id="lightboxCaption" class="lightbox-caption"></div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script type="module" src="photo.js?v=20260811-4"></script>
 </body>
 </html>
