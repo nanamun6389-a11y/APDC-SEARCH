@@ -44,6 +44,16 @@ const sponsorName = document.getElementById("sponsorName");
 const sponsorContact = document.getElementById("sponsorContact");
 const sponsorMessage = document.getElementById("sponsorMessage");
 const sponsorSubmitMessage = document.getElementById("sponsorSubmitMessage");
+const sponsorSlides = Array.from(document.querySelectorAll("#sponsorRotator .sponsor-slide"));
+let sponsorSlideIndex = 0;
+if (sponsorSlides.length > 1) {
+  setInterval(() => {
+    sponsorSlides[sponsorSlideIndex].classList.remove("active");
+    sponsorSlideIndex = (sponsorSlideIndex + 1) % sponsorSlides.length;
+    sponsorSlides[sponsorSlideIndex].classList.add("active");
+  }, 3200);
+}
+
 const submitSponsor = document.getElementById("submitSponsor");
 let media = [];
 

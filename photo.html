@@ -23,36 +23,38 @@
   <div id="galleryEmpty" class="empty-state hidden">아직 공개된 사진이나 동영상이 없습니다.</div>
 </main>
 
-<div class="floating-sponsor" style="bottom:calc(406px + env(safe-area-inset-bottom));cursor:default" aria-label="탑드림댄스 스폰서">
-  <span class="floating-sponsor-label">SPONSOR</span>
-  <strong>탑드림댄스</strong>
-  <small>APDC 2026</small>
+<div class="floating-sponsor sponsor-rotator" id="sponsorRotator" aria-live="polite">
+  <div class="sponsor-slide active" aria-label="Top Dream Dance sponsor">
+    <span class="floating-sponsor-label">SPONSOR</span>
+    <strong>TOP DREAM DANCE</strong>
+    <small>APDC 2026</small>
+  </div>
+  <div class="sponsor-slide" aria-label="Rael sponsor">
+    <span class="floating-sponsor-label">SPONSOR</span>
+    <strong>RAEL</strong>
+    <small>APDC 2026</small>
+  </div>
+  <div class="sponsor-slide" aria-label="M Project sponsor">
+    <span class="floating-sponsor-label">SPONSOR</span>
+    <strong>M PROJECT</strong>
+    <small>APDC 2026</small>
+  </div>
+  <div class="sponsor-slide" aria-label="Park Ji Woo Dance Studio sponsor">
+    <span class="floating-sponsor-label">SPONSOR</span>
+    <strong>PARK JI WOO DANCE STUDIO</strong>
+    <small>APDC 2026</small>
+  </div>
+  <div class="sponsor-slide" aria-label="Dancefill Academy sponsor">
+    <span class="floating-sponsor-label">SPONSOR</span>
+    <strong>DANCEFILL ACADEMY</strong>
+    <small>APDC 2026</small>
+  </div>
+  <button id="openSponsor" class="sponsor-slide sponsor-inquiry-slide" type="button" aria-label="Sponsor advertising inquiry">
+    <span class="floating-sponsor-label">SPONSOR AD</span>
+    <strong>ADVERTISING INQUIRY</strong>
+    <small>Name · Contact</small>
+  </button>
 </div>
-<div class="floating-sponsor" style="bottom:calc(340px + env(safe-area-inset-bottom));cursor:default" aria-label="라엘 스폰서">
-  <span class="floating-sponsor-label">SPONSOR</span>
-  <strong>라엘</strong>
-  <small>APDC 2026</small>
-</div>
-<div class="floating-sponsor" style="bottom:calc(274px + env(safe-area-inset-bottom));cursor:default" aria-label="엠프로젝트 스폰서">
-  <span class="floating-sponsor-label">SPONSOR</span>
-  <strong>엠프로젝트</strong>
-  <small>APDC 2026</small>
-</div>
-<div class="floating-sponsor" style="bottom:calc(208px + env(safe-area-inset-bottom));cursor:default" aria-label="박지우댄스스튜디오 스폰서">
-  <span class="floating-sponsor-label">SPONSOR</span>
-  <strong>박지우댄스스튜디오</strong>
-  <small>APDC 2026</small>
-</div>
-<div class="floating-sponsor" style="bottom:calc(142px + env(safe-area-inset-bottom));cursor:default" aria-label="댄스필아카데미 스폰서">
-  <span class="floating-sponsor-label">SPONSOR</span>
-  <strong>댄스필아카데미</strong>
-  <small>APDC 2026</small>
-</div>
-<button id="openSponsor" class="floating-sponsor" type="button" aria-label="스폰서 광고 문의">
-  <span class="floating-sponsor-label">SPONSOR AD</span>
-  <strong>광고 문의</strong>
-  <small>이름 · 연락처 남기기</small>
-</button>
 <button id="openUpload" class="floating-admin" type="button" aria-label="갤러리 관리자">ADMIN</button>
 <button id="scrollTop" class="floating-top" type="button" aria-label="맨 위로 이동">↑</button>
 
@@ -130,6 +132,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<script type="module" src="photo.js?v=20260811-8"></script>
+<script type="module" src="photo.js?v=20260811-9"></script>
 </body>
 </html>
