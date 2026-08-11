@@ -62,6 +62,7 @@ let sponsorTimer = null;
 const submitSponsor = document.getElementById("submitSponsor");
 let media = [];
 const selectedMediaIds = new Set();
+const IS_STANDALONE_ADMIN = document.body.classList.contains("gallery-admin-page");
 
 function escapeHtml(v) {
   return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
@@ -371,11 +372,13 @@ function openUpload() {
   }
 }
 function closeUpload() {
+  if (IS_STANDALONE_ADMIN) { window.location.href = "photo.html"; return; }
   uploadPanel.classList.add("hidden");
   document.body.style.overflow = "";
   history.replaceState(null, "", location.pathname);
 }
-document.getElementById("openUpload").onclick = openUpload;
+const openUploadButton = document.getElementById("openUpload");
+if (openUploadButton && !IS_STANDALONE_ADMIN) openUploadButton.onclick = openUpload;
 document.getElementById("scrollTop").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 document.getElementById("closeUpload").onclick = closeUpload;
 
@@ -566,4 +569,4 @@ uploadBtn.addEventListener("click", async () => {
   }
 });
 
-if (location.hash === "#upload") openUpload();
+if (IS_STANDALONE_ADMIN || location.hash === "#upload") openUpload();

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#000000">
   <title>APDC Gallery</title>
-  <link rel="stylesheet" href="photo.css?v=20260811-10">
+  <link rel="stylesheet" href="photo.css?v=20260811-13">
 </head>
 <body>
 <header class="photo-header public-header">
@@ -23,8 +23,11 @@
   <div id="galleryEmpty" class="empty-state hidden">아직 공개된 사진이나 동영상이 없습니다.</div>
 </main>
 
+<div class="gallery-admin-footer-wrap">
+  <a href="photo-admin.html" class="gallery-admin-footer-link">ADMIN</a>
+</div>
+
 <div class="floating-sponsor sponsor-rotator" id="sponsorRotator" aria-live="polite"></div>
-<button id="openUpload" class="floating-admin" type="button" aria-label="갤러리 관리자">ADMIN</button>
 <button id="scrollTop" class="floating-top" type="button" aria-label="맨 위로 이동">↑</button>
 
 
@@ -136,6 +139,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<script type="module" src="photo.js?v=20260811-12"></script>
+<script type="module" src="photo.js?v=20260811-13"></script>
 </body>
 </html>

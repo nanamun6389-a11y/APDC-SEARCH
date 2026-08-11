@@ -1,1 +1,97 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>APDC Gallery Upload</title><meta http-equiv="refresh" content="0;url=photo.html#upload"></head><body style="background:#000;color:#fff;font-family:Arial"><p>Opening gallery upload…</p><a href="photo.html#upload" style="color:#fff">← BACK TO GALLERY</a></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>APDC Gallery Admin</title>
+  <link rel="stylesheet" href="photo.css?v=20260811-13">
+</head>
+<body class="gallery-admin-page">
+<header class="photo-header admin-page-header">
+  <a href="photo.html" class="back-link" aria-label="갤러리로 돌아가기">← BACK</a>
+  <div class="gallery-title">
+    <div class="eyebrow">2026 ASIA PACIFIC DANCESPORT CHAMPIONSHIP</div>
+    <h1>ADMIN</h1>
+  </div>
+</header>
+
+<!-- Hidden compatibility nodes used by the shared gallery script. -->
+<div class="hidden" aria-hidden="true">
+  <div id="publicPhotoGrid"></div><div id="galleryLoading"></div><div id="galleryEmpty"></div>
+  <div id="sponsorRotator"></div>
+  <button id="openUpload" type="button"></button>
+</div>
+
+<div id="sponsorPanel" class="sponsor-panel hidden" role="dialog" aria-modal="true" aria-label="Sponsor advertising inquiry">
+  <div class="sponsor-sheet">
+    <button id="closeSponsor" class="panel-back" type="button">← BACK</button>
+    <section class="upload-section">
+      <input id="sponsorName" type="text"><input id="sponsorContact" type="text"><textarea id="sponsorMessage"></textarea>
+      <button id="submitSponsor" type="button">SEND</button><div id="sponsorSubmitMessage"></div>
+    </section>
+  </div>
+</div>
+
+<div id="uploadPanel" class="upload-panel admin-page-panel" aria-label="Gallery admin">
+  <div class="upload-sheet admin-page-sheet">
+    <button id="closeUpload" class="panel-back" type="button">← BACK TO GALLERY</button>
+
+    <section id="uploadPasswordGate" class="upload-section">
+      <div class="small-label">ADMIN ACCESS</div>
+      <h2>ENTER PASSWORD</h2>
+      <input id="galleryPassword" type="password" autocomplete="off" placeholder="Password">
+      <button id="unlockUpload" class="primary-btn" type="button">ENTER</button>
+      <div id="passwordMessage" class="message"></div>
+    </section>
+
+    <section id="uploadControls" class="upload-section hidden">
+      <div class="admin-dashboard-title">
+        <div class="small-label">GALLERY ADMIN</div>
+        <h2>GALLERY MANAGEMENT</h2>
+      </div>
+
+      <div class="admin-section-card admin-sponsor-card">
+        <div class="admin-section-head">
+          <div><div class="small-label">SPONSORS</div><h3>SPONSOR MANAGEMENT</h3><p>업체명 철자 수정 · 추가 · 삭제</p></div>
+          <button id="addSponsorName" class="admin-sponsor-add" type="button">+ ADD</button>
+        </div>
+        <div id="adminSponsorList" class="admin-sponsor-list"></div>
+        <button id="saveSponsorNames" type="button" class="primary-btn admin-sponsor-save">SAVE SPONSORS</button>
+        <div id="sponsorAdminMessage" class="message"></div>
+      </div>
+
+      <div class="admin-section-card">
+        <div class="admin-section-head"><div><div class="small-label">ADD MEDIA</div><h3>ADD PHOTOS & VIDEOS</h3><p>사진에는 APDC 워터마크가 자동 적용됩니다.</p></div></div>
+        <label class="file-picker" for="galleryFiles"><strong>사진 · 동영상 선택</strong><span>여러 파일을 한 번에 선택할 수 있습니다.</span></label>
+        <input id="galleryFiles" type="file" accept="image/*,video/*" multiple hidden>
+        <input id="galleryCaption" type="text" maxlength="80" placeholder="캡션 (선택)">
+        <button id="galleryUploadBtn" type="button" class="primary-btn" disabled>UPLOAD</button>
+        <div id="selectedInfo" class="selected-info">선택된 파일 없음</div>
+        <div id="uploadProgress" class="progress-wrap hidden"><div id="uploadProgressBar"></div></div>
+        <div id="uploadMessage" class="message"></div>
+      </div>
+
+      <div class="admin-section-card admin-delete-card">
+        <div class="admin-section-head admin-delete-head">
+          <div><div class="small-label">MANAGE MEDIA</div><h3>SELECT & DELETE</h3><p>사진을 눌러 여러 장을 선택한 뒤 한 번에 삭제하세요.</p></div>
+          <span id="adminMediaCount" class="admin-media-count">0</span>
+        </div>
+        <div class="admin-bulk-toolbar">
+          <button id="selectAllMedia" type="button" class="admin-tool-btn">SELECT ALL</button>
+          <button id="clearMediaSelection" type="button" class="admin-tool-btn">CLEAR</button>
+          <span id="selectedMediaCount" class="admin-selected-count">0 SELECTED</span>
+        </div>
+        <div id="adminMediaGrid" class="admin-media-grid"></div>
+        <div id="adminMediaEmpty" class="admin-media-empty hidden">삭제할 사진이나 동영상이 없습니다.</div>
+        <button id="deleteSelectedMedia" type="button" class="primary-btn admin-delete-selected" disabled>DELETE SELECTED (0)</button>
+        <div id="bulkDeleteMessage" class="message"></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox hidden"><button id="lightboxClose" type="button">BACK</button><img id="lightboxImage" class="hidden"><video id="lightboxVideo" class="hidden"></video><div id="lightboxCaption"></div></div>
+<script type="module" src="photo.js?v=20260811-13"></script>
+</body>
+</html>
