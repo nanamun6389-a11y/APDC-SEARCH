@@ -6,7 +6,12 @@
   <meta name="theme-color" content="#000000">
   <title>APDC Entry Search</title>
   <link rel="stylesheet" href="style.css?v=20260717-admin-restore?v=20260715-complete">
-<style>.page-back-btn{position:fixed;z-index:99;left:10px;top:10px;padding:8px 10px;border:1px solid #777;background:#000;color:#fff;text-decoration:none;font:900 10px Arial;letter-spacing:.08em}</style></head>
+<style>.page-back-btn{position:fixed;z-index:99;left:10px;top:10px;padding:8px 10px;border:1px solid #777;background:#000;color:#fff;text-decoration:none;font:900 10px Arial;letter-spacing:.08em}</style><style>
+.entry-quick-nav{display:flex;overflow-x:auto;white-space:nowrap;gap:0;border-bottom:1px solid #ddd;background:#fff;padding-left:78px}
+.entry-quick-nav a{flex:0 0 auto;color:#000;text-decoration:none;padding:11px 12px;font:900 10px Arial;letter-spacing:.04em;border-right:1px solid #ddd}
+.entry-quick-nav a.active{background:#000;color:#fff}
+@media(max-width:600px){.entry-quick-nav{padding-left:68px}}
+</style></head>
 <body><a class="page-back-btn" href="index.html">← BACK</a>
 <header class="site-header">
   <a id="homeBtn" class="brand entry-brand-link" href="index.html" aria-label="Return to APDC home">
@@ -14,6 +19,13 @@
     <span class="title">APDC ENTRY SEARCH</span>
   </a>
 </header>
+<nav class="entry-quick-nav">
+  <a href="entry.html" class="active">ENTRY SEARCH</a>
+  <a href="timetable.html">TIMETABLE</a>
+  <a href="results.html">RESULTS</a>
+  <a href="shipping.html">PRIZE SHIPPING</a>
+  <a href="photo.html">GALLERY</a>
+</nav>
 
 <main class="container">
   <section class="search-area">

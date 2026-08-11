@@ -4,6107 +4,3562 @@
     "category": "Formation",
     "place": "1st",
     "name": "Team Trendy",
-    "backNo": "297",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "297"
   },
   {
     "certificateNo": "002",
     "category": "Formation",
     "place": "2nd",
     "name": "Retro",
-    "backNo": "298",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "298"
   },
   {
     "certificateNo": "003",
     "category": "Formation",
     "place": "3rd",
     "name": "The Best Kids",
-    "backNo": "299",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "299"
   },
   {
     "certificateNo": "070",
     "category": "Under 10 Solo C",
     "place": "1st",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "151"
   },
   {
     "certificateNo": "071",
     "category": "Under 10 Solo C",
     "place": "2nd",
     "name": "Marissa Yu En Goh Redimerio",
-    "backNo": "55",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "55"
   },
   {
     "certificateNo": "072",
     "category": "Under 10 Solo C",
     "place": "3rd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "42"
   },
   {
     "certificateNo": "073",
     "category": "Under 10 Solo C",
     "place": "4th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "074",
     "category": "Under 10 Solo C",
     "place": "5th",
     "name": "Wong Yuet To",
-    "backNo": "50",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "50"
   },
   {
     "certificateNo": "075",
     "category": "Under 10 Solo C",
     "place": "6th",
     "name": "Yul BAEK",
-    "backNo": "44",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "44"
   },
   {
     "certificateNo": "260",
     "category": "Under 10 Solo CR",
     "place": "1st",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "151"
   },
   {
     "certificateNo": "261",
     "category": "Under 10 Solo CR",
     "place": "2nd",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "262",
     "category": "Under 10 Solo CR",
     "place": "3rd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "263",
     "category": "Under 10 Solo CR",
     "place": "4th",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "264",
     "category": "Under 10 Solo CR",
     "place": "5th",
     "name": "Yul BAEK",
-    "backNo": "44",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "44"
   },
   {
     "certificateNo": "265",
     "category": "Under 10 Solo CR",
     "place": "6th",
     "name": "Tsai Yu Yen",
-    "backNo": "45",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "45"
   },
   {
     "certificateNo": "266",
     "category": "Under 10 Solo CR",
     "place": "6th",
     "name": "JIN YU TONG",
-    "backNo": "153",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "153"
   },
   {
     "certificateNo": "274",
     "category": "Under 10 Solo CRJ",
     "place": "1st",
     "name": "WANG YUN XI",
-    "backNo": "152",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "152"
   },
   {
     "certificateNo": "275",
     "category": "Under 10 Solo CRJ",
     "place": "2nd",
     "name": "Marissa Yu En Goh Redimerio",
-    "backNo": "55",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "55"
   },
   {
     "certificateNo": "276",
     "category": "Under 10 Solo CRJ",
     "place": "3rd",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "151"
   },
   {
     "certificateNo": "277",
     "category": "Under 10 Solo CRJ",
     "place": "4th",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "278",
     "category": "Under 10 Solo CRJ",
     "place": "5th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "279",
     "category": "Under 10 Solo CRJ",
     "place": "6th",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "280",
     "category": "Under 10 Solo CRJ",
     "place": "6th",
     "name": "Liu Yiling",
-    "backNo": "79",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "79"
   },
   {
     "certificateNo": "287",
     "category": "Under 10 Solo CRS",
     "place": "1st",
     "name": "WANG YUN XI",
-    "backNo": "152",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "152"
   },
   {
     "certificateNo": "288",
     "category": "Under 10 Solo CRS",
     "place": "2nd",
     "name": "Marissa Yu En Goh Redimerio",
-    "backNo": "55",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "55"
   },
   {
     "certificateNo": "289",
     "category": "Under 10 Solo CRS",
     "place": "3rd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "290",
     "category": "Under 10 Solo CRS",
     "place": "4th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "291",
     "category": "Under 10 Solo CRS",
     "place": "5th",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "292",
     "category": "Under 10 Solo CRS",
     "place": "6th",
     "name": "HyeYul LEE",
-    "backNo": "109",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "109"
   },
   {
     "certificateNo": "246",
     "category": "Under 10 Solo J",
     "place": "1st",
     "name": "Marissa Yu En Goh Redimerio",
-    "backNo": "55",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "55"
   },
   {
     "certificateNo": "247",
     "category": "Under 10 Solo J",
     "place": "2nd",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "151"
   },
   {
     "certificateNo": "248",
     "category": "Under 10 Solo J",
     "place": "3rd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "249",
     "category": "Under 10 Solo J",
     "place": "4th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "250",
     "category": "Under 10 Solo J",
     "place": "5th",
     "name": "Wong Yuet To",
-    "backNo": "50",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "50"
   },
   {
     "certificateNo": "251",
     "category": "Under 10 Solo J",
     "place": "6th",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "252",
     "category": "Under 10 Solo J",
     "place": "6th",
     "name": "Low Xin Yu",
-    "backNo": "46",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "46"
   },
   {
     "certificateNo": "253",
     "category": "Under 10 Solo J",
     "place": "6th",
     "name": "JIN YU TONG",
-    "backNo": "153",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "153"
   },
   {
     "certificateNo": "241",
     "category": "Under 10 Solo P",
     "place": "1st",
     "name": "Marissa Yu En Goh Redimerio",
-    "backNo": "55",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "55"
   },
   {
     "certificateNo": "242",
     "category": "Under 10 Solo P",
     "place": "2nd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "243",
     "category": "Under 10 Solo P",
     "place": "3rd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "244",
     "category": "Under 10 Solo P",
     "place": "4th",
     "name": "Tinny Yang",
-    "backNo": "40",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "40"
   },
   {
     "certificateNo": "245",
     "category": "Under 10 Solo P",
     "place": "5th",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "233",
     "category": "Under 10 Solo R",
     "place": "1st",
     "name": "Marissa Yu En Goh Redimerio",
-    "backNo": "55",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "55"
   },
   {
     "certificateNo": "234",
     "category": "Under 10 Solo R",
     "place": "2nd",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "151"
   },
   {
     "certificateNo": "235",
     "category": "Under 10 Solo R",
     "place": "3rd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "42"
   },
   {
     "certificateNo": "236",
     "category": "Under 10 Solo R",
     "place": "4th",
     "name": "Wong Yuet To",
-    "backNo": "50",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "50"
   },
   {
     "certificateNo": "237",
     "category": "Under 10 Solo R",
     "place": "5th",
     "name": "HyeYul LEE",
-    "backNo": "109",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "109"
   },
   {
     "certificateNo": "238",
     "category": "Under 10 Solo R",
     "place": "6th",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "239",
     "category": "Under 10 Solo R",
     "place": "6th",
     "name": "Yul BAEK",
-    "backNo": "44",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "44"
   },
   {
     "certificateNo": "240",
     "category": "Under 10 Solo R",
     "place": "6th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "299",
     "category": "Under 10 Solo RJ",
     "place": "1st",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "151"
   },
   {
     "certificateNo": "300",
     "category": "Under 10 Solo RJ",
     "place": "2nd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "301",
     "category": "Under 10 Solo RJ",
     "place": "3rd",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "302",
     "category": "Under 10 Solo RJ",
     "place": "4th",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "303",
     "category": "Under 10 Solo RJ",
     "place": "5th",
     "name": "Liu Yiling",
-    "backNo": "79",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "79"
   },
   {
     "certificateNo": "304",
     "category": "Under 10 Solo RJ",
     "place": "6th",
     "name": "JIN YU TONG",
-    "backNo": "153",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "153"
   },
   {
     "certificateNo": "226",
     "category": "Under 10 Solo S",
     "place": "1st",
     "name": "WANG YUN XI",
-    "backNo": "152",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "152"
   },
   {
     "certificateNo": "227",
     "category": "Under 10 Solo S",
     "place": "2nd",
     "name": "Marissa Yu En Goh Redimerio",
-    "backNo": "55",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "55"
   },
   {
     "certificateNo": "228",
     "category": "Under 10 Solo S",
     "place": "3rd",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "229",
     "category": "Under 10 Solo S",
     "place": "4th",
     "name": "Wong Yuet To",
-    "backNo": "50",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "50"
   },
   {
     "certificateNo": "230",
     "category": "Under 10 Solo S",
     "place": "5th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "231",
     "category": "Under 10 Solo S",
     "place": "6th",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "232",
     "category": "Under 10 Solo S",
     "place": "6th",
     "name": "Yul BAEK",
-    "backNo": "44",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "44"
   },
   {
     "certificateNo": "478",
     "category": "Under 10 Solo F",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "479",
     "category": "Under 10 Solo F",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "480",
     "category": "Under 10 Solo F",
     "place": "3rd",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "343",
     "category": "Under 10 Solo Q",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "344",
     "category": "Under 10 Solo Q",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "345",
     "category": "Under 10 Solo Q",
     "place": "3rd",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "346",
     "category": "Under 10 Solo Q",
     "place": "4th",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "474",
     "category": "Under 10 Solo T",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "475",
     "category": "Under 10 Solo T",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "476",
     "category": "Under 10 Solo T",
     "place": "3rd",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "477",
     "category": "Under 10 Solo T",
     "place": "4th",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "463",
     "category": "Under 10 Solo W",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "464",
     "category": "Under 10 Solo W",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "465",
     "category": "Under 10 Solo W",
     "place": "3rd",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "466",
     "category": "Under 10 Solo W",
     "place": "4th",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "435",
     "category": "Under 10 Solo WQ",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "436",
     "category": "Under 10 Solo WQ",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "437",
     "category": "Under 10 Solo WQ",
     "place": "3rd",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "460",
     "category": "Under 10 Solo WT",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "461",
     "category": "Under 10 Solo WT",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "462",
     "category": "Under 10 Solo WT",
     "place": "3rd",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "332",
     "category": "Under 10 Solo WTF",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "333",
     "category": "Under 10 Solo WTF",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "334",
     "category": "Under 10 Solo WTF",
     "place": "3rd",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "364",
     "category": "Under 10 Solo WTQ",
     "place": "1st",
     "name": "Melody Huang",
-    "backNo": "42",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "42"
   },
   {
     "certificateNo": "365",
     "category": "Under 10 Solo WTQ",
     "place": "2nd",
     "name": "Olivia Pan",
-    "backNo": "41",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "41"
   },
   {
     "certificateNo": "366",
     "category": "Under 10 Solo WTQ",
     "place": "3rd",
     "name": "Keung Ho Yin Elliot",
-    "backNo": "49",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "49"
   },
   {
     "certificateNo": "004",
     "category": "Under 12 CRS",
     "place": "1st",
     "name": "Wong Tsun Yin & Chin Choi Ni Charlie",
-    "backNo": "201",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "201"
   },
   {
     "certificateNo": "005",
     "category": "Under 12 CRS",
     "place": "2nd",
     "name": "Ng Yuen Chun & Liu Siyan",
-    "backNo": "200",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "200"
   },
   {
     "certificateNo": "050",
     "category": "Under 12 Solo C",
     "place": "1st",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "151"
   },
   {
     "certificateNo": "051",
     "category": "Under 12 Solo C",
     "place": "2nd",
     "name": "Avery Boon",
-    "backNo": "76",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "76"
   },
   {
     "certificateNo": "052",
     "category": "Under 12 Solo C",
     "place": "3rd",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "053",
     "category": "Under 12 Solo C",
     "place": "4th",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "054",
     "category": "Under 12 Solo C",
     "place": "5th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "055",
     "category": "Under 12 Solo C",
     "place": "6th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "153",
     "category": "Under 12 Solo CR",
     "place": "1st",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "151"
   },
   {
     "certificateNo": "154",
     "category": "Under 12 Solo CR",
     "place": "2nd",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "149"
   },
   {
     "certificateNo": "155",
     "category": "Under 12 Solo CR",
     "place": "3rd",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "47"
   },
   {
     "certificateNo": "156",
     "category": "Under 12 Solo CR",
     "place": "4th",
     "name": "SiA JEON",
-    "backNo": "73",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "73"
   },
   {
     "certificateNo": "157",
     "category": "Under 12 Solo CR",
     "place": "5th",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "158",
     "category": "Under 12 Solo CR",
     "place": "6th",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "138",
     "category": "Under 12 Solo CRJ",
     "place": "1st",
     "name": "WANG YUN XI",
-    "backNo": "152",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "152"
   },
   {
     "certificateNo": "139",
     "category": "Under 12 Solo CRJ",
     "place": "2nd",
     "name": "Avery Boon",
-    "backNo": "76",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "76"
   },
   {
     "certificateNo": "140",
     "category": "Under 12 Solo CRJ",
     "place": "3rd",
     "name": "SeungMin LEE",
-    "backNo": "57",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "57"
   },
   {
     "certificateNo": "141",
     "category": "Under 12 Solo CRJ",
     "place": "4th",
     "name": "SiA JEON",
-    "backNo": "73",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "73"
   },
   {
     "certificateNo": "142",
     "category": "Under 12 Solo CRJ",
     "place": "5th",
     "name": "Tsai Yu Tong",
-    "backNo": "75",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "75"
   },
   {
     "certificateNo": "143",
     "category": "Under 12 Solo CRJ",
     "place": "6th",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "144",
     "category": "Under 12 Solo CRJ",
     "place": "6th",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "145",
     "category": "Under 12 Solo CRJ",
     "place": "6th",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "146",
     "category": "Under 12 Solo CRJ",
     "place": "6th",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "119",
     "category": "Under 12 Solo CRS",
     "place": "1st",
     "name": "WANG YUN XI",
-    "backNo": "152",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "152"
   },
   {
     "certificateNo": "120",
     "category": "Under 12 Solo CRS",
     "place": "2nd",
     "name": "Avery Boon",
-    "backNo": "76",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "76"
   },
   {
     "certificateNo": "121",
     "category": "Under 12 Solo CRS",
     "place": "3rd",
     "name": "SeungMin LEE",
-    "backNo": "57",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "57"
   },
   {
     "certificateNo": "122",
     "category": "Under 12 Solo CRS",
     "place": "4th",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "123",
     "category": "Under 12 Solo CRS",
     "place": "5th",
     "name": "Tsai Yu Tong",
-    "backNo": "75",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "75"
   },
   {
     "certificateNo": "124",
     "category": "Under 12 Solo CRS",
     "place": "6th",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "212",
     "category": "Under 12 Solo J",
     "place": "1st",
     "name": "Avery Boon",
-    "backNo": "76",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "76"
   },
   {
     "certificateNo": "213",
     "category": "Under 12 Solo J",
     "place": "2nd",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "151"
   },
   {
     "certificateNo": "214",
     "category": "Under 12 Solo J",
     "place": "3rd",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "215",
     "category": "Under 12 Solo J",
     "place": "4th",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "216",
     "category": "Under 12 Solo J",
     "place": "5th",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "217",
     "category": "Under 12 Solo J",
     "place": "6th",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "218",
     "category": "Under 12 Solo J",
     "place": "6th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "219",
     "category": "Under 12 Solo J",
     "place": "6th",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "220",
     "category": "Under 12 Solo P",
     "place": "1st",
     "name": "SeungMin LEE",
-    "backNo": "57",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "57"
   },
   {
     "certificateNo": "221",
     "category": "Under 12 Solo P",
     "place": "2nd",
     "name": "Avery Boon",
-    "backNo": "76",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "76"
   },
   {
     "certificateNo": "222",
     "category": "Under 12 Solo P",
     "place": "3rd",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "223",
     "category": "Under 12 Solo P",
     "place": "4th",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "224",
     "category": "Under 12 Solo P",
     "place": "5th",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "225",
     "category": "Under 12 Solo P",
     "place": "6th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "056",
     "category": "Under 12 Solo R",
     "place": "1st",
     "name": "Avery Boon",
-    "backNo": "76",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "76"
   },
   {
     "certificateNo": "057",
     "category": "Under 12 Solo R",
     "place": "2nd",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "058",
     "category": "Under 12 Solo R",
     "place": "3rd",
     "name": "Ng Fong Yi",
-    "backNo": "47",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "47"
   },
   {
     "certificateNo": "059",
     "category": "Under 12 Solo R",
     "place": "4th",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "060",
     "category": "Under 12 Solo R",
     "place": "5th",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "151"
   },
   {
     "certificateNo": "061",
     "category": "Under 12 Solo R",
     "place": "6th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "107",
     "category": "Under 12 Solo RJ",
     "place": "1st",
     "name": "WANG YI YU",
-    "backNo": "151",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "151"
   },
   {
     "certificateNo": "108",
     "category": "Under 12 Solo RJ",
     "place": "2nd",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "109",
     "category": "Under 12 Solo RJ",
     "place": "3rd",
     "name": "SiA JEON",
-    "backNo": "73",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "73"
   },
   {
     "certificateNo": "110",
     "category": "Under 12 Solo RJ",
     "place": "4th",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "111",
     "category": "Under 12 Solo RJ",
     "place": "5th",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "112",
     "category": "Under 12 Solo RJ",
     "place": "6th",
     "name": "Yul BAEK",
-    "backNo": "44",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "44"
   },
   {
     "certificateNo": "062",
     "category": "Under 12 Solo S",
     "place": "1st",
     "name": "WANG YUN XI",
-    "backNo": "152",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "152"
   },
   {
     "certificateNo": "063",
     "category": "Under 12 Solo S",
     "place": "2nd",
     "name": "Avery Boon",
-    "backNo": "76",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "76"
   },
   {
     "certificateNo": "064",
     "category": "Under 12 Solo S",
     "place": "3rd",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "065",
     "category": "Under 12 Solo S",
     "place": "4th",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "066",
     "category": "Under 12 Solo S",
     "place": "5th",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "067",
     "category": "Under 12 Solo S",
     "place": "6th",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "068",
     "category": "Under 12 Solo S",
     "place": "6th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "400",
     "category": "Under 12 Solo F",
     "place": "1st",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "401",
     "category": "Under 12 Solo F",
     "place": "2nd",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "402",
     "category": "Under 12 Solo F",
     "place": "3rd",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "403",
     "category": "Under 12 Solo F",
     "place": "4th",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "411",
     "category": "Under 12 Solo Q",
     "place": "1st",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "412",
     "category": "Under 12 Solo Q",
     "place": "2nd",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "413",
     "category": "Under 12 Solo Q",
     "place": "3rd",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "414",
     "category": "Under 12 Solo Q",
     "place": "4th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "415",
     "category": "Under 12 Solo Q",
     "place": "5th",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "379",
     "category": "Under 12 Solo T",
     "place": "1st",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "380",
     "category": "Under 12 Solo T",
     "place": "2nd",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "381",
     "category": "Under 12 Solo T",
     "place": "3rd",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "382",
     "category": "Under 12 Solo T",
     "place": "4th",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "383",
     "category": "Under 12 Solo T",
     "place": "5th",
     "name": "Kuok Sut Iao",
-    "backNo": "62",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "62"
   },
   {
     "certificateNo": "384",
     "category": "Under 12 Solo T",
     "place": "6th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "353",
     "category": "Under 12 Solo W",
     "place": "1st",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "354",
     "category": "Under 12 Solo W",
     "place": "2nd",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "355",
     "category": "Under 12 Solo W",
     "place": "3rd",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "356",
     "category": "Under 12 Solo W",
     "place": "4th",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "357",
     "category": "Under 12 Solo W",
     "place": "5th",
     "name": "Kuok Sut Iao",
-    "backNo": "62",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "62"
   },
   {
     "certificateNo": "358",
     "category": "Under 12 Solo W",
     "place": "6th",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "359",
     "category": "Under 12 Solo W",
     "place": "6th",
     "name": "Liang Brian",
-    "backNo": "66",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "66"
   },
   {
     "certificateNo": "337",
     "category": "Under 12 Solo WQ",
     "place": "1st",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "338",
     "category": "Under 12 Solo WQ",
     "place": "2nd",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "339",
     "category": "Under 12 Solo WQ",
     "place": "3rd",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "340",
     "category": "Under 12 Solo WQ",
     "place": "4th",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "423",
     "category": "Under 12 Solo WT",
     "place": "1st",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "424",
     "category": "Under 12 Solo WT",
     "place": "2nd",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "425",
     "category": "Under 12 Solo WT",
     "place": "3rd",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "426",
     "category": "Under 12 Solo WT",
     "place": "4th",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "427",
     "category": "Under 12 Solo WT",
     "place": "5th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "428",
     "category": "Under 12 Solo WT",
     "place": "6th",
     "name": "Kuok Sut Iao",
-    "backNo": "62",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "62"
   },
   {
     "certificateNo": "438",
     "category": "Under 12 Solo WTF",
     "place": "1st",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "439",
     "category": "Under 12 Solo WTF",
     "place": "2nd",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "440",
     "category": "Under 12 Solo WTF",
     "place": "3rd",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "441",
     "category": "Under 12 Solo WTF",
     "place": "4th",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "448",
     "category": "Under 12 Solo WTQ",
     "place": "1st",
     "name": "Wong Tsun Yin",
-    "backNo": "77",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "77"
   },
   {
     "certificateNo": "449",
     "category": "Under 12 Solo WTQ",
     "place": "2nd",
     "name": "Chin Choi Ni Charlie",
-    "backNo": "65",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "65"
   },
   {
     "certificateNo": "450",
     "category": "Under 12 Solo WTQ",
     "place": "3rd",
     "name": "Ng Yuen Chun",
-    "backNo": "63",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "63"
   },
   {
     "certificateNo": "451",
     "category": "Under 12 Solo WTQ",
     "place": "4th",
     "name": "Liu Siyan",
-    "backNo": "64",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "64"
   },
   {
     "certificateNo": "452",
     "category": "Under 12 Solo WTQ",
     "place": "5th",
     "name": "Sio Chong Ian",
-    "backNo": "61",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "61"
   },
   {
     "certificateNo": "321",
     "category": "Under 12 WTF",
     "place": "1st",
     "name": "Wong Tsun Yin & Chin Choi Ni Charlie",
-    "backNo": "201",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "201"
   },
   {
     "certificateNo": "322",
     "category": "Under 12 WTF",
     "place": "2nd",
     "name": "Ng Yuen Chun & Liu Siyan",
-    "backNo": "200",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "200"
   },
   {
     "certificateNo": "010",
     "category": "Under 15 CRS",
     "place": "1st",
     "name": "SeungMin LEE & MinSeo KIM",
-    "backNo": "80",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "80"
   },
   {
     "certificateNo": "011",
     "category": "Under 15 CRS",
     "place": "2nd",
     "name": "Wong Tsun Yin & Chin Choi Ni Charlie",
-    "backNo": "201",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "201"
   },
   {
     "certificateNo": "101",
     "category": "Under 15 Solo C",
     "place": "1st",
     "name": "Mathilda Lily Cook",
-    "backNo": "14",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "14"
   },
   {
     "certificateNo": "102",
     "category": "Under 15 Solo C",
     "place": "2nd",
     "name": "GaUl PARK",
-    "backNo": "150",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "150"
   },
   {
     "certificateNo": "103",
     "category": "Under 15 Solo C",
     "place": "3rd",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "104",
     "category": "Under 15 Solo C",
     "place": "4th",
     "name": "Cheang Cheng Tong",
-    "backNo": "102",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "102"
   },
   {
     "certificateNo": "105",
     "category": "Under 15 Solo C",
     "place": "5th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "106",
     "category": "Under 15 Solo C",
     "place": "6th",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "254",
     "category": "Under 15 Solo CR",
     "place": "1st",
     "name": "ChoHee HAN",
-    "backNo": "145",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "145"
   },
   {
     "certificateNo": "255",
     "category": "Under 15 Solo CR",
     "place": "2nd",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "256",
     "category": "Under 15 Solo CR",
     "place": "3rd",
     "name": "GaUl PARK",
-    "backNo": "150",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "150"
   },
   {
     "certificateNo": "257",
     "category": "Under 15 Solo CR",
     "place": "4th",
     "name": "YeSeul YOON",
-    "backNo": "101",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "101"
   },
   {
     "certificateNo": "258",
     "category": "Under 15 Solo CR",
     "place": "5th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "259",
     "category": "Under 15 Solo CR",
     "place": "6th",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "267",
     "category": "Under 15 Solo CRJ",
     "place": "1st",
     "name": "ChoHee HAN",
-    "backNo": "145",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "145"
   },
   {
     "certificateNo": "268",
     "category": "Under 15 Solo CRJ",
     "place": "2nd",
     "name": "GaUl PARK",
-    "backNo": "150",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "150"
   },
   {
     "certificateNo": "269",
     "category": "Under 15 Solo CRJ",
     "place": "3rd",
     "name": "HeeSeo CHOI",
-    "backNo": "104",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "104"
   },
   {
     "certificateNo": "270",
     "category": "Under 15 Solo CRJ",
     "place": "4th",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "271",
     "category": "Under 15 Solo CRJ",
     "place": "5th",
     "name": "Tsai Yu Tong",
-    "backNo": "75",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "75"
   },
   {
     "certificateNo": "272",
     "category": "Under 15 Solo CRJ",
     "place": "6th",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "273",
     "category": "Under 15 Solo CRJ",
     "place": "6th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "125",
     "category": "Under 15 Solo CRS",
     "place": "1st",
     "name": "MinSeo KIM",
-    "backNo": "58",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "58"
   },
   {
     "certificateNo": "126",
     "category": "Under 15 Solo CRS",
     "place": "2nd",
     "name": "YooJeong Son",
-    "backNo": "81",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "81"
   },
   {
     "certificateNo": "127",
     "category": "Under 15 Solo CRS",
     "place": "3rd",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "95"
   },
   {
     "certificateNo": "128",
     "category": "Under 15 Solo CRS",
     "place": "4th",
     "name": "GaUl PARK",
-    "backNo": "150",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "150"
   },
   {
     "certificateNo": "129",
     "category": "Under 15 Solo CRS",
     "place": "5th",
     "name": "ChoHee HAN",
-    "backNo": "145",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "145"
   },
   {
     "certificateNo": "130",
     "category": "Under 15 Solo CRS",
     "place": "6th",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "131",
     "category": "Under 15 Solo CRS",
     "place": "6th",
     "name": "HeeSeo CHOI",
-    "backNo": "104",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "104"
   },
   {
     "certificateNo": "281",
     "category": "Under 15 Solo CSRJ",
     "place": "1st",
     "name": "MinSeo KIM",
-    "backNo": "58",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "58"
   },
   {
     "certificateNo": "282",
     "category": "Under 15 Solo CSRJ",
     "place": "2nd",
     "name": "HeeSeo CHOI",
-    "backNo": "104",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "104"
   },
   {
     "certificateNo": "283",
     "category": "Under 15 Solo CSRJ",
     "place": "3rd",
     "name": "Mathilda Lily Cook",
-    "backNo": "14",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "14"
   },
   {
     "certificateNo": "284",
     "category": "Under 15 Solo CSRJ",
     "place": "4th",
     "name": "YooJeong Son",
-    "backNo": "81",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "81"
   },
   {
     "certificateNo": "285",
     "category": "Under 15 Solo CSRJ",
     "place": "5th",
     "name": "ChoHee HAN",
-    "backNo": "145",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "145"
   },
   {
     "certificateNo": "286",
     "category": "Under 15 Solo CSRJ",
     "place": "6th",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "076",
     "category": "Under 15 Solo J",
     "place": "1st",
     "name": "Mathilda Lily Cook",
-    "backNo": "14",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "14"
   },
   {
     "certificateNo": "077",
     "category": "Under 15 Solo J",
     "place": "2nd",
     "name": "GaUl PARK",
-    "backNo": "150",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "150"
   },
   {
     "certificateNo": "078",
     "category": "Under 15 Solo J",
     "place": "3rd",
     "name": "Lim Qin En",
-    "backNo": "105",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "105"
   },
   {
     "certificateNo": "079",
     "category": "Under 15 Solo J",
     "place": "4th",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "080",
     "category": "Under 15 Solo J",
     "place": "5th",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "081",
     "category": "Under 15 Solo J",
     "place": "6th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "082",
     "category": "Under 15 Solo P",
     "place": "1st",
     "name": "Mathilda Lily Cook",
-    "backNo": "14",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "14"
   },
   {
     "certificateNo": "083",
     "category": "Under 15 Solo P",
     "place": "2nd",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "084",
     "category": "Under 15 Solo P",
     "place": "3rd",
     "name": "Cheang Cheng Tong",
-    "backNo": "102",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "102"
   },
   {
     "certificateNo": "085",
     "category": "Under 15 Solo P",
     "place": "4th",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "086",
     "category": "Under 15 Solo P",
     "place": "5th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "087",
     "category": "Under 15 Solo P",
     "place": "6th",
     "name": "Keung Wing Sum",
-    "backNo": "99",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "99"
   },
   {
     "certificateNo": "088",
     "category": "Under 15 Solo R",
     "place": "1st",
     "name": "Mathilda Lily Cook",
-    "backNo": "14",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "14"
   },
   {
     "certificateNo": "089",
     "category": "Under 15 Solo R",
     "place": "2nd",
     "name": "Lim Qin En",
-    "backNo": "105",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "105"
   },
   {
     "certificateNo": "090",
     "category": "Under 15 Solo R",
     "place": "3rd",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "091",
     "category": "Under 15 Solo R",
     "place": "4th",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "092",
     "category": "Under 15 Solo R",
     "place": "5th",
     "name": "GaUl PARK",
-    "backNo": "150",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "150"
   },
   {
     "certificateNo": "093",
     "category": "Under 15 Solo R",
     "place": "6th",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "094",
     "category": "Under 15 Solo R",
     "place": "6th",
     "name": "Keung Wing Sum",
-    "backNo": "99",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "99"
   },
   {
     "certificateNo": "113",
     "category": "Under 15 Solo RJ",
     "place": "1st",
     "name": "ChoHee HAN",
-    "backNo": "145",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "145"
   },
   {
     "certificateNo": "114",
     "category": "Under 15 Solo RJ",
     "place": "2nd",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "115",
     "category": "Under 15 Solo RJ",
     "place": "3rd",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "116",
     "category": "Under 15 Solo RJ",
     "place": "4th",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "117",
     "category": "Under 15 Solo RJ",
     "place": "5th",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "118",
     "category": "Under 15 Solo RJ",
     "place": "6th",
     "name": "Keung Wing Sum",
-    "backNo": "99",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "99"
   },
   {
     "certificateNo": "095",
     "category": "Under 15 Solo S",
     "place": "1st",
     "name": "Mathilda Lily Cook",
-    "backNo": "14",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "14"
   },
   {
     "certificateNo": "096",
     "category": "Under 15 Solo S",
     "place": "2nd",
     "name": "Lim Qin En",
-    "backNo": "105",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "105"
   },
   {
     "certificateNo": "097",
     "category": "Under 15 Solo S",
     "place": "3rd",
     "name": "Nayool LEE",
-    "backNo": "95",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "95"
   },
   {
     "certificateNo": "098",
     "category": "Under 15 Solo S",
     "place": "4th",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "099",
     "category": "Under 15 Solo S",
     "place": "5th",
     "name": "Keung Wing Sum",
-    "backNo": "99",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "99"
   },
   {
     "certificateNo": "100",
     "category": "Under 15 Solo S",
     "place": "6th",
     "name": "Ieong Chi Kio",
-    "backNo": "96",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "96"
   },
   {
     "certificateNo": "404",
     "category": "Under 15 Solo F",
     "place": "1st",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "405",
     "category": "Under 15 Solo F",
     "place": "2nd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "406",
     "category": "Under 15 Solo F",
     "place": "3rd",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "407",
     "category": "Under 15 Solo F",
     "place": "4th",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "408",
     "category": "Under 15 Solo F",
     "place": "5th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "409",
     "category": "Under 15 Solo F",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "416",
     "category": "Under 15 Solo Q",
     "place": "1st",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "417",
     "category": "Under 15 Solo Q",
     "place": "2nd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "418",
     "category": "Under 15 Solo Q",
     "place": "3rd",
     "name": "Cheang Cheng Tong",
-    "backNo": "102",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "102"
   },
   {
     "certificateNo": "419",
     "category": "Under 15 Solo Q",
     "place": "4th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "420",
     "category": "Under 15 Solo Q",
     "place": "5th",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "421",
     "category": "Under 15 Solo Q",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "422",
     "category": "Under 15 Solo Q",
     "place": "6th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "394",
     "category": "Under 15 Solo T",
     "place": "1st",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "395",
     "category": "Under 15 Solo T",
     "place": "2nd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "396",
     "category": "Under 15 Solo T",
     "place": "3rd",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "397",
     "category": "Under 15 Solo T",
     "place": "4th",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "398",
     "category": "Under 15 Solo T",
     "place": "5th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "399",
     "category": "Under 15 Solo T",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "373",
     "category": "Under 15 Solo W",
     "place": "1st",
     "name": "Cheang Cheng Tong",
-    "backNo": "102",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "102"
   },
   {
     "certificateNo": "374",
     "category": "Under 15 Solo W",
     "place": "2nd",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "375",
     "category": "Under 15 Solo W",
     "place": "3rd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "376",
     "category": "Under 15 Solo W",
     "place": "4th",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "377",
     "category": "Under 15 Solo W",
     "place": "5th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "378",
     "category": "Under 15 Solo W",
     "place": "6th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "385",
     "category": "Under 15 Solo WQ",
     "place": "1st",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "386",
     "category": "Under 15 Solo WQ",
     "place": "2nd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "387",
     "category": "Under 15 Solo WQ",
     "place": "3rd",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "388",
     "category": "Under 15 Solo WQ",
     "place": "4th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "389",
     "category": "Under 15 Solo WQ",
     "place": "5th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "390",
     "category": "Under 15 Solo WQ",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "429",
     "category": "Under 15 Solo WT",
     "place": "1st",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "430",
     "category": "Under 15 Solo WT",
     "place": "2nd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "431",
     "category": "Under 15 Solo WT",
     "place": "3rd",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "432",
     "category": "Under 15 Solo WT",
     "place": "4th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "433",
     "category": "Under 15 Solo WT",
     "place": "5th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "434",
     "category": "Under 15 Solo WT",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "442",
     "category": "Under 15 Solo WTF",
     "place": "1st",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "443",
     "category": "Under 15 Solo WTF",
     "place": "2nd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "444",
     "category": "Under 15 Solo WTF",
     "place": "3rd",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "445",
     "category": "Under 15 Solo WTF",
     "place": "4th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "446",
     "category": "Under 15 Solo WTF",
     "place": "5th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "447",
     "category": "Under 15 Solo WTF",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "467",
     "category": "Under 15 Solo WTFQ",
     "place": "1st",
     "name": "Cheang Cheng Tong",
-    "backNo": "102",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "102"
   },
   {
     "certificateNo": "468",
     "category": "Under 15 Solo WTFQ",
     "place": "2nd",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "94"
   },
   {
     "certificateNo": "469",
     "category": "Under 15 Solo WTFQ",
     "place": "3rd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "90"
   },
   {
     "certificateNo": "470",
     "category": "Under 15 Solo WTFQ",
     "place": "4th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "471",
     "category": "Under 15 Solo WTFQ",
     "place": "5th",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "472",
     "category": "Under 15 Solo WTFQ",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "473",
     "category": "Under 15 Solo WTFQ",
     "place": "6th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "453",
     "category": "Under 15 Solo WTQ",
     "place": "1st",
     "name": "Cheang Cheng Tong",
-    "backNo": "102",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "102"
   },
   {
     "certificateNo": "454",
     "category": "Under 15 Solo WTQ",
     "place": "2nd",
     "name": "Lucie Wang",
-    "backNo": "94",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "94"
   },
   {
     "certificateNo": "455",
     "category": "Under 15 Solo WTQ",
     "place": "3rd",
     "name": "Fifi Chang",
-    "backNo": "90",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "90"
   },
   {
     "certificateNo": "456",
     "category": "Under 15 Solo WTQ",
     "place": "4th",
     "name": "Cindy Hsia",
-    "backNo": "93",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "93"
   },
   {
     "certificateNo": "457",
     "category": "Under 15 Solo WTQ",
     "place": "5th",
     "name": "Keung Yuen Hei Maemi",
-    "backNo": "98",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "98"
   },
   {
     "certificateNo": "458",
     "category": "Under 15 Solo WTQ",
     "place": "6th",
     "name": "Katy Lin",
-    "backNo": "91",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "91"
   },
   {
     "certificateNo": "459",
     "category": "Under 15 Solo WTQ",
     "place": "6th",
     "name": "Jasmine Liu",
-    "backNo": "92",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "92"
   },
   {
     "certificateNo": "363",
     "category": "Under 15 WTF",
     "place": "1st",
     "name": "Wong Tsun Yin & Chin Choi Ni Charlie",
-    "backNo": "201",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "201"
   },
   {
     "certificateNo": "132",
     "category": "Under 18 Solo 5 Dance",
     "place": "1st",
     "name": "Chloe Pang Si Han",
-    "backNo": "125",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "125"
   },
   {
     "certificateNo": "133",
     "category": "Under 18 Solo 5 Dance",
     "place": "2nd",
     "name": "ChanByeol PARK",
-    "backNo": "15",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "15"
   },
   {
     "certificateNo": "134",
     "category": "Under 18 Solo 5 Dance",
     "place": "3rd",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "135",
     "category": "Under 18 Solo 5 Dance",
     "place": "4th",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "136",
     "category": "Under 18 Solo 5 Dance",
     "place": "5th",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "137",
     "category": "Under 18 Solo 5 Dance",
     "place": "6th",
     "name": "Yugay Anastasiya",
-    "backNo": "28",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "28"
   },
   {
     "certificateNo": "168",
     "category": "Under 18 Solo C",
     "place": "1st",
     "name": "Chloe Pang Si Han",
-    "backNo": "125",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "125"
   },
   {
     "certificateNo": "169",
     "category": "Under 18 Solo C",
     "place": "2nd",
     "name": "JuEun BYEON",
-    "backNo": "123",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "123"
   },
   {
     "certificateNo": "170",
     "category": "Under 18 Solo C",
     "place": "3rd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "171",
     "category": "Under 18 Solo C",
     "place": "4th",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "172",
     "category": "Under 18 Solo C",
     "place": "5th",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "173",
     "category": "Under 18 Solo C",
     "place": "6th",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "174",
     "category": "Under 18 Solo C",
     "place": "6th",
     "name": "AhReum KIM",
-    "backNo": "143",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "143"
   },
   {
     "certificateNo": "147",
     "category": "Under 18 Solo CR",
     "place": "1st",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "148",
     "category": "Under 18 Solo CR",
     "place": "2nd",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "149",
     "category": "Under 18 Solo CR",
     "place": "3rd",
     "name": "JuEun BYEON",
-    "backNo": "123",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "123"
   },
   {
     "certificateNo": "150",
     "category": "Under 18 Solo CR",
     "place": "4th",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "151",
     "category": "Under 18 Solo CR",
     "place": "5th",
     "name": "DoYe YOO",
-    "backNo": "144",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "144"
   },
   {
     "certificateNo": "152",
     "category": "Under 18 Solo CR",
     "place": "6th",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "046",
     "category": "Under 18 Solo CRJ",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "047",
     "category": "Under 18 Solo CRJ",
     "place": "2nd",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "048",
     "category": "Under 18 Solo CRJ",
     "place": "3rd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "049",
     "category": "Under 18 Solo CRJ",
     "place": "4th",
     "name": "DoYe YOO",
-    "backNo": "144",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "144"
   },
   {
     "certificateNo": "015",
     "category": "Under 18 Solo CRS",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "016",
     "category": "Under 18 Solo CRS",
     "place": "2nd",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "017",
     "category": "Under 18 Solo CRS",
     "place": "3rd",
     "name": "Yugay Anastasiya",
-    "backNo": "28",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "28"
   },
   {
     "certificateNo": "018",
     "category": "Under 18 Solo CRS",
     "place": "4th",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "019",
     "category": "Under 18 Solo CRS",
     "place": "5th",
     "name": "AhReum KIM",
-    "backNo": "143",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "143"
   },
   {
     "certificateNo": "020",
     "category": "Under 18 Solo CRS",
     "place": "6th",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "481",
     "category": "Under 18 Solo Elite A Latin",
     "place": "1st",
     "name": "SuBin AN",
-    "backNo": "11",
-    "certificate": true,
-    "trophy": true,
-    "medal": false,
-    "prize": true,
-    "note": "트로피 + 상금"
+    "backNo": "11"
   },
   {
     "certificateNo": "482",
     "category": "Under 18 Solo Elite A Latin",
     "place": "2nd",
     "name": "Chloe Pang Si Han",
-    "backNo": "125",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": true,
-    "note": "메달 + 상금"
+    "backNo": "125"
   },
   {
     "certificateNo": "483",
     "category": "Under 18 Solo Elite A Latin",
     "place": "3rd",
     "name": "YuRin LEE",
-    "backNo": "10",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": true,
-    "note": "메달 + 상금"
+    "backNo": "10"
   },
   {
     "certificateNo": "484",
     "category": "Under 18 Solo Elite A Latin",
     "place": "4th",
     "name": "ChanByeol PARK",
-    "backNo": "15",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "15"
   },
   {
     "certificateNo": "485",
     "category": "Under 18 Solo Elite A Latin",
     "place": "5th",
     "name": "GaUl PARK",
-    "backNo": "150",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "150"
   },
   {
     "certificateNo": "486",
     "category": "Under 18 Solo Elite A Latin",
     "place": "6th",
     "name": "Yugay Anastasiya",
-    "backNo": "28",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "28"
   },
   {
     "certificateNo": "487",
     "category": "Under 18 Solo Elite A Latin",
     "place": "6th",
     "name": "Tsai Yu Tong",
-    "backNo": "75",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "75"
   },
   {
     "certificateNo": "488",
     "category": "Under 18 Solo Elite A Latin",
     "place": "6th",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "489",
     "category": "Under 18 Solo Elite A Latin",
     "place": "6th",
     "name": "UiChan KIM",
-    "backNo": "149",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "149"
   },
   {
     "certificateNo": "159",
     "category": "Under 18 Solo J",
     "place": "1st",
     "name": "Chloe Pang Si Han",
-    "backNo": "125",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "125"
   },
   {
     "certificateNo": "160",
     "category": "Under 18 Solo J",
     "place": "2nd",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "161",
     "category": "Under 18 Solo J",
     "place": "3rd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "029",
     "category": "Under 18 Solo P",
     "place": "1st",
     "name": "Chloe Pang Si Han",
-    "backNo": "125",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "125"
   },
   {
     "certificateNo": "030",
     "category": "Under 18 Solo P",
     "place": "2nd",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "031",
     "category": "Under 18 Solo P",
     "place": "3rd",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "032",
     "category": "Under 18 Solo P",
     "place": "4th",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "162",
     "category": "Under 18 Solo R",
     "place": "1st",
     "name": "Chloe Pang Si Han",
-    "backNo": "125",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "125"
   },
   {
     "certificateNo": "163",
     "category": "Under 18 Solo R",
     "place": "2nd",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "164",
     "category": "Under 18 Solo R",
     "place": "3rd",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "165",
     "category": "Under 18 Solo R",
     "place": "4th",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "166",
     "category": "Under 18 Solo R",
     "place": "5th",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "167",
     "category": "Under 18 Solo R",
     "place": "6th",
     "name": "AhReum KIM",
-    "backNo": "143",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "143"
   },
   {
     "certificateNo": "",
     "category": "Under 18 Solo RJ",
     "place": "1st",
-    "name": "Cheng Cheuk Lam   Solo",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "name": " Cheng Cheuk Lam   Solo",
+    "backNo": "12"
   },
   {
     "certificateNo": "036",
     "category": "Under 18 Solo RJ",
     "place": "2nd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "037",
     "category": "Under 18 Solo RJ",
     "place": "3rd",
     "name": "DoYe YOO",
-    "backNo": "144",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "144"
   },
   {
     "certificateNo": "038",
     "category": "Under 18 Solo RJ",
     "place": "4th",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "024",
     "category": "Under 18 Solo S",
     "place": "1st",
     "name": "Chloe Pang Si Han",
-    "backNo": "125",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "125"
   },
   {
     "certificateNo": "025",
     "category": "Under 18 Solo S",
     "place": "2nd",
     "name": "JuEun BYEON",
-    "backNo": "123",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "123"
   },
   {
     "certificateNo": "026",
     "category": "Under 18 Solo S",
     "place": "3rd",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "027",
     "category": "Under 18 Solo S",
     "place": "4th",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "028",
     "category": "Under 18 Solo S",
     "place": "5th",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "410",
     "category": "Under 18 Solo F",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "411",
     "category": "Under 18 Solo F",
     "place": "2nd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "412",
     "category": "Under 18 Solo F",
     "place": "3rd",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "413",
     "category": "Under 18 Solo F",
     "place": "4th",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "341",
     "category": "Under 18 Solo Q",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "342",
     "category": "Under 18 Solo Q",
     "place": "2nd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "327",
     "category": "Under 18 Solo T",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "330",
     "category": "Under 18 Solo T",
     "place": "2nd",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "328",
     "category": "Under 18 Solo T",
     "place": "3rd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "329",
     "category": "Under 18 Solo T",
     "place": "4th",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "349",
     "category": "Under 18 Solo W",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "350",
     "category": "Under 18 Solo W",
     "place": "2nd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "351",
     "category": "Under 18 Solo W",
     "place": "3rd",
     "name": "Cheng Ut U, Uta",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "352",
     "category": "Under 18 Solo W",
     "place": "4th",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "335",
     "category": "Under 18 Solo WQ",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "336",
     "category": "Under 18 Solo WQ",
     "place": "2nd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "391",
     "category": "Under 18 Solo WT",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "392",
     "category": "Under 18 Solo WT",
     "place": "2nd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "393",
     "category": "Under 18 Solo WT",
     "place": "3rd",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "324",
     "category": "Under 18 Solo WTF",
     "place": "1st",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "325",
     "category": "Under 18 Solo WTF",
     "place": "2nd",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "326",
     "category": "Under 18 Solo WTF",
     "place": "3rd",
     "name": "Cheng Ut Tong, Udia",
-    "backNo": "124",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "124"
   },
   {
     "certificateNo": "369",
     "category": "Under 18 Solo WTFQ",
     "place": "1st",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "370",
     "category": "Under 18 Solo WTFQ",
     "place": "2nd",
     "name": "Yeon Woo Lee",
-    "backNo": "154",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "154"
   },
   {
     "certificateNo": "371",
     "category": "Under 18 Solo WTFQ",
     "place": "3rd",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "372",
     "category": "Under 18 Solo WTFQ",
     "place": "4th",
     "name": "Leung Pui U",
-    "backNo": "122",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "122"
   },
   {
     "certificateNo": "360",
     "category": "Under 18 Solo WTQ",
     "place": "1st",
     "name": "Genie Chen",
-    "backNo": "120",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "120"
   },
   {
     "certificateNo": "361",
     "category": "Under 18 Solo WTQ",
     "place": "2nd",
     "name": "Cheng Ut U, Uta",
-    "backNo": "121",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "121"
   },
   {
     "certificateNo": "211",
     "category": "Over 19 Solo C",
     "place": "1st",
     "name": "Chan Hio Tong",
-    "backNo": "22",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "22"
   },
   {
     "certificateNo": "182",
     "category": "Over 19 Solo CR",
     "place": "1st",
     "name": "Song IRANG",
-    "backNo": "140",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "140"
   },
   {
     "certificateNo": "183",
     "category": "Over 19 Solo CR",
     "place": "2nd",
     "name": "YoungYeon PARK",
-    "backNo": "37",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "37"
   },
   {
     "certificateNo": "184",
     "category": "Over 19 Solo CR",
     "place": "3rd",
     "name": "JiHyo YOO",
-    "backNo": "27",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "27"
   },
   {
     "certificateNo": "185",
     "category": "Over 19 Solo CR",
     "place": "4th",
     "name": "Chan Hio Tong",
-    "backNo": "22",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "22"
   },
   {
     "certificateNo": "186",
     "category": "Over 19 Solo CR",
     "place": "5th",
     "name": "GaIn PARK",
-    "backNo": "24",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "24"
   },
   {
     "certificateNo": "187",
     "category": "Over 19 Solo CR",
     "place": "6th",
     "name": "HaEun KIM",
-    "backNo": "25",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "25"
   },
   {
     "certificateNo": "315",
     "category": "Over 19 Solo Latin 5 Dance",
     "place": "1st",
     "name": "Choo Yi Xuan",
-    "backNo": "13",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "13"
   },
   {
     "certificateNo": "316",
     "category": "Over 19 Solo Latin 5 Dance",
     "place": "2nd",
     "name": "Nanaha Kosaka",
-    "backNo": "21",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "21"
   },
   {
     "certificateNo": "317",
     "category": "Over 19 Solo Latin 5 Dance",
     "place": "3rd",
     "name": "Song IRANG",
-    "backNo": "140",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "140"
   },
   {
     "certificateNo": "318",
     "category": "Over 19 Solo Latin 5 Dance",
     "place": "4th",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "319",
     "category": "Over 19 Solo Latin 5 Dance",
     "place": "5th",
     "name": "Yugay Anastasiya",
-    "backNo": "28",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "28"
   },
   {
     "certificateNo": "320",
     "category": "Over 19 Solo Latin 5 Dance",
     "place": "6th",
     "name": "JiHyo YOO",
-    "backNo": "27",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "27"
   },
   {
     "certificateNo": "305",
     "category": "Over 19 Solo Latin CRS",
     "place": "1st",
     "name": "Choo Yi Xuan",
-    "backNo": "13",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "13"
   },
   {
     "certificateNo": "306",
     "category": "Over 19 Solo Latin CRS",
     "place": "2nd",
     "name": "Song IRANG",
-    "backNo": "140",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "140"
   },
   {
     "certificateNo": "307",
     "category": "Over 19 Solo Latin CRS",
     "place": "3rd",
     "name": "Nanaha Kosaka",
-    "backNo": "21",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "21"
   },
   {
     "certificateNo": "308",
     "category": "Over 19 Solo Latin CRS",
     "place": "4th",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "309",
     "category": "Over 19 Solo Latin CRS",
     "place": "5th",
     "name": "JiHyo YOO",
-    "backNo": "27",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "27"
   },
   {
     "certificateNo": "310",
     "category": "Over 19 Solo Latin CRS",
     "place": "6th",
     "name": "Choy Hoi Ching",
-    "backNo": "9",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "9"
   },
   {
     "certificateNo": "023",
     "category": "Over 19 Solo Latin CSRJ",
     "place": "1st",
     "name": "MinJi BAEK",
-    "backNo": "16",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "16"
   },
   {
     "certificateNo": "033",
     "category": "Over 19 Solo P",
     "place": "1st",
     "name": "Choo Yi Xuan",
-    "backNo": "13",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "13"
   },
   {
     "certificateNo": "034",
     "category": "Over 19 Solo P",
     "place": "1st",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "506",
     "category": "Over 19 Solo R",
     "place": "1st",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "021",
     "category": "Over 19 Solo RJ",
     "place": "1st",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "022",
     "category": "Over 19 Solo RJ",
     "place": "1st",
     "name": "Song IRANG",
-    "backNo": "140",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "140"
   },
   {
     "certificateNo": "188",
     "category": "Over 19 Solo S",
     "place": "1st",
     "name": "Choo Yi Xuan",
-    "backNo": "13",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "13"
   },
   {
     "certificateNo": "189",
     "category": "Over 19 Solo S",
     "place": "2nd",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "190",
     "category": "Over 19 Solo S",
     "place": "3rd",
     "name": "YoungYeon PARK",
-    "backNo": "37",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "37"
   },
   {
     "certificateNo": "191",
     "category": "Over 19 Solo S",
     "place": "4th",
     "name": "Chan Hio Tong",
-    "backNo": "22",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "22"
   },
   {
     "certificateNo": "331",
     "category": "Over 19 Solo T",
     "place": "1st",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "347",
     "category": "Over 19 Solo W",
     "place": "1st",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "348",
     "category": "Over 19 Solo W",
     "place": "2nd",
     "name": "Chan Hio Tong",
-    "backNo": "22",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "22"
   },
   {
     "certificateNo": "323",
     "category": "Over 19 Solo WTF",
     "place": "1st",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "367",
     "category": "Over 19 Solo WTFQ",
     "place": "1st",
     "name": "Lei Weng I",
-    "backNo": "26",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "26"
   },
   {
     "certificateNo": "368",
     "category": "Over 19 Solo WTFQ",
     "place": "2nd",
     "name": "Cheng Ut Leng",
-    "backNo": "23",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "23"
   },
   {
     "certificateNo": "362",
     "category": "Over 19 Solo WTQ",
     "place": "1st",
     "name": "Lei Weng I",
-    "backNo": "26",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "26"
   },
   {
     "certificateNo": "205",
     "category": "Over 35 Solo C",
     "place": "1st",
     "name": "SukHee KIM",
-    "backNo": "35",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "35"
   },
   {
     "certificateNo": "206",
     "category": "Over 35 Solo C",
     "place": "2nd",
     "name": "HyeKyung LEE",
-    "backNo": "31",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "31"
   },
   {
     "certificateNo": "207",
     "category": "Over 35 Solo C",
     "place": "3rd",
     "name": "HyoSeon PARK",
-    "backNo": "34",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "34"
   },
   {
     "certificateNo": "208",
     "category": "Over 35 Solo C",
     "place": "4th",
     "name": "SeonA JEONG",
-    "backNo": "30",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "30"
   },
   {
     "certificateNo": "209",
     "category": "Over 35 Solo C",
     "place": "5th",
     "name": "HyunGye KIM",
-    "backNo": "33",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "33"
   },
   {
     "certificateNo": "210",
     "category": "Over 35 Solo C",
     "place": "6th",
     "name": "SeongJi CHOI",
-    "backNo": "32",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "32"
   },
   {
     "certificateNo": "175",
     "category": "Over 35 Solo CR",
     "place": "1st",
     "name": "HyeKyung LEE",
-    "backNo": "31",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "31"
   },
   {
     "certificateNo": "176",
     "category": "Over 35 Solo CR",
     "place": "2nd",
     "name": "SukHee KIM",
-    "backNo": "35",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "35"
   },
   {
     "certificateNo": "177",
     "category": "Over 35 Solo CR",
     "place": "3rd",
     "name": "HyunGye KIM",
-    "backNo": "33",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "33"
   },
   {
     "certificateNo": "178",
     "category": "Over 35 Solo CR",
     "place": "4th",
     "name": "HyoSeon PARK",
-    "backNo": "34",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "34"
   },
   {
     "certificateNo": "179",
     "category": "Over 35 Solo CR",
     "place": "5th",
     "name": "SeonA JEONG",
-    "backNo": "30",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "30"
   },
   {
     "certificateNo": "180",
     "category": "Over 35 Solo CR",
     "place": "6th",
     "name": "SeongJi CHOI",
-    "backNo": "32",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "32"
   },
   {
     "certificateNo": "293",
     "category": "Over 35 Solo CRS",
     "place": "1st",
     "name": "HyeKyung LEE",
-    "backNo": "31",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "31"
   },
   {
     "certificateNo": "294",
     "category": "Over 35 Solo CRS",
     "place": "2nd",
     "name": "SukHee KIM",
-    "backNo": "35",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "35"
   },
   {
     "certificateNo": "295",
     "category": "Over 35 Solo CRS",
     "place": "3rd",
     "name": "HyunGye KIM",
-    "backNo": "33",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "33"
   },
   {
     "certificateNo": "296",
     "category": "Over 35 Solo CRS",
     "place": "4th",
     "name": "SeonA JEONG",
-    "backNo": "30",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "30"
   },
   {
     "certificateNo": "297",
     "category": "Over 35 Solo CRS",
     "place": "5th",
     "name": "HyoSeon PARK",
-    "backNo": "34",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "34"
   },
   {
     "certificateNo": "298",
     "category": "Over 35 Solo CRS",
     "place": "6th",
     "name": "SeongJi CHOI",
-    "backNo": "32",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "32"
   },
   {
     "certificateNo": "198",
     "category": "Over 35 Solo R",
     "place": "1st",
     "name": "SukHee KIM",
-    "backNo": "35",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "35"
   },
   {
     "certificateNo": "199",
     "category": "Over 35 Solo R",
     "place": "2nd",
     "name": "HyunGye KIM",
-    "backNo": "33",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "33"
   },
   {
     "certificateNo": "200",
     "category": "Over 35 Solo R",
     "place": "3rd",
     "name": "HyoSeon PARK",
-    "backNo": "34",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "34"
   },
   {
     "certificateNo": "201",
     "category": "Over 35 Solo R",
     "place": "4th",
     "name": "HyeKyung LEE",
-    "backNo": "31",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "31"
   },
   {
     "certificateNo": "202",
     "category": "Over 35 Solo R",
     "place": "5th",
     "name": "SeonA JEONG",
-    "backNo": "30",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "30"
   },
   {
     "certificateNo": "203",
     "category": "Over 35 Solo R",
     "place": "6th",
     "name": "SeongJi CHOI",
-    "backNo": "32",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "32"
   },
   {
     "certificateNo": "192",
     "category": "Over 35 Solo S",
     "place": "1st",
     "name": "SukHee KIM",
-    "backNo": "35",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "35"
   },
   {
     "certificateNo": "193",
     "category": "Over 35 Solo S",
     "place": "2nd",
     "name": "HyeKyung LEE",
-    "backNo": "31",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "31"
   },
   {
     "certificateNo": "194",
     "category": "Over 35 Solo S",
     "place": "3rd",
     "name": "HyoSeon PARK",
-    "backNo": "34",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "34"
   },
   {
     "certificateNo": "195",
     "category": "Over 35 Solo S",
     "place": "4th",
     "name": "HyunGye KIM",
-    "backNo": "33",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "33"
   },
   {
     "certificateNo": "196",
     "category": "Over 35 Solo S",
     "place": "5th",
     "name": "SeongJi CHOI",
-    "backNo": "32",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "32"
   },
   {
     "certificateNo": "197",
     "category": "Over 35 Solo S",
     "place": "6th",
     "name": "SeonA JEONG",
-    "backNo": "30",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "30"
   },
   {
     "certificateNo": "039",
     "category": "Amateur Rising Star Latin",
     "place": "1st",
     "name": "Kengo Izumi & Shima Saito",
-    "backNo": "5",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "5"
   },
   {
     "certificateNo": "040",
     "category": "Amateur Rising Star Latin",
     "place": "2nd",
     "name": "KyuWon KIM & Marta Pierog",
-    "backNo": "6",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "6"
   },
   {
     "certificateNo": "041",
     "category": "Amateur Rising Star Latin",
     "place": "3rd",
     "name": "GyuMin PARK & JinYoo KIM",
-    "backNo": "2",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "2"
   },
   {
     "certificateNo": "042",
     "category": "Amateur Rising Star Latin",
     "place": "4th",
     "name": "HyunOuk KIM & JiHye CHOI",
-    "backNo": "1",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "1"
   },
   {
     "certificateNo": "043",
     "category": "Amateur Rising Star Latin",
     "place": "5th",
     "name": "Gerald Heng & Shen Xuan Hui",
-    "backNo": "3",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "3"
   },
   {
     "certificateNo": "044",
     "category": "Amateur Rising Star Latin",
     "place": "6th",
     "name": "Wong Qinyuen & Zhu Wanyi",
-    "backNo": "4",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "4"
   },
   {
     "certificateNo": "045",
     "category": "Amateur Rising Star Latin",
     "place": "6th",
     "name": "Calitin Daniel & Myagmar Delgermaa",
-    "backNo": "7",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "7"
   },
   {
     "certificateNo": "500",
     "category": "Asia Pacific Amateur Latin",
     "place": "1st",
     "name": "HyeonWoo CHO & SeoJin BYOUN",
-    "backNo": "8",
-    "certificate": true,
-    "trophy": true,
-    "medal": false,
-    "prize": true,
-    "note": "트로피 + 상금"
+    "backNo": "8"
   },
   {
     "certificateNo": "501",
     "category": "Asia Pacific Amateur Latin",
     "place": "2nd",
     "name": "KyuWon KIM & Marta Pierog",
-    "backNo": "6",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": true,
-    "note": "메달 + 상금"
+    "backNo": "6"
   },
   {
     "certificateNo": "502",
     "category": "Asia Pacific Amateur Latin",
     "place": "3rd",
     "name": "Kengo Izumi & Shima Saito",
-    "backNo": "5",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": true,
-    "note": "메달 + 상금"
+    "backNo": "5"
   },
   {
     "certificateNo": "503",
     "category": "Asia Pacific Amateur Latin",
     "place": "4th",
     "name": "GyuMin PARK & JinYoo KIM",
-    "backNo": "2",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "2"
   },
   {
     "certificateNo": "504",
     "category": "Asia Pacific Amateur Latin",
     "place": "5th",
     "name": "HyunOuk KIM & JiHye CHOI",
-    "backNo": "1",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "1"
   },
   {
     "certificateNo": "505",
     "category": "Asia Pacific Amateur Latin",
     "place": "6th",
     "name": "Gerald Heng & Shen Xuan Hui",
-    "backNo": "3",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "3"
   },
   {
     "certificateNo": "490",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "1st",
     "name": "YuRin LEE",
-    "backNo": "10",
-    "certificate": true,
-    "trophy": true,
-    "medal": false,
-    "prize": true,
-    "note": "트로피 + 상금"
+    "backNo": "10"
   },
   {
     "certificateNo": "491",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "2nd",
     "name": "Mathilda Lily Cook",
-    "backNo": "14",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": true,
-    "note": "메달 + 상금"
+    "backNo": "14"
   },
   {
     "certificateNo": "492",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "3rd",
     "name": "ChanByeol PARK",
-    "backNo": "15",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": true,
-    "note": "메달 + 상금"
+    "backNo": "15"
   },
   {
     "certificateNo": "493",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "4th",
     "name": "YooJeong Son",
-    "backNo": "81",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "81"
   },
   {
     "certificateNo": "494",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "5th",
     "name": "SuBin AN",
-    "backNo": "11",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "11"
   },
   {
     "certificateNo": "495",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "6th",
     "name": "Choy Hoi Ching",
-    "backNo": "9",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "9"
   },
   {
     "certificateNo": "496",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "6th",
     "name": "Cheng Cheuk Lam",
-    "backNo": "12",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "12"
   },
   {
     "certificateNo": "497",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "6th",
     "name": "Choo Yi Xuan",
-    "backNo": "13",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "13"
   },
   {
     "certificateNo": "498",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "6th",
     "name": "Nanaha Kosaka",
-    "backNo": "21",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "21"
   },
   {
     "certificateNo": "499",
     "category": "Asia Pacific Amateur Solo Latin",
     "place": "6th",
     "name": "JiHyo YOO",
-    "backNo": "27",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "27"
   },
   {
     "certificateNo": "007",
     "category": "Korea Closed Amateur Latin",
     "place": "1st",
     "name": "HyeonWoo CHO & SeoJin BYOUN",
-    "backNo": "8",
-    "certificate": true,
-    "trophy": true,
-    "medal": false,
-    "prize": false,
-    "note": "트로피"
+    "backNo": "8"
   },
   {
     "certificateNo": "008",
     "category": "Korea Closed Amateur Latin",
     "place": "2nd",
     "name": "GyuMin PARK & JinYoo KIM",
-    "backNo": "2",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "2"
   },
   {
     "certificateNo": "009",
     "category": "Korea Closed Amateur Latin",
     "place": "3rd",
     "name": "HyunOuk KIM & JiHye CHOI",
-    "backNo": "1",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "1"
   },
   {
     "certificateNo": "181",
     "category": "Senior 50 CR",
     "place": "1st",
     "name": "SungHo SON & JungHyun KIM",
-    "backNo": "210",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "210"
   },
   {
     "certificateNo": "012",
     "category": "Mania Latin CR",
     "place": "1st",
     "name": "Wen Lei & SukHee KIM",
-    "backNo": "211",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "211"
   },
   {
     "certificateNo": "013",
     "category": "Mania Latin CR",
     "place": "2nd",
     "name": "DaRae KIM & SangMi KIM",
-    "backNo": "214",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "214"
   },
   {
     "certificateNo": "014",
     "category": "Mania Latin CR",
     "place": "3rd",
     "name": "SungHo SON & JungHyun KIM",
-    "backNo": "210",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "210"
   },
   {
     "certificateNo": "311",
     "category": "Mania Latin CRS",
     "place": "1st",
     "name": "JaeWoo JEON & MinJi BAEK",
-    "backNo": "215",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "215"
   },
   {
     "certificateNo": "312",
     "category": "Mania Latin CRS",
     "place": "2nd",
     "name": "Wen Lei & SukHee KIM",
-    "backNo": "211",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "211"
   },
   {
     "certificateNo": "313",
     "category": "Mania Latin CRS",
     "place": "3rd",
     "name": "DaRae KIM & SangMi KIM",
-    "backNo": "214",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "214"
   },
   {
     "certificateNo": "314",
     "category": "Mania Latin CRS",
     "place": "4th",
     "name": "SungHo SON & JungHyun KIM",
-    "backNo": "210",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "210"
   },
   {
     "certificateNo": "006",
     "category": "Mania Latin R",
     "place": "1st",
     "name": "DaRae KIM & SuIm CHAE",
-    "backNo": "213",
-    "certificate": true,
-    "trophy": false,
-    "medal": false,
-    "prize": false,
-    "note": ""
+    "backNo": "213"
   },
   {
     "certificateNo": "204",
     "category": "Pro-Am Latin R",
     "place": "1st",
     "name": "DaRae KIM & SuIm CHAE",
-    "backNo": "213",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "213"
   },
   {
     "certificateNo": "069",
     "category": "Pro-Am Standard 3 Dance",
     "place": "1st",
     "name": "JaeHo KO & JinShun",
-    "backNo": "212",
-    "certificate": true,
-    "trophy": false,
-    "medal": true,
-    "prize": false,
-    "note": "메달"
+    "backNo": "212"
   }
 ]

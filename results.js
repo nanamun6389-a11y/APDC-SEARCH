@@ -35,30 +35,6 @@ function sectionOf(category){
 }
 const SECTION_ORDER=["FORMATION","UNDER 10","UNDER 12","UNDER 15","UNDER 18","OVER 19","OVER 35","AMATEUR","SENIOR","MANIA","PRO-AM","OTHER"];
 
-function countAwards(rows){
-  return rows.reduce((acc,row)=>{
-    if(row.trophy) acc.trophy += 1;
-    if(row.medal) acc.medal += 1;
-    if(row.prize) acc.prize += 1;
-    return acc;
-  }, {trophy:0, medal:0, prize:0});
-}
-function awardBadges(row){
-  const badges=[];
-  if(row.trophy) badges.push('<span class="award-badge" title="Trophy">🏆</span>');
-  if(row.medal) badges.push('<span class="award-badge" title="Medal">🏅</span>');
-  if(row.prize) badges.push('<span class="award-badge" title="Prize Money">💵</span>');
-  return badges.join('');
-}
-function awardSummary(rows){
-  const counts=countAwards(rows);
-  const items=[];
-  if(counts.trophy) items.push(`<span class="event-award">🏆 ${counts.trophy}</span>`);
-  if(counts.medal) items.push(`<span class="event-award">🏅 ${counts.medal}</span>`);
-  if(counts.prize) items.push(`<span class="event-award">💵 ${counts.prize}</span>`);
-  return items.join('');
-}
-
 function render(){
   const q=norm(searchEl.value);
   const filtered=RESULTS.filter(row=>matches(row,q));
@@ -90,21 +66,14 @@ function render(){
           ${[...events.entries()].map(([eventName,rows])=>`
             <section class="result-event">
               <div class="result-event-head">
-                <div>
-                  <h3>${esc(eventName)}</h3>
-                  <span>${rows.length} PLACES</span>
-                </div>
-                <div class="event-awards">${awardSummary(rows)}</div>
+                <h3>${esc(eventName)}</h3>
+                <span>${rows.length} PLACES</span>
               </div>
               <div class="result-section-list">
                 ${rows.map(row=>`
-                  <article class="result-row ${row.trophy||row.medal||row.prize ? 'has-award' : ''}">
+                  <article class="result-row">
                     <div class="result-place">${esc(row.place)}</div>
-                    <div class="result-name-wrap">
-                      <div class="result-name">${esc(row.name)}</div>
-                      ${row.note ? `<div class="result-note">${esc(row.note)}</div>` : ''}
-                    </div>
-                    <div class="result-awards">${awardBadges(row)}</div>
+                    <div class="result-name">${esc(row.name)}</div>
                     <div class="result-back"><span>BACK NO.</span><strong>${esc(row.backNo||"—")}</strong></div>
                   </article>
                 `).join("")}
