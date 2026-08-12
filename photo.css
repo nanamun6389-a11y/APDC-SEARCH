@@ -45,3 +45,19 @@
 .admin-page-sheet{width:min(760px,100%)!important;margin:0 auto!important;border:1px solid #2f2f2f!important;background:#0c0c0c!important}
 .gallery-admin-page .floating-admin,.gallery-admin-page .floating-sponsor,.gallery-admin-page .floating-top{display:none!important}
 @media(max-width:600px){.gallery-admin-footer-wrap{padding-bottom:calc(96px + env(safe-area-inset-bottom))}.gallery-admin-footer-link{min-width:108px;height:42px}.admin-page-panel{padding-left:10px!important;padding-right:10px!important}}
+
+
+/* V14 gallery: 50 items per page, row grid + arrow paging */
+.public-photo-grid{columns:auto!important;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;transition:opacity .28s ease,transform .28s ease}
+.public-photo-card-wrap{margin:0!important;min-width:0}
+.public-photo-card img,.public-photo-card video{width:100%;aspect-ratio:4/3;object-fit:cover;height:auto}
+.public-photo-card video{min-height:0}
+.gallery-pager{display:flex;align-items:center;justify-content:center;gap:18px;margin:28px auto 4px}
+.gallery-page-arrow{width:48px;height:48px;border-radius:50%;border:1px solid #555;background:#111;color:#fff;font-size:31px;line-height:1;cursor:pointer;box-shadow:0 5px 22px rgba(0,0,0,.42)}
+.gallery-page-arrow:disabled{opacity:.2;cursor:default}
+.gallery-page-status{min-width:68px;text-align:center;color:#999;font-size:11px;font-weight:900;letter-spacing:.12em}
+.page-enter-right{animation:galleryPageFromRight .32s ease both}.page-enter-left{animation:galleryPageFromLeft .32s ease both}
+@keyframes galleryPageFromRight{from{opacity:.2;transform:translateX(26px)}to{opacity:1;transform:translateX(0)}}
+@keyframes galleryPageFromLeft{from{opacity:.2;transform:translateX(-26px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:900px){.public-photo-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}}
+@media(max-width:600px){.public-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.gallery-pager{margin-top:22px}.gallery-page-arrow{width:44px;height:44px}}

@@ -303,8 +303,18 @@ submitSponsor.onclick = () => {
   window.location.href = `mailto:${SPONSOR_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };
 
-function renderGallery() {
-  grid.innerHTML = media.map((item,i) => {
+const GALLERY_PAGE_SIZE = 50;
+let galleryPage = 0;
+
+function renderGallery(direction = 0) {
+  const totalPages = Math.max(1, Math.ceil(media.length / GALLERY_PAGE_SIZE));
+  galleryPage = Math.min(Math.max(0, galleryPage), totalPages - 1);
+  const start = galleryPage * GALLERY_PAGE_SIZE;
+  const pageItems = media.slice(start, start + GALLERY_PAGE_SIZE);
+
+  grid.classList.remove("page-enter-left", "page-enter-right");
+  grid.innerHTML = pageItems.map((item,localIndex) => {
+    const i = start + localIndex;
     const kind = mediaKind(item);
     const src = mediaUrl(item);
     if (kind === "video") {
@@ -327,6 +337,29 @@ function renderGallery() {
   grid.querySelectorAll(".public-photo-card").forEach(el => {
     el.onclick = () => openLightbox(Number(el.dataset.index));
   });
+
+  let pager = document.getElementById("galleryPager");
+  if (!pager) {
+    pager = document.createElement("nav");
+    pager.id = "galleryPager";
+    pager.className = "gallery-pager";
+    grid.insertAdjacentElement("afterend", pager);
+  }
+  pager.classList.toggle("hidden", media.length <= GALLERY_PAGE_SIZE);
+  pager.innerHTML = `<button class="gallery-page-arrow" id="galleryPrevPage" type="button" aria-label="이전 사진 페이지">‹</button>
+    <span class="gallery-page-status">${galleryPage + 1} / ${totalPages}</span>
+    <button class="gallery-page-arrow" id="galleryNextPage" type="button" aria-label="다음 사진 페이지">›</button>`;
+  const prev = document.getElementById("galleryPrevPage");
+  const next = document.getElementById("galleryNextPage");
+  prev.disabled = galleryPage === 0;
+  next.disabled = galleryPage >= totalPages - 1;
+  prev.onclick = () => { if (galleryPage > 0) { galleryPage--; renderGallery(-1); window.scrollTo({top: 0, behavior: "smooth"}); } };
+  next.onclick = () => { if (galleryPage < totalPages - 1) { galleryPage++; renderGallery(1); window.scrollTo({top: 0, behavior: "smooth"}); } };
+
+  if (direction) {
+    void grid.offsetWidth;
+    grid.classList.add(direction > 0 ? "page-enter-right" : "page-enter-left");
+  }
 }
 
 let lightboxIndex = -1;
