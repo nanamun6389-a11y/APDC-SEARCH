@@ -1,5 +1,8 @@
 apdcBuildLanguageUI();
 "use strict";
+const competitionId=new URL(location.href).searchParams.get("competition")||"2026-apdc";
+const isLegacyCompetition=competitionId==="2026-apdc";
+let competitionMeta=null;
 let entries=[];let activeSection="ALL";
 const $=id=>document.getElementById(id),q=$("query"),tabs=$("sectionTabs"),eventList=$("eventList"),eventSummary=$("eventSummary"),searchBox=$("searchBox"),searchResults=$("searchResults"),searchTitle=$("searchTitle"),searchCount=$("searchCount"),infoModal=$("infoModal"),infoContent=$("infoContent"),playerModal=$("playerModal"),playerContent=$("playerContent");
 const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
@@ -29,14 +32,33 @@ async function loadLocalPlayers(){
   if(!Array.isArray(data))throw new Error("players.json must contain an array");
   return data;
 }
+async function rootFbGet(path){
+  const r=await fetch(`${FIREBASE_ROOT}/${path}.json?v=${Date.now()}`,{cache:"no-store"});
+  if(!r.ok)throw new Error(`Firebase GET ${path}: ${r.status}`);
+  return r.json();
+}
+async function loadCompetitionMeta(){
+  if(isLegacyCompetition)return {id:"2026-apdc",name:"2026 APDC",date:"2026-08-08",venue:"SEOCHO SPORTS COMPLEX"};
+  return await rootFbGet(`publishedCompetitions/${encodeURIComponent(competitionId)}`);
+}
 async function loadEntries(){
-  // ENTRY ADMIN saves to Firebase. Always show that live master first.
-  // Static GitHub players.json is fallback only when Firebase is unavailable/empty.
-  try{
-    const online=await fbGet("players");
-    if(Array.isArray(online)&&online.length)return online;
-  }catch(e){console.warn("Online entry master unavailable; using local fallback",e)}
+  if(!isLegacyCompetition){
+    const online=await rootFbGet(`competitions/${encodeURIComponent(competitionId)}/publicEntries`);
+    if(Array.isArray(online))return online;
+    if(online&&typeof online==="object")return Object.values(online);
+    return [];
+  }
+  try{const online=await fbGet("players");if(Array.isArray(online)&&online.length)return online;}catch(e){console.warn("Online entry master unavailable; using local fallback",e)}
   return loadLocalPlayers();
 }
-loadEntries().then(data=>{entries=(Array.isArray(data)?data:[]).filter(item=>item&&item.competitor&&item.event&&item.section);renderTabs();renderEvents()}).catch(e=>{console.error(e);eventSummary.textContent="ERROR";eventList.innerHTML='<div class="empty">FAILED TO LOAD ENTRY DATA.</div>'});
+Promise.all([loadCompetitionMeta(),loadEntries()]).then(([meta,data])=>{
+  competitionMeta=meta||{id:competitionId,name:competitionId};
+  const eyebrow=document.querySelector(".entry-brand-link .eyebrow");if(eyebrow)eyebrow.textContent=(competitionMeta.name||competitionId).toUpperCase();
+  document.title=`${competitionMeta.name||competitionId} Entry Search`;
+  document.querySelectorAll('a[href$=".html"]').forEach(a=>{
+    const href=a.getAttribute('href'); if(!href||href.startsWith('http')||isLegacyCompetition)return;
+    const u=new URL(href,location.href);u.searchParams.set('competition',competitionId);a.href=u.href;
+  });
+  entries=(Array.isArray(data)?data:[]).filter(item=>item&&item.competitor&&item.event&&item.section);renderTabs();renderEvents();
+}).catch(e=>{console.error(e);eventSummary.textContent="ERROR";eventList.innerHTML='<div class="empty">FAILED TO LOAD ENTRY DATA.</div>'});
 document.addEventListener("DOMContentLoaded",()=>{const query=$("query");if(query)query.placeholder=apdcT("searchPlaceholder");const sb=document.querySelector(".search-btn");if(sb)sb.textContent=apdcT("search")});
