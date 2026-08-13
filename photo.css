@@ -61,3 +61,14 @@
 @keyframes galleryPageFromLeft{from{opacity:.2;transform:translateX(-26px)}to{opacity:1;transform:translateX(0)}}
 @media(max-width:900px){.public-photo-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}}
 @media(max-width:600px){.public-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.gallery-pager{margin-top:22px}.gallery-page-arrow{width:44px;height:44px}}
+
+
+/* V15 mobile lightbox UX: safer BACK position + swipe-down to close */
+.lightbox{padding-top:calc(72px + env(safe-area-inset-top));padding-bottom:calc(72px + env(safe-area-inset-bottom));touch-action:pan-y pinch-zoom}
+.lightbox-back{left:calc(14px + env(safe-area-inset-left));top:calc(14px + env(safe-area-inset-top));min-width:74px;min-height:44px;padding:11px 14px;display:flex;align-items:center;justify-content:center;z-index:3;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.back-link{left:calc(18px + env(safe-area-inset-left));min-height:42px;min-width:70px;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+@media(max-width:600px){
+  .photo-header{padding-top:calc(20px + env(safe-area-inset-top))}
+  .back-link{left:calc(10px + env(safe-area-inset-left));top:calc(50% + env(safe-area-inset-top)/2);padding:10px 11px;font-size:10px}
+  .lightbox-back{left:calc(12px + env(safe-area-inset-left));top:calc(12px + env(safe-area-inset-top));min-width:82px;min-height:46px;padding:12px 14px;font-size:11px}
+}

@@ -428,7 +428,11 @@ lightbox.addEventListener("touchend", e => {
   lightboxTouchStartX = 0;
   lightboxTouchStartY = 0;
 
-  // Ignore taps/vertical scrolling. A deliberate horizontal swipe must be at least 45px.
+  // Swipe down closes the preview. Horizontal swipe keeps previous/next navigation.
+  if (dy > 55 && Math.abs(dy) > Math.abs(dx) * 1.1) {
+    closeLightbox();
+    return;
+  }
   if (Math.abs(dx) < 45 || Math.abs(dx) <= Math.abs(dy) * 1.15) return;
   if (dx < 0) lightboxNext();
   else lightboxPrev();
